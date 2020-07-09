@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A189724B6A1DA00D63C79 /* ArrotoAmargoApp.swift */; };
+		D99A189A24B6A1DA00D63C79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A189924B6A1DA00D63C79 /* ContentView.swift */; };
+		D99A189C24B6A1DC00D63C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99A189B24B6A1DC00D63C79 /* Assets.xcassets */; };
+		D99A189F24B6A1DC00D63C79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99A189E24B6A1DC00D63C79 /* Preview Assets.xcassets */; };
+		D99A18AA24B6A1DC00D63C79 /* ArrotoAmargoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A18A924B6A1DC00D63C79 /* ArrotoAmargoTests.swift */; };
+		D99A18B524B6A1DC00D63C79 /* ArrotoAmargoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D99A18A624B6A1DC00D63C79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99A188C24B6A1DA00D63C79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99A189324B6A1DA00D63C79;
+			remoteInfo = ArrotoAmargo;
+		};
+		D99A18B124B6A1DC00D63C79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99A188C24B6A1DA00D63C79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99A189324B6A1DA00D63C79;
+			remoteInfo = ArrotoAmargo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D99A189424B6A1DA00D63C79 /* ArrotoAmargo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArrotoAmargo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99A189724B6A1DA00D63C79 /* ArrotoAmargoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoApp.swift; sourceTree = "<group>"; };
+		D99A189924B6A1DA00D63C79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D99A189B24B6A1DC00D63C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D99A189E24B6A1DC00D63C79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D99A18A024B6A1DC00D63C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99A18A524B6A1DC00D63C79 /* ArrotoAmargoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrotoAmargoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99A18A924B6A1DC00D63C79 /* ArrotoAmargoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoTests.swift; sourceTree = "<group>"; };
+		D99A18AB24B6A1DC00D63C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrotoAmargoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoUITests.swift; sourceTree = "<group>"; };
+		D99A18B624B6A1DC00D63C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D99A189124B6A1DA00D63C79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99A18A224B6A1DC00D63C79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99A18AD24B6A1DC00D63C79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D99A188B24B6A1DA00D63C79 = {
+			isa = PBXGroup;
+			children = (
+				D99A189624B6A1DA00D63C79 /* ArrotoAmargo */,
+				D99A18A824B6A1DC00D63C79 /* ArrotoAmargoTests */,
+				D99A18B324B6A1DC00D63C79 /* ArrotoAmargoUITests */,
+				D99A189524B6A1DA00D63C79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D99A189524B6A1DA00D63C79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D99A189424B6A1DA00D63C79 /* ArrotoAmargo.app */,
+				D99A18A524B6A1DC00D63C79 /* ArrotoAmargoTests.xctest */,
+				D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D99A189624B6A1DA00D63C79 /* ArrotoAmargo */ = {
+			isa = PBXGroup;
+			children = (
+				D99A189724B6A1DA00D63C79 /* ArrotoAmargoApp.swift */,
+				D99A189924B6A1DA00D63C79 /* ContentView.swift */,
+				D99A189B24B6A1DC00D63C79 /* Assets.xcassets */,
+				D99A18A024B6A1DC00D63C79 /* Info.plist */,
+				D99A189D24B6A1DC00D63C79 /* Preview Content */,
+			);
+			path = ArrotoAmargo;
+			sourceTree = "<group>";
+		};
+		D99A189D24B6A1DC00D63C79 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D99A189E24B6A1DC00D63C79 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D99A18A824B6A1DC00D63C79 /* ArrotoAmargoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D99A18A924B6A1DC00D63C79 /* ArrotoAmargoTests.swift */,
+				D99A18AB24B6A1DC00D63C79 /* Info.plist */,
+			);
+			path = ArrotoAmargoTests;
+			sourceTree = "<group>";
+		};
+		D99A18B324B6A1DC00D63C79 /* ArrotoAmargoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */,
+				D99A18B624B6A1DC00D63C79 /* Info.plist */,
+			);
+			path = ArrotoAmargoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D99A189324B6A1DA00D63C79 /* ArrotoAmargo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99A18B924B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargo" */;
+			buildPhases = (
+				D99A189024B6A1DA00D63C79 /* Sources */,
+				D99A189124B6A1DA00D63C79 /* Frameworks */,
+				D99A189224B6A1DA00D63C79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArrotoAmargo;
+			productName = ArrotoAmargo;
+			productReference = D99A189424B6A1DA00D63C79 /* ArrotoAmargo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D99A18A424B6A1DC00D63C79 /* ArrotoAmargoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99A18BC24B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargoTests" */;
+			buildPhases = (
+				D99A18A124B6A1DC00D63C79 /* Sources */,
+				D99A18A224B6A1DC00D63C79 /* Frameworks */,
+				D99A18A324B6A1DC00D63C79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99A18A724B6A1DC00D63C79 /* PBXTargetDependency */,
+			);
+			name = ArrotoAmargoTests;
+			productName = ArrotoAmargoTests;
+			productReference = D99A18A524B6A1DC00D63C79 /* ArrotoAmargoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D99A18AF24B6A1DC00D63C79 /* ArrotoAmargoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99A18BF24B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargoUITests" */;
+			buildPhases = (
+				D99A18AC24B6A1DC00D63C79 /* Sources */,
+				D99A18AD24B6A1DC00D63C79 /* Frameworks */,
+				D99A18AE24B6A1DC00D63C79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99A18B224B6A1DC00D63C79 /* PBXTargetDependency */,
+			);
+			name = ArrotoAmargoUITests;
+			productName = ArrotoAmargoUITests;
+			productReference = D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D99A188C24B6A1DA00D63C79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					D99A189324B6A1DA00D63C79 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					D99A18A424B6A1DC00D63C79 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = D99A189324B6A1DA00D63C79;
+					};
+					D99A18AF24B6A1DC00D63C79 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = D99A189324B6A1DA00D63C79;
+					};
+				};
+			};
+			buildConfigurationList = D99A188F24B6A1DA00D63C79 /* Build configuration list for PBXProject "ArrotoAmargo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D99A188B24B6A1DA00D63C79;
+			productRefGroup = D99A189524B6A1DA00D63C79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D99A189324B6A1DA00D63C79 /* ArrotoAmargo */,
+				D99A18A424B6A1DC00D63C79 /* ArrotoAmargoTests */,
+				D99A18AF24B6A1DC00D63C79 /* ArrotoAmargoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D99A189224B6A1DA00D63C79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99A189F24B6A1DC00D63C79 /* Preview Assets.xcassets in Resources */,
+				D99A189C24B6A1DC00D63C79 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99A18A324B6A1DC00D63C79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99A18AE24B6A1DC00D63C79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D99A189024B6A1DA00D63C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99A189A24B6A1DA00D63C79 /* ContentView.swift in Sources */,
+				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99A18A124B6A1DC00D63C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99A18AA24B6A1DC00D63C79 /* ArrotoAmargoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99A18AC24B6A1DC00D63C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99A18B524B6A1DC00D63C79 /* ArrotoAmargoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D99A18A724B6A1DC00D63C79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99A189324B6A1DA00D63C79 /* ArrotoAmargo */;
+			targetProxy = D99A18A624B6A1DC00D63C79 /* PBXContainerItemProxy */;
+		};
+		D99A18B224B6A1DC00D63C79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99A189324B6A1DA00D63C79 /* ArrotoAmargo */;
+			targetProxy = D99A18B124B6A1DC00D63C79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D99A18B724B6A1DC00D63C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D99A18B824B6A1DC00D63C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D99A18BA24B6A1DC00D63C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ArrotoAmargo/Preview Content\"";
+				DEVELOPMENT_TEAM = L8X3H5XA82;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ArrotoAmargo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D99A18BB24B6A1DC00D63C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ArrotoAmargo/Preview Content\"";
+				DEVELOPMENT_TEAM = L8X3H5XA82;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ArrotoAmargo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D99A18BD24B6A1DC00D63C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8X3H5XA82;
+				INFOPLIST_FILE = ArrotoAmargoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArrotoAmargo.app/ArrotoAmargo";
+			};
+			name = Debug;
+		};
+		D99A18BE24B6A1DC00D63C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8X3H5XA82;
+				INFOPLIST_FILE = ArrotoAmargoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArrotoAmargo.app/ArrotoAmargo";
+			};
+			name = Release;
+		};
+		D99A18C024B6A1DC00D63C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8X3H5XA82;
+				INFOPLIST_FILE = ArrotoAmargoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArrotoAmargo;
+			};
+			name = Debug;
+		};
+		D99A18C124B6A1DC00D63C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8X3H5XA82;
+				INFOPLIST_FILE = ArrotoAmargoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArrotoAmargo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D99A188F24B6A1DA00D63C79 /* Build configuration list for PBXProject "ArrotoAmargo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99A18B724B6A1DC00D63C79 /* Debug */,
+				D99A18B824B6A1DC00D63C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99A18B924B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99A18BA24B6A1DC00D63C79 /* Debug */,
+				D99A18BB24B6A1DC00D63C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99A18BC24B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99A18BD24B6A1DC00D63C79 /* Debug */,
+				D99A18BE24B6A1DC00D63C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99A18BF24B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99A18C024B6A1DC00D63C79 /* Debug */,
+				D99A18C124B6A1DC00D63C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D99A188C24B6A1DA00D63C79 /* Project object */;
+}
