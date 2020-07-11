@@ -13,6 +13,10 @@
 		D99A189F24B6A1DC00D63C79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99A189E24B6A1DC00D63C79 /* Preview Assets.xcassets */; };
 		D99A18AA24B6A1DC00D63C79 /* ArrotoAmargoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A18A924B6A1DC00D63C79 /* ArrotoAmargoTests.swift */; };
 		D99A18B524B6A1DC00D63C79 /* ArrotoAmargoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */; };
+		D9CC7DDF24B7FA3D006C2D4D /* AvaliacaoCervejaDetalhe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DDE24B7FA3D006C2D4D /* AvaliacaoCervejaDetalhe.swift */; };
+		D9CC7DE224B7FDE3006C2D4D /* AvaliacaoCerveja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE124B7FDE3006C2D4D /* AvaliacaoCerveja.swift */; };
+		D9CC7DE524BA1801006C2D4D /* cervejaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9CC7DE424BA1801006C2D4D /* cervejaDados.json */; };
+		D9CC7DE724BA1887006C2D4D /* AvaliacaoCervejaLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE624BA1887006C2D4D /* AvaliacaoCervejaLinha.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrotoAmargoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoUITests.swift; sourceTree = "<group>"; };
 		D99A18B624B6A1DC00D63C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9CC7DDE24B7FA3D006C2D4D /* AvaliacaoCervejaDetalhe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoCervejaDetalhe.swift; sourceTree = "<group>"; };
+		D9CC7DE124B7FDE3006C2D4D /* AvaliacaoCerveja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoCerveja.swift; sourceTree = "<group>"; };
+		D9CC7DE424BA1801006C2D4D /* cervejaDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cervejaDados.json; sourceTree = "<group>"; };
+		D9CC7DE624BA1887006C2D4D /* AvaliacaoCervejaLinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoCervejaLinha.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,12 @@
 		D99A189624B6A1DA00D63C79 /* ArrotoAmargo */ = {
 			isa = PBXGroup;
 			children = (
+				D9CC7DE324BA17D8006C2D4D /* Resources */,
+				D9CC7DE024B7FBB4006C2D4D /* Models */,
 				D99A189724B6A1DA00D63C79 /* ArrotoAmargoApp.swift */,
 				D99A189924B6A1DA00D63C79 /* ContentView.swift */,
+				D9CC7DDE24B7FA3D006C2D4D /* AvaliacaoCervejaDetalhe.swift */,
+				D9CC7DE624BA1887006C2D4D /* AvaliacaoCervejaLinha.swift */,
 				D99A189B24B6A1DC00D63C79 /* Assets.xcassets */,
 				D99A18A024B6A1DC00D63C79 /* Info.plist */,
 				D99A189D24B6A1DC00D63C79 /* Preview Content */,
@@ -128,6 +140,22 @@
 				D99A18B624B6A1DC00D63C79 /* Info.plist */,
 			);
 			path = ArrotoAmargoUITests;
+			sourceTree = "<group>";
+		};
+		D9CC7DE024B7FBB4006C2D4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9CC7DE124B7FDE3006C2D4D /* AvaliacaoCerveja.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9CC7DE324BA17D8006C2D4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9CC7DE424BA1801006C2D4D /* cervejaDados.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +263,7 @@
 			files = (
 				D99A189F24B6A1DC00D63C79 /* Preview Assets.xcassets in Resources */,
 				D99A189C24B6A1DC00D63C79 /* Assets.xcassets in Resources */,
+				D9CC7DE524BA1801006C2D4D /* cervejaDados.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +290,9 @@
 			files = (
 				D99A189A24B6A1DA00D63C79 /* ContentView.swift in Sources */,
 				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
+				D9CC7DE724BA1887006C2D4D /* AvaliacaoCervejaLinha.swift in Sources */,
+				D9CC7DE224B7FDE3006C2D4D /* AvaliacaoCerveja.swift in Sources */,
+				D9CC7DDF24B7FA3D006C2D4D /* AvaliacaoCervejaDetalhe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
