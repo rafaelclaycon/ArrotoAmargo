@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import ImageIO
 
-let cervejaDados: [AvaliacaoCerveja] = load("cervejaDados.json")
+let avaliacaoDados: [AvaliacaoCerveja] = load("avaliacaoDados.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -53,7 +53,7 @@ final class ImageStore {
             let imageSource = CGImageSourceCreateWithURL(url as NSURL, nil),
             let image = CGImageSourceCreateImageAtIndex(imageSource, 0, nil)
         else {
-            fatalError("Couldn't load image \(name).jpg from main bundle.")
+            fatalError("Não foi possível carregar a imagem \(name).jpg a partir do main bundle.")
         }
         return image
     }

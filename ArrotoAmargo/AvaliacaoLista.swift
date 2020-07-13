@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AvaliacaoLista: View {
     var body: some View {
-        List(cervejaDados) { avaliacao in
+        List(avaliacaoDados) { avaliacao in
             AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacao)
         }
     }

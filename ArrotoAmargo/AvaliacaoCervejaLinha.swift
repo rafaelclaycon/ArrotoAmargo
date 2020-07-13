@@ -24,8 +24,8 @@ struct AvaliacaoCervejaLinha: View {
 struct AvaliacaoCervejaLinha_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            AvaliacaoCervejaLinha(avaliacaoCerveja: cervejaDados[0])
-            AvaliacaoCervejaLinha(avaliacaoCerveja: cervejaDados[1])
+            AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacaoDados[0])
+            AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacaoDados[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }
