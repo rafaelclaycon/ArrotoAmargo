@@ -11,12 +11,19 @@ struct AvaliacaoCervejaLinha: View {
     var avaliacaoCerveja: AvaliacaoCerveja
     
     var body: some View {
-        Text(avaliacaoCerveja.nomeCerveja)
+        HStack {
+            avaliacaoCerveja.image
+                .resizable()
+                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            Text(avaliacaoCerveja.nomeCerveja)
+            Spacer()
+        }
     }
 }
 
 struct AvaliacaoCervejaLinha_Previews: PreviewProvider {
     static var previews: some View {
-        AvaliacaoCervejaLinha(avaliacaoCerveja: cervejaDados[0])
+        AvaliacaoCervejaLinha(avaliacaoCerveja: cervejaDados[1])
+            .previewLayout(.fixed(width: 300, height: 70))
     }
 }
