@@ -1,18 +1,24 @@
 [
     {
         "nomeCerveja": "India Pale Ale",
+        "id": 1,
+        "nomeImagem": "india_pale_ale",
         "nomeFamiliaCerveja": "Roleta Russa",
         "nomeCervejaria": "Imigração",
         "nota": 4
     },
     {
         "nomeCerveja": "New England IPA",
+        "id": 2,
+        "nomeImagem": "new_england_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
         "nomeCervejaria": "Imigração",
         "nota": 5
     },
     {
         "nomeCerveja": "Easy IPA",
+        "id": 3,
+        "nomeImagem": "easy_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
         "nomeCervejaria": "Imigração",
         "nota": 1
