@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct AvaliacaoCerveja: Hashable, Codable {
+struct AvaliacaoCerveja: Hashable, Codable, Identifiable {
+    var id: Int
     var nomeCerveja: String
     fileprivate var nomeImagem: String
     var nomeFamiliaCerveja: String
