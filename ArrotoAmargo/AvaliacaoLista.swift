@@ -9,14 +9,22 @@ import SwiftUI
 
 struct AvaliacaoLista: View {
     var body: some View {
-        List(avaliacaoDados) { avaliacao in
-            AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacao)
+        NavigationView {
+            List(avaliacaoDados) { avaliacao in
+                NavigationLink(destination: AvaliacaoCervejaDetalhe(avaliacao: avaliacao)) {
+                    AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacao)
+                }
+            }
+            .navigationBarTitle(Text("Avaliações"))
         }
     }
 }
 
 struct AvaliacaoLista_Previews: PreviewProvider {
     static var previews: some View {
-        AvaliacaoLista()
+        ForEach(["iPhone SE (2nd generation)", "iPhone 11 Pro Max"], id: \.self) { deviceName in
+            AvaliacaoLista()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+        }
     }
 }

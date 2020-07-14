@@ -8,16 +8,36 @@
 import SwiftUI
 
 struct AvaliacaoCervejaDetalhe: View {
+    var avaliacao: AvaliacaoCerveja
+    
     var body: some View {
-        Image("IPA")
-            .clipShape(Circle())
-            .overlay(Circle().stroke(Color.white, lineWidth: 4))
-            .shadow(radius: 10)
+        VStack {
+            Image("IPA")
+                .offset(y: -130)
+                .padding(.bottom, -130)
+
+            VStack(alignment: .leading) {
+                Text(avaliacao.nomeCerveja)
+                    .font(.title)
+
+                HStack(alignment: .top) {
+                    Text(avaliacao.nomeFamiliaCerveja)
+                        .font(.subheadline)
+                    Spacer()
+                    Text(avaliacao.nomeCervejaria)
+                        .font(.subheadline)
+                }
+            }
+            .padding()
+
+            Spacer()
+        }
+        .navigationBarTitle(Text(avaliacao.nomeCerveja), displayMode: .inline)
     }
 }
 
 struct BeerDetail_Previews: PreviewProvider {
     static var previews: some View {
-        AvaliacaoCervejaDetalhe()
+        AvaliacaoCervejaDetalhe(avaliacao: avaliacaoDados[1])
     }
 }
