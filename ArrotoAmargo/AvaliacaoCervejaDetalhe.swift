@@ -12,14 +12,15 @@ struct AvaliacaoCervejaDetalhe: View {
     
     var body: some View {
         VStack {
-            Image("IPA")
-                .offset(y: -130)
-                .padding(.bottom, -130)
-
-            VStack(alignment: .leading) {
+            HStack {
+                Image("IPA").resizable()
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Text(avaliacao.nomeCerveja)
                     .font(.title)
-
+                Spacer()
+            }
+            
+            VStack(alignment: .leading) {
                 HStack(alignment: .top) {
                     Text(avaliacao.nomeFamiliaCerveja)
                         .font(.subheadline)
@@ -27,6 +28,9 @@ struct AvaliacaoCervejaDetalhe: View {
                     Text(avaliacao.nomeCervejaria)
                         .font(.subheadline)
                 }
+                Text("Nota: \(avaliacao.nota)")
+                    .font(.body)
+                    .padding(.top, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             }
             .padding()
 
@@ -38,6 +42,9 @@ struct AvaliacaoCervejaDetalhe: View {
 
 struct BeerDetail_Previews: PreviewProvider {
     static var previews: some View {
-        AvaliacaoCervejaDetalhe(avaliacao: avaliacaoDados[1])
+        ForEach(["iPhone SE (2nd generation)", "iPhone 11 Pro Max"], id: \.self) { deviceName in
+            AvaliacaoCervejaDetalhe(avaliacao: avaliacaoDados[1])
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+        }
     }
 }
