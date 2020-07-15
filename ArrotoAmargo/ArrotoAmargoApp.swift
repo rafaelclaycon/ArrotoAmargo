@@ -11,7 +11,7 @@ import SwiftUI
 struct ArrotoAmargoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AvaliacaoLista()
         }
     }
 }
