@@ -12,6 +12,10 @@ struct AvaliacaoCervejaDetalhe: View {
     
     var body: some View {
         VStack {
+            MapView(coordinate: avaliacao.locationCoordinate)
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 180)
+            
             HStack {
                 Image("IPA").resizable()
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)

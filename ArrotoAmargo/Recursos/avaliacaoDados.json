@@ -5,7 +5,11 @@
         "nomeImagem": "india_pale_ale",
         "nomeFamiliaCerveja": "Roleta Russa",
         "nomeCervejaria": "Imigração",
-        "nota": 4
+        "nota": 4,
+        "coordenadas": {
+            "longitude": -51.06552601,
+            "latitude": -29.67756663
+        }
     },
     {
         "nomeCerveja": "New England IPA",
@@ -13,7 +17,11 @@
         "nomeImagem": "new_england_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
         "nomeCervejaria": "Imigração",
-        "nota": 5
+        "nota": 5,
+        "coordenadas": {
+            "longitude": -51.0532093,
+            "latitude": -29.68463672
+        }
     },
     {
         "nomeCerveja": "Easy IPA",
@@ -21,6 +29,10 @@
         "nomeImagem": "easy_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
         "nomeCervejaria": "Imigração",
-        "nota": 1
+        "nota": 1,
+        "coordenadas": {
+            "longitude": -51.19876742,
+            "latitude": -30.04065931
+        }
     }
 ]
