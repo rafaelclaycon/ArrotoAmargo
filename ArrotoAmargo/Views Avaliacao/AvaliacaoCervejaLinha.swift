@@ -12,7 +12,7 @@ struct AvaliacaoCervejaLinha: View {
     
     var body: some View {
         HStack {
-            avaliacaoCerveja.image
+            avaliacaoCerveja.imagem
                 .resizable()
                 .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             Text(avaliacaoCerveja.nomeCerveja)

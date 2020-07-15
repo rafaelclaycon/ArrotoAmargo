@@ -25,7 +25,7 @@ struct AvaliacaoCerveja: Hashable, Codable, Identifiable {
 }
 
 extension AvaliacaoCerveja {
-    var image: Image {
+    var imagem: Image {
         ImageStore.shared.image(name: nomeImagem)
     }
 }
