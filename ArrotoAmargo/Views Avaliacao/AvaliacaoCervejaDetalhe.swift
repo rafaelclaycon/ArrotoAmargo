@@ -12,7 +12,7 @@ struct AvaliacaoCervejaDetalhe: View {
     
     var body: some View {
         VStack {
-            MapView(coordinate: avaliacao.locationCoordinate)
+            Mapa(coordinate: avaliacao.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 180)
             

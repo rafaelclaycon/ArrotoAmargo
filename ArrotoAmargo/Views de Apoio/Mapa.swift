@@ -1,5 +1,5 @@
 //
-//  MapView.swift
+//  Mapa.swift
 //  ArrotoAmargo
 //
 //  Created by Rafael Claycon Schmitt on 14/07/20.
@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct MapView: UIViewRepresentable {
+struct Mapa: UIViewRepresentable {
     var coordinate: CLLocationCoordinate2D
     
     func makeUIView(context: Context) -> MKMapView {
@@ -22,8 +22,8 @@ struct MapView: UIViewRepresentable {
     }
 }
 
-struct MapView_Previews: PreviewProvider {
+struct Mapa_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinate: avaliacaoDados[0].locationCoordinate)
+        Mapa(coordinate: avaliacaoDados[0].locationCoordinate)
     }
 }
