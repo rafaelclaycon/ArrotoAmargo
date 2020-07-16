@@ -22,6 +22,8 @@ struct AvaliacaoCervejaDetalhe: View {
                 Text(avaliacao.nomeCerveja)
                     .font(.title)
                 Spacer()
+                MedidorNota(nota: avaliacao.nota)
+                    .padding(.trailing, 16)
             }
             
             VStack(alignment: .leading) {

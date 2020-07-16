@@ -16,6 +16,7 @@
 		D99A189F24B6A1DC00D63C79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99A189E24B6A1DC00D63C79 /* Preview Assets.xcassets */; };
 		D99A18AA24B6A1DC00D63C79 /* ArrotoAmargoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A18A924B6A1DC00D63C79 /* ArrotoAmargoTests.swift */; };
 		D99A18B524B6A1DC00D63C79 /* ArrotoAmargoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */; };
+		D9A7C6AF24BFB43C005AC54F /* MedidorNota.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */; };
 		D9CC7DDF24B7FA3D006C2D4D /* AvaliacaoCervejaDetalhe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DDE24B7FA3D006C2D4D /* AvaliacaoCervejaDetalhe.swift */; };
 		D9CC7DE224B7FDE3006C2D4D /* AvaliacaoCerveja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE124B7FDE3006C2D4D /* AvaliacaoCerveja.swift */; };
 		D9CC7DE524BA1801006C2D4D /* avaliacaoDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9CC7DE424BA1801006C2D4D /* avaliacaoDados.json */; };
@@ -57,6 +58,7 @@
 		D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrotoAmargoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoUITests.swift; sourceTree = "<group>"; };
 		D99A18B624B6A1DC00D63C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidorNota.swift; sourceTree = "<group>"; };
 		D9CC7DDE24B7FA3D006C2D4D /* AvaliacaoCervejaDetalhe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoCervejaDetalhe.swift; sourceTree = "<group>"; };
 		D9CC7DE124B7FDE3006C2D4D /* AvaliacaoCerveja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoCerveja.swift; sourceTree = "<group>"; };
 		D9CC7DE424BA1801006C2D4D /* avaliacaoDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = avaliacaoDados.json; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D91E407824BEA50B003448B5 /* MapView.swift */,
+				D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */,
 			);
 			path = "Views de Apoio";
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			files = (
 				D91E407924BEA50B003448B5 /* MapView.swift in Sources */,
 				D9CC7DE924BA4137006C2D4D /* Dados.swift in Sources */,
+				D9A7C6AF24BFB43C005AC54F /* MedidorNota.swift in Sources */,
 				D9F18E6F24BBECA500325193 /* AvaliacaoLista.swift in Sources */,
 				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
 				D9CC7DE724BA1887006C2D4D /* AvaliacaoCervejaLinha.swift in Sources */,
