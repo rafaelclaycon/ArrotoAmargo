@@ -10,6 +10,9 @@ import SwiftUI
 struct MedidorIBU: View {
     @State var valor: Int
     
+    // O limite máximo do medidor é 90 IBU pois o paladar humano é incapaz de perceber a diferença de amargor acima de 80-90 IBU.
+    // Fonte: https://www.beeradvocate.com/community/threads/how-high-can-ibus-go.77319/
+    
     var body: some View {
         let circleSize: CGFloat = 44
         let lineWidth: CGFloat = 4
@@ -24,7 +27,7 @@ struct MedidorIBU: View {
                     .frame(width: circleSize, height: circleSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Circle()
-                    .trim(from: 0.0, to: CGFloat(min((Float(self.valor)/90)*0.75, 0.75)))
+                    .trim(from: 0.0, to: CGFloat(min((Float(self.valor) / 90) * 0.75, 0.75)))
                     .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin: .round))
                     .foregroundColor(Color.gray)
                     .rotationEffect(Angle(degrees: 135.0))
