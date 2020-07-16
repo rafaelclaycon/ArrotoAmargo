@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D91E407924BEA50B003448B5 /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91E407824BEA50B003448B5 /* Mapa.swift */; };
+		D940EC1F24BFE45D001CC829 /* MedidorIBU.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */; };
 		D9945E3824BBD43800E9428F /* new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3524BBD43800E9428F /* new_england_ipa.jpg */; };
 		D9945E3924BBD43800E9428F /* easy_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3624BBD43800E9428F /* easy_ipa.jpg */; };
 		D9945E3A24BBD43800E9428F /* india_pale_ale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3724BBD43800E9428F /* india_pale_ale.jpg */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		D91E407824BEA50B003448B5 /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
+		D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidorIBU.swift; sourceTree = "<group>"; };
 		D9945E3524BBD43800E9428F /* new_england_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_england_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3624BBD43800E9428F /* easy_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = easy_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3724BBD43800E9428F /* india_pale_ale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = india_pale_ale.jpg; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				D91E407824BEA50B003448B5 /* Mapa.swift */,
 				D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */,
+				D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */,
 			);
 			path = "Views de Apoio";
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D940EC1F24BFE45D001CC829 /* MedidorIBU.swift in Sources */,
 				D91E407924BEA50B003448B5 /* Mapa.swift in Sources */,
 				D9CC7DE924BA4137006C2D4D /* Dados.swift in Sources */,
 				D9A7C6AF24BFB43C005AC54F /* MedidorNota.swift in Sources */,

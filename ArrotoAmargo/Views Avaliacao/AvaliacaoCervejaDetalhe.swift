@@ -38,6 +38,9 @@ struct AvaliacaoCervejaDetalhe: View {
                 Spacer()
             }
             .padding()
+            
+            MedidorIBU(valor: avaliacao.ibu)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 20)
 
             Spacer()
         }
@@ -47,7 +50,7 @@ struct AvaliacaoCervejaDetalhe: View {
 
 struct BeerDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE (2nd generation)", "iPhone 11 Pro Max"], id: \.self) { deviceName in
+        ForEach(["iPhone SE (1st generation)", "iPhone SE (2nd generation)", "iPhone 11 Pro Max", "iPad Air (3rd generation)"], id: \.self) { deviceName in
             AvaliacaoCervejaDetalhe(avaliacao: avaliacaoDados[1])
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }

@@ -22,7 +22,7 @@ struct AvaliacaoLista: View {
 
 struct AvaliacaoLista_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE (2nd generation)", "iPhone 11 Pro Max"], id: \.self) { deviceName in
+        ForEach(["iPhone SE (1st generation)", "iPhone SE (2nd generation)", "iPhone 11 Pro Max"], id: \.self) { deviceName in
             AvaliacaoLista()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }

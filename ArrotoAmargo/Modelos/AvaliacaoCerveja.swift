@@ -16,6 +16,8 @@ struct AvaliacaoCerveja: Hashable, Codable, Identifiable {
     var nomeFamiliaCerveja: String
     var nomeCervejaria: String
     var nota: Int
+    var ibu: Int
+    var teorAlcoolico: Float
     
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

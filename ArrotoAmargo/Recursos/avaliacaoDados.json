@@ -9,7 +9,9 @@
         "coordenadas": {
             "longitude": -51.06552601,
             "latitude": -29.67756663
-        }
+        },
+        "ibu": 58,
+        "teorAlcoolico": 5.6
     },
     {
         "nomeCerveja": "New England IPA",
@@ -17,11 +19,13 @@
         "nomeImagem": "new_england_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
         "nomeCervejaria": "Imigração",
-        "nota": 3,
+        "nota": 5,
         "coordenadas": {
             "longitude": -51.0532093,
             "latitude": -29.68463672
-        }
+        },
+        "ibu": 64,
+        "teorAlcoolico": 6
     },
     {
         "nomeCerveja": "Easy IPA",
@@ -33,6 +37,8 @@
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
-        }
+        },
+        "ibu": 30,
+        "teorAlcoolico": 4.6
     }
 ]
