@@ -12,7 +12,7 @@ struct AvaliacaoCervejaDetalhe: View {
     
     var body: some View {
         VStack {
-            MapView(coordinate: avaliacao.locationCoordinate)
+            Mapa(coordinate: avaliacao.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 180)
             
@@ -22,21 +22,25 @@ struct AvaliacaoCervejaDetalhe: View {
                 Text(avaliacao.nomeCerveja)
                     .font(.title)
                 Spacer()
+                MedidorNota(nota: avaliacao.nota)
+                    .padding(.all, 20)
             }
             
-            VStack(alignment: .leading) {
-                HStack(alignment: .top) {
-                    Text(avaliacao.nomeFamiliaCerveja)
-                        .font(.subheadline)
-                    Spacer()
-                    Text(avaliacao.nomeCervejaria)
-                        .font(.subheadline)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Família: \(avaliacao.nomeFamiliaCerveja)")
+                        .font(.body)
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    Text("Cervejaria: \(avaliacao.nomeCervejaria)")
+                        .font(.body)
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 }
-                Text("Nota: \(avaliacao.nota)")
-                    .font(.body)
-                    .padding(.top, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                Spacer()
             }
             .padding()
+            
+            MedidorIBU(valor: avaliacao.ibu)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 20)
 
             Spacer()
         }
@@ -46,7 +50,7 @@ struct AvaliacaoCervejaDetalhe: View {
 
 struct BeerDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE (2nd generation)", "iPhone 11 Pro Max"], id: \.self) { deviceName in
+        ForEach(["iPhone SE (1st generation)", "iPhone SE (2nd generation)", "iPhone 11 Pro Max", "iPad Air (3rd generation)"], id: \.self) { deviceName in
             AvaliacaoCervejaDetalhe(avaliacao: avaliacaoDados[1])
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
