@@ -10,7 +10,7 @@ Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI para i
 ## Requisitos
 
 - iOS 14
-- Xcode 12+
+- Xcode 12 beta
 
 ## Perguntas & respostas
 
