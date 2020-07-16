@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D91E407924BEA50B003448B5 /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91E407824BEA50B003448B5 /* Mapa.swift */; };
 		D940EC1F24BFE45D001CC829 /* MedidorIBU.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */; };
+		D940EC2124BFFD59001CC829 /* PreferenciasUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC2024BFFD59001CC829 /* PreferenciasUsuario.swift */; };
+		D98E91D224C00B05006B7C44 /* double_new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D98E91D124C00B05006B7C44 /* double_new_england_ipa.jpg */; };
 		D9945E3824BBD43800E9428F /* new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3524BBD43800E9428F /* new_england_ipa.jpg */; };
 		D9945E3924BBD43800E9428F /* easy_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3624BBD43800E9428F /* easy_ipa.jpg */; };
 		D9945E3A24BBD43800E9428F /* india_pale_ale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3724BBD43800E9428F /* india_pale_ale.jpg */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		D91E407824BEA50B003448B5 /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
 		D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidorIBU.swift; sourceTree = "<group>"; };
+		D940EC2024BFFD59001CC829 /* PreferenciasUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenciasUsuario.swift; sourceTree = "<group>"; };
+		D98E91D124C00B05006B7C44 /* double_new_england_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = double_new_england_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3524BBD43800E9428F /* new_england_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_england_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3624BBD43800E9428F /* easy_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = easy_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3724BBD43800E9428F /* india_pale_ale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = india_pale_ale.jpg; sourceTree = "<group>"; };
@@ -127,10 +131,10 @@
 		D99A189624B6A1DA00D63C79 /* ArrotoAmargo */ = {
 			isa = PBXGroup;
 			children = (
+				D9CC7DE024B7FBB4006C2D4D /* Modelos */,
+				D9CC7DE324BA17D8006C2D4D /* Recursos */,
 				D9C0FB1E24BF62CC00B221A5 /* Views Avaliacao */,
 				D91E407A24BF61D0003448B5 /* Views de Apoio */,
-				D9CC7DE324BA17D8006C2D4D /* Recursos */,
-				D9CC7DE024B7FBB4006C2D4D /* Modelos */,
 				D99A189724B6A1DA00D63C79 /* ArrotoAmargoApp.swift */,
 				D99A189B24B6A1DC00D63C79 /* Assets.xcassets */,
 				D99A18A024B6A1DC00D63C79 /* Info.plist */,
@@ -180,6 +184,7 @@
 			children = (
 				D9CC7DE124B7FDE3006C2D4D /* AvaliacaoCerveja.swift */,
 				D9CC7DE824BA4137006C2D4D /* Dados.swift */,
+				D940EC2024BFFD59001CC829 /* PreferenciasUsuario.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 		D9CC7DE324BA17D8006C2D4D /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				D98E91D124C00B05006B7C44 /* double_new_england_ipa.jpg */,
 				D9945E3624BBD43800E9428F /* easy_ipa.jpg */,
 				D9945E3724BBD43800E9428F /* india_pale_ale.jpg */,
 				D9945E3524BBD43800E9428F /* new_england_ipa.jpg */,
@@ -304,6 +310,7 @@
 				D9945E3924BBD43800E9428F /* easy_ipa.jpg in Resources */,
 				D99A189C24B6A1DC00D63C79 /* Assets.xcassets in Resources */,
 				D9CC7DE524BA1801006C2D4D /* avaliacaoDados.json in Resources */,
+				D98E91D224C00B05006B7C44 /* double_new_england_ipa.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +338,7 @@
 				D940EC1F24BFE45D001CC829 /* MedidorIBU.swift in Sources */,
 				D91E407924BEA50B003448B5 /* Mapa.swift in Sources */,
 				D9CC7DE924BA4137006C2D4D /* Dados.swift in Sources */,
+				D940EC2124BFFD59001CC829 /* PreferenciasUsuario.swift in Sources */,
 				D9A7C6AF24BFB43C005AC54F /* MedidorNota.swift in Sources */,
 				D9F18E6F24BBECA500325193 /* AvaliacaoLista.swift in Sources */,
 				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
