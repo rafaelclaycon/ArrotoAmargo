@@ -23,20 +23,19 @@ struct AvaliacaoCervejaDetalhe: View {
                     .font(.title)
                 Spacer()
                 MedidorNota(nota: avaliacao.nota)
-                    .padding(.trailing, 16)
+                    .padding(.all, 20)
             }
             
-            VStack(alignment: .leading) {
-                HStack(alignment: .top) {
-                    Text(avaliacao.nomeFamiliaCerveja)
-                        .font(.subheadline)
-                    Spacer()
-                    Text(avaliacao.nomeCervejaria)
-                        .font(.subheadline)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Família: \(avaliacao.nomeFamiliaCerveja)")
+                        .font(.body)
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    Text("Cervejaria: \(avaliacao.nomeCervejaria)")
+                        .font(.body)
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 }
-                Text("Nota: \(avaliacao.nota)")
-                    .font(.body)
-                    .padding(.top, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                Spacer()
             }
             .padding()
 
