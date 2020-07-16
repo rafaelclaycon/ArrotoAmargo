@@ -15,7 +15,7 @@ struct AvaliacaoLista: View {
                     AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacao)
                 }
             }
-            .navigationBarTitle(Text("Avaliações"))
+            .navigationBarTitle(Text("Cervejas"))
         }
     }
 }

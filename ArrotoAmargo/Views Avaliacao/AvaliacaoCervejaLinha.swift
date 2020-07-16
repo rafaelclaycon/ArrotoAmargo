@@ -15,7 +15,15 @@ struct AvaliacaoCervejaLinha: View {
             avaliacaoCerveja.imagem
                 .resizable()
                 .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            Text(avaliacaoCerveja.nomeCerveja)
+            
+            VStack(alignment: .leading) {
+                Text(avaliacaoCerveja.nomeCerveja)
+                    .font(.headline)
+                Text(avaliacaoCerveja.nomeCervejaria)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            
             Spacer()
         }
     }
@@ -27,6 +35,6 @@ struct AvaliacaoCervejaLinha_Previews: PreviewProvider {
             AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacaoDados[0])
             AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacaoDados[1])
         }
-        .previewLayout(.fixed(width: 300, height: 70))
+        .previewLayout(.fixed(width: 350, height: 70))
     }
 }
