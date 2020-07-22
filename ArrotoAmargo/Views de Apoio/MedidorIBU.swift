@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MedidorIBU: View {
-    @State var valor: Int
+    @State var valor: Float
     
     // O limite máximo do medidor é 90 IBU pois o paladar humano é incapaz de perceber a diferença de amargor acima de 80-90 IBU.
     // Fonte: https://www.beeradvocate.com/community/threads/how-high-can-ibus-go.77319/
