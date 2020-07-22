@@ -3,9 +3,12 @@ Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI para i
 
 ![Imagem bem próxima da lateral de um copo de cerveja exibindo a cerveja dourada, a espuma branca e as gotas de água condensadas escorrendo por fora do copo](Imagens/timothy-dykes-Lq1rOaigDoY-unsplash.jpg)
 
+![GIF de demonstração do app](Imagens/app_demo.gif)
+
 ## Funcionalidades
 
-- Registrar avaliações
+- Visualizar lista de cervejas e seus detalhes
+- Registrar avaliações (*em breve*)
 
 ## Requisitos
 
