@@ -9,27 +9,42 @@ import SwiftUI
 
 struct AvaliacaoLista: View {
     @State var preferencias: PreferenciasUsuario
+    @State private var showingSheet = false
+    @ObservedObject var cervejasVM = CervejaListaViewModel()
     
     var body: some View {
         let navBarItemSize: CGFloat = 36
         
         TabView {
             NavigationView {
-                List(avaliacaoDados) { avaliacao in
+                List(cervejasVM.cervejas) { avaliacao in
                     NavigationLink(destination: AvaliacaoCervejaDetalhe(avaliacao: avaliacao)) {
                         AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacao)
                     }
+                }
+                .onAppear() {
+                    self.cervejasVM.inicializar()
                 }
                 .navigationBarItems(trailing:
                     HStack {
                         Button(action: {
                             print("Ordernar cervejas pressionado!")
+                            self.showingSheet = true
                         }) {
                             Image(systemName: "arrow.up.arrow.down")
                                 .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
                                 .frame(width: 20, height: 20, alignment: .center)
                         }
                         .frame(width: navBarItemSize, height: navBarItemSize, alignment: .center)
+                        .actionSheet(isPresented: $showingSheet) {
+                            ActionSheet(title: Text("Ordenar cervejas"),
+                                        message: Text("Escolha uma propriedade da cerveja para reordernar a lista."),
+                                        buttons: [.default(Text("🔠  Nome (A → Z)")) { self.cervejasVM.ordenarAlfabeticamentePeloNomeDaCerveja() },
+                                                  .default(Text("🥇  Nota (5 → 0)")) { self.cervejasVM.ordenarPorNota() },
+                                                  .default(Text("📆  Data de adição")),
+                                                  .default(Text("😖  IBU")) { self.cervejasVM.ordenarPorIBU() },
+                                                  .cancel(Text("Cancelar"))])
+                        }
                         
                         Button(action: {
                             print("Adicionar cerveja pressionado!")
