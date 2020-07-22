@@ -24,7 +24,7 @@ struct MedidorNota: View {
                     .frame(width: circleSize, height: circleSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Circle()
-                    .trim(from: 0.0, to: CGFloat(min((Float(self.nota)/5)*0.75, 0.75)))
+                    .trim(from: 0.0, to: CGFloat(min((Float(self.nota) / 5) * 0.75, 0.75)))
                     .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin: .round))
                     .foregroundColor(.orange)
                     .rotationEffect(Angle(degrees: 135.0))

@@ -25,7 +25,7 @@
             "latitude": -29.68463672
         },
         "ibu": 64,
-        "teorAlcoolico": 6
+        "teorAlcoolico": 6.0
     },
     {
         "nomeCerveja": "Easy IPA",
@@ -40,5 +40,117 @@
         },
         "ibu": 30,
         "teorAlcoolico": 4.6
+    },
+    {
+        "nomeCerveja": "Double New England IPA",
+        "id": 4,
+        "nomeImagem": "double_new_england_ipa",
+        "nomeFamiliaCerveja": "Roleta Russa",
+        "nomeCervejaria": "Imigração",
+        "nota": 0,
+        "coordenadas": {
+            "longitude": -51.19876742,
+            "latitude": -30.04065931
+        },
+        "ibu": 70,
+        "teorAlcoolico": 8.1
+    },
+    {
+        "nomeCerveja": "Weidmann",
+        "id": 5,
+        "nomeImagem": "weidmann",
+        "nomeFamiliaCerveja": "Hefeweisbier Dunkel",
+        "nomeCervejaria": "Gilde Brauerel GmbH",
+        "nota": 4,
+        "coordenadas": {
+            "longitude": 9.753374654934941,
+            "latitude": 52.35445047476286
+        },
+        "ibu": 0,
+        "teorAlcoolico": 5.0
+    },
+    {
+        "nomeCerveja": "Summer IPA",
+        "id": 6,
+        "nomeImagem": "summer_ipa",
+        "nomeFamiliaCerveja": "",
+        "nomeCervejaria": "Tupiniquim",
+        "nota": 1,
+        "coordenadas": {
+            "longitude": -51.19876742,
+            "latitude": -30.04065931
+        },
+        "ibu": 0,
+        "teorAlcoolico": 5.0
+    },
+    {
+        "nomeCerveja": "Hop Bomb IPA",
+        "id": 7,
+        "nomeImagem": "hop_bomb_ipa",
+        "nomeFamiliaCerveja": "",
+        "nomeCervejaria": "Tupiniquim",
+        "nota": 5,
+        "coordenadas": {
+            "longitude": -51.19876742,
+            "latitude": -30.04065931
+        },
+        "ibu": 0,
+        "teorAlcoolico": 5.0
+    },
+    {
+        "nomeCerveja": "Session IPA",
+        "id": 8,
+        "nomeImagem": "session_ipa",
+        "nomeFamiliaCerveja": "",
+        "nomeCervejaria": "Dado Bier",
+        "nota": 3,
+        "coordenadas": {
+            "longitude": -51.19876742,
+            "latitude": -30.04065931
+        },
+        "ibu": 40,
+        "teorAlcoolico": 4.1
+    },
+    {
+        "nomeCerveja": "Weisse",
+        "id": 9,
+        "nomeImagem": "weisse",
+        "nomeFamiliaCerveja": "",
+        "nomeCervejaria": "Patagonia",
+        "nota": 5,
+        "coordenadas": {
+            "longitude": -51.19876742,
+            "latitude": -30.04065931
+        },
+        "ibu": 18,
+        "teorAlcoolico": 4.4
+    },
+    {
+        "nomeCerveja": "Bohemian Pilsener",
+        "id": 10,
+        "nomeImagem": "bohemian_pilsener",
+        "nomeFamiliaCerveja": "",
+        "nomeCervejaria": "Patagonia",
+        "nota": 3,
+        "coordenadas": {
+            "longitude": -51.19876742,
+            "latitude": -30.04065931
+        },
+        "ibu": 18,
+        "teorAlcoolico": 5.2
+    },
+    {
+        "nomeCerveja": "Amber Lager",
+        "id": 11,
+        "nomeImagem": "amber_lager",
+        "nomeFamiliaCerveja": "",
+        "nomeCervejaria": "Patagonia",
+        "nota": 2,
+        "coordenadas": {
+            "longitude": -51.19876742,
+            "latitude": -30.04065931
+        },
+        "ibu": 13.5,
+        "teorAlcoolico": 4.5
     }
 ]
