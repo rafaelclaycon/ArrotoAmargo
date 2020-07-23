@@ -1,5 +1,5 @@
 //
-//  AvaliacaoCerveja.swift
+//  Cerveja.swift
 //  ArrotoAmargo
 //
 //  Created by Rafael Claycon Schmitt on 09/07/20.
@@ -8,9 +8,9 @@
 import SwiftUI
 import CoreLocation
 
-struct AvaliacaoCerveja: Hashable, Codable, Identifiable {
+struct Cerveja: Hashable, Codable, Identifiable {
     var id: Int
-    var nomeCerveja: String
+    var nome: String
     fileprivate var nomeImagem: String
     fileprivate var coordenadas: Coordinates
     var nomeFamiliaCerveja: String
@@ -24,9 +24,11 @@ struct AvaliacaoCerveja: Hashable, Codable, Identifiable {
             latitude: coordenadas.latitude,
             longitude: coordenadas.longitude)
     }
+    
+    var avaliacoes: [Avaliacao]?
 }
 
-extension AvaliacaoCerveja {
+extension Cerveja {
     var imagem: Image {
         ImageStore.shared.image(name: nomeImagem)
     }

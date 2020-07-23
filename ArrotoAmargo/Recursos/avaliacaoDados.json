@@ -1,6 +1,6 @@
 [
     {
-        "nomeCerveja": "India Pale Ale",
+        "nome": "India Pale Ale",
         "id": 1,
         "nomeImagem": "india_pale_ale",
         "nomeFamiliaCerveja": "Roleta Russa",
@@ -11,10 +11,21 @@
             "latitude": -29.67756663
         },
         "ibu": 58,
-        "teorAlcoolico": 5.6
+        "teorAlcoolico": 5.6,
+        "avaliacoes": [
+            {
+                "id": 45,
+                "dataHoraRegistro": "2012-03-19T07:22:00Z",
+                "nota": 4,
+                "localRegistro": {
+                    "longitude": -51.06552601,
+                    "latitude": -29.67756663
+                }
+            }
+        ]
     },
     {
-        "nomeCerveja": "New England IPA",
+        "nome": "New England IPA",
         "id": 2,
         "nomeImagem": "new_england_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
@@ -28,7 +39,7 @@
         "teorAlcoolico": 6.0
     },
     {
-        "nomeCerveja": "Easy IPA",
+        "nome": "Easy IPA",
         "id": 3,
         "nomeImagem": "easy_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
@@ -42,7 +53,7 @@
         "teorAlcoolico": 4.6
     },
     {
-        "nomeCerveja": "Double New England IPA",
+        "nome": "Double New England IPA",
         "id": 4,
         "nomeImagem": "double_new_england_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
@@ -56,7 +67,7 @@
         "teorAlcoolico": 8.1
     },
     {
-        "nomeCerveja": "Weidmann",
+        "nome": "Weidmann",
         "id": 5,
         "nomeImagem": "weidmann",
         "nomeFamiliaCerveja": "Hefeweisbier Dunkel",
@@ -70,7 +81,7 @@
         "teorAlcoolico": 5.0
     },
     {
-        "nomeCerveja": "Summer IPA",
+        "nome": "Summer IPA",
         "id": 6,
         "nomeImagem": "summer_ipa",
         "nomeFamiliaCerveja": "",
@@ -84,7 +95,7 @@
         "teorAlcoolico": 5.0
     },
     {
-        "nomeCerveja": "Hop Bomb IPA",
+        "nome": "Hop Bomb IPA",
         "id": 7,
         "nomeImagem": "hop_bomb_ipa",
         "nomeFamiliaCerveja": "",
@@ -98,7 +109,7 @@
         "teorAlcoolico": 5.0
     },
     {
-        "nomeCerveja": "Session IPA",
+        "nome": "Session IPA",
         "id": 8,
         "nomeImagem": "session_ipa",
         "nomeFamiliaCerveja": "",
@@ -112,7 +123,7 @@
         "teorAlcoolico": 4.1
     },
     {
-        "nomeCerveja": "Weisse",
+        "nome": "Weisse",
         "id": 9,
         "nomeImagem": "weisse",
         "nomeFamiliaCerveja": "",
@@ -126,7 +137,7 @@
         "teorAlcoolico": 4.4
     },
     {
-        "nomeCerveja": "Bohemian Pilsener",
+        "nome": "Bohemian Pilsener",
         "id": 10,
         "nomeImagem": "bohemian_pilsener",
         "nomeFamiliaCerveja": "",
@@ -140,7 +151,7 @@
         "teorAlcoolico": 5.2
     },
     {
-        "nomeCerveja": "Amber Lager",
+        "nome": "Amber Lager",
         "id": 11,
         "nomeImagem": "amber_lager",
         "nomeFamiliaCerveja": "",

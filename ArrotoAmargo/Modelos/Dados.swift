@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import ImageIO
 
-let avaliacaoDados: [AvaliacaoCerveja] = load("avaliacaoDados.json")
+let avaliacaoDados: [Cerveja] = load("avaliacaoDados.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -27,6 +27,8 @@ func load<T: Decodable>(_ filename: String) -> T {
     
     do {
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         return try decoder.decode(T.self, from: data)
     } catch {
         fatalError("Não foi possível fazer o parse de \(filename) como \(T.self):\n\(error)")

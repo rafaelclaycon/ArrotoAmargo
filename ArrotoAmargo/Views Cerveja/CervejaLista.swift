@@ -1,5 +1,5 @@
 //
-//  AvaliacaoLista.swift
+//  CervejaLista.swift
 //  ArrotoAmargo
 //
 //  Created by Rafael Claycon Schmitt on 12/07/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AvaliacaoLista: View {
+struct CervejaLista: View {
     @State var preferencias: PreferenciasUsuario
     @State private var showingSheet = false
     @ObservedObject var cervejasVM = CervejaListaViewModel()
@@ -17,9 +17,9 @@ struct AvaliacaoLista: View {
         
         TabView {
             NavigationView {
-                List(cervejasVM.cervejas) { avaliacao in
-                    NavigationLink(destination: AvaliacaoCervejaDetalhe(avaliacao: avaliacao)) {
-                        AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacao)
+                List(cervejasVM.cervejas) { cerveja in
+                    NavigationLink(destination: CervejaDetalhe(cerveja: cerveja)) {
+                        CervejaLinha(cerveja: cerveja)
                     }
                 }
                 .onAppear() {
@@ -72,9 +72,9 @@ struct AvaliacaoLista: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.all, 22)
                     
-                    List(avaliacaoDados) { avaliacao in
-                        NavigationLink(destination: AvaliacaoCervejaDetalhe(avaliacao: avaliacao)) {
-                            AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacao)
+                    List(avaliacaoDados) { cerveja in
+                        NavigationLink(destination: CervejaDetalhe(cerveja: cerveja)) {
+                            CervejaLinha(cerveja: cerveja)
                         }
                     }
                 }
@@ -94,9 +94,9 @@ struct AvaliacaoLista: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.all, 22)
                     
-                    List(avaliacaoDados) { avaliacao in
-                        NavigationLink(destination: AvaliacaoCervejaDetalhe(avaliacao: avaliacao)) {
-                            AvaliacaoCervejaLinha(avaliacaoCerveja: avaliacao)
+                    List(avaliacaoDados) { cerveja in
+                        NavigationLink(destination: CervejaDetalhe(cerveja: cerveja)) {
+                            CervejaLinha(cerveja: cerveja)
                         }
                     }
                 }
@@ -116,7 +116,7 @@ struct AvaliacaoLista_Previews: PreviewProvider {
         // iPhone SE (2nd generation)
         // iPad Pro (11-inch) (2nd generation)
         ForEach(["iPhone 11 Pro Max"], id: \.self) { deviceName in
-            AvaliacaoLista(preferencias: PreferenciasUsuario(tipoListaSelecionado: PreferenciasUsuario.TipoLista.cervejas))
+            CervejaLista(preferencias: PreferenciasUsuario(tipoListaSelecionado: PreferenciasUsuario.TipoLista.cervejas))
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
     }

@@ -15,7 +15,7 @@ class CervejaListaViewModel: ObservableObject {
     }
     
     func ordenarAlfabeticamentePeloNomeDaCerveja() {
-        cervejas.sort { $0.nomeCerveja.lowercased() < $1.nomeCerveja.lowercased() }
+        cervejas.sort { $0.nome.lowercased() < $1.nome.lowercased() }
     }
     
     func ordenarPorNota() {

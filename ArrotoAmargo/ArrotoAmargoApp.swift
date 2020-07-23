@@ -11,7 +11,7 @@ import SwiftUI
 struct ArrotoAmargoApp: App {
     var body: some Scene {
         WindowGroup {
-            AvaliacaoLista(preferencias: PreferenciasUsuario(tipoListaSelecionado: PreferenciasUsuario.TipoLista.cervejas))
+            CervejaLista(preferencias: PreferenciasUsuario(tipoListaSelecionado: PreferenciasUsuario.TipoLista.cervejas))
         }
     }
 }
