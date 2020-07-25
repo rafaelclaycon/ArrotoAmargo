@@ -10,20 +10,17 @@ import SwiftUI
 struct CervejaLista: View {
     @State var preferencias: PreferenciasUsuario
     @State private var showingSheet = false
-    @ObservedObject var cervejasVM = CervejaListaViewModel()
+    @ObservedObject var viewModel = CervejaListaViewModel(cervejas: avaliacaoDados)
     
     var body: some View {
         let navBarItemSize: CGFloat = 36
         
         TabView {
             NavigationView {
-                List(cervejasVM.cervejas) { cerveja in
+                List(viewModel.cervejas) { cerveja in
                     NavigationLink(destination: CervejaDetalhe(cerveja: cerveja)) {
                         CervejaLinha(cerveja: cerveja)
                     }
-                }
-                .onAppear() {
-                    self.cervejasVM.inicializar()
                 }
                 .navigationBarItems(trailing:
                     HStack {
@@ -39,10 +36,10 @@ struct CervejaLista: View {
                         .actionSheet(isPresented: $showingSheet) {
                             ActionSheet(title: Text("Ordenar cervejas"),
                                         message: Text("Escolha uma propriedade da cerveja para reordernar a lista."),
-                                        buttons: [.default(Text("🔠  Nome (A → Z)")) { self.cervejasVM.ordenarAlfabeticamentePeloNomeDaCerveja() },
-                                                  .default(Text("🥇  Nota (5 → 0)")) { self.cervejasVM.ordenarPorNota() },
+                                        buttons: [.default(Text("🔠  Nome (A → Z)")) { self.viewModel.ordenarAlfabeticamentePeloNomeDaCerveja() },
+                                                  .default(Text("🥇  Nota (5 → 0)")) { self.viewModel.ordenarPorNota() },
                                                   .default(Text("📆  Data de adição")),
-                                                  .default(Text("😖  IBU")) { self.cervejasVM.ordenarPorIBU() },
+                                                  .default(Text("😖  IBU")) { self.viewModel.ordenarPorIBU() },
                                                   .cancel(Text("Cancelar"))])
                         }
                         
@@ -78,7 +75,7 @@ struct CervejaLista: View {
                         }
                     }
                 }
-                .navigationBarTitle(Text("Cervejas 🍻"))
+                .navigationBarTitle(Text("Diário 📓"))
             }
             .tabItem {
                 Image(systemName: "calendar")
@@ -100,7 +97,7 @@ struct CervejaLista: View {
                         }
                     }
                 }
-                .navigationBarTitle(Text("Cervejas 🍻"))
+                .navigationBarTitle(Text("Mapa 🗺"))
             }
             .tabItem {
                 Image(systemName: "mappin.and.ellipse")

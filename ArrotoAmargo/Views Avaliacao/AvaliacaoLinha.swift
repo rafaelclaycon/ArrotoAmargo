@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct AvaliacaoLinha: View {
-    
-    @ObservedObject var viewModel = AvaliacaoLinhaViewModel()
+    @ObservedObject var viewModel: AvaliacaoLinhaViewModel
     
     init(viewModel: AvaliacaoLinhaViewModel) {
         self.viewModel = viewModel
@@ -17,20 +16,23 @@ struct AvaliacaoLinha: View {
     
     var body: some View {
         HStack {
+            Mapa(coordinate: viewModel.localRegistro)
+                .frame(width: 80, height: 80, alignment: .center)
             VStack(alignment: .leading) {
-                Text(avaliacaoVM.nota)
-                    .font(.headline)
-                Text(avaliacaoVM.dataHoraRegistro)
+                Text(viewModel.dataHoraRegistro)
                     .font(.subheadline)
                     .foregroundColor(.gray)
+                    .padding()
             }
             Spacer()
+            MedidorNota(nota: viewModel.nota)
+                .padding()
         }
     }
 }
 
 struct AvaliacaoLinha_Previews: PreviewProvider {
     static var previews: some View {
-        AvaliacaoLinha(avaliacao: avaliacaoDados[0].avaliacoes[0])
+        AvaliacaoLinha(viewModel: AvaliacaoLinhaViewModel(avaliacao: avaliacaoDados[0].avaliacoes![0]))
     }
 }

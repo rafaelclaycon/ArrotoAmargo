@@ -199,6 +199,7 @@
 			children = (
 				D9AF4D2F24C7E84D00739866 /* AvaliacaoLinha.swift */,
 				D9084BCC24C88660003EA025 /* AvaliacaoLinhaViewModel.swift */,
+				D9AF4D2A24C7E6CB00739866 /* AvaliacaoListaViewModel.swift */,
 			);
 			path = "Views Avaliacao";
 			sourceTree = "<group>";
@@ -209,6 +210,7 @@
 				D9CC7DDE24B7FA3D006C2D4D /* CervejaDetalhe.swift */,
 				D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */,
 				D9F18E6E24BBECA500325193 /* CervejaLista.swift */,
+				D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */,
 			);
 			path = "Views Cerveja";
 			sourceTree = "<group>";
@@ -220,8 +222,6 @@
 				D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */,
 				D9CC7DE824BA4137006C2D4D /* Dados.swift */,
 				D940EC2024BFFD59001CC829 /* PreferenciasUsuario.swift */,
-				D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */,
-				D9AF4D2A24C7E6CB00739866 /* AvaliacaoListaViewModel.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";

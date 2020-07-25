@@ -17,7 +17,16 @@
                 "id": 45,
                 "dataHoraRegistro": "2012-03-19T07:22:00Z",
                 "nota": 4,
-                "localRegistro": {
+                "coordenadas": {
+                    "longitude": -51.06552601,
+                    "latitude": -29.67756663
+                }
+            },
+            {
+                "id": 46,
+                "dataHoraRegistro": "2012-03-19T07:22:00Z",
+                "nota": 5,
+                "coordenadas": {
                     "longitude": -51.06552601,
                     "latitude": -29.67756663
                 }

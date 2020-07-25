@@ -6,10 +6,16 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Avaliacao: Hashable, Codable, Identifiable {
     var id: Int
     var dataHoraRegistro: Date
     var nota: Int
-    fileprivate var localRegistro: Coordinates
+    fileprivate var coordenadas: Coordinates
+    var localRegistro: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordenadas.latitude,
+            longitude: coordenadas.longitude)
+    }
 }

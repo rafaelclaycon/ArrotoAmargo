@@ -8,9 +8,10 @@
 import Combine
 
 class CervejaListaViewModel: ObservableObject {
-    @Published var cervejas = avaliacaoDados
+    @Published var cervejas: [Cerveja]
     
-    func inicializar() {
+    init(cervejas: [Cerveja]) {
+        self.cervejas = cervejas
         self.ordenarAlfabeticamentePeloNomeDaCerveja()
     }
     
