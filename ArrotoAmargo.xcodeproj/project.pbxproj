@@ -38,6 +38,7 @@
 		D9CC7DE724BA1887006C2D4D /* CervejaLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */; };
 		D9CC7DE924BA4137006C2D4D /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE824BA4137006C2D4D /* Dados.swift */; };
 		D9F18E6F24BBECA500325193 /* CervejaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F18E6E24BBECA500325193 /* CervejaLista.swift */; };
+		D9FAF80E24CC305A00EDA25C /* CervejaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaLinha.swift; sourceTree = "<group>"; };
 		D9CC7DE824BA4137006C2D4D /* Dados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dados.swift; sourceTree = "<group>"; };
 		D9F18E6E24BBECA500325193 /* CervejaLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaLista.swift; sourceTree = "<group>"; };
+		D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaDetalheViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				D9CC7DDE24B7FA3D006C2D4D /* CervejaDetalhe.swift */,
+				D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */,
 				D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */,
 				D9F18E6E24BBECA500325193 /* CervejaLista.swift */,
 				D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */,
@@ -397,6 +400,7 @@
 				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
 				D9084BCD24C88660003EA025 /* AvaliacaoLinhaViewModel.swift in Sources */,
 				D9612D6B24C7E3B300EFF8EE /* Avaliacao.swift in Sources */,
+				D9FAF80E24CC305A00EDA25C /* CervejaDetalheViewModel.swift in Sources */,
 				D9CC7DE724BA1887006C2D4D /* CervejaLinha.swift in Sources */,
 				D9CC7DE224B7FDE3006C2D4D /* Cerveja.swift in Sources */,
 				D9CC7DDF24B7FA3D006C2D4D /* CervejaDetalhe.swift in Sources */,

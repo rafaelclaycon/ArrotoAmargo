@@ -18,7 +18,7 @@ struct CervejaLista: View {
         TabView {
             NavigationView {
                 List(viewModel.cervejas) { cerveja in
-                    NavigationLink(destination: CervejaDetalhe(cerveja: cerveja)) {
+                    NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
                         CervejaLinha(cerveja: cerveja)
                     }
                 }
@@ -70,7 +70,7 @@ struct CervejaLista: View {
                     .padding(.all, 22)
                     
                     List(avaliacaoDados) { cerveja in
-                        NavigationLink(destination: CervejaDetalhe(cerveja: cerveja)) {
+                        NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
                             CervejaLinha(cerveja: cerveja)
                         }
                     }
@@ -92,7 +92,7 @@ struct CervejaLista: View {
                     .padding(.all, 22)
                     
                     List(avaliacaoDados) { cerveja in
-                        NavigationLink(destination: CervejaDetalhe(cerveja: cerveja)) {
+                        NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
                             CervejaLinha(cerveja: cerveja)
                         }
                     }
