@@ -33,9 +33,14 @@ struct CervejaDetalhe: View {
                         Text("Família: \(viewModel.nomeFamiliaCerveja)")
                             .font(.body)
                             .padding(.all, 10)
-                        Text("Cervejaria: \(viewModel.nomeCervejaria)")
+                        Text("Cervejaria:")
                             .font(.body)
                             .padding(.all, 10)
+                        CervejariaCelula()
+                            .background(Color.white)
+                            .cornerRadius(14)
+                            .shadow(color: .gray, radius: 3, x: 0.0, y: 2)
+                            .padding(.horizontal, 15)
                     }
                     Spacer()
                 }
@@ -67,10 +72,12 @@ struct CervejaDetalhe: View {
     }
 }
 
-struct BeerDetail_Previews: PreviewProvider {
+struct CervejaDetalhe_Previews: PreviewProvider {
+    // iPhone SE (1st generation)
+    // iPhone SE (2nd generation)
     // iPad Air (3rd generation)
     static var previews: some View {
-        ForEach(["iPhone SE (1st generation)", "iPhone SE (2nd generation)", "iPhone 11 Pro Max"], id: \.self) { deviceName in
+        ForEach(["iPhone 11 Pro Max"], id: \.self) { deviceName in
             CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: avaliacaoDados[1])) 
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
