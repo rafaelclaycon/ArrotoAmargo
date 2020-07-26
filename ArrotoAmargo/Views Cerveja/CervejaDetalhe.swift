@@ -22,6 +22,7 @@ struct CervejaDetalhe: View {
                         .frame(width: 100, height: 100, alignment: .center)
                     Text(viewModel.nome)
                         .font(.title)
+                        .bold()
                     Spacer()
                     MedidorNota(nota: viewModel.nota)
                         .padding(.all, 20)
@@ -47,11 +48,13 @@ struct CervejaDetalhe: View {
                     VStack(alignment: .leading) {
                         Text("Avaliações")
                             .font(.title2)
+                            .bold()
                             .padding()
                         
                         ForEach(viewModel.avaliacoes!) { avaliacao in
                             AvaliacaoLinha(viewModel: AvaliacaoLinhaViewModel(avaliacao: avaliacao))
                                 .background(Color.yellow)
+                                .frame(height: 50)
                         }
                     }
                 } else {

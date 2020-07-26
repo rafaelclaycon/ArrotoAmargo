@@ -20,8 +20,8 @@ struct AvaliacaoLinha: View {
                 .frame(width: 80, height: 80, alignment: .center)
             VStack(alignment: .leading) {
                 Text(viewModel.dataHoraRegistro)
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+                    .font(.title3)
+                    .bold()
                     .padding()
             }
             Spacer()

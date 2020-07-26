@@ -22,8 +22,8 @@ class AvaliacaoLinhaViewModel: ObservableObject {
         
         let dateFormatter = DateFormatter()
         //dateFormatter.dateFormat = "dd/MM/yyyy hh:mm:ss"
-        dateFormatter.dateStyle = .full
-        dateFormatter.timeStyle = .short
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .none
         dateFormatter.locale = Locale(identifier: "pt_BR")
         self.dataHoraRegistro = dateFormatter.string(from: avaliacao.dataHoraRegistro)
         
