@@ -21,6 +21,7 @@ struct Cerveja: Hashable, Codable, Identifiable {
     var estilo: EstiloCerveja
     var cor: Float?
     var notasDegustacao: String?
+    var fotosUsuario: [String]?
     
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

@@ -21,6 +21,7 @@ class CervejaDetalheViewModel: ObservableObject {
     @Published var teorAlcoolico: Float
     @Published var existemAvaliacoes: Bool
     @Published var avaliacoes: [Avaliacao]?
+    @Published var existemFotosUsuario: Bool
     
     init(cerveja: Cerveja) {
         self.cerveja = cerveja
@@ -35,5 +36,10 @@ class CervejaDetalheViewModel: ObservableObject {
         self.teorAlcoolico = cerveja.teorAlcoolico
         self.avaliacoes = cerveja.avaliacoes
         self.existemAvaliacoes = cerveja.avaliacoes != nil
+        self.existemFotosUsuario = cerveja.fotosUsuario != nil
+    }
+    
+    func primeiraFoto() -> Image {
+        return ImageStore.shared.image(name: cerveja.fotosUsuario![0])
     }
 }

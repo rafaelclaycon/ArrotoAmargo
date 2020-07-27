@@ -13,9 +13,18 @@ struct CervejaDetalhe: View {
     var body: some View {
         ScrollView {
             VStack {
-                Mapa(coordinate: viewModel.locationCoordinate)
-                    .edgesIgnoringSafeArea(.top)
-                    .frame(height: 180)
+                if viewModel.existemFotosUsuario {
+                    viewModel.primeiraFoto()
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .edgesIgnoringSafeArea(.top)
+                        .frame(height: 180)
+                        .clipped()
+                } else {
+                    Mapa(coordinate: viewModel.locationCoordinate)
+                        .edgesIgnoringSafeArea(.top)
+                        .frame(height: 180)
+                }
                 
                 HStack {
                     viewModel.imagem.resizable()

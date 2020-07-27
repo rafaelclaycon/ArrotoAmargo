@@ -1,6 +1,6 @@
 [
     {
-        "nome": "India Pale Ale",
+        "nome": "Roleta Russa India Pale Ale",
         "id": 1,
         "nomeImagem": "india_pale_ale",
         "nomeFamiliaCerveja": "Roleta Russa",
@@ -38,7 +38,7 @@
         ]
     },
     {
-        "nome": "New England IPA",
+        "nome": "Roleta Russa New England IPA",
         "id": 2,
         "nomeImagem": "new_england_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
@@ -52,10 +52,11 @@
         "teorAlcoolico": 6.0,
         "estilo": "India Pale Ale",
         "cor": 3.5,
-        "notasDegustacao": "Aroma e sabor cítrico e frutado devido à receita complexa que utiliza muitos lúpulos americanos e australianos."
+        "notasDegustacao": "Aroma e sabor cítrico e frutado devido à receita complexa que utiliza muitos lúpulos americanos e australianos.",
+        "fotosUsuario": ["new_england_ipa_foto_usuario"]
     },
     {
-        "nome": "Easy IPA",
+        "nome": "Roleta Russa Easy IPA",
         "id": 3,
         "nomeImagem": "easy_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
@@ -72,7 +73,7 @@
         "notasDegustacao": "Aroma e sabor cítrico que remetem a frutas tropicais e amarelas, como maracujá e mamão papaia."
     },
     {
-        "nome": "Double New England IPA",
+        "nome": "Roleta Russa Double New England IPA",
         "id": 4,
         "nomeImagem": "double_new_england_ipa",
         "nomeFamiliaCerveja": "Roleta Russa",
@@ -101,7 +102,8 @@
         },
         "ibu": 0,
         "teorAlcoolico": 5.0,
-        "estilo": "Dunkel"
+        "estilo": "Dunkel",
+        "fotosUsuario": ["weidmann_foto_usuario"]
     },
     {
         "nome": "Summer IPA",
@@ -131,7 +133,8 @@
         },
         "ibu": 0,
         "teorAlcoolico": 5.0,
-        "estilo": "India Pale Ale"
+        "estilo": "India Pale Ale",
+        "fotosUsuario": ["hop_bomb_ipa_foto_usuario"]
     },
     {
         "nome": "Session IPA",
@@ -176,7 +179,8 @@
         },
         "ibu": 18,
         "teorAlcoolico": 5.2,
-        "estilo": "Pilsen"
+        "estilo": "Pilsen",
+        "fotosUsuario": ["patagonia_pilsen_foto_usuario"]
     },
     {
         "nome": "Amber Lager",

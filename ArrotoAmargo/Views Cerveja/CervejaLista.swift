@@ -103,7 +103,7 @@ struct CervejaLista: View {
                 Image(systemName: "mappin.and.ellipse")
                 Text("Mapa")
             }
-        }
+        }.accentColor(.orange)
     }
 }
 
