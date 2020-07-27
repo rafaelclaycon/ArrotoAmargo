@@ -18,7 +18,7 @@
         "avaliacoes": [
             {
                 "id": 45,
-                "dataHoraRegistro": "2012-03-19T07:22:00Z",
+                "dataHoraRegistro": "2020-06-22T07:22:00Z",
                 "nota": 4,
                 "coordenadas": {
                     "longitude": -51.06552601,
@@ -28,7 +28,7 @@
             },
             {
                 "id": 46,
-                "dataHoraRegistro": "2012-03-19T07:22:00Z",
+                "dataHoraRegistro": "2020-03-19T07:22:00Z",
                 "nota": 5,
                 "coordenadas": {
                     "longitude": -51.06552601,
@@ -50,7 +50,9 @@
         },
         "ibu": 64,
         "teorAlcoolico": 6.0,
-        "estilo": "India Pale Ale"
+        "estilo": "India Pale Ale",
+        "cor": 3.5,
+        "notasDegustacao": "Aroma e sabor cítrico e frutado devido à receita complexa que utiliza muitos lúpulos americanos e australianos."
     },
     {
         "nome": "Easy IPA",
@@ -65,7 +67,9 @@
         },
         "ibu": 30,
         "teorAlcoolico": 4.6,
-        "estilo": "India Pale Ale"
+        "estilo": "India Pale Ale",
+        "cor": 3.3,
+        "notasDegustacao": "Aroma e sabor cítrico que remetem a frutas tropicais e amarelas, como maracujá e mamão papaia."
     },
     {
         "nome": "Double New England IPA",
@@ -80,7 +84,9 @@
         },
         "ibu": 70,
         "teorAlcoolico": 8.1,
-        "estilo": "India Pale Ale"
+        "estilo": "India Pale Ale",
+        "cor": 4,
+        "notasDegustacao": "Aromas intensos que remetem a suco de frutas como maracujá, laranja, mamão papaia e melão. No sabor as notas frutadas se repetem em primeiro plano, em seguida, o amargor prevalece inserido de forma equilibrada."
     },
     {
         "nome": "Weidmann",
