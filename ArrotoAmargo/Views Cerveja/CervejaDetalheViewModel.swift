@@ -17,7 +17,7 @@ class CervejaDetalheViewModel: ObservableObject {
     @Published var nomeFamiliaCerveja: String
     @Published var nomeCervejaria: String
     @Published var nota: Int
-    @Published var ibu: Float
+    @Published var ibu: Int
     @Published var teorAlcoolico: Float
     @Published var existemAvaliacoes: Bool
     @Published var avaliacoes: [Avaliacao]?
@@ -31,7 +31,7 @@ class CervejaDetalheViewModel: ObservableObject {
         self.nomeFamiliaCerveja = cerveja.nomeFamiliaCerveja
         self.nomeCervejaria = cerveja.nomeCervejaria
         self.nota = cerveja.nota
-        self.ibu = cerveja.ibu
+        self.ibu = Int(round(cerveja.ibu))
         self.teorAlcoolico = cerveja.teorAlcoolico
         self.avaliacoes = cerveja.avaliacoes
         self.existemAvaliacoes = cerveja.avaliacoes != nil
