@@ -18,6 +18,9 @@ struct Cerveja: Hashable, Codable, Identifiable {
     var nota: Int
     var ibu: Float
     var teorAlcoolico: Float
+    var estilo: EstiloCerveja
+    var cor: Float?
+    var notasDegustacao: String?
     
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -37,4 +40,23 @@ extension Cerveja {
 struct Coordinates: Hashable, Codable {
     var latitude: Double
     var longitude: Double
+}
+
+enum EstiloCerveja: String {
+    case americanPaleAle = "American Pale Ale"
+    case indiaPaleAle = "India Pale Ale"
+    case pilsen = "Pilsen"
+    case americanLager = "American Lager"
+    case premium = "Premium"
+    case witbier = "Witbier"
+    case dunkel = "Dunkel"
+    case amberLager = "Amber Lager"
+    
+    case desconhecido
+}
+
+extension EstiloCerveja: Codable {
+    public init(from decoder: Decoder) throws {
+        self = try EstiloCerveja(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .desconhecido
+    }
 }

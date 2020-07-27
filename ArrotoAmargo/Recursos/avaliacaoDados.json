@@ -12,6 +12,9 @@
         },
         "ibu": 58,
         "teorAlcoolico": 5.6,
+        "estilo": "India Pale Ale",
+        "cor": 5.08,
+        "notasDegustacao": "Aroma e sabor cítrico e frutado devido à adição exagerada de lúpulos americanos, remetendo a frutas amarelas e tropicais, como maracujá, laranja, pomelo e manga.",
         "avaliacoes": [
             {
                 "id": 45,
@@ -20,7 +23,8 @@
                 "coordenadas": {
                     "longitude": -51.06552601,
                     "latitude": -29.67756663
-                }
+                },
+                "observacoes": "Lorem ipsum dolor sit amet."
             },
             {
                 "id": 46,
@@ -45,7 +49,8 @@
             "latitude": -29.68463672
         },
         "ibu": 64,
-        "teorAlcoolico": 6.0
+        "teorAlcoolico": 6.0,
+        "estilo": "India Pale Ale"
     },
     {
         "nome": "Easy IPA",
@@ -59,7 +64,8 @@
             "latitude": -30.04065931
         },
         "ibu": 30,
-        "teorAlcoolico": 4.6
+        "teorAlcoolico": 4.6,
+        "estilo": "India Pale Ale"
     },
     {
         "nome": "Double New England IPA",
@@ -73,7 +79,8 @@
             "latitude": -30.04065931
         },
         "ibu": 70,
-        "teorAlcoolico": 8.1
+        "teorAlcoolico": 8.1,
+        "estilo": "India Pale Ale"
     },
     {
         "nome": "Weidmann",
@@ -87,7 +94,8 @@
             "latitude": 52.35445047476286
         },
         "ibu": 0,
-        "teorAlcoolico": 5.0
+        "teorAlcoolico": 5.0,
+        "estilo": "Dunkel"
     },
     {
         "nome": "Summer IPA",
@@ -101,7 +109,8 @@
             "latitude": -30.04065931
         },
         "ibu": 0,
-        "teorAlcoolico": 5.0
+        "teorAlcoolico": 5.0,
+        "estilo": "India Pale Ale"
     },
     {
         "nome": "Hop Bomb IPA",
@@ -115,7 +124,8 @@
             "latitude": -30.04065931
         },
         "ibu": 0,
-        "teorAlcoolico": 5.0
+        "teorAlcoolico": 5.0,
+        "estilo": "India Pale Ale"
     },
     {
         "nome": "Session IPA",
@@ -129,7 +139,8 @@
             "latitude": -30.04065931
         },
         "ibu": 40,
-        "teorAlcoolico": 4.1
+        "teorAlcoolico": 4.1,
+        "estilo": "India Pale Ale"
     },
     {
         "nome": "Weisse",
@@ -143,7 +154,8 @@
             "latitude": -30.04065931
         },
         "ibu": 18,
-        "teorAlcoolico": 4.4
+        "teorAlcoolico": 4.4,
+        "estilo": "Witbier"
     },
     {
         "nome": "Bohemian Pilsener",
@@ -157,7 +169,8 @@
             "latitude": -30.04065931
         },
         "ibu": 18,
-        "teorAlcoolico": 5.2
+        "teorAlcoolico": 5.2,
+        "estilo": "Pilsen"
     },
     {
         "nome": "Amber Lager",
@@ -171,6 +184,7 @@
             "latitude": -30.04065931
         },
         "ibu": 13.5,
-        "teorAlcoolico": 4.5
+        "teorAlcoolico": 4.5,
+        "estilo": "Amber Lager"
     }
 ]
