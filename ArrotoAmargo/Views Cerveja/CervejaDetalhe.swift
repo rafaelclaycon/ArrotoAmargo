@@ -63,8 +63,11 @@ struct CervejaDetalhe: View {
                         }
                     }
                 } else {
-                    Spacer()
                     Text("Não existem avaliações para essa cerveja.")
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 10)
+                        .padding(.bottom, 35)
+                        .padding(.horizontal, 10)
                 }
             }
             .navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
