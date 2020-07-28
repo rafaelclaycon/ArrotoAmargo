@@ -19,7 +19,7 @@ struct CervejaLinha: View {
             VStack(alignment: .leading) {
                 Text(cerveja.nome)
                     .font(.headline)
-                Text(cerveja.nomeCervejaria)
+                Text(cerveja.cervejaria!.nome)
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }

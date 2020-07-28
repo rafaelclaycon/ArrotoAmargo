@@ -9,26 +9,28 @@ import SwiftUI
 import CoreLocation
 
 struct CervejariaCelula: View {
+    @ObservedObject var viewModel: CervejariaCelulaViewModel
+    
     var body: some View {
         HStack {
-            ImageStore.shared.image(name: "logo_imigracao")
+            viewModel.imagem
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(.leading, 20)
             VStack(alignment: .leading) {
-                Text("Imigração")
+                Text(viewModel.nome)
                     .font(.title3)
                     .bold()
                     //.padding()
                 Spacer()
-                Text("Campo Bom, RS - Brasil")
+                Text(viewModel.endereco)
                     .font(.subheadline)
                     .foregroundColor(.gray)
                     //.padding()
             }
             .padding()
             Spacer()
-            Mapa(coordinate: CLLocationCoordinate2D(latitude: -29.67694208, longitude: -51.06510758))
+            Mapa(coordinate: viewModel.localizacao)
                 .frame(width: 80, height: 78, alignment: .trailing)
         }
     }
@@ -36,7 +38,7 @@ struct CervejariaCelula: View {
 
 struct CervejariaCelula_Previews: PreviewProvider {
     static var previews: some View {
-        CervejariaCelula()
+        CervejariaCelula(viewModel: CervejariaCelulaViewModel(cervejaria: cervejariaDados[0]))
             .previewLayout(.fixed(width: 360, height: 78))
     }
 }

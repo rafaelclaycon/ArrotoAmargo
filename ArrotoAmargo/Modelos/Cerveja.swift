@@ -13,8 +13,7 @@ struct Cerveja: Hashable, Codable, Identifiable {
     var nome: String
     fileprivate var nomeImagem: String
     fileprivate var coordenadas: Coordinates
-    var nomeFamiliaCerveja: String
-    var nomeCervejaria: String
+    var idCervejaria: Int
     var nota: Int
     var ibu: Float
     var teorAlcoolico: Float
@@ -30,6 +29,10 @@ struct Cerveja: Hashable, Codable, Identifiable {
     }
     
     var avaliacoes: [Avaliacao]?
+    
+    var cervejaria: Cervejaria? {
+        return cervejariaDados.first(where: {$0.id == self.idCervejaria}) ?? nil
+    }
 }
 
 extension Cerveja {

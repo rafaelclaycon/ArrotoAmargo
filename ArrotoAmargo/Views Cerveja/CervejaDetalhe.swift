@@ -39,13 +39,10 @@ struct CervejaDetalhe: View {
                 
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("Família: \(viewModel.nomeFamiliaCerveja)")
-                            .font(.body)
-                            .padding(.all, 10)
                         Text("Cervejaria:")
                             .font(.body)
                             .padding(.all, 10)
-                        CervejariaCelula()
+                        CervejariaCelula(viewModel: CervejariaCelulaViewModel(cervejaria: viewModel.cervejaria))
                             .background(Color.white)
                             .cornerRadius(14)
                             .shadow(color: .gray, radius: 3, x: 0.0, y: 2)

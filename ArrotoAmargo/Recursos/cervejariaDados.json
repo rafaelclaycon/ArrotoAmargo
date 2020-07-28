@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "nome": "Imigração",
+        "endereco": "Campo Bom - RS, Brasil",
+        "nomeGrupo": null,
+        "nomeImagem": "logo_imigracao",
+        "coordenadas": {
+            "longitude": -51.06552601,
+            "latitude": -29.67756663
+        }
+    },
+    {
+        "id": 2,
+        "nome": "Cervejaria Bohemia",
+        "endereco": "Petrópolis - RJ, Brasil",
+        "nomeGrupo": "Ambev",
+        "nomeImagem": "ambev_logo",
+        "coordenadas": {
+            "longitude": -51.06552601,
+            "latitude": -29.67756663
+        }
+    },
+    {
+        "id": 3,
+        "nome": "Gilde Brauerei",
+        "endereco": "Hanôver - Baixa Saxónia, Alemanha",
+        "nomeGrupo": null,
+        "nomeImagem": "gilde_logo",
+        "coordenadas": {
+            "longitude": -51.06552601,
+            "latitude": -29.67756663
+        }
+    },
+    {
+        "id": 4,
+        "nome": "Tupiniquim",
+        "endereco": "Porto Alegre - RS, Brasil",
+        "nomeGrupo": null,
+        "nomeImagem": "tupiniquim_logo",
+        "coordenadas": {
+            "longitude": -51.06552601,
+            "latitude": -29.67756663
+        }
+    },
+    {
+        "id": 5,
+        "nome": "Santamate",
+        "endereco": "Santa Maria - RS, Brasil",
+        "nomeGrupo": "Dado Bier",
+        "nomeImagem": "dado_bier_logo",
+        "coordenadas": {
+            "longitude": -51.06552601,
+            "latitude": -29.67756663
+        }
+    }
+]

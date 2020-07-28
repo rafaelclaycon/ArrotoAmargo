@@ -11,8 +11,10 @@ import CoreLocation
 struct Cervejaria: Hashable, Codable, Identifiable {
     var id: Int
     var nome: String
-    fileprivate var nomeImagem: String
+    var nomeImagem: String
     fileprivate var coordenadas: Coordinates
+    var endereco: String
+    var nomeGrupo: String?
     
     var localizacao: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

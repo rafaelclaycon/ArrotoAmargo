@@ -14,8 +14,7 @@ class CervejaDetalheViewModel: ObservableObject {
     @Published var locationCoordinate: CLLocationCoordinate2D
     @Published var nome: String
     @Published var imagem: Image
-    @Published var nomeFamiliaCerveja: String
-    @Published var nomeCervejaria: String
+    @Published var cervejaria: Cervejaria
     @Published var nota: Int
     @Published var ibu: Int
     @Published var teorAlcoolico: Float
@@ -29,8 +28,7 @@ class CervejaDetalheViewModel: ObservableObject {
         self.locationCoordinate = cerveja.locationCoordinate
         self.nome = cerveja.nome
         self.imagem = cerveja.imagem
-        self.nomeFamiliaCerveja = cerveja.nomeFamiliaCerveja
-        self.nomeCervejaria = cerveja.nomeCervejaria
+        self.cervejaria = cerveja.cervejaria!
         self.nota = cerveja.nota
         self.ibu = Int(round(cerveja.ibu))
         self.teorAlcoolico = cerveja.teorAlcoolico

@@ -3,8 +3,7 @@
         "nome": "Roleta Russa India Pale Ale",
         "id": 1,
         "nomeImagem": "india_pale_ale",
-        "nomeFamiliaCerveja": "Roleta Russa",
-        "nomeCervejaria": "Imigração",
+        "idCervejaria": 1,
         "nota": 4,
         "coordenadas": {
             "longitude": -51.06552601,
@@ -41,8 +40,7 @@
         "nome": "Roleta Russa New England IPA",
         "id": 2,
         "nomeImagem": "new_england_ipa",
-        "nomeFamiliaCerveja": "Roleta Russa",
-        "nomeCervejaria": "Imigração",
+        "idCervejaria": 1,
         "nota": 5,
         "coordenadas": {
             "longitude": -51.0532093,
@@ -59,8 +57,7 @@
         "nome": "Roleta Russa Easy IPA",
         "id": 3,
         "nomeImagem": "easy_ipa",
-        "nomeFamiliaCerveja": "Roleta Russa",
-        "nomeCervejaria": "Imigração",
+        "idCervejaria": 1,
         "nota": 1,
         "coordenadas": {
             "longitude": -51.19876742,
@@ -76,8 +73,7 @@
         "nome": "Roleta Russa Double New England IPA",
         "id": 4,
         "nomeImagem": "double_new_england_ipa",
-        "nomeFamiliaCerveja": "Roleta Russa",
-        "nomeCervejaria": "Imigração",
+        "idCervejaria": 1,
         "nota": 0,
         "coordenadas": {
             "longitude": -51.19876742,
@@ -93,8 +89,7 @@
         "nome": "Weidmann",
         "id": 5,
         "nomeImagem": "weidmann",
-        "nomeFamiliaCerveja": "Hefeweisbier Dunkel",
-        "nomeCervejaria": "Gilde Brauerel GmbH",
+        "idCervejaria": 3,
         "nota": 4,
         "coordenadas": {
             "longitude": 9.753374654934941,
@@ -109,8 +104,7 @@
         "nome": "Summer IPA",
         "id": 6,
         "nomeImagem": "summer_ipa",
-        "nomeFamiliaCerveja": "",
-        "nomeCervejaria": "Tupiniquim",
+        "idCervejaria": 4,
         "nota": 1,
         "coordenadas": {
             "longitude": -51.19876742,
@@ -124,8 +118,7 @@
         "nome": "Hop Bomb IPA",
         "id": 7,
         "nomeImagem": "hop_bomb_ipa",
-        "nomeFamiliaCerveja": "",
-        "nomeCervejaria": "Tupiniquim",
+        "idCervejaria": 4,
         "nota": 5,
         "coordenadas": {
             "longitude": -51.19876742,
@@ -140,8 +133,7 @@
         "nome": "Session IPA",
         "id": 8,
         "nomeImagem": "session_ipa",
-        "nomeFamiliaCerveja": "",
-        "nomeCervejaria": "Dado Bier",
+        "idCervejaria": 5,
         "nota": 3,
         "coordenadas": {
             "longitude": -51.19876742,
@@ -155,8 +147,7 @@
         "nome": "Weisse",
         "id": 9,
         "nomeImagem": "weisse",
-        "nomeFamiliaCerveja": "",
-        "nomeCervejaria": "Patagonia",
+        "idCervejaria": 2,
         "nota": 5,
         "coordenadas": {
             "longitude": -51.19876742,
@@ -170,8 +161,7 @@
         "nome": "Bohemian Pilsener",
         "id": 10,
         "nomeImagem": "bohemian_pilsener",
-        "nomeFamiliaCerveja": "",
-        "nomeCervejaria": "Patagonia",
+        "idCervejaria": 2,
         "nota": 3,
         "coordenadas": {
             "longitude": -51.19876742,
@@ -186,8 +176,7 @@
         "nome": "Amber Lager",
         "id": 11,
         "nomeImagem": "amber_lager",
-        "nomeFamiliaCerveja": "",
-        "nomeCervejaria": "Patagonia",
+        "idCervejaria": 2,
         "nota": 2,
         "coordenadas": {
             "longitude": -51.19876742,
