@@ -8,14 +8,15 @@
 import Combine
 
 class CervejaListaViewModel: ObservableObject {
-    @Published var cervejas = avaliacaoDados
+    @Published var cervejas: [Cerveja]
     
-    func inicializar() {
+    init(cervejas: [Cerveja]) {
+        self.cervejas = cervejas
         self.ordenarAlfabeticamentePeloNomeDaCerveja()
     }
     
     func ordenarAlfabeticamentePeloNomeDaCerveja() {
-        cervejas.sort { $0.nomeCerveja.lowercased() < $1.nomeCerveja.lowercased() }
+        cervejas.sort { $0.nome.lowercased() < $1.nome.lowercased() }
     }
     
     func ordenarPorNota() {
