@@ -255,8 +255,8 @@
 		D9C0FB1E24BF62CC00B221A5 /* Views Lista de Cervejas */ = {
 			isa = PBXGroup;
 			children = (
-				D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */,
 				D9F18E6E24BBECA500325193 /* CervejaLista.swift */,
+				D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */,
 				D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */,
 			);
 			path = "Views Lista de Cervejas";

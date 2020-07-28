@@ -14,6 +14,8 @@ class AvaliacaoLinhaViewModel: ObservableObject {
     @Published var nota: Int
     @Published var dataHoraRegistro: String
     @Published var localRegistro: CLLocationCoordinate2D
+    @Published var localConsumo: String
+    @Published var anotacoes: String
     
     init(avaliacao: Avaliacao) {
         self.avaliacao = avaliacao
@@ -28,5 +30,7 @@ class AvaliacaoLinhaViewModel: ObservableObject {
         self.dataHoraRegistro = dateFormatter.string(from: avaliacao.dataHoraRegistro)
         
         self.localRegistro = avaliacao.localRegistro
+        self.localConsumo = avaliacao.localConsumo
+        self.anotacoes = avaliacao.anotacoes
     }
 }

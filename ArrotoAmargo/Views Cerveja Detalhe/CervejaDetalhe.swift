@@ -55,19 +55,35 @@ struct CervejaDetalhe: View {
                 MedidorIBU(valor: viewModel.ibu)
                     .padding(.all, 20)
                 
+                HStack() {
+                    Text("Avaliações")
+                        .font(.title2)
+                        .bold()
+                        .padding()
+                    Spacer()
+                    Button(action: {
+                        print("Adicionar avaliação pressionado.")
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                            .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
+                            .frame(width: 26, height: 26, alignment: .center)
+                    }
+                    .padding()
+                }
+                    
                 if viewModel.existemAvaliacoes {
-                    VStack(alignment: .leading) {
-                        Text("Avaliações")
-                            .font(.title2)
-                            .bold()
-                            .padding()
-                        
+                    VStack() {
                         ForEach(viewModel.avaliacoes!) { avaliacao in
                             AvaliacaoLinha(viewModel: AvaliacaoLinhaViewModel(avaliacao: avaliacao))
-                                .background(Color.yellow)
-                                .frame(height: 50)
+                                .frame(height: 88)
+                                .background(Color.white)
+                                .cornerRadius(14)
+                                .shadow(color: .gray, radius: 2, x: 0.0, y: 1)
+                                .padding(.horizontal, 15)
+                                .padding(.bottom, 5)
                         }
                     }
+                    .padding(.bottom, 35)
                 } else {
                     Text("Não existem avaliações para essa cerveja.")
                         .multilineTextAlignment(.center)
@@ -86,8 +102,8 @@ struct CervejaDetalhe_Previews: PreviewProvider {
     // iPhone SE (2nd generation)
     // iPad Air (3rd generation)
     static var previews: some View {
-        ForEach(["iPhone 11 Pro Max"], id: \.self) { deviceName in
-            CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: avaliacaoDados[1])) 
+        ForEach(["iPhone 11"], id: \.self) { deviceName in
+            CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: avaliacaoDados[0]))
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
     }

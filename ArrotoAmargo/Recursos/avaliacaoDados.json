@@ -19,20 +19,34 @@
                 "id": 45,
                 "dataHoraRegistro": "2020-06-22T07:22:00Z",
                 "nota": 4,
+                "localConsumo": "Casa",
                 "coordenadas": {
                     "longitude": -51.06552601,
                     "latitude": -29.67756663
                 },
-                "observacoes": "Lorem ipsum dolor sit amet."
+                "anotacoes": "Lorem ipsum dolor sit amet."
             },
             {
                 "id": 46,
                 "dataHoraRegistro": "2020-03-19T07:22:00Z",
                 "nota": 5,
+                "localConsumo": "Casa",
                 "coordenadas": {
                     "longitude": -51.06552601,
                     "latitude": -29.67756663
-                }
+                },
+                "anotacoes": "Para analistas consultados pelo G1, fim de programas como Auxílio Emergencial e BEm somados à abertura econômica vão sobrecarregar busca por vagas. Projeções apontam para desemprego de até 18% no final do ano."
+            },
+            {
+                "id": 47,
+                "dataHoraRegistro": "2020-03-19T07:22:00Z",
+                "nota": 5,
+                "localConsumo": "Casa do Vitor",
+                "coordenadas": {
+                    "longitude": -51.06552601,
+                    "latitude": -29.67756663
+                },
+                "anotacoes": "Bem gostosa, como sempre."
             }
         ]
     },
