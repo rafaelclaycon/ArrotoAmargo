@@ -150,14 +150,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D906101E24D08A59003DA906 /* Views Cervejaria */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAF81124CD1DE300EDA25C /* CervejariaCelula.swift */,
+				D906101424D0851B003DA906 /* CervejariaCelulaViewModel.swift */,
+			);
+			path = "Views Cervejaria";
+			sourceTree = "<group>";
+		};
+		D906101F24D08A8E003DA906 /* Views Cerveja Detalhe */ = {
+			isa = PBXGroup;
+			children = (
+				D9CC7DDE24B7FA3D006C2D4D /* CervejaDetalhe.swift */,
+				D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */,
+			);
+			path = "Views Cerveja Detalhe";
+			sourceTree = "<group>";
+		};
 		D91E407A24BF61D0003448B5 /* Views de Apoio */ = {
 			isa = PBXGroup;
 			children = (
 				D91E407824BEA50B003448B5 /* Mapa.swift */,
 				D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */,
 				D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */,
-				D9FAF81124CD1DE300EDA25C /* CervejariaCelula.swift */,
-				D906101424D0851B003DA906 /* CervejariaCelulaViewModel.swift */,
 			);
 			path = "Views de Apoio";
 			sourceTree = "<group>";
@@ -186,10 +202,12 @@
 			isa = PBXGroup;
 			children = (
 				D9CC7DE024B7FBB4006C2D4D /* Modelos */,
-				D9CC7DE324BA17D8006C2D4D /* Recursos */,
-				D9C0FB1E24BF62CC00B221A5 /* Views Cerveja */,
+				D9C0FB1E24BF62CC00B221A5 /* Views Lista de Cervejas */,
+				D906101F24D08A8E003DA906 /* Views Cerveja Detalhe */,
+				D906101E24D08A59003DA906 /* Views Cervejaria */,
 				D9AF4D2C24C7E79A00739866 /* Views Avaliacao */,
 				D91E407A24BF61D0003448B5 /* Views de Apoio */,
+				D9CC7DE324BA17D8006C2D4D /* Recursos */,
 				D99A189724B6A1DA00D63C79 /* ArrotoAmargoApp.swift */,
 				D99A189B24B6A1DC00D63C79 /* Assets.xcassets */,
 				D99A18A024B6A1DC00D63C79 /* Info.plist */,
@@ -234,16 +252,14 @@
 			path = "Views Avaliacao";
 			sourceTree = "<group>";
 		};
-		D9C0FB1E24BF62CC00B221A5 /* Views Cerveja */ = {
+		D9C0FB1E24BF62CC00B221A5 /* Views Lista de Cervejas */ = {
 			isa = PBXGroup;
 			children = (
-				D9CC7DDE24B7FA3D006C2D4D /* CervejaDetalhe.swift */,
-				D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */,
 				D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */,
 				D9F18E6E24BBECA500325193 /* CervejaLista.swift */,
 				D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */,
 			);
-			path = "Views Cerveja";
+			path = "Views Lista de Cervejas";
 			sourceTree = "<group>";
 		};
 		D9CC7DE024B7FBB4006C2D4D /* Modelos */ = {
