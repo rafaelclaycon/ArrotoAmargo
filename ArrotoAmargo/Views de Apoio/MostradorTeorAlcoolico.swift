@@ -12,39 +12,44 @@ struct MostradorTeorAlcoolico: View {
     @State var texto: String
     
     var body: some View {
-        ZStack() {
-            Text("TEOR ALCÓOLICO")
+        VStack() {
+            Text("TEOR ALCOÓLICO")
                 .font(.callout)
                 .foregroundColor(.gray)
                 .bold()
-                .offset(y: -24)
+                .offset(y: 8)
             
-            Path { path in
-                path.move(to: CGPoint(x: 40, y: 40))
-                path.addLine(to: CGPoint(x: 160, y: 40))
-            }
-            .stroke(style: StrokeStyle(lineWidth: 4, lineCap: .round))
-            .foregroundColor(.gray)
-            
-            let innerCircleXOffset = CGFloat(35 + (12 * valor))
-            let outterCircleXOffset = CGFloat(33 + (12 * valor))
-            
-            Circle()
-                .size(width: 10, height: 10)
-                .offset(x: innerCircleXOffset, y: 35)
-                .overlay(
+            ZStack() {
+                let YPosition = CGFloat(10)
+                
+                Path { path in
+                    path.move(to: CGPoint(x: 40, y: YPosition))
+                    path.addLine(to: CGPoint(x: 160, y: YPosition))
+                }
+                .stroke(style: StrokeStyle(lineWidth: 4, lineCap: .round))
+                .foregroundColor(.gray)
+                
+                let innerCircleXOffset = CGFloat(35 + (12 * valor))
+                let outterCircleXOffset = CGFloat(32 + (12 * valor))
+                
+                ZStack() {
                     Circle()
-                        .size(width: 13, height: 13)
-                        .offset(x: outterCircleXOffset, y: 33)
-                        .stroke(Color.white.opacity(1), lineWidth: 3)
+                        .size(width: 16, height: 16)
+                        .offset(x: outterCircleXOffset, y: YPosition - 7.6)
+                        .foregroundColor(Color.white.opacity(1))
                         .blendMode(.lighten)
-                )
-                .foregroundColor(Color.gray.opacity(1))
+                    Circle()
+                        .size(width: 10, height: 10)
+                        .offset(x: innerCircleXOffset, y: YPosition - 5)
+                        .foregroundColor(Color.gray.opacity(1))
+                }
+                
+            }
             
             Text(texto)
                 .font(.body)
                 .bold()
-                .offset(y: 24)
+                .offset(y: -6)
         }
     }
 }
