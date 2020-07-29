@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CervejaDetalhe: View {
     @ObservedObject var viewModel: CervejaDetalheViewModel
+    @State var exibindoTelaNovaAvaliacao = false
     
     var body: some View {
         ScrollView {
@@ -69,13 +70,16 @@ struct CervejaDetalhe: View {
                         .padding()
                     Spacer()
                     Button(action: {
-                        print("Adicionar avaliação pressionado.")
+                        self.exibindoTelaNovaAvaliacao.toggle()
                     }) {
                         Image(systemName: "plus.circle.fill")
                             .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
                             .frame(width: 26, height: 26, alignment: .center)
                     }
                     .padding()
+                    .sheet(isPresented: $exibindoTelaNovaAvaliacao) {
+                        NovaAvaliacao()
+                    }
                 }
                     
                 if viewModel.existemAvaliacoes {
