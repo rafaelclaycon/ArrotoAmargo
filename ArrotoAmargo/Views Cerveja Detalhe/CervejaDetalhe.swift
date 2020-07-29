@@ -52,8 +52,15 @@ struct CervejaDetalhe: View {
                 }
                 .padding()
                 
-                MedidorIBU(valor: viewModel.ibu)
-                    .padding(.all, 20)
+                HStack() {
+                    MedidorIBU(valor: viewModel.ibu)
+                        .padding(.all, 20)
+                    
+                    MostradorTeorAlcoolico(valor: 8.1, texto: "8,1%")
+                        .frame(width: 200, height: 80, alignment: .center)
+                        //.background(Color.yellow)
+                }
+                .padding()
                 
                 HStack() {
                     Text("Avaliações")

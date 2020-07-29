@@ -18,6 +18,7 @@
 		D906101B24D088E1003DA906 /* ambev_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101724D088E1003DA906 /* ambev_logo.jpg */; };
 		D906101C24D088E1003DA906 /* gilde_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101824D088E1003DA906 /* gilde_logo.jpg */; };
 		D906101D24D088E1003DA906 /* dado_bier_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101924D088E1003DA906 /* dado_bier_logo.jpg */; };
+		D906102124D0F66A003DA906 /* MostradorTeorAlcoolico.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906102024D0F66A003DA906 /* MostradorTeorAlcoolico.swift */; };
 		D9084BCD24C88660003EA025 /* AvaliacaoLinhaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084BCC24C88660003EA025 /* AvaliacaoLinhaViewModel.swift */; };
 		D91E407924BEA50B003448B5 /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91E407824BEA50B003448B5 /* Mapa.swift */; };
 		D940EC1F24BFE45D001CC829 /* MedidorIBU.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */; };
@@ -83,6 +84,7 @@
 		D906101724D088E1003DA906 /* ambev_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ambev_logo.jpg; sourceTree = "<group>"; };
 		D906101824D088E1003DA906 /* gilde_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gilde_logo.jpg; sourceTree = "<group>"; };
 		D906101924D088E1003DA906 /* dado_bier_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dado_bier_logo.jpg; sourceTree = "<group>"; };
+		D906102024D0F66A003DA906 /* MostradorTeorAlcoolico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostradorTeorAlcoolico.swift; sourceTree = "<group>"; };
 		D9084BCC24C88660003EA025 /* AvaliacaoLinhaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoLinhaViewModel.swift; sourceTree = "<group>"; };
 		D91E407824BEA50B003448B5 /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
 		D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidorIBU.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				D91E407824BEA50B003448B5 /* Mapa.swift */,
 				D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */,
 				D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */,
+				D906102024D0F66A003DA906 /* MostradorTeorAlcoolico.swift */,
 			);
 			path = "Views de Apoio";
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				D9CC7DE224B7FDE3006C2D4D /* Cerveja.swift in Sources */,
 				D9CC7DDF24B7FA3D006C2D4D /* CervejaDetalhe.swift in Sources */,
 				D99E5CA224C7CDD100D8A648 /* CervejaListaViewModel.swift in Sources */,
+				D906102124D0F66A003DA906 /* MostradorTeorAlcoolico.swift in Sources */,
 				D906101524D0851B003DA906 /* CervejariaCelulaViewModel.swift in Sources */,
 				D9FAF81224CD1DE300EDA25C /* CervejariaCelula.swift in Sources */,
 			);
