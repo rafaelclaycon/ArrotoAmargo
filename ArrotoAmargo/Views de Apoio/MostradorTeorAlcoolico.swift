@@ -10,6 +10,7 @@ import SwiftUI
 struct MostradorTeorAlcoolico: View {
     @State var valor: Float
     @State var texto: String
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack() {
@@ -31,13 +32,14 @@ struct MostradorTeorAlcoolico: View {
                 
                 let innerCircleXOffset = CGFloat(35 + (12 * valor))
                 let outterCircleXOffset = CGFloat(32 + (12 * valor))
+                let blendModeSetting = colorScheme == .dark ? BlendMode.darken : BlendMode.lighten
                 
                 ZStack() {
                     Circle()
                         .size(width: 16, height: 16)
                         .offset(x: outterCircleXOffset, y: YPosition - 8)
                         .foregroundColor(Color.background)
-                        .blendMode(.color)
+                        .blendMode(blendModeSetting)
                     Circle()
                         .size(width: 10, height: 10)
                         .offset(x: innerCircleXOffset, y: YPosition - 5)
