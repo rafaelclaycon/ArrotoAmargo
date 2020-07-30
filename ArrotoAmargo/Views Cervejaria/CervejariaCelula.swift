@@ -15,8 +15,10 @@ struct CervejariaCelula: View {
         HStack {
             viewModel.imagem
                 .resizable()
+                .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(.leading, 20)
+                
             VStack(alignment: .leading) {
                 Text(viewModel.nome)
                     .font(.title3)

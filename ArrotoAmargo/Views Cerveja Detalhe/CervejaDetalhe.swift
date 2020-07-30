@@ -21,10 +21,10 @@ struct CervejaDetalhe: View {
                         .edgesIgnoringSafeArea(.top)
                         .frame(height: 180)
                         .clipped()
-                } else {
-                    Mapa(coordinate: viewModel.locationCoordinate)
-                        .edgesIgnoringSafeArea(.top)
-                        .frame(height: 180)
+//                } else {
+//                    Mapa(coordinate: viewModel.locationCoordinate)
+//                        .edgesIgnoringSafeArea(.top)
+//                        .frame(height: 180)
                 }
                 
                 HStack {

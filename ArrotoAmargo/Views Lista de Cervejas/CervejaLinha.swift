@@ -16,10 +16,12 @@ struct CervejaLinha: View {
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
             
+            let nomeCervejaria = cerveja.cervejaria!.nomeGrupo != nil ? cerveja.cervejaria!.nomeGrupo! : cerveja.cervejaria!.nome
+            
             VStack(alignment: .leading) {
                 Text(cerveja.nome)
                     .font(.headline)
-                Text(cerveja.cervejaria!.nome)
+                Text(nomeCervejaria)
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }

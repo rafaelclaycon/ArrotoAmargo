@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct CervejaLista: View {
     @State var preferencias: PreferenciasUsuario
@@ -91,11 +92,8 @@ struct CervejaLista: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.all, 22)
                     
-                    List(avaliacaoDados) { cerveja in
-                        NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
-                            CervejaLinha(cerveja: cerveja)
-                        }
-                    }
+                    Mapa(coordinate: CLLocationCoordinate2D(latitude: -29.67756663, longitude: -51.06552601))
+                        .edgesIgnoringSafeArea(.all)
                 }
                 .navigationBarTitle(Text("Mapa 🗺"))
             }
