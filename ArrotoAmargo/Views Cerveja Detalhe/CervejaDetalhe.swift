@@ -57,9 +57,8 @@ struct CervejaDetalhe: View {
                     MedidorIBU(valor: viewModel.ibu)
                         .padding(.all, 20)
                     
-                    MostradorTeorAlcoolico(valor: 8.1, texto: "8,1%")
+                    MostradorTeorAlcoolico(valor: viewModel.teorAlcoolico, texto: viewModel.getTeorAlcoolicoTexto())
                         .frame(width: 200, height: 80, alignment: .center)
-                        //.background(Color.yellow)
                 }
                 .padding()
                 

@@ -40,4 +40,8 @@ class CervejaDetalheViewModel: ObservableObject {
     func primeiraFoto() -> Image {
         return ImageStore.shared.image(name: cerveja.fotosUsuario![0])
     }
+    
+    func getTeorAlcoolicoTexto() -> String {
+        return String(format: "%.1f", locale: Locale(identifier: "pt_BR"), self.teorAlcoolico) + "%"
+    }
 }
