@@ -35,13 +35,13 @@ struct MostradorTeorAlcoolico: View {
                 ZStack() {
                     Circle()
                         .size(width: 16, height: 16)
-                        .offset(x: outterCircleXOffset, y: YPosition - 7.6)
-                        .foregroundColor(Color.white.opacity(1))
-                        .blendMode(.lighten)
+                        .offset(x: outterCircleXOffset, y: YPosition - 8)
+                        .foregroundColor(Color.background)
+                        .blendMode(.color)
                     Circle()
                         .size(width: 10, height: 10)
                         .offset(x: innerCircleXOffset, y: YPosition - 5)
-                        .foregroundColor(Color.gray.opacity(1))
+                        .foregroundColor(Color.gray)
                 }
                 
             }
@@ -58,6 +58,7 @@ struct MostradorTeorAlcoolico_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MostradorTeorAlcoolico(valor: 0, texto: "0%")
+                //.preferredColorScheme(.dark)
             MostradorTeorAlcoolico(valor: 5, texto: "5%")
             MostradorTeorAlcoolico(valor: 8.1, texto: "8,1%")
             MostradorTeorAlcoolico(valor: 9, texto: "9%")

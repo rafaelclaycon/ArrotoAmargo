@@ -28,6 +28,7 @@
 		D95DE9A624CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A324CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg */; };
 		D95DE9A724CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A424CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg */; };
 		D9612D6B24C7E3B300EFF8EE /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */; };
+		D97BD4E124D24DCB00B321B7 /* Color+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BD4E024D24DCB00B321B7 /* Color+BackgroundColor.swift */; };
 		D98E91D224C00B05006B7C44 /* double_new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D98E91D124C00B05006B7C44 /* double_new_england_ipa.jpg */; };
 		D9945E3824BBD43800E9428F /* new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3524BBD43800E9428F /* new_england_ipa.jpg */; };
 		D9945E3924BBD43800E9428F /* easy_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3624BBD43800E9428F /* easy_ipa.jpg */; };
@@ -95,6 +96,7 @@
 		D95DE9A324CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hop_bomb_ipa_foto_usuario.jpg; sourceTree = "<group>"; };
 		D95DE9A424CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_england_ipa_foto_usuario.jpg; sourceTree = "<group>"; };
 		D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
+		D97BD4E024D24DCB00B321B7 /* Color+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+BackgroundColor.swift"; sourceTree = "<group>"; };
 		D98E91D124C00B05006B7C44 /* double_new_england_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = double_new_england_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3524BBD43800E9428F /* new_england_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_england_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3624BBD43800E9428F /* easy_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = easy_ipa.jpg; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */,
 				D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */,
 				D906102024D0F66A003DA906 /* MostradorTeorAlcoolico.swift */,
+				D97BD4E024D24DCB00B321B7 /* Color+BackgroundColor.swift */,
 			);
 			path = "Views de Apoio";
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				D9AF4D2B24C7E6CB00739866 /* AvaliacaoListaViewModel.swift in Sources */,
 				D9A7C6AF24BFB43C005AC54F /* MedidorNota.swift in Sources */,
 				D9D895F724D22967004F0EF2 /* NovaAvaliacao.swift in Sources */,
+				D97BD4E124D24DCB00B321B7 /* Color+BackgroundColor.swift in Sources */,
 				D9F18E6F24BBECA500325193 /* CervejaLista.swift in Sources */,
 				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
 				D9084BCD24C88660003EA025 /* AvaliacaoLinhaViewModel.swift in Sources */,
