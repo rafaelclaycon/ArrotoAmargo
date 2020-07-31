@@ -38,20 +38,14 @@ struct CervejaDetalhe: View {
                         .padding(.all, 20)
                 }
                 
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Cervejaria:")
-                            .font(.body)
-                            .padding(.all, 10)
-                        CervejariaCelula(viewModel: CervejariaCelulaViewModel(cervejaria: viewModel.cervejaria))
-                            .background(Color.white)
-                            .cornerRadius(14)
-                            .shadow(color: .gray, radius: 3, x: 0.0, y: 2)
-                            .padding(.horizontal, 15)
-                    }
-                    Spacer()
+                VStack(alignment: .leading) {
+                    Text("Cervejaria:")
+                        .font(.body)
+                        .padding(.all, 10)
+                    CervejariaCelula(viewModel: CervejariaCelulaViewModel(cervejaria: viewModel.cervejaria))
+                        .padding(.horizontal, 15)
                 }
-                .padding()
+                Spacer()
                 
                 HStack() {
                     MedidorIBU(valor: viewModel.ibu)
