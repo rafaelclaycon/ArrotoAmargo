@@ -61,6 +61,7 @@ enum EstiloCerveja: String {
     case dunkel = "Dunkel"
     case amberLager = "Amber Lager"
     case americanIPA = "American IPA"
+    case dortmunderExport = "Dortmunder Export"
     
     case desconhecido
 }
