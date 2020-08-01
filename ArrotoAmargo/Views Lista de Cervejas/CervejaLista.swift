@@ -55,6 +55,7 @@ struct CervejaLista: View {
                     }
                 )
                 .navigationBarTitle(Text("Cervejas 🍻"))
+                .accessibility(identifier: UIID.cervejaLista)
             }
             .tabItem {
                 Image(systemName: "circle.grid.2x2.fill")

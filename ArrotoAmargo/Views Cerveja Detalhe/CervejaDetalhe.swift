@@ -33,6 +33,7 @@ struct CervejaDetalhe: View {
                     Text(viewModel.nome)
                         .font(.title)
                         .bold()
+                        .accessibility(identifier: UIID.nomeCervejaTitulo)
                     Spacer()
                     MedidorNota(nota: viewModel.nota)
                         .padding(.all, 20)

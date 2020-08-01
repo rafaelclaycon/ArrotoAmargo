@@ -8,6 +8,7 @@
 import XCTest
 
 class ArrotoAmargoUITests: XCTestCase {
+    let app = XCUIApplication()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,13 +23,19 @@ class ArrotoAmargoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+    func testExibeListaCervejasEAbreDetalhes() throws {
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        // Verifica se a lista de cervejas está sendo exibida.
+        let lista = app.tables[UIID.cervejaLista]
+        XCTAssertTrue(lista.waitForExistence(timeout: 4))
+        
+        // Toca na 7ª célula da lista, de cima para baixo.
+        lista.cells.element(boundBy: 6).tap()
+        
+        // Verifica se o nome da cerveja está sendo exibido.
+        let titulo = app.staticTexts[UIID.nomeCervejaTitulo]
+        XCTAssertTrue(titulo.waitForExistence(timeout: 4))
     }
 
     func testLaunchPerformance() throws {
