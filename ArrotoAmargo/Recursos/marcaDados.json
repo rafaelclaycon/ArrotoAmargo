@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nome": "Imigração",
+        "proprietario": "Cervejaria Campo Bom LTDA",
+        "enderecoSede": "Campo Bom - RS, Brasil",
+        "nomeImagem": "logo_imigracao"
+    },
+    {
+        "id": 2,
+        "nome": "Bellavista",
+        "proprietario": "Bebidas Fruki S.A.",
+        "enderecoSede": "Lajeado - RS, Brasil",
+        "nomeImagem": "bellavista_logo"
+    },
+    {
+        "id": 3,
+        "nome": "Patagonia",
+        "proprietario": "Ambev S.A.",
+        "enderecoSede": "São Paulo - SP, Brasil",
+        "nomeImagem": "ambev_logo"
+    },
+    {
+        "id": 4,
+        "nome": "Dado Bier",
+        "proprietario": "Eduardo Bier Industrial e Comercial de Produtos Alimenticios Ltda.",
+        "enderecoSede": "Porto Alegre - RS, Brasil",
+        "nomeImagem": "dado_bier_logo"
+    },
+    {
+        "id": 5,
+        "nome": "Tupiniquim",
+        "proprietario": "Cervejaria Tupiniquim S.A.",
+        "enderecoSede": "Porto Alegre - RS, Brasil",
+        "nomeImagem": "tupiniquim_logo"
+    },
+    {
+        "id": 6,
+        "nome": "Gilde Brauerei",
+        "proprietario": "Gilde Brauerei GmbH",
+        "enderecoSede": "Hanôver - Baixa Saxónia, Alemanha",
+        "nomeImagem": "gilde_logo"
+    }
+]

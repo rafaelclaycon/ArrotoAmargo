@@ -15,6 +15,7 @@ class CervejaDetalheViewModel: ObservableObject {
     @Published var nome: String
     @Published var imagem: Image
     @Published var cervejaria: Cervejaria
+    @Published var marca: Marca
     @Published var nota: Int
     @Published var ibu: Int
     @Published var teorAlcoolico: Float
@@ -29,6 +30,7 @@ class CervejaDetalheViewModel: ObservableObject {
         self.nome = cerveja.nome
         self.imagem = cerveja.imagem
         self.cervejaria = cerveja.cervejaria!
+        self.marca = cerveja.marca!
         self.nota = cerveja.nota
         self.ibu = Int(round(cerveja.ibu))
         self.teorAlcoolico = cerveja.teorAlcoolico

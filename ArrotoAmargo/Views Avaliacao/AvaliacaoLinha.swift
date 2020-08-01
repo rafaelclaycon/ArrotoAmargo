@@ -39,7 +39,7 @@ struct AvaliacaoLinha: View {
 
 struct AvaliacaoLinha_Previews: PreviewProvider {
     static var previews: some View {
-        AvaliacaoLinha(viewModel: AvaliacaoLinhaViewModel(avaliacao: avaliacaoDados[0].avaliacoes![0]))
+        AvaliacaoLinha(viewModel: AvaliacaoLinhaViewModel(avaliacao: cervejaDados[0].avaliacoes![0]))
             .previewLayout(.fixed(width: 360, height: 78))
     }
 }

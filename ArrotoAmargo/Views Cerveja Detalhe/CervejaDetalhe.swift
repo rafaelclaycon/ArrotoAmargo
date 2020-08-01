@@ -39,13 +39,7 @@ struct CervejaDetalhe: View {
                         .padding(.all, 20)
                 }
                 
-                VStack(alignment: .leading) {
-                    Text("Cervejaria:")
-                        .font(.body)
-                        .padding(.all, 10)
-                    CervejariaCelula(viewModel: CervejariaCelulaViewModel(cervejaria: viewModel.cervejaria))
-                        .padding(.horizontal, 15)
-                }
+                CervejariaCelula(viewModel: CervejariaCelulaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca))
                 Spacer()
                 
                 HStack() {
@@ -108,7 +102,7 @@ struct CervejaDetalhe_Previews: PreviewProvider {
     // iPad Air (3rd generation)
     static var previews: some View {
         ForEach(["iPhone 11"], id: \.self) { deviceName in
-            CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: avaliacaoDados[0]))
+            CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cervejaDados[0]))
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
     }

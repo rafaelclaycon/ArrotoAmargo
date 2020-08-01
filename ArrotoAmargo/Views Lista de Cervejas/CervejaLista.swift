@@ -11,7 +11,7 @@ import CoreLocation
 struct CervejaLista: View {
     @State var preferencias: PreferenciasUsuario
     @State private var showingSheet = false
-    @ObservedObject var viewModel = CervejaListaViewModel(cervejas: avaliacaoDados)
+    @ObservedObject var viewModel = CervejaListaViewModel(cervejas: cervejaDados)
     
     var body: some View {
         let navBarItemSize: CGFloat = 36
@@ -71,7 +71,7 @@ struct CervejaLista: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.all, 22)
                     
-                    List(avaliacaoDados) { cerveja in
+                    List(cervejaDados) { cerveja in
                         NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
                             CervejaLinha(cerveja: cerveja)
                         }

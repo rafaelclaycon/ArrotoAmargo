@@ -11,16 +11,22 @@ import CoreLocation
 
 class CervejariaCelulaViewModel: ObservableObject {
     var cervejaria: Cervejaria
-    @Published var imagem: Image
-    @Published var nome: String
+    var marca: Marca
+    @Published var logoCervejaria: Image
+    @Published var nomeCervejaria: String
     @Published var endereco: String
     @Published var localizacao: CLLocationCoordinate2D
+    @Published var nomeMarca: String
+    @Published var nomeProprietarioMarca: String
     
-    init(cervejaria: Cervejaria) {
+    init(cervejaria: Cervejaria, marca: Marca) {
         self.cervejaria = cervejaria
-        self.imagem = ImageStore.shared.image(name: cervejaria.nomeImagem)
-        self.nome = cervejaria.nomeGrupo ?? cervejaria.nome
+        self.marca = marca
+        self.logoCervejaria = ImageStore.shared.image(name: marca.nomeImagem)
+        self.nomeCervejaria = cervejaria.razaoSocial
         self.endereco = cervejaria.endereco
         self.localizacao = cervejaria.localizacao
+        self.nomeMarca = marca.nome
+        self.nomeProprietarioMarca = marca.proprietario
     }
 }

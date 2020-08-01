@@ -9,12 +9,13 @@ import Foundation
 import CoreLocation
 
 struct Cervejaria: Hashable, Codable, Identifiable {
+    
+    // Cervejaria, do ponto de vista do Arroto Amargo, é a empresa que produziu e envasou a cerveja.
+    
     var id: Int
-    var nome: String
-    var nomeImagem: String
-    fileprivate var coordenadas: Coordinates
+    var razaoSocial: String
     var endereco: String
-    var nomeGrupo: String?
+    fileprivate var coordenadas: Coordinates
     
     var localizacao: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

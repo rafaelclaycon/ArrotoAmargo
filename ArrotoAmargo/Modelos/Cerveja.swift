@@ -14,6 +14,7 @@ struct Cerveja: Hashable, Codable, Identifiable {
     fileprivate var nomeImagem: String
     fileprivate var coordenadas: Coordinates
     var idCervejaria: Int
+    var idMarca: Int
     var nota: Int
     var ibu: Float
     var teorAlcoolico: Float
@@ -32,6 +33,10 @@ struct Cerveja: Hashable, Codable, Identifiable {
     
     var cervejaria: Cervejaria? {
         return cervejariaDados.first(where: {$0.id == self.idCervejaria}) ?? nil
+    }
+    
+    var marca: Marca? {
+        return marcaDados.first(where: {$0.id == self.idMarca}) ?? nil
     }
 }
 
@@ -55,6 +60,7 @@ enum EstiloCerveja: String {
     case witbier = "Witbier"
     case dunkel = "Dunkel"
     case amberLager = "Amber Lager"
+    case americanIPA = "American IPA"
     
     case desconhecido
 }
