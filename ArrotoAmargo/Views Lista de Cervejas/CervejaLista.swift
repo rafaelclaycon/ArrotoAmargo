@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct CervejaLista: View {
     @State var preferencias: PreferenciasUsuario
     @State private var showingSheet = false
-    @ObservedObject var viewModel = CervejaListaViewModel(cervejas: avaliacaoDados)
+    @ObservedObject var viewModel = CervejaListaViewModel(cervejas: cervejaDados)
     
     var body: some View {
         let navBarItemSize: CGFloat = 36
@@ -54,6 +55,7 @@ struct CervejaLista: View {
                     }
                 )
                 .navigationBarTitle(Text("Cervejas 🍻"))
+                .accessibility(identifier: UIID.cervejaLista)
             }
             .tabItem {
                 Image(systemName: "circle.grid.2x2.fill")
@@ -69,7 +71,7 @@ struct CervejaLista: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.all, 22)
                     
-                    List(avaliacaoDados) { cerveja in
+                    List(cervejaDados) { cerveja in
                         NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
                             CervejaLinha(cerveja: cerveja)
                         }
@@ -91,11 +93,8 @@ struct CervejaLista: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.all, 22)
                     
-                    List(avaliacaoDados) { cerveja in
-                        NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
-                            CervejaLinha(cerveja: cerveja)
-                        }
-                    }
+                    Mapa(coordinate: CLLocationCoordinate2D(latitude: -29.67756663, longitude: -51.06552601))
+                        .edgesIgnoringSafeArea(.all)
                 }
                 .navigationBarTitle(Text("Mapa 🗺"))
             }
@@ -103,7 +102,7 @@ struct CervejaLista: View {
                 Image(systemName: "mappin.and.ellipse")
                 Text("Mapa")
             }
-        }.accentColor(.orange)
+        }
     }
 }
 

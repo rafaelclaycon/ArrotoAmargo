@@ -9,8 +9,9 @@ import Foundation
 import SwiftUI
 import ImageIO
 
-let avaliacaoDados: [Cerveja] = load("avaliacaoDados.json")
+let cervejaDados: [Cerveja] = load("cervejaDados.json")
 let cervejariaDados: [Cervejaria] = load("cervejariaDados.json")
+let marcaDados: [Marca] = load("marcaDados.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

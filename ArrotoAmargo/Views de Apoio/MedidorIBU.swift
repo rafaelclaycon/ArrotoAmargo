@@ -24,14 +24,14 @@ struct MedidorIBU: View {
                     .opacity(0.3)
                     .foregroundColor(Color.gray)
                     .rotationEffect(Angle(degrees: 135.0))
-                    .frame(width: circleSize, height: circleSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: circleSize, height: circleSize, alignment: .center)
                 
                 Circle()
                     .trim(from: 0.0, to: CGFloat(min((Float(self.valor) / 90) * 0.75, 0.75)))
                     .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin: .round))
                     .foregroundColor(Color.gray)
                     .rotationEffect(Angle(degrees: 135.0))
-                    .frame(width: circleSize, height: circleSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: circleSize, height: circleSize, alignment: .center)
                 
                 Text(String(self.valor))
                     .font(.title3)

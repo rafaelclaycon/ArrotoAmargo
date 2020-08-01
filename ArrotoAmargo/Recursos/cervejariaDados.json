@@ -1,10 +1,8 @@
 [
     {
         "id": 1,
-        "nome": "Imigração",
+        "razaoSocial": "Cervejaria Campo Bom LTDA",
         "endereco": "Campo Bom - RS, Brasil",
-        "nomeGrupo": null,
-        "nomeImagem": "logo_imigracao",
         "coordenadas": {
             "longitude": -51.06552601,
             "latitude": -29.67756663
@@ -12,21 +10,17 @@
     },
     {
         "id": 2,
-        "nome": "Cervejaria Bohemia",
+        "razaoSocial": "Cervejaria Bohemia",
         "endereco": "Petrópolis - RJ, Brasil",
-        "nomeGrupo": "Ambev",
-        "nomeImagem": "ambev_logo",
         "coordenadas": {
-            "longitude": -51.06552601,
-            "latitude": -29.67756663
+            "longitude": -43.184725,
+            "latitude": -22.506295
         }
     },
     {
         "id": 3,
-        "nome": "Gilde Brauerei",
+        "razaoSocial": "Gilde Brauerei",
         "endereco": "Hanôver - Baixa Saxónia, Alemanha",
-        "nomeGrupo": null,
-        "nomeImagem": "gilde_logo",
         "coordenadas": {
             "longitude": -51.06552601,
             "latitude": -29.67756663
@@ -34,10 +28,8 @@
     },
     {
         "id": 4,
-        "nome": "Tupiniquim",
+        "razaoSocial": "Tupiniquim",
         "endereco": "Porto Alegre - RS, Brasil",
-        "nomeGrupo": null,
-        "nomeImagem": "tupiniquim_logo",
         "coordenadas": {
             "longitude": -51.06552601,
             "latitude": -29.67756663
@@ -45,13 +37,11 @@
     },
     {
         "id": 5,
-        "nome": "Santamate",
+        "razaoSocial": "Santamate Indústria e Comércio LTDA",
         "endereco": "Santa Maria - RS, Brasil",
-        "nomeGrupo": "Dado Bier",
-        "nomeImagem": "dado_bier_logo",
         "coordenadas": {
-            "longitude": -51.06552601,
-            "latitude": -29.67756663
+            "longitude": -53.783119,
+            "latitude": -29.773929
         }
     }
 ]

@@ -15,11 +15,11 @@ struct CervejaLinha: View {
             cerveja.imagem
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
-            
+                        
             VStack(alignment: .leading) {
                 Text(cerveja.nome)
                     .font(.headline)
-                Text(cerveja.cervejaria!.nome)
+                Text(cerveja.cervejaria!.razaoSocial)
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }
@@ -32,8 +32,8 @@ struct CervejaLinha: View {
 struct CervejaLinha_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CervejaLinha(cerveja: avaliacaoDados[0])
-            CervejaLinha(cerveja: avaliacaoDados[1])
+            CervejaLinha(cerveja: cervejaDados[0])
+            CervejaLinha(cerveja: cervejaDados[1])
         }
         .previewLayout(.fixed(width: 350, height: 70))
     }
