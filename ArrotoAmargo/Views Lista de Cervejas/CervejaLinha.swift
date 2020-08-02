@@ -8,20 +8,25 @@
 import SwiftUI
 
 struct CervejaLinha: View {
-    var cerveja: Cerveja
+    @ObservedObject var viewModel: CervejaLinhaViewModel
     
     var body: some View {
         HStack {
-            cerveja.imagem
+            viewModel.imagem
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
                         
             VStack(alignment: .leading) {
-                Text(cerveja.nome)
+                Text(viewModel.nomeCerveja)
                     .font(.headline)
-                Text(cerveja.cervejaria!.razaoSocial)
-                    .font(.subheadline)
+                    .padding(.bottom, 2)
+                    .padding(.leading, 5)
+                Text(viewModel.nomeCervejaria)
+                    .font(.footnote)
+                    //.bold()
                     .foregroundColor(.gray)
+                    .padding(.top, 2)
+                    .padding(.leading, 5)
             }
             
             Spacer()
@@ -32,8 +37,8 @@ struct CervejaLinha: View {
 struct CervejaLinha_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CervejaLinha(cerveja: cervejaDados[0])
-            CervejaLinha(cerveja: cervejaDados[1])
+            CervejaLinha(viewModel: CervejaLinhaViewModel(cerveja: cervejaDados[0]))
+            CervejaLinha(viewModel: CervejaLinhaViewModel(cerveja: cervejaDados[1]))
         }
         .previewLayout(.fixed(width: 350, height: 70))
     }

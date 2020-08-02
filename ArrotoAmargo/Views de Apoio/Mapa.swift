@@ -10,6 +10,7 @@ import MapKit
 
 struct Mapa: UIViewRepresentable {
     var coordinate: CLLocationCoordinate2D
+    var span: CLLocationDegrees = 0.02
     
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
@@ -17,7 +18,7 @@ struct Mapa: UIViewRepresentable {
     
     func updateUIView(_ uiView: MKMapView, context: Context) {
         // Span serve para definir o nível de zoom que se quer no mapa. Valores MENORES (0.002) dão MAIS zoom.
-        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+        let span = MKCoordinateSpan(latitudeDelta: self.span, longitudeDelta: self.span)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         uiView.setRegion(region, animated: true)
     }

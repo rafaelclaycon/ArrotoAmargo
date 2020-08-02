@@ -21,7 +21,7 @@ struct CervejaLista: View {
             NavigationView {
                 List(viewModel.cervejas) { cerveja in
                     NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
-                        CervejaLinha(cerveja: cerveja)
+                        CervejaLinha(viewModel: CervejaLinhaViewModel(cerveja: cerveja))
                     }
                 }
                 .navigationBarItems(trailing:
@@ -84,7 +84,7 @@ struct CervejaLista: View {
                     
                     List(cervejaDados) { cerveja in
                         NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
-                            CervejaLinha(cerveja: cerveja)
+                            CervejaLinha(viewModel: CervejaLinhaViewModel(cerveja: cerveja))
                         }
                     }
                 }

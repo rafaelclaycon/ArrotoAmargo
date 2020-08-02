@@ -13,6 +13,9 @@
 		D9049DCD24D5B87F0099DD51 /* cervejaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCA24D5B87F0099DD51 /* cervejaDados.json */; };
 		D9049DCE24D5B87F0099DD51 /* marcaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCB24D5B87F0099DD51 /* marcaDados.json */; };
 		D9049DD024D624F00099DD51 /* imigracao_export.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCF24D624F00099DD51 /* imigracao_export.jpg */; };
+		D9049DD224D65CDD0099DD51 /* CervejaLinhaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD124D65CDD0099DD51 /* CervejaLinhaViewModel.swift */; };
+		D9049DD424D661A80099DD51 /* CervejariaDetalhe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD324D661A80099DD51 /* CervejariaDetalhe.swift */; };
+		D9049DD624D662580099DD51 /* CervejariaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD524D662580099DD51 /* CervejariaDetalheViewModel.swift */; };
 		D904D6EB24C4C7EB00FAEEE6 /* weidmann.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EA24C4C7EB00FAEEE6 /* weidmann.jpg */; };
 		D904D6F024C4F1C500FAEEE6 /* session_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EC24C4F1C500FAEEE6 /* session_ipa.jpg */; };
 		D904D6F124C4F1C500FAEEE6 /* summer_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6ED24C4F1C500FAEEE6 /* summer_ipa.jpg */; };
@@ -88,6 +91,9 @@
 		D9049DCA24D5B87F0099DD51 /* cervejaDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cervejaDados.json; sourceTree = "<group>"; };
 		D9049DCB24D5B87F0099DD51 /* marcaDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = marcaDados.json; sourceTree = "<group>"; };
 		D9049DCF24D624F00099DD51 /* imigracao_export.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imigracao_export.jpg; sourceTree = "<group>"; };
+		D9049DD124D65CDD0099DD51 /* CervejaLinhaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaLinhaViewModel.swift; sourceTree = "<group>"; };
+		D9049DD324D661A80099DD51 /* CervejariaDetalhe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejariaDetalhe.swift; sourceTree = "<group>"; };
+		D9049DD524D662580099DD51 /* CervejariaDetalheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejariaDetalheViewModel.swift; sourceTree = "<group>"; };
 		D904D6EA24C4C7EB00FAEEE6 /* weidmann.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weidmann.jpg; sourceTree = "<group>"; };
 		D904D6EC24C4F1C500FAEEE6 /* session_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = session_ipa.jpg; sourceTree = "<group>"; };
 		D904D6ED24C4F1C500FAEEE6 /* summer_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = summer_ipa.jpg; sourceTree = "<group>"; };
@@ -174,6 +180,8 @@
 			children = (
 				D9FAF81124CD1DE300EDA25C /* CervejariaCelula.swift */,
 				D906101424D0851B003DA906 /* CervejariaCelulaViewModel.swift */,
+				D9049DD324D661A80099DD51 /* CervejariaDetalhe.swift */,
+				D9049DD524D662580099DD51 /* CervejariaDetalheViewModel.swift */,
 			);
 			path = "Views Cervejaria";
 			sourceTree = "<group>";
@@ -279,8 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				D9F18E6E24BBECA500325193 /* CervejaLista.swift */,
-				D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */,
 				D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */,
+				D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */,
+				D9049DD124D65CDD0099DD51 /* CervejaLinhaViewModel.swift */,
 			);
 			path = "Views Lista de Cervejas";
 			sourceTree = "<group>";
@@ -497,18 +506,21 @@
 				D9A7C6AF24BFB43C005AC54F /* MedidorNota.swift in Sources */,
 				D9D895F724D22967004F0EF2 /* NovaAvaliacao.swift in Sources */,
 				D97BD4E124D24DCB00B321B7 /* Color+BackgroundColor.swift in Sources */,
+				D9049DD424D661A80099DD51 /* CervejariaDetalhe.swift in Sources */,
 				D9F18E6F24BBECA500325193 /* CervejaLista.swift in Sources */,
 				D9B0EBF524D4F7F4007B6F93 /* UIID.swift in Sources */,
 				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
 				D9084BCD24C88660003EA025 /* AvaliacaoLinhaViewModel.swift in Sources */,
 				D9612D6B24C7E3B300EFF8EE /* Avaliacao.swift in Sources */,
 				D9FAF80E24CC305A00EDA25C /* CervejaDetalheViewModel.swift in Sources */,
+				D9049DD224D65CDD0099DD51 /* CervejaLinhaViewModel.swift in Sources */,
 				D9CC7DE724BA1887006C2D4D /* CervejaLinha.swift in Sources */,
 				D9CC7DE224B7FDE3006C2D4D /* Cerveja.swift in Sources */,
 				D9CC7DDF24B7FA3D006C2D4D /* CervejaDetalhe.swift in Sources */,
 				D99E5CA224C7CDD100D8A648 /* CervejaListaViewModel.swift in Sources */,
 				D906102124D0F66A003DA906 /* MostradorTeorAlcoolico.swift in Sources */,
 				D906101524D0851B003DA906 /* CervejariaCelulaViewModel.swift in Sources */,
+				D9049DD624D662580099DD51 /* CervejariaDetalheViewModel.swift in Sources */,
 				D9FAF81224CD1DE300EDA25C /* CervejariaCelula.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
