@@ -14,11 +14,16 @@ class CervejariaDetalheViewModel: ObservableObject {
     @Published var nomeCervejaria: String
     @Published var endereco: String
     @Published var localizacao: CLLocationCoordinate2D
+    @Published var cervejas: [Cerveja]
     
     init(cervejaria: Cervejaria) {
         self.cervejaria = cervejaria
         self.nomeCervejaria = cervejaria.razaoSocial
         self.endereco = cervejaria.endereco
         self.localizacao = cervejaria.localizacao
+        self.cervejas = cervejaDados.filter { cerveja in
+            return cerveja.idCervejaria == cervejaria.id
+        }
+        self.cervejas.sort { $0.nome.lowercased() < $1.nome.lowercased() }
     }
 }
