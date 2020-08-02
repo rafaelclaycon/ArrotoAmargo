@@ -15,13 +15,14 @@ struct Cerveja: Hashable, Codable, Identifiable {
     fileprivate var coordenadas: Coordinates
     var idCervejaria: Int
     var idMarca: Int
-    var nota: Int
+    var nota: Int?
     var ibu: Float
     var teorAlcoolico: Float
     var estilo: EstiloCerveja
     var cor: Float?
     var notasDegustacao: String?
     var fotosUsuario: [String]?
+    var dataAdicao: Date
     
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

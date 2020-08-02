@@ -15,6 +15,7 @@
         "estilo": "India Pale Ale",
         "cor": 5.08,
         "notasDegustacao": "Aroma e sabor cítrico e frutado devido à adição exagerada de lúpulos americanos, remetendo a frutas amarelas e tropicais, como maracujá, laranja, pomelo e manga.",
+        "dataAdicao": "2020-07-08T20:04:00Z",
         "avaliacoes": [
             {
                 "id": 45,
@@ -67,7 +68,8 @@
         "estilo": "India Pale Ale",
         "cor": 3.5,
         "notasDegustacao": "Aroma e sabor cítrico e frutado devido à receita complexa que utiliza muitos lúpulos americanos e australianos.",
-        "fotosUsuario": ["new_england_ipa_foto_usuario"]
+        "fotosUsuario": ["new_england_ipa_foto_usuario"],
+        "dataAdicao": "2020-07-08T20:04:00Z"
     },
     {
         "nome": "Roleta Russa Easy IPA",
@@ -84,7 +86,8 @@
         "teorAlcoolico": 4.6,
         "estilo": "India Pale Ale",
         "cor": 3.3,
-        "notasDegustacao": "Aroma e sabor cítrico que remetem a frutas tropicais e amarelas, como maracujá e mamão papaia."
+        "notasDegustacao": "Aroma e sabor cítrico que remetem a frutas tropicais e amarelas, como maracujá e mamão papaia.",
+        "dataAdicao": "2020-07-08T20:04:00Z"
     },
     {
         "nome": "Roleta Russa Double New England IPA",
@@ -92,7 +95,7 @@
         "nomeImagem": "double_new_england_ipa",
         "idCervejaria": 1,
         "idMarca": 1,
-        "nota": 0,
+        "nota": 2,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -101,7 +104,8 @@
         "teorAlcoolico": 8.1,
         "estilo": "India Pale Ale",
         "cor": 4,
-        "notasDegustacao": "Aromas intensos que remetem a suco de frutas como maracujá, laranja, mamão papaia e melão. No sabor as notas frutadas se repetem em primeiro plano, em seguida, o amargor prevalece inserido de forma equilibrada."
+        "notasDegustacao": "Aromas intensos que remetem a suco de frutas como maracujá, laranja, mamão papaia e melão. No sabor as notas frutadas se repetem em primeiro plano, em seguida, o amargor prevalece inserido de forma equilibrada.",
+        "dataAdicao": "2020-07-08T20:04:00Z"
     },
     {
         "nome": "Weidmann",
@@ -117,7 +121,8 @@
         "ibu": 0,
         "teorAlcoolico": 5.0,
         "estilo": "Dunkel",
-        "fotosUsuario": ["weidmann_foto_usuario"]
+        "fotosUsuario": ["weidmann_foto_usuario"],
+        "dataAdicao": "2020-07-17T22:21:18Z"
     },
     {
         "nome": "Summer IPA",
@@ -132,7 +137,8 @@
         },
         "ibu": 0,
         "teorAlcoolico": 5.0,
-        "estilo": "India Pale Ale"
+        "estilo": "India Pale Ale",
+        "dataAdicao": "2020-07-17T23:54:13Z",
     },
     {
         "nome": "Hop Bomb IPA",
@@ -148,7 +154,8 @@
         "ibu": 0,
         "teorAlcoolico": 5.0,
         "estilo": "India Pale Ale",
-        "fotosUsuario": ["hop_bomb_ipa_foto_usuario"]
+        "fotosUsuario": ["hop_bomb_ipa_foto_usuario"],
+        "dataAdicao": "2020-07-18T14:32:43Z"
     },
     {
         "nome": "Session IPA",
@@ -163,7 +170,8 @@
         },
         "ibu": 40,
         "teorAlcoolico": 4.1,
-        "estilo": "India Pale Ale"
+        "estilo": "India Pale Ale",
+        "dataAdicao": "2020-07-18T15:23:02Z"
     },
     {
         "nome": "Patagonia Weisse",
@@ -178,7 +186,8 @@
         },
         "ibu": 18,
         "teorAlcoolico": 4.4,
-        "estilo": "Witbier"
+        "estilo": "Witbier",
+        "dataAdicao": "2020-07-18T22:32:52Z"
     },
     {
         "nome": "Patagonia Bohemian Pilsener",
@@ -194,7 +203,8 @@
         "ibu": 18,
         "teorAlcoolico": 5.2,
         "estilo": "Pilsen",
-        "fotosUsuario": ["patagonia_pilsen_foto_usuario"]
+        "fotosUsuario": ["patagonia_pilsen_foto_usuario"],
+        "dataAdicao": "2020-07-18T22:32:52Z"
     },
     {
         "nome": "Patagonia Amber Lager",
@@ -209,7 +219,8 @@
         },
         "ibu": 13.5,
         "teorAlcoolico": 4.5,
-        "estilo": "Amber Lager"
+        "estilo": "Amber Lager",
+        "dataAdicao": "2020-07-19T00:38:56Z"
     },
     {
         "nome": "Bellavista American IPA",
@@ -224,7 +235,8 @@
         },
         "ibu": 55,
         "teorAlcoolico": 6.2,
-        "estilo": "American IPA"
+        "estilo": "American IPA",
+        "dataAdicao": "2020-07-31T18:02:00Z"
     },
     {
         "nome": "Imigração Export",
@@ -242,6 +254,7 @@
         "estilo": "Dortmunder Export",
         "cor": null,
         "notasDegustacao": "Produzida com quatro tipos de maltes, aroma e sabor equilibrados com floral do lúpulo, que remetem a casca de pão e biscoito, lembrando o mel. A sensação de boca é de corpo médio-baixo, amargor baixo, e final levemente doce.",
-        "avaliacoes": null
+        "avaliacoes": null,
+        "dataAdicao": "2020-08-01T19:33:00Z"
     }
 ]

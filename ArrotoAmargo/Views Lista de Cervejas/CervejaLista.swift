@@ -10,7 +10,8 @@ import CoreLocation
 
 struct CervejaLista: View {
     @State var preferencias: PreferenciasUsuario
-    @State private var showingSheet = false
+    @State private var exibindoOpcoesOrdenacao = false
+    @State private var exibindoOpcoesCriacao = false
     @ObservedObject var viewModel = CervejaListaViewModel(cervejas: cervejaDados)
     
     var body: some View {
@@ -27,31 +28,41 @@ struct CervejaLista: View {
                     HStack {
                         Button(action: {
                             print("Ordernar cervejas pressionado!")
-                            self.showingSheet = true
+                            self.exibindoOpcoesOrdenacao = true
                         }) {
                             Image(systemName: "arrow.up.arrow.down")
                                 .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
                                 .frame(width: 20, height: 20, alignment: .center)
                         }
                         .frame(width: navBarItemSize, height: navBarItemSize, alignment: .center)
-                        .actionSheet(isPresented: $showingSheet) {
+                        .actionSheet(isPresented: $exibindoOpcoesOrdenacao) {
                             ActionSheet(title: Text("Ordenar cervejas"),
                                         message: Text("Escolha uma propriedade da cerveja para reordernar a lista."),
                                         buttons: [.default(Text("🔠  Nome (A → Z)")) { self.viewModel.ordenarAlfabeticamentePeloNomeDaCerveja() },
                                                   .default(Text("🥇  Nota (5 → 0)")) { self.viewModel.ordenarPorNota() },
-                                                  .default(Text("📆  Data de adição")),
-                                                  .default(Text("😖  IBU")) { self.viewModel.ordenarPorIBU() },
+                                                  .default(Text("📆  Data de adição (mais recentes no topo)")) { self.viewModel.ordenarPorDataAdicao() },
+                                                  .default(Text("😖  IBU (maior a menor)")) { self.viewModel.ordenarPorIBU() },
                                                   .cancel(Text("Cancelar"))])
                         }
                         
                         Button(action: {
                             print("Adicionar cerveja pressionado!")
+                            self.exibindoOpcoesCriacao = true
                         }) {
                             Image(systemName: "plus")
                                 .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
                                 .frame(width: 20, height: 20, alignment: .center)
                         }
                         .frame(width: navBarItemSize, height: navBarItemSize, alignment: .center)
+                        .actionSheet(isPresented: $exibindoOpcoesCriacao) {
+                            ActionSheet(title: Text("O que vamos criar hoje?"),
+                                        message: Text(""),
+                                        buttons: [.default(Text("📕  Nova avaliação")),
+                                                  .default(Text("🍺  Nova cerveja")),
+                                                  .default(Text("🏢  Nova cervejaria")),
+                                                  .default(Text("💎  Nova marca")),
+                                                  .cancel(Text("Cancelar"))])
+                        }
                     }
                 )
                 .navigationBarTitle(Text("Cervejas 🍻"))

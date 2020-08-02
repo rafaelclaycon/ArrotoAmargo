@@ -30,14 +30,23 @@ struct CervejaDetalhe: View {
                 HStack {
                     viewModel.imagem.resizable()
                         .frame(width: 100, height: 100, alignment: .center)
-                    Text(viewModel.nome)
-                        .font(.title)
-                        .bold()
-                        .accessibility(identifier: UIID.nomeCervejaTitulo)
+                    VStack(alignment: .leading) {
+                        Text(viewModel.nome)
+                            .font(.title2)
+                            .bold()
+                            .accessibility(identifier: UIID.nomeCervejaTitulo)
+                            .padding(.bottom, 8)
+                            .padding(.leading, 10)
+                        viewModel.getTextoEstilo()
+                            .font(.subheadline)
+                            .bold()
+                            .padding(.leading, 10)
+                    }
                     Spacer()
                     MedidorNota(nota: viewModel.nota)
                         .padding(.all, 20)
                 }
+                .padding(.bottom, 15)
                 
                 CervejariaCelula(viewModel: CervejariaCelulaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca))
                 Spacer()
@@ -102,7 +111,7 @@ struct CervejaDetalhe_Previews: PreviewProvider {
     // iPad Air (3rd generation)
     static var previews: some View {
         ForEach(["iPhone 11"], id: \.self) { deviceName in
-            CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cervejaDados[0]))
+            CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cervejaDados[1]))
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
     }

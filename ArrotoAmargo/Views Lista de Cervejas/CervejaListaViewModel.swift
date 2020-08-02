@@ -20,10 +20,14 @@ class CervejaListaViewModel: ObservableObject {
     }
     
     func ordenarPorNota() {
-        cervejas.sort { $0.nota > $1.nota }
+        cervejas.sort { $0.nota ?? 0 > $1.nota ?? 0 }
     }
     
     func ordenarPorIBU() {
         cervejas.sort { $0.ibu > $1.ibu }
+    }
+    
+    func ordenarPorDataAdicao() {
+        cervejas.sort { $0.dataAdicao > $1.dataAdicao }
     }
 }
