@@ -19,7 +19,7 @@ Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI para i
 
 *Por que macOS diz "em breve" na descrição?*
 
-Por ser um projeto que utiliza a nova versão do SwiftUI, não é possível buildar o target do app para Mac usando o macOS Catalina (o decorador `@main` está disponível apenas no Big Sur). A versão do app para macOS provavelmente sairá depois do lançamento oficial do macOS Big Sur (setembro/outubro 2020).
+Visto que esse projeto utiliza os novos recursos de gerenciamento de ciclo de vida (*lifecycle management*) do SwiftUI, disponíveis apenas no macOS Big Sur, não é possível buildar o target do Mac utilizando a versão atual do SO (macOS Catalina). Trabalharei na versão para Mac após o lançamento oficial do Big Sur (setembro/outubro de 2020).
 
 ## Contato
 
