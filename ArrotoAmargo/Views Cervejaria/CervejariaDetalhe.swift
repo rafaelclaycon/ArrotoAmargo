@@ -13,7 +13,7 @@ struct CervejariaDetalhe: View {
     var body: some View {
         VStack(alignment: .leading) {
             Mapa(coordinate: viewModel.localizacao/*, span: 0.005*/)
-                //.edgesIgnoringSafeArea(.top)
+                .edgesIgnoringSafeArea(.top)
                 .frame(height: 200)
             
             HStack {

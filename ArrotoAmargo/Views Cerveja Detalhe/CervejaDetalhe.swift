@@ -28,7 +28,8 @@ struct CervejaDetalhe: View {
                 }
                 
                 HStack {
-                    viewModel.imagem.resizable()
+                    viewModel.imagem
+                        .resizable()
                         .frame(width: 100, height: 100, alignment: .center)
                     VStack(alignment: .leading) {
                         Text(viewModel.nome)
@@ -75,7 +76,7 @@ struct CervejaDetalhe: View {
                     }
                     .padding()
                     .sheet(isPresented: $exibindoTelaNovaAvaliacao) {
-                        NovaAvaliacao()
+                        //NovaAvaliacao(viewModel: NovaAvaliacaoViewModel())
                     }
                 }
                     

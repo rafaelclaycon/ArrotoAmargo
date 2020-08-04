@@ -8,30 +8,84 @@
 import SwiftUI
 
 struct NovaAvaliacao: View {
+    @ObservedObject var viewModel: NovaAvaliacaoViewModel
+    @Binding var estaSendoExibido: Bool
     @State private var nome: String = ""
-    @State private var fullText: String = "This is some editable text..."
+    @State private var fullText: String = ""
+    @State private var indiceCerveja = 0
+    @State private var indiceMarca = 0
+    @State private var indiceCervejaria = 0
+    @State private var dataRegistro = Date()
+    @State private var usarLocalizacaoAtual: Bool = true
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Nova Cerveja 🍺")
-                .font(.title)
-                .bold()
-            
-            TextField("Nome", text: $nome)
-                //.padding()
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-            
-            TextEditor(text: $fullText)
-                .foregroundColor(Color.gray)
-                .font(.custom("HelveticaNeue", size: 13))
-                .lineSpacing(5)
+        NavigationView {
+            Form {
+                // DETALHES DA CERVEJA
+                Section(header: Text("Para")) {
+                    Picker(selection: $indiceCerveja, label: Text("Nome")) {
+                        ForEach(0 ..< viewModel.cervejas.count) {
+                            Text("\(self.viewModel.cervejas[$0])")
+                        }
+                    }
+                    
+                    Picker(selection: $indiceMarca, label: Text("Marca")) {
+                        ForEach(0 ..< viewModel.marcas.count) {
+                            Text("\(self.viewModel.marcas[$0])")
+                        }
+                    }
+                    
+                    Picker(selection: $indiceCervejaria, label: Text("Cervejaria")) {
+                        ForEach(0 ..< viewModel.cervejarias.count) {
+                            Text("\(self.viewModel.cervejarias[$0])")
+                        }
+                    }
+                }
+                
+                Section(header: Text("Degustada em")) {
+                    DatePicker(selection: $dataRegistro, in: ...Date(), displayedComponents: [.date, .hourAndMinute]) {
+                        //Text("Às")
+                    }
+                }
+                
+                Section(header: Text("Local de consumo")) {
+                    TextField("Descrição do local", text: $nome)
+                    Toggle(isOn: $usarLocalizacaoAtual) {
+                        Text("Usar localização atual")
+                    }
+                }
+                
+                Section {
+                    Stepper(value: $viewModel.nota, in: 0...5) {
+                        Text("Nota: \(viewModel.nota)")
+                    }
+                    Text(viewModel.textoNota)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .font(.title)
+                }
+                
+                Section(header: Text("Anotações")) {
+                    TextEditor(text: $fullText)
+                        .frame(height: 100)
+                    Button("Adicionar foto") {
+                        print("Hora de tirar foto!")
+                    }
+                }
+                
+                Button("Salvar avaliação") {
+                    self.estaSendoExibido = false
+                }
+            }
+            .navigationBarTitle("Nova Avaliação 📕")
+            .onDisappear {
+                self.estaSendoExibido = false
+            }
         }
-        .padding()
     }
 }
 
 struct NovaAvaliacao_Previews: PreviewProvider {
     static var previews: some View {
-        NovaAvaliacao()
+        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: .constant(true))
     }
 }
