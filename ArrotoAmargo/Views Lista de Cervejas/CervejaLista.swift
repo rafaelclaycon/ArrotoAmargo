@@ -12,7 +12,9 @@ struct CervejaLista: View {
     @State var preferencias: PreferenciasUsuario
     @State private var exibindoOpcoesOrdenacao = false
     @State private var exibindoOpcoesCriacao = false
-    @State private var exibindoModalNovaAvaliacao = false
+    @State private var exibindoModal = false
+    @State private var exibirCadastroAvaliacao = false
+    @State private var exibirCadastroCerveja = false
     @ObservedObject var viewModel = CervejaListaViewModel(cervejas: cervejaDados)
     
     var body: some View {
@@ -60,24 +62,31 @@ struct CervejaLista: View {
                                         message: nil,
                                         buttons: [.default(Text("📕  Nova avaliação")) {
                                                     self.exibindoOpcoesCriacao = false
-                                                    self.exibindoModalNovaAvaliacao = true
+                                                    self.exibirCadastroAvaliacao = true
+                                                    self.exibirCadastroCerveja = false
+                                                    self.exibindoModal = true
                                                 },
-                                                  .default(Text("🍺  Nova cerveja")),
+                                                  .default(Text("🍺  Nova cerveja")) {
+                                                    self.exibindoOpcoesCriacao = false
+                                                    self.exibirCadastroAvaliacao = false
+                                                    self.exibirCadastroCerveja = true
+                                                    self.exibindoModal = true
+                                                },
                                                   .default(Text("🏢  Nova cervejaria")),
                                                   .default(Text("💎  Nova marca")),
                                                   .cancel(Text("Cancelar"))])
                         }
-                        
-                        /*NavigationLink(destination: NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: $exibindoModalNovaAvaliacao), isActive: $exibindoModalNovaAvaliacao) {
-                            EmptyView()
-                        }*/
                     }
                 )
                 .navigationBarTitle(Text("Cervejas 🍻"))
                 .accessibility(identifier: UIID.cervejaLista)
             }
-            .sheet(isPresented: $exibindoModalNovaAvaliacao) {
-                NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: $exibindoModalNovaAvaliacao)
+            .sheet(isPresented: $exibindoModal) {
+                if exibirCadastroAvaliacao {
+                    NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: $exibindoModal)
+                } else if exibirCadastroCerveja {
+                    NovaCerveja(viewModel: NovaCervejaViewModel(), estaSendoExibido: $exibindoModal)
+                }
             }
             .tabItem {
                 Image(systemName: "circle.grid.2x2.fill")

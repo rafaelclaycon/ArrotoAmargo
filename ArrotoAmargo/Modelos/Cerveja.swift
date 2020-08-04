@@ -52,7 +52,7 @@ struct Coordinates: Hashable, Codable {
     var longitude: Double
 }
 
-enum EstiloCerveja: String {
+enum EstiloCerveja: String, CaseIterable {
     case americanPaleAle = "American Pale Ale"
     case indiaPaleAle = "India Pale Ale"
     case pilsen = "Pilsen"
