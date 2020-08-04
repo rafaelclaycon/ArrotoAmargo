@@ -10,9 +10,14 @@ import CoreLocation
 
 struct CervejariaCelula: View {
     @ObservedObject var viewModel: CervejariaCelulaViewModel
+    @State private var action: Int? = 0
     
     var body: some View {
         VStack(alignment: .leading) {
+            NavigationLink(destination: CervejariaDetalhe(viewModel: CervejariaDetalheViewModel(cervejaria: viewModel.getCervejaria())), tag: 1, selection: $action) {
+                EmptyView()
+            }
+            
             Text("PRODUZIDA E ENVASADA POR:")
                 .font(.subheadline)
                 .bold()
@@ -20,40 +25,41 @@ struct CervejariaCelula: View {
                 .padding(.leading, 20)
             
             // Cervejaria
-            HStack {
-                Mapa(coordinate: viewModel.localizacao)
-                    .frame(width: 80, height: 70)
+            Button(action: {
+                print("Ver detalhes da cervejaria pressionado")
+                self.action = 1
+            }) {
+                HStack {
+                    Mapa(coordinate: viewModel.localizacao)
+                        .frame(width: 80, height: 70)
+                        
+                    VStack(alignment: .leading) {
+                        Text(viewModel.nomeCervejaria)
+                            .font(.headline)
+                            .foregroundColor(.black)
+                            .padding(.leading, 10)
+                            .padding(.bottom, 6)
+                        
+                        Text(viewModel.endereco)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .padding(.leading, 10)
+                            //.padding(.top, 2)
+                    }
                     
-                VStack(alignment: .leading) {
-                    Text(viewModel.nomeCervejaria)
-                        .font(.body)
-                        .bold()
-                        .padding(.leading, 10)
-                        .padding(.bottom, 6)
-                    
-                    Text(viewModel.endereco)
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                        .padding(.leading, 10)
-                        //.padding(.top, 2)
-                }
-                
-                Spacer()
-                
-                Button(action: {
-                    print("Ver detalhes da cervejaria pressionado")
-                    //self.showingSheet = true
-                }) {
+                    Spacer()
                     Image(systemName: "chevron.right")
+                        .foregroundColor(.gray)
+                        .padding(.trailing, 26)
                 }
-                .foregroundColor(.gray)
-                .padding(.trailing, 26)
             }
+            .padding(.bottom, 10)
             
+            // Sob a marca: / Para:
             HStack {
                 VStack(alignment: .leading) {
                     Text("SOB A MARCA:")
-                        .font(.subheadline)
+                        .font(.footnote)
                         .bold()
                         .foregroundColor(.gray)
                         .padding(.leading, 20)
@@ -62,10 +68,10 @@ struct CervejariaCelula: View {
                         viewModel.logoCervejaria
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 50, height: 50, alignment: .center)
+                            .frame(width: 30, height: 30, alignment: .center)
                             .padding(.leading, 15)
                         Text(viewModel.nomeMarca)
-                            .bold()
+                            .font(.subheadline)
                             .padding(.leading, 20)
                             .padding(.top, 6)
                     }
@@ -75,13 +81,14 @@ struct CervejariaCelula: View {
                 
                 VStack(alignment: .leading) {
                     Text("PARA:")
-                        .font(.subheadline)
+                        .font(.footnote)
                         .bold()
                         .foregroundColor(.gray)
                         .padding(.leading, 20)
                         .padding(.bottom, 6)
                     Text(viewModel.nomeProprietarioMarca)
-                        .bold()
+                        //.bold()
+                        .font(.subheadline)
                         .padding(.leading, 20)
                 }
                 Spacer()

@@ -29,4 +29,8 @@ class CervejariaCelulaViewModel: ObservableObject {
         self.nomeMarca = marca.nome
         self.nomeProprietarioMarca = marca.proprietario
     }
+    
+    func getCervejaria() -> Cervejaria {
+        return cervejaria
+    }
 }

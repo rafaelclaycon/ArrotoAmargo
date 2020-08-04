@@ -4,8 +4,8 @@
         "razaoSocial": "Cervejaria Campo Bom LTDA",
         "endereco": "Campo Bom - RS, Brasil",
         "coordenadas": {
-            "longitude": -51.06552601,
-            "latitude": -29.67756663
+            "longitude": -51.064971,
+            "latitude": -29.676570
         }
     },
     {
@@ -19,20 +19,20 @@
     },
     {
         "id": 3,
-        "razaoSocial": "Gilde Brauerei",
+        "razaoSocial": "Gilde Brauerei GmbH",
         "endereco": "Hanôver - Baixa Saxónia, Alemanha",
         "coordenadas": {
-            "longitude": -51.06552601,
-            "latitude": -29.67756663
+            "longitude": 9.755236,
+            "latitude": 52.353742
         }
     },
     {
         "id": 4,
-        "razaoSocial": "Tupiniquim",
+        "razaoSocial": "Cervejaria Tupiniquim S.A.",
         "endereco": "Porto Alegre - RS, Brasil",
         "coordenadas": {
-            "longitude": -51.06552601,
-            "latitude": -29.67756663
+            "longitude": -51.174702,
+            "latitude": -29.974663
         }
     },
     {
