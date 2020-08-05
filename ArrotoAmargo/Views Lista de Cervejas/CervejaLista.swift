@@ -9,13 +9,8 @@ import SwiftUI
 import CoreLocation
 
 struct CervejaLista: View {
-    @State var preferencias: PreferenciasUsuario
-    @State private var exibindoOpcoesOrdenacao = false
-    @State private var exibindoOpcoesCriacao = false
-    @State private var exibindoModal = false
-    @State private var exibirCadastroAvaliacao = false
-    @State private var exibirCadastroCerveja = false
     @ObservedObject var viewModel = CervejaListaViewModel(cervejas: cervejaDados)
+    @State var preferencias: PreferenciasUsuario
     
     var body: some View {
         let navBarItemSize: CGFloat = 36
@@ -31,48 +26,32 @@ struct CervejaLista: View {
                     HStack {
                         Button(action: {
                             print("Ordernar cervejas pressionado!")
-                            self.exibindoOpcoesOrdenacao = true
+                            viewModel.exibindoOpcoesOrdenacao = true
                         }) {
                             Image(systemName: "arrow.up.arrow.down")
                                 .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
                                 .frame(width: 20, height: 20, alignment: .center)
                         }
                         .frame(width: navBarItemSize, height: navBarItemSize, alignment: .center)
-                        .actionSheet(isPresented: $exibindoOpcoesOrdenacao) {
-                            ActionSheet(title: Text("Reordenar lista"),
-                                        message: Text("Escolha uma propriedade da cerveja para reordernar a lista."),
-                                        buttons: [.default(Text("🔠  Nome (A → Z)")) { self.viewModel.ordenarAlfabeticamentePeloNomeDaCerveja() },
-                                                  .default(Text("🥇  Nota (5 → 0)")) { self.viewModel.ordenarPorNota() },
-                                                  .default(Text("📆  Data de adição")) { self.viewModel.ordenarPorDataAdicao() },
-                                                  .default(Text("😖  IBU")) { self.viewModel.ordenarPorIBU() },
-                                                  .cancel(Text("Cancelar"))])
+                        .actionSheet(isPresented: $viewModel.exibindoOpcoesOrdenacao) {
+                            viewModel.getActionSheetOrdenacao()
                         }
-                        
+
                         Button(action: {
                             print("Adicionar cerveja pressionado!")
-                            self.exibindoOpcoesCriacao = true
+                            viewModel.exibindoOpcoesCriacao = true
                         }) {
                             Image(systemName: "plus")
                                 .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
                                 .frame(width: 20, height: 20, alignment: .center)
                         }
                         .frame(width: navBarItemSize, height: navBarItemSize, alignment: .center)
-                        .actionSheet(isPresented: $exibindoOpcoesCriacao) {
+                        .actionSheet(isPresented: $viewModel.exibindoOpcoesCriacao) {
                             ActionSheet(title: Text("O que você deseja criar?"),
                                         message: nil,
-                                        buttons: [.default(Text("📕  Nova avaliação")) {
-                                                    self.exibindoOpcoesCriacao = false
-                                                    self.exibirCadastroAvaliacao = true
-                                                    self.exibirCadastroCerveja = false
-                                                    self.exibindoModal = true
-                                                },
-                                                  .default(Text("🍺  Nova cerveja")) {
-                                                    self.exibindoOpcoesCriacao = false
-                                                    self.exibirCadastroAvaliacao = false
-                                                    self.exibirCadastroCerveja = true
-                                                    self.exibindoModal = true
-                                                },
-                                                  .default(Text("🏢  Nova cervejaria")),
+                                        buttons: [.default(Text("📕  Nova avaliação")) { viewModel.exibirCadastroNovaAvaliacao() },
+                                                  .default(Text("🍺  Nova cerveja")) { viewModel.exibirCadastroNovaCerveja() },
+                                                  .default(Text("🏢  Nova cervejaria")) { viewModel.exibirCadastroNovaCevejaria() },
                                                   .default(Text("💎  Nova marca")),
                                                   .cancel(Text("Cancelar"))])
                         }
@@ -81,19 +60,20 @@ struct CervejaLista: View {
                 .navigationBarTitle(Text("Cervejas 🍻"))
                 .accessibility(identifier: UIID.cervejaLista)
             }
-            .sheet(isPresented: $exibindoModal) {
-                if exibirCadastroAvaliacao {
-                    NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: $exibindoModal)
-                } else if exibirCadastroCerveja {
-                    NovaCerveja(viewModel: NovaCervejaViewModel(), estaSendoExibido: $exibindoModal)
+            .sheet(isPresented: $viewModel.exibindoModal) {
+                if viewModel.exibirCadastroAvaliacao {
+                    NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: $viewModel.exibindoModal)
+                } else if viewModel.exibirCadastroCerveja {
+                    NovaCerveja(viewModel: NovaCervejaViewModel(), estaSendoExibido: $viewModel.exibindoModal)
+                } else if viewModel.exibirCadastroCervejaria {
+                    NovaCervejaria(viewModel: NovaCervejariaViewModel(), estaSendoExibido: $viewModel.exibindoModal)
                 }
             }
             .tabItem {
                 Image(systemName: "circle.grid.2x2.fill")
                 Text("Cervejas")
             }
-            
-            
+                        
             NavigationView {
                 VStack {
                     Picker(selection: $preferencias.tipoListaSelecionado, label: Text("Tipo")) {
@@ -103,7 +83,7 @@ struct CervejaLista: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.all, 22)
-                    
+
                     List(cervejaDados) { cerveja in
                         NavigationLink(destination: CervejaDetalhe(viewModel: CervejaDetalheViewModel(cerveja: cerveja))) {
                             CervejaLinha(viewModel: CervejaLinhaViewModel(cerveja: cerveja))
@@ -125,7 +105,7 @@ struct CervejaLista: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.all, 22)
-                    
+
                     Mapa(coordinate: CLLocationCoordinate2D(latitude: -29.67756663, longitude: -51.06552601))
                         .edgesIgnoringSafeArea(.all)
                 }

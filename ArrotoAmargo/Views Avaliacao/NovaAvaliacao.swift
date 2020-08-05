@@ -61,6 +61,13 @@ struct NovaAvaliacao: View {
                 }
             }
             .navigationBarTitle("Nova Avaliação 📕")
+            .navigationBarItems(leading:
+                Button(action: {
+                    self.estaSendoExibido = false
+                }) {
+                    Text("Cancelar")
+                }
+            )
             .onDisappear {
                 self.estaSendoExibido = false
             }
