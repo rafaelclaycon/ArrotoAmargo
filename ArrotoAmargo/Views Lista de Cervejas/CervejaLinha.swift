@@ -19,13 +19,11 @@ struct CervejaLinha: View {
             VStack(alignment: .leading) {
                 Text(viewModel.nomeCerveja)
                     .font(.headline)
-                    .padding(.bottom, 2)
+                    .padding(.bottom, 0.1)
                     .padding(.leading, 5)
                 Text(viewModel.nomeCervejaria)
                     .font(.footnote)
-                    //.bold()
                     .foregroundColor(.gray)
-                    .padding(.top, 2)
                     .padding(.leading, 5)
             }
             
