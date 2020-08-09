@@ -21,10 +21,6 @@ struct CervejaDetalhe: View {
                         .edgesIgnoringSafeArea(.top)
                         .frame(height: 180)
                         .clipped()
-//                } else {
-//                    Mapa(coordinate: viewModel.locationCoordinate)
-//                        .edgesIgnoringSafeArea(.top)
-//                        .frame(height: 180)
                 }
                 
                 HStack {
@@ -65,7 +61,7 @@ struct CervejaDetalhe: View {
                     Text("Avaliações")
                         .font(.title2)
                         .bold()
-                        .padding()
+                        .padding(.leading, 20)
                     Spacer()
                     Button(action: {
                         self.exibindoTelaNovaAvaliacao.toggle()
@@ -74,9 +70,9 @@ struct CervejaDetalhe: View {
                             .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
                             .frame(width: 26, height: 26, alignment: .center)
                     }
-                    .padding()
+                    .padding(.trailing, 20)
                     .sheet(isPresented: $exibindoTelaNovaAvaliacao) {
-                        //NovaAvaliacao(viewModel: NovaAvaliacaoViewModel())
+                        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: $exibindoTelaNovaAvaliacao)
                     }
                 }
                     

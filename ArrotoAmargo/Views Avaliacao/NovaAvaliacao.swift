@@ -68,9 +68,6 @@ struct NovaAvaliacao: View {
                     Text("Cancelar")
                 }
             )
-            .onDisappear {
-                self.estaSendoExibido = false
-            }
         }
     }
 }

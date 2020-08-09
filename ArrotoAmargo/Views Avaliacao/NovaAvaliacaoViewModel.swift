@@ -8,8 +8,7 @@
 import Combine
 
 class NovaAvaliacaoViewModel: ObservableObject {
-    // TODO: Implementar avaliacao
-    //var avaliacao: Avaliacao
+    //var avaliacao: Avaliacao?
     @Published var cervejas: [String] = []
     @Published var nota: Int = 0 {
         didSet {
