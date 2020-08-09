@@ -13,38 +13,22 @@ struct NovaAvaliacao: View {
     @State private var nome: String = ""
     @State private var fullText: String = ""
     @State private var indiceCerveja = 0
-    @State private var indiceMarca = 0
-    @State private var indiceCervejaria = 0
     @State private var dataRegistro = Date()
     @State private var usarLocalizacaoAtual: Bool = true
 
     var body: some View {
         NavigationView {
             Form {
-                // DETALHES DA CERVEJA
                 Section(header: Text("Para")) {
                     Picker(selection: $indiceCerveja, label: Text("Nome")) {
                         ForEach(0 ..< viewModel.cervejas.count) {
                             Text("\(self.viewModel.cervejas[$0])")
                         }
                     }
-                    
-                    Picker(selection: $indiceMarca, label: Text("Marca")) {
-                        ForEach(0 ..< viewModel.marcas.count) {
-                            Text("\(self.viewModel.marcas[$0])")
-                        }
-                    }
-                    
-                    Picker(selection: $indiceCervejaria, label: Text("Cervejaria")) {
-                        ForEach(0 ..< viewModel.cervejarias.count) {
-                            Text("\(self.viewModel.cervejarias[$0])")
-                        }
-                    }
                 }
                 
                 Section(header: Text("Degustada em")) {
                     DatePicker(selection: $dataRegistro, in: ...Date(), displayedComponents: [.date, .hourAndMinute]) {
-                        //Text("Às")
                     }
                 }
                 
@@ -77,9 +61,13 @@ struct NovaAvaliacao: View {
                 }
             }
             .navigationBarTitle("Nova Avaliação 📕")
-            .onDisappear {
-                self.estaSendoExibido = false
-            }
+            .navigationBarItems(leading:
+                Button(action: {
+                    self.estaSendoExibido = false
+                }) {
+                    Text("Cancelar")
+                }
+            )
         }
     }
 }

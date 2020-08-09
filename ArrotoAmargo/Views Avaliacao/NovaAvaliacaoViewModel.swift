@@ -8,10 +8,8 @@
 import Combine
 
 class NovaAvaliacaoViewModel: ObservableObject {
-    //var avaliacao: Avaliacao
+    //var avaliacao: Avaliacao?
     @Published var cervejas: [String] = []
-    @Published var marcas: [String] = []
-    @Published var cervejarias: [String] = []
     @Published var nota: Int = 0 {
         didSet {
             switch nota {
@@ -38,20 +36,6 @@ class NovaAvaliacaoViewModel: ObservableObject {
         }
         for cerveja in copiaCervejasOrdenadasAlfabeticamente {
             cervejas.append(cerveja.nome)
-        }
-        
-        let copiaMarcasOrdenadasAlfabeticamente = marcaDados.sorted {
-            $0.nome.lowercased() < $1.nome.lowercased()
-        }
-        for marca in copiaMarcasOrdenadasAlfabeticamente {
-            marcas.append(marca.nome)
-        }
-        
-        let copiaCervejariasOrdenadasAlfabeticamente = cervejariaDados.sorted {
-            $0.razaoSocial.lowercased() < $1.razaoSocial.lowercased()
-        }
-        for cervejaria in copiaCervejariasOrdenadasAlfabeticamente {
-            cervejarias.append(cervejaria.razaoSocial)
         }
     }
 }
