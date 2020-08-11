@@ -42,9 +42,11 @@ struct NovaAvaliacao: View {
                     Stepper(value: $viewModel.nota, in: 0...5) {
                         Text("Nota: \(viewModel.nota)")
                     }
-                    Text(viewModel.textoNota)
+//                    Text(viewModel.textoNota)
+//                        .frame(maxWidth: .infinity, alignment: .center)
+//                        .font(.title)
+                    MostradorNotaEmoji(viewModel: MostradorNotaEmojiViewModel(nota: viewModel.nota))
                         .frame(maxWidth: .infinity, alignment: .center)
-                        .font(.title)
                 }
                 
                 Section(header: Text("Anotações")) {
