@@ -12,7 +12,6 @@ struct NovaAvaliacao: View {
     @Binding var estaSendoExibido: Bool
     @State private var nome: String = ""
     @State private var fullText: String = ""
-    @State private var indiceCerveja = 0
     @State private var dataRegistro = Date()
     @State private var usarLocalizacaoAtual: Bool = true
 
@@ -20,7 +19,7 @@ struct NovaAvaliacao: View {
         NavigationView {
             Form {
                 Section(header: Text("Para")) {
-                    Picker(selection: $indiceCerveja, label: Text("Nome")) {
+                    Picker(selection: $viewModel.indiceCerveja, label: Text("Nome")) {
                         ForEach(0 ..< viewModel.cervejas.count) {
                             Text("\(self.viewModel.cervejas[$0])")
                         }
@@ -74,6 +73,6 @@ struct NovaAvaliacao: View {
 
 struct NovaAvaliacao_Previews: PreviewProvider {
     static var previews: some View {
-        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: .constant(true))
+        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: nil), estaSendoExibido: .constant(true))
     }
 }
