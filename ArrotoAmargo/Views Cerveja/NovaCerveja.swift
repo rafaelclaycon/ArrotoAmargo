@@ -16,6 +16,10 @@ struct NovaCerveja: View {
     @State private var indiceCervejaria = 0
     @State private var ibu: Double = 0
     @State private var notasDegustacao: String = ""
+    @State private var metodoDefinicaoCor = 0
+    @State private var indiceCor = 0
+    @State private var corTexto: String = ""
+    @State private var cor = Color.white
     
     var body: some View {
         NavigationView {
@@ -61,8 +65,34 @@ struct NovaCerveja: View {
                     Text(viewModel.textoTeorAlcoolico)
                 }
                 
-                Section {
-                    Text("Cor")
+                Section(header: Text("Cor")/*, footer: Text("Escolher uma das cores pré-definidas pode ser o método menos fiél de definir a cor da cerveja.")*/) {
+                    Picker(selection: $metodoDefinicaoCor, label: Text("Cor")) {
+                        Text("Selecionar").tag(0)
+                        Text("Digitar").tag(1)
+                        Text("Medir").tag(2)
+                    }.pickerStyle(SegmentedPickerStyle())
+                    
+                    if metodoDefinicaoCor == 0 {
+                        Picker(selection: $indiceCor, label: Text("Cor pré-definida")) {
+//                                Color(viewModel.getCorSelecionada()
+//                                    //.border(Color.gray)
+//                                    .cornerRadius(5)
+//                                    .frame(width: 100))
+                            ForEach(0 ..< viewModel.cores.count) {
+                                Text("\(self.viewModel.cores[$0])")
+                                    //.foregroundColor(viewModel.corSelecionada)
+                            }
+                        }
+                    } else if metodoDefinicaoCor == 1 {
+                        TextField("SRM", text: $corTexto)
+                    } else if metodoDefinicaoCor == 2 {
+                        //ColorPicker("Cor", selection: $cor)
+                        Button(action: {
+                            print("Tocou em escolher.")
+                        }) {
+                            Text("Escolher")
+                        }
+                    }
                 }
                 
                 Section(header: Text("Notas de degustação")) {

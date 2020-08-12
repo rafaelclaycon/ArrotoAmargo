@@ -72,3 +72,41 @@ extension EstiloCerveja: Codable {
         self = try EstiloCerveja(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .desconhecido
     }
 }
+
+enum CorCerveja: String, CaseIterable {
+    case paleLager = "🟨  SRM 2 - Exemplos: Pale Lager, Witbier, Pilsener, Berliner Weisse"
+    case blondeAle = "Blonde Ale"
+    case weissbier = "Weissbier"
+    case americanPaleAle = "American Pale Ale"
+    case saison = "Saison"
+    case englishBitter = "English Bitter"
+    case doubleIPA = "Double IPA"
+    case amberAle = "🟫  Amber Ale"
+    case dunkel = "Dunkel"
+    case porter = "Porter"
+    case stout = "Stout"
+    case balticPorter = "Baltic Porter"
+    case imperialStout = "⬛️  Imperial Stout"
+}
+
+extension CorCerveja {
+    var value: Color {
+        get {
+            switch self {
+            case .paleLager:
+                return Color(UIColor(displayP3Red: 0.9998916984, green: 1, blue: 0.9998809695, alpha: 1))
+            default:
+                return Color.black
+            }
+        }
+    }
+    
+    func getCorPara(_ string: String) -> UIColor {
+        switch string {
+        case "Pale Lager":
+            return UIColor(displayP3Red: 0.9998916984, green: 1, blue: 0.9998809695, alpha: 1)
+        default:
+            return UIColor.systemPink
+        }
+    }
+}
