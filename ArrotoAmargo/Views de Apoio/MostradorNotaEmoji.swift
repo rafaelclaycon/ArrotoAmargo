@@ -34,7 +34,7 @@ struct MostradorNotaEmoji: View {
                     .opacity(viewModel.opacidadeQuinto)
             }
             .padding(.bottom, 3)
-            Text("EITA...")
+            Text(viewModel.getFraseEngracadinha())
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .bold()
