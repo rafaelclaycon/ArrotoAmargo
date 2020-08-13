@@ -20,6 +20,7 @@ struct NovaCerveja: View {
     @State private var indiceCor = 0
     @State private var corTexto: String = ""
     @State private var cor = Color.white
+    @State var selection: Int? = nil
     
     var body: some View {
         NavigationView {
@@ -73,18 +74,33 @@ struct NovaCerveja: View {
                     }.pickerStyle(SegmentedPickerStyle())
                     
                     if metodoDefinicaoCor == 0 {
-                        Picker(selection: $indiceCor, label: Text("Cor pré-definida")) {
-//                                Color(viewModel.getCorSelecionada()
-//                                    //.border(Color.gray)
-//                                    .cornerRadius(5)
-//                                    .frame(width: 100))
-                            ForEach(0 ..< viewModel.cores.count) {
-                                Text("\(self.viewModel.cores[$0])")
-                                    //.foregroundColor(viewModel.corSelecionada)
+                        NavigationLink(destination: CorLista(), tag: 1, selection: $selection) {
+                            Button(action: {
+                                self.selection = 1
+                            }) {
+                                HStack {
+                                    Color(red: 0.97, green: 0.96, blue: 0.38)
+                                        .frame(width: 100, height: 36)
+    //                                    .overlay(
+    //                                        RoundedRectangle(cornerRadius: 7)
+    //                                            .stroke(Color.gray, lineWidth: 1)
+    //                                    )
+                                        .cornerRadius(7)
+                                        .padding(.all, 4)
+                                    Text("Pale Lager, Witbier, Pilsener")
+                                        .foregroundColor(.gray)
+                                        .padding(.leading, 6)
+                                    //Spacer()
+//                                    Image(systemName: "chevron.right")
+//                                        .foregroundColor(.gray)
+                                        //.padding(.trailing, 26)
+                                }
+                                //.frame(maxWidth: .infinity)
                             }
                         }
                     } else if metodoDefinicaoCor == 1 {
                         TextField("SRM", text: $corTexto)
+                            .keyboardType(.numberPad)
                     } else if metodoDefinicaoCor == 2 {
                         //ColorPicker("Cor", selection: $cor)
                         Button(action: {

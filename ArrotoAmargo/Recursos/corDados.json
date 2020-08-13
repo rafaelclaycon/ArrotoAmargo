@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "valorSRM": 2,
+        "exemplos": "Pale lager, Witbier, Pilsener",
+        "valorVermelho": 0.97,
+        "valorVerde": 0.96,
+        "valorAzul": 0.38
+    },
+    {
+        "id": 2,
+        "valorSRM": 3,
+        "exemplos": "Maibock, Blonde Ale",
+        "valorVermelho": 0.96,
+        "valorVerde": 0.95,
+        "valorAzul": 0.23
+    },
+    {
+        "id": 3,
+        "valorSRM": 4,
+        "exemplos": "Weissbier",
+        "valorVermelho": 0.93,
+        "valorVerde": 0.89,
+        "valorAzul": 0.22
+    },
+    {
+        "id": 4,
+        "valorSRM": 6,
+        "exemplos": "American Pale Ale, India Pale Ale",
+        "valorVermelho": 0.83,
+        "valorVerde": 0.73,
+        "valorAzul": 0.22
+    },
+    {
+        "id": 5,
+        "valorSRM": 8,
+        "exemplos": "Weissbier, Saison",
+        "valorVermelho": 0.75,
+        "valorVerde": 0.57,
+        "valorAzul": 0.26
+    },
+    {
+        "id": 6,
+        "valorSRM": 10,
+        "exemplos": "English Bitter, ESB",
+        "valorVermelho": 0.75,
+        "valorVerde": 0.51,
+        "valorAzul": 0.25
+    },
+    {
+        "id": 7,
+        "valorSRM": 13,
+        "exemplos": "Biere de Garde, Double IPA",
+        "valorVermelho": 0.73,
+        "valorVerde": 0.4,
+        "valorAzul": 0.22
+    },
+    {
+        "id": 8,
+        "valorSRM": 17,
+        "exemplos": "Dark lager, Vienna lager, Marzen, Amber Ale",
+        "valorVermelho": 0.55,
+        "valorVerde": 0.3,
+        "valorAzul": 0.21
+    },
+    {
+        "id": 9,
+        "valorSRM": 20,
+        "exemplos": "Brown Ale, Bock, Dunkel, Dunkelweizen",
+        "valorVermelho": 0.36,
+        "valorVerde": 0.2,
+        "valorAzul": 0.11
+    },
+    {
+        "id": 10,
+        "valorSRM": 24,
+        "exemplos": "Irish Dry Stout, Doppelbock, Porter",
+        "valorVermelho": 0.15,
+        "valorVerde": 0.09,
+        "valorAzul": 0.09
+    },
+    {
+        "id": 11,
+        "valorSRM": 29,
+        "exemplos": "Stout",
+        "valorVermelho": 0.06,
+        "valorVerde": 0.04,
+        "valorAzul": 0.04
+    },
+    {
+        "id": 12,
+        "valorSRM": 35,
+        "exemplos": "Foreign Stout, Baltic Porter",
+        "valorVermelho": 0.03,
+        "valorVerde": 0.03,
+        "valorAzul": 0.03
+    },
+    {
+        "id": 13,
+        "valorSRM": 40,
+        "exemplos": "Imperial Stout",
+        "valorVermelho": 0.01,
+        "valorVerde": 0.02,
+        "valorAzul": 0.01
+    }
+]

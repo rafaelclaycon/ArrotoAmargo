@@ -43,9 +43,9 @@ class NovaCervejaViewModel: ObservableObject {
         }
         
         // Cor
-        for cor in CorCerveja.allCases {
-            cores.append(cor.rawValue)
-        }
+//        for cor in CorCerveja.allCases {
+//            cores.append(cor.rawValue)
+//        }
     }
     
     func getCorSelecionada() -> UIColor {
