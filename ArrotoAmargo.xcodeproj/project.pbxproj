@@ -64,6 +64,22 @@
 		D9B0EBF524D4F7F4007B6F93 /* UIID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0EBF324D4F7C8007B6F93 /* UIID.swift */; };
 		D9BFA7E524E4A46F008ED37A /* corDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9BFA7E424E4A46F008ED37A /* corDados.json */; };
 		D9BFA7E724E4A500008ED37A /* CorLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BFA7E624E4A500008ED37A /* CorLista.swift */; };
+		D9BFA80D24E4CB3C008ED37A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BFA80C24E4CB3C008ED37A /* WidgetKit.framework */; };
+		D9BFA80F24E4CB3C008ED37A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BFA80E24E4CB3C008ED37A /* SwiftUI.framework */; };
+		D9BFA81224E4CB3C008ED37A /* ArrotoAmargoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BFA81124E4CB3C008ED37A /* ArrotoAmargoWidget.swift */; };
+		D9BFA81524E4CB3E008ED37A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BFA81424E4CB3E008ED37A /* Assets.xcassets */; };
+		D9BFA81724E4CB3E008ED37A /* ArrotoAmargoWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D9BFA81324E4CB3C008ED37A /* ArrotoAmargoWidget.intentdefinition */; };
+		D9BFA81824E4CB3E008ED37A /* ArrotoAmargoWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D9BFA81324E4CB3C008ED37A /* ArrotoAmargoWidget.intentdefinition */; };
+		D9BFA81B24E4CB3E008ED37A /* ArrotoAmargoWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9BFA80A24E4CB3C008ED37A /* ArrotoAmargoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9BFA82024E4CDE8008ED37A /* bellavista_american_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9049DC524D5A91C0099DD51 /* bellavista_american_ipa.jpg */; };
+		D9BFA82124E4CE39008ED37A /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE824BA4137006C2D4D /* Dados.swift */; };
+		D9BFA82224E4CE64008ED37A /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */; };
+		D9BFA82324E4CE64008ED37A /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92923A324D90AE200977803 /* UF.swift */; };
+		D9BFA82424E4CE64008ED37A /* Cervejaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80F24CD149000EDA25C /* Cervejaria.swift */; };
+		D9BFA82524E4CE64008ED37A /* Marca.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DC724D5B11E0099DD51 /* Marca.swift */; };
+		D9BFA82624E4CE64008ED37A /* Cerveja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE124B7FDE3006C2D4D /* Cerveja.swift */; };
+		D9BFA82724E4CE64008ED37A /* PreferenciasUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC2024BFFD59001CC829 /* PreferenciasUsuario.swift */; };
+		D9BFA82824E4CEBD008ED37A /* new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3524BBD43800E9428F /* new_england_ipa.jpg */; };
 		D9CC7DDF24B7FA3D006C2D4D /* CervejaDetalhe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DDE24B7FA3D006C2D4D /* CervejaDetalhe.swift */; };
 		D9CC7DE224B7FDE3006C2D4D /* Cerveja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE124B7FDE3006C2D4D /* Cerveja.swift */; };
 		D9CC7DE724BA1887006C2D4D /* CervejaLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */; };
@@ -92,7 +108,28 @@
 			remoteGlobalIDString = D99A189324B6A1DA00D63C79;
 			remoteInfo = ArrotoAmargo;
 		};
+		D9BFA81924E4CB3E008ED37A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99A188C24B6A1DA00D63C79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9BFA80924E4CB3C008ED37A;
+			remoteInfo = ArrotoAmargoWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9BFA81F24E4CB3E008ED37A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9BFA81B24E4CB3E008ED37A /* ArrotoAmargoWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D9049DC524D5A91C0099DD51 /* bellavista_american_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bellavista_american_ipa.jpg; sourceTree = "<group>"; };
@@ -157,6 +194,13 @@
 		D9B0EBF324D4F7C8007B6F93 /* UIID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIID.swift; sourceTree = "<group>"; };
 		D9BFA7E424E4A46F008ED37A /* corDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corDados.json; sourceTree = "<group>"; };
 		D9BFA7E624E4A500008ED37A /* CorLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorLista.swift; sourceTree = "<group>"; };
+		D9BFA80A24E4CB3C008ED37A /* ArrotoAmargoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ArrotoAmargoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9BFA80C24E4CB3C008ED37A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D9BFA80E24E4CB3C008ED37A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D9BFA81124E4CB3C008ED37A /* ArrotoAmargoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoWidget.swift; sourceTree = "<group>"; };
+		D9BFA81324E4CB3C008ED37A /* ArrotoAmargoWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ArrotoAmargoWidget.intentdefinition; sourceTree = "<group>"; };
+		D9BFA81424E4CB3E008ED37A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9BFA81624E4CB3E008ED37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9CC7DDE24B7FA3D006C2D4D /* CervejaDetalhe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaDetalhe.swift; sourceTree = "<group>"; };
 		D9CC7DE124B7FDE3006C2D4D /* Cerveja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cerveja.swift; sourceTree = "<group>"; };
 		D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaLinha.swift; sourceTree = "<group>"; };
@@ -189,6 +233,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9BFA80724E4CB3C008ED37A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BFA80F24E4CB3C008ED37A /* SwiftUI.framework in Frameworks */,
+				D9BFA80D24E4CB3C008ED37A /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +300,8 @@
 				D99A189624B6A1DA00D63C79 /* ArrotoAmargo */,
 				D99A18A824B6A1DC00D63C79 /* ArrotoAmargoTests */,
 				D99A18B324B6A1DC00D63C79 /* ArrotoAmargoUITests */,
+				D9BFA81024E4CB3C008ED37A /* ArrotoAmargoWidget */,
+				D9BFA80B24E4CB3C008ED37A /* Frameworks */,
 				D99A189524B6A1DA00D63C79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -257,6 +312,7 @@
 				D99A189424B6A1DA00D63C79 /* ArrotoAmargo.app */,
 				D99A18A524B6A1DC00D63C79 /* ArrotoAmargoTests.xctest */,
 				D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */,
+				D9BFA80A24E4CB3C008ED37A /* ArrotoAmargoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,6 +373,26 @@
 				D9EBE37E24D77A1800F74645 /* NovaAvaliacaoViewModel.swift */,
 			);
 			path = "Views Avaliacao";
+			sourceTree = "<group>";
+		};
+		D9BFA80B24E4CB3C008ED37A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9BFA80C24E4CB3C008ED37A /* WidgetKit.framework */,
+				D9BFA80E24E4CB3C008ED37A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9BFA81024E4CB3C008ED37A /* ArrotoAmargoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D9BFA81124E4CB3C008ED37A /* ArrotoAmargoWidget.swift */,
+				D9BFA81324E4CB3C008ED37A /* ArrotoAmargoWidget.intentdefinition */,
+				D9BFA81424E4CB3E008ED37A /* Assets.xcassets */,
+				D9BFA81624E4CB3E008ED37A /* Info.plist */,
+			);
+			path = ArrotoAmargoWidget;
 			sourceTree = "<group>";
 		};
 		D9C0FB1E24BF62CC00B221A5 /* Views Lista de Cervejas */ = {
@@ -388,10 +464,12 @@
 				D99A189024B6A1DA00D63C79 /* Sources */,
 				D99A189124B6A1DA00D63C79 /* Frameworks */,
 				D99A189224B6A1DA00D63C79 /* Resources */,
+				D9BFA81F24E4CB3E008ED37A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9BFA81A24E4CB3E008ED37A /* PBXTargetDependency */,
 			);
 			name = ArrotoAmargo;
 			productName = ArrotoAmargo;
@@ -434,6 +512,23 @@
 			productReference = D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D9BFA80924E4CB3C008ED37A /* ArrotoAmargoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9BFA81C24E4CB3E008ED37A /* Build configuration list for PBXNativeTarget "ArrotoAmargoWidgetExtension" */;
+			buildPhases = (
+				D9BFA80624E4CB3C008ED37A /* Sources */,
+				D9BFA80724E4CB3C008ED37A /* Frameworks */,
+				D9BFA80824E4CB3C008ED37A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArrotoAmargoWidgetExtension;
+			productName = ArrotoAmargoWidgetExtension;
+			productReference = D9BFA80A24E4CB3C008ED37A /* ArrotoAmargoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -454,6 +549,9 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = D99A189324B6A1DA00D63C79;
 					};
+					D9BFA80924E4CB3C008ED37A = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = D99A188F24B6A1DA00D63C79 /* Build configuration list for PBXProject "ArrotoAmargo" */;
@@ -472,6 +570,7 @@
 				D99A189324B6A1DA00D63C79 /* ArrotoAmargo */,
 				D99A18A424B6A1DC00D63C79 /* ArrotoAmargoTests */,
 				D99A18AF24B6A1DC00D63C79 /* ArrotoAmargoUITests */,
+				D9BFA80924E4CB3C008ED37A /* ArrotoAmargoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -527,6 +626,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9BFA80824E4CB3C008ED37A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BFA82824E4CEBD008ED37A /* new_england_ipa.jpg in Resources */,
+				D9BFA81524E4CB3E008ED37A /* Assets.xcassets in Resources */,
+				D9BFA82024E4CDE8008ED37A /* bellavista_american_ipa.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -552,6 +661,7 @@
 				D92923A624D90CBA00977803 /* NovaCervejariaViewModel.swift in Sources */,
 				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
 				D9084BCD24C88660003EA025 /* AvaliacaoLinhaViewModel.swift in Sources */,
+				D9BFA81824E4CB3E008ED37A /* ArrotoAmargoWidget.intentdefinition in Sources */,
 				D9612D6B24C7E3B300EFF8EE /* Avaliacao.swift in Sources */,
 				D929239E24D8E86800977803 /* NovaCerveja.swift in Sources */,
 				D9FAF80E24CC305A00EDA25C /* CervejaDetalheViewModel.swift in Sources */,
@@ -590,6 +700,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9BFA80624E4CB3C008ED37A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BFA82624E4CE64008ED37A /* Cerveja.swift in Sources */,
+				D9BFA81724E4CB3E008ED37A /* ArrotoAmargoWidget.intentdefinition in Sources */,
+				D9BFA82124E4CE39008ED37A /* Dados.swift in Sources */,
+				D9BFA81224E4CB3C008ED37A /* ArrotoAmargoWidget.swift in Sources */,
+				D9BFA82524E4CE64008ED37A /* Marca.swift in Sources */,
+				D9BFA82324E4CE64008ED37A /* UF.swift in Sources */,
+				D9BFA82724E4CE64008ED37A /* PreferenciasUsuario.swift in Sources */,
+				D9BFA82224E4CE64008ED37A /* Avaliacao.swift in Sources */,
+				D9BFA82424E4CE64008ED37A /* Cervejaria.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -602,6 +728,11 @@
 			isa = PBXTargetDependency;
 			target = D99A189324B6A1DA00D63C79 /* ArrotoAmargo */;
 			targetProxy = D99A18B124B6A1DC00D63C79 /* PBXContainerItemProxy */;
+		};
+		D9BFA81A24E4CB3E008ED37A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9BFA80924E4CB3C008ED37A /* ArrotoAmargoWidgetExtension */;
+			targetProxy = D9BFA81924E4CB3E008ED37A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -725,6 +856,7 @@
 		D99A18BA24B6A1DC00D63C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -747,6 +879,7 @@
 		D99A18BB24B6A1DC00D63C79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -850,6 +983,48 @@
 			};
 			name = Release;
 		};
+		D9BFA81D24E4CB3E008ED37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8X3H5XA82;
+				INFOPLIST_FILE = ArrotoAmargoWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.ArrotoAmargoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9BFA81E24E4CB3E008ED37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8X3H5XA82;
+				INFOPLIST_FILE = ArrotoAmargoWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.ArrotoAmargoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -885,6 +1060,15 @@
 			buildConfigurations = (
 				D99A18C024B6A1DC00D63C79 /* Debug */,
 				D99A18C124B6A1DC00D63C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9BFA81C24E4CB3E008ED37A /* Build configuration list for PBXNativeTarget "ArrotoAmargoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9BFA81D24E4CB3E008ED37A /* Debug */,
+				D9BFA81E24E4CB3E008ED37A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
