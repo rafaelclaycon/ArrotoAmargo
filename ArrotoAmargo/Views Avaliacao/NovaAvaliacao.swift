@@ -26,10 +26,12 @@ struct NovaAvaliacao: View {
                     }
                 }
                 
+                #if !os(tvOS)
                 Section(header: Text("Degustada em")) {
                     DatePicker(selection: $dataRegistro, in: ...Date(), displayedComponents: [.date, .hourAndMinute]) {
                     }
                 }
+                #endif
                 
                 Section(header: Text("Local de consumo")) {
                     TextField("Descrição do local", text: $nome)
@@ -39,9 +41,11 @@ struct NovaAvaliacao: View {
                 }
                 
                 Section {
+                    #if !os(tvOS)
                     Stepper(value: $viewModel.nota, in: 0...5) {
                         Text("Nota: \(viewModel.nota)")
                     }
+                    #endif
 //                    Text(viewModel.textoNota)
 //                        .frame(maxWidth: .infinity, alignment: .center)
 //                        .font(.title)
@@ -50,8 +54,10 @@ struct NovaAvaliacao: View {
                 }
                 
                 Section(header: Text("Anotações")) {
+                    #if !os(tvOS)
                     TextEditor(text: $fullText)
                         .frame(height: 100)
+                    #endif
                     Button("Adicionar foto") {
                         print("Hora de tirar foto!")
                     }

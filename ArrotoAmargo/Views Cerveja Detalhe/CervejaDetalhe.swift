@@ -97,7 +97,7 @@ struct CervejaDetalhe: View {
                         .padding(.horizontal, 10)
                 }
             }
-            .navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
+            //.navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
         }
     }
 }

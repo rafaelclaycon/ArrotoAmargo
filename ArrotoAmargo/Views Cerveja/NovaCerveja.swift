@@ -57,12 +57,16 @@ struct NovaCerveja: View {
                 }
                 
                 Section(header: Text("Amargor")) {
+                    #if !os(tvOS)
                     Slider(value: $ibu, in: 0...120, step: 1)
+                    #endif
                     Text("IBU: \(Int(ibu))")
                 }
                 
                 Section(header: Text("Teor alcoólico")) {
+                    #if !os(tvOS)
                     Slider(value: $viewModel.teorAlcoolico, in: 0...10, step: 0.1)
+                    #endif
                     Text(viewModel.textoTeorAlcoolico)
                 }
                 
@@ -111,10 +115,12 @@ struct NovaCerveja: View {
                     }
                 }
                 
+                #if !os(tvOS)
                 Section(header: Text("Notas de degustação")) {
                     TextEditor(text: $notasDegustacao)
                         .frame(height: 100)
                 }
+                #endif
                 
                 Button("Salvar cerveja") {
                     self.estaSendoExibido = false
