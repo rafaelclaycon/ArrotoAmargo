@@ -1,6 +1,6 @@
 # Arroto Amargo
 
-🇧🇷PT:
+🇧🇷 PT:
 
 Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI para todas as plataformas da Apple.
 
@@ -19,7 +19,7 @@ A personal beer rating catalog made with Swift and SwiftUI for all of Apple's pl
 In order of priority:
 
 - iOS
-- macOS (*em breve*)
+- macOS (*coming soon*)
 - iPadOS
 - watchOS
 - tvOS
