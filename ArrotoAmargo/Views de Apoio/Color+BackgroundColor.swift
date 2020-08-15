@@ -13,6 +13,10 @@ public extension Color {
     static let background = Color(NSColor.windowBackgroundColor)
     static let secondaryBackground = Color(NSColor.underPageBackgroundColor)
     static let tertiaryBackground = Color(NSColor.controlBackgroundColor)
+    #elseif os(tvOS)
+    static let background = Color.white
+    static let secondaryBackground = Color.gray
+    static let tertiaryBackground = Color.pink
     #else
     static let background = Color(UIColor.systemBackground)
     static let secondaryBackground = Color(UIColor.secondarySystemBackground)

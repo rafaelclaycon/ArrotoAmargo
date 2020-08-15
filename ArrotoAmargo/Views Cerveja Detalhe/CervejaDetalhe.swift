@@ -72,7 +72,7 @@ struct CervejaDetalhe: View {
                     }
                     .padding(.trailing, 20)
                     .sheet(isPresented: $exibindoTelaNovaAvaliacao) {
-                        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(), estaSendoExibido: $exibindoTelaNovaAvaliacao)
+                        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: viewModel.nome), estaSendoExibido: $exibindoTelaNovaAvaliacao)
                     }
                 }
                     
@@ -97,7 +97,7 @@ struct CervejaDetalhe: View {
                         .padding(.horizontal, 10)
                 }
             }
-            .navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
+            //.navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
         }
     }
 }

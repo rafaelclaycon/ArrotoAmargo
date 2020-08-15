@@ -16,6 +16,11 @@ struct NovaCerveja: View {
     @State private var indiceCervejaria = 0
     @State private var ibu: Double = 0
     @State private var notasDegustacao: String = ""
+    @State private var metodoDefinicaoCor = 0
+    @State private var indiceCor = 0
+    @State private var corTexto: String = ""
+    @State private var cor = Color.white
+    @State var selection: Int? = nil
     
     var body: some View {
         NavigationView {
@@ -52,23 +57,70 @@ struct NovaCerveja: View {
                 }
                 
                 Section(header: Text("Amargor")) {
+                    #if !os(tvOS)
                     Slider(value: $ibu, in: 0...120, step: 1)
+                    #endif
                     Text("IBU: \(Int(ibu))")
                 }
                 
                 Section(header: Text("Teor alcoólico")) {
+                    #if !os(tvOS)
                     Slider(value: $viewModel.teorAlcoolico, in: 0...10, step: 0.1)
+                    #endif
                     Text(viewModel.textoTeorAlcoolico)
                 }
                 
-                Section {
-                    Text("Cor")
+                Section(header: Text("Cor")/*, footer: Text("Escolher uma das cores pré-definidas pode ser o método menos fiél de definir a cor da cerveja.")*/) {
+                    Picker(selection: $metodoDefinicaoCor, label: Text("Cor")) {
+                        Text("Selecionar").tag(0)
+                        Text("Digitar").tag(1)
+                        Text("Medir").tag(2)
+                    }.pickerStyle(SegmentedPickerStyle())
+                    
+                    if metodoDefinicaoCor == 0 {
+                        NavigationLink(destination: CorLista(), tag: 1, selection: $selection) {
+                            Button(action: {
+                                self.selection = 1
+                            }) {
+                                HStack {
+                                    Color(red: 0.97, green: 0.96, blue: 0.38)
+                                        .frame(width: 100, height: 36)
+    //                                    .overlay(
+    //                                        RoundedRectangle(cornerRadius: 7)
+    //                                            .stroke(Color.gray, lineWidth: 1)
+    //                                    )
+                                        .cornerRadius(7)
+                                        .padding(.all, 4)
+                                    Text("Pale Lager, Witbier, Pilsener")
+                                        .foregroundColor(.gray)
+                                        .padding(.leading, 6)
+                                    //Spacer()
+//                                    Image(systemName: "chevron.right")
+//                                        .foregroundColor(.gray)
+                                        //.padding(.trailing, 26)
+                                }
+                                //.frame(maxWidth: .infinity)
+                            }
+                        }
+                    } else if metodoDefinicaoCor == 1 {
+                        TextField("SRM", text: $corTexto)
+                            .keyboardType(.numberPad)
+                    } else if metodoDefinicaoCor == 2 {
+                        //ColorPicker("Cor", selection: $cor)
+                        Button(action: {
+                            print("Tocou em escolher.")
+                        }) {
+                            Text("Escolher")
+                        }
+                    }
                 }
                 
+                #if !os(tvOS)
                 Section(header: Text("Notas de degustação")) {
                     TextEditor(text: $notasDegustacao)
                         .frame(height: 100)
                 }
+                #endif
                 
                 Button("Salvar cerveja") {
                     self.estaSendoExibido = false

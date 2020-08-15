@@ -7,6 +7,7 @@
 
 import Combine
 import CoreLocation
+import SwiftUI
 
 class NovaCervejaViewModel: ObservableObject {
     @Published var estilos: [String] = []
@@ -18,6 +19,9 @@ class NovaCervejaViewModel: ObservableObject {
         }
     }
     @Published var textoTeorAlcoolico: String = "0,0%"
+    @Published var cores: [String] = []
+    @Published var corSelecionada: UIColor = .systemPink
+    //@State private var indiceCor = 0
     
     init() {
         for estilo in EstiloCerveja.allCases {
@@ -37,5 +41,20 @@ class NovaCervejaViewModel: ObservableObject {
         for cervejaria in copiaCervejariasOrdenadasAlfabeticamente {
             cervejarias.append(cervejaria.razaoSocial)
         }
+        
+        // Cor
+//        for cor in CorCerveja.allCases {
+//            cores.append(cor.rawValue)
+//        }
+    }
+    
+    func getCorSelecionada() -> UIColor {
+        return UIColor.systemPink
+//        switch self.indiceCor {
+//        case 0:
+//            return UIColor(displayP3Red: 0.9998916984, green: 1, blue: 0.9998809695, alpha: 1)
+//        default:
+//            return UIColor.systemPink
+//        }
     }
 }

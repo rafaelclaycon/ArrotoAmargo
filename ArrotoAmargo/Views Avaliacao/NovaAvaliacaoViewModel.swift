@@ -8,8 +8,8 @@
 import Combine
 
 class NovaAvaliacaoViewModel: ObservableObject {
-    //var avaliacao: Avaliacao?
     @Published var cervejas: [String] = []
+    @Published var indiceCerveja = 0
     @Published var nota: Int = 0 {
         didSet {
             switch nota {
@@ -30,12 +30,15 @@ class NovaAvaliacaoViewModel: ObservableObject {
     }
     @Published var textoNota: String = ""
     
-    init() {
+    init(nomeCerveja: String?) {
         let copiaCervejasOrdenadasAlfabeticamente = cervejaDados.sorted {
             $0.nome.lowercased() < $1.nome.lowercased()
         }
         for cerveja in copiaCervejasOrdenadasAlfabeticamente {
             cervejas.append(cerveja.nome)
+        }
+        if nomeCerveja != nil {
+            self.indiceCerveja = cervejas.firstIndex(of: nomeCerveja!) ?? 0
         }
     }
 }

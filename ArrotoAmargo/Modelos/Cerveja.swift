@@ -72,3 +72,12 @@ extension EstiloCerveja: Codable {
         self = try EstiloCerveja(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .desconhecido
     }
 }
+
+struct CorCerveja: Hashable, Codable, Identifiable {
+    var id: Int
+    var valorSRM: Int
+    var exemplos: String
+    var valorVermelho: Double
+    var valorVerde: Double
+    var valorAzul: Double
+}
