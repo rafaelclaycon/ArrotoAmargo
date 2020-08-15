@@ -1,5 +1,30 @@
 # Arroto Amargo
-Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI para iOS, iPadOS, macOS (*em breve*) e watchOS.
+
+🇧🇷PT:
+
+Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI para todas as plataformas da Apple.
+
+Em ordem de prioridade:
+
+- iOS
+- macOS (*em breve*)
+- iPadOS
+- watchOS
+- tvOS
+
+🇺🇸 EN:
+
+A personal beer rating catalog made with Swift and SwiftUI for all of Apple's platforms.
+
+In order of priority:
+
+- iOS
+- macOS (*em breve*)
+- iPadOS
+- watchOS
+- tvOS
+
+Code is 99.9% in Portuguese.
 
 ![Imagem bem próxima da lateral de um copo de cerveja exibindo a cerveja dourada, a espuma branca e as gotas de água condensadas escorrendo por fora do copo](Imagens/timothy-dykes-Lq1rOaigDoY-unsplash.jpg)
 
