@@ -10,10 +10,6 @@ import SwiftUI
 struct NovaAvaliacao: View {
     @ObservedObject var viewModel: NovaAvaliacaoViewModel
     @Binding var estaSendoExibido: Bool
-    @State private var nome: String = ""
-    @State private var fullText: String = ""
-    @State private var dataRegistro = Date()
-    @State private var usarLocalizacaoAtual: Bool = true
 
     var body: some View {
         NavigationView {
@@ -23,19 +19,19 @@ struct NovaAvaliacao: View {
                         ForEach(0 ..< viewModel.cervejas.count) {
                             Text("\(self.viewModel.cervejas[$0])")
                         }
-                    }
+                    }.disabled(viewModel.veioTelaDetalheCerveja)
                 }
                 
                 #if !os(tvOS)
                 Section(header: Text("Degustada em")) {
-                    DatePicker(selection: $dataRegistro, in: ...Date(), displayedComponents: [.date, .hourAndMinute]) {
+                    DatePicker(selection: $viewModel.dataRegistro, in: ...Date(), displayedComponents: [.date, .hourAndMinute]) {
                     }
                 }
                 #endif
                 
                 Section(header: Text("Local de consumo")) {
-                    TextField("Descrição do local", text: $nome)
-                    Toggle(isOn: $usarLocalizacaoAtual) {
+                    TextField("Descrição do local", text: $viewModel.descricaoLocal)
+                    Toggle(isOn: $viewModel.usarLocalizacaoAtual) {
                         Text("Usar localização atual")
                     }
                 }
@@ -55,7 +51,7 @@ struct NovaAvaliacao: View {
                 
                 Section(header: Text("Anotações")) {
                     #if !os(tvOS)
-                    TextEditor(text: $fullText)
+                    TextEditor(text: $viewModel.anotacoes)
                         .frame(height: 100)
                     #endif
                     Button("Adicionar foto") {
@@ -64,6 +60,8 @@ struct NovaAvaliacao: View {
                 }
                 
                 Button("Salvar avaliação") {
+                    //print("Cerveja: \(cervejaDados[0].nome)")
+                    viewModel.salvarAvaliacao()
                     self.estaSendoExibido = false
                 }
             }
@@ -81,6 +79,6 @@ struct NovaAvaliacao: View {
 
 struct NovaAvaliacao_Previews: PreviewProvider {
     static var previews: some View {
-        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: nil), estaSendoExibido: .constant(true))
+        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: nil, idCerveja: nil), estaSendoExibido: .constant(true))
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 class NovaAvaliacaoViewModel: ObservableObject {
     @Published var cervejas: [String] = []
@@ -29,8 +30,14 @@ class NovaAvaliacaoViewModel: ObservableObject {
         }
     }
     @Published var textoNota: String = ""
+    @Published var veioTelaDetalheCerveja: Bool = false
+    @Published var descricaoLocal: String = ""
+    @Published var anotacoes: String = ""
+    @Published var dataRegistro = Date()
+    @Published var usarLocalizacaoAtual: Bool = true
+    private var idCerveja: Int? = nil
     
-    init(nomeCerveja: String?) {
+    init(nomeCerveja: String?, idCerveja: Int?) {
         let copiaCervejasOrdenadasAlfabeticamente = cervejaDados.sorted {
             $0.nome.lowercased() < $1.nome.lowercased()
         }
@@ -39,6 +46,19 @@ class NovaAvaliacaoViewModel: ObservableObject {
         }
         if nomeCerveja != nil {
             self.indiceCerveja = cervejas.firstIndex(of: nomeCerveja!) ?? 0
+        }
+        self.veioTelaDetalheCerveja = nomeCerveja != nil
+        self.idCerveja = idCerveja
+    }
+    
+    func salvarAvaliacao() {
+        guard idCerveja != nil else {
+            fatalError("idCerveja não especificado!")
+        }
+        if cervejaDados[idCerveja!].avaliacoes != nil {
+            cervejaDados[idCerveja!].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: -122.029620, localRegistroLongitude: 37.332104))
+        } else {
+            print("Array de avaliações era nil para \(cervejaDados[0].nome).")
         }
     }
 }

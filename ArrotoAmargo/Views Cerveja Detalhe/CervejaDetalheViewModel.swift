@@ -23,6 +23,7 @@ class CervejaDetalheViewModel: ObservableObject {
     @Published var existemAvaliacoes: Bool
     @Published var avaliacoes: [Avaliacao]?
     @Published var existemFotosUsuario: Bool
+    @Published var idCerveja: Int
     
     init(cerveja: Cerveja) {
         self.cerveja = cerveja
@@ -39,6 +40,7 @@ class CervejaDetalheViewModel: ObservableObject {
         self.avaliacoes = cerveja.avaliacoes
         self.existemAvaliacoes = cerveja.avaliacoes != nil
         self.existemFotosUsuario = cerveja.fotosUsuario != nil
+        self.idCerveja = cerveja.id
     }
     
     func primeiraFoto() -> Image {
@@ -67,6 +69,14 @@ class CervejaDetalheViewModel: ObservableObject {
             return Text("☕️  \(nomeEstilo)").foregroundColor(.orange)
         default:
             return Text(nomeEstilo).foregroundColor(.orange)
+        }
+    }
+    
+    func atualizarListaAvaliacoes() {
+        if let cervejaEncontrada = cervejaDados.first(where: {$0.id == self.cerveja.id}) {
+            self.avaliacoes = cervejaEncontrada.avaliacoes
+        } else {
+            print("Cerveja não encontrada! Lista de avaliações não será atualizada!")
         }
     }
 }

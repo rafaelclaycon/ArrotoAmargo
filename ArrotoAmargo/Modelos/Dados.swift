@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import ImageIO
 
-let cervejaDados: [Cerveja] = load("cervejaDados.json")
+var cervejaDados: [Cerveja] = load("cervejaDados.json")
 let cervejariaDados: [Cervejaria] = load("cervejariaDados.json")
 let marcaDados: [Marca] = load("marcaDados.json")
 let cores: [CorCerveja] = load("corDados.json")
