@@ -55,10 +55,17 @@ class NovaAvaliacaoViewModel: ObservableObject {
         guard idCerveja != nil else {
             fatalError("idCerveja não especificado!")
         }
-        if cervejaDados[idCerveja!].avaliacoes != nil {
-            cervejaDados[idCerveja!].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: -122.029620, localRegistroLongitude: 37.332104))
+        guard let indice = cervejaDados.firstIndex(where: {$0.id == idCerveja}) else {
+            fatalError("Índice não encontrado para ID: \(String(describing: idCerveja))")
+        }
+        
+        if cervejaDados[indice].avaliacoes != nil {
+            print("Cerveja: \(cervejaDados[indice].nome)")
+            print("Count avaliações antes da adição: \(cervejaDados[indice].avaliacoes!.count)")
+            cervejaDados[indice].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: -122.029620, localRegistroLongitude: 37.332104))
+            print("Count avaliações depois da adição: \(cervejaDados[indice].avaliacoes!.count)")
         } else {
-            print("Array de avaliações era nil para \(cervejaDados[0].nome).")
+            print("Array de avaliações era nil para \(cervejaDados[indice].nome).")
         }
     }
 }

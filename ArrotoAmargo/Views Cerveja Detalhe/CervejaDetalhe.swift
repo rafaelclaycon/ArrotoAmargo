@@ -9,11 +9,7 @@ import SwiftUI
 
 struct CervejaDetalhe: View {
     @ObservedObject var viewModel: CervejaDetalheViewModel
-    @State var exibindoTelaNovaAvaliacao = false {
-        didSet {
-            viewModel.atualizarListaAvaliacoes()
-        }
-    }
+    @State var exibindoTelaNovaAvaliacao = false
     
     var body: some View {
         ScrollView {
@@ -75,7 +71,7 @@ struct CervejaDetalhe: View {
                             .frame(width: 26, height: 26, alignment: .center)
                     }
                     .padding(.trailing, 20)
-                    .sheet(isPresented: $exibindoTelaNovaAvaliacao) {
+                    .sheet(isPresented: $exibindoTelaNovaAvaliacao, onDismiss: { viewModel.atualizarListaAvaliacoes() }) {
                         NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: viewModel.nome, idCerveja: viewModel.idCerveja), estaSendoExibido: $exibindoTelaNovaAvaliacao)
                     }
                 }
@@ -101,7 +97,7 @@ struct CervejaDetalhe: View {
                         .padding(.horizontal, 10)
                 }
             }
-            //.navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
+            .navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
         }
     }
 }
