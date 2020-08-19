@@ -37,7 +37,7 @@ class CervejaDetalheViewModel: ObservableObject {
         self.nota = cerveja.nota
         self.ibu = Int(round(cerveja.ibu))
         self.teorAlcoolico = cerveja.teorAlcoolico
-        self.avaliacoes = cerveja.avaliacoes
+        self.avaliacoes = cerveja.avaliacoes?.sorted(by: { $0.dataHoraRegistro > $1.dataHoraRegistro })
         self.existemAvaliacoes = cerveja.avaliacoes != nil
         self.existemFotosUsuario = cerveja.fotosUsuario != nil
         self.idCerveja = cerveja.id
@@ -74,7 +74,7 @@ class CervejaDetalheViewModel: ObservableObject {
     
     func atualizarListaAvaliacoes() {
         if let cervejaEncontrada = cervejaDados.first(where: {$0.id == self.cerveja.id}) {
-            self.avaliacoes = cervejaEncontrada.avaliacoes
+            self.avaliacoes = cervejaEncontrada.avaliacoes?.sorted(by: { $0.dataHoraRegistro > $1.dataHoraRegistro })
         } else {
             print("Cerveja não encontrada! Lista de avaliações não será atualizada!")
         }
