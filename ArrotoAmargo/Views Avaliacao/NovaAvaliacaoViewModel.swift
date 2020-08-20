@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import CoreLocation
 
 class NovaAvaliacaoViewModel: ObservableObject {
     @Published var cervejas: [String] = []
@@ -36,6 +37,7 @@ class NovaAvaliacaoViewModel: ObservableObject {
     @Published var dataRegistro = Date()
     @Published var usarLocalizacaoAtual: Bool = true
     private var idCerveja: Int? = nil
+    private var locationManager = CLLocationManager()
     
     init(nomeCerveja: String?, idCerveja: Int?) {
         let copiaCervejasOrdenadasAlfabeticamente = cervejaDados.sorted {
@@ -49,6 +51,8 @@ class NovaAvaliacaoViewModel: ObservableObject {
         }
         self.veioTelaDetalheCerveja = nomeCerveja != nil
         self.idCerveja = idCerveja
+        
+        locationManager.requestWhenInUseAuthorization()
     }
     
     func salvarAvaliacao() {
@@ -60,9 +64,18 @@ class NovaAvaliacaoViewModel: ObservableObject {
         }
         
         if cervejaDados[indice].avaliacoes != nil {
+            var currentLocation: CLLocation!
+
+            if
+               CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
+               CLLocationManager.authorizationStatus() ==  .authorizedAlways
+            {
+                currentLocation = locationManager.location
+            }
+            
             print("Cerveja: \(cervejaDados[indice].nome)")
             print("Count avaliações antes da adição: \(cervejaDados[indice].avaliacoes!.count)")
-            cervejaDados[indice].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: -122.029620, localRegistroLongitude: 37.332104))
+            cervejaDados[indice].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: currentLocation.coordinate.latitude, localRegistroLongitude: currentLocation.coordinate.longitude))
             print("Count avaliações depois da adição: \(cervejaDados[indice].avaliacoes!.count)")
         } else {
             print("Array de avaliações era nil para \(cervejaDados[indice].nome).")

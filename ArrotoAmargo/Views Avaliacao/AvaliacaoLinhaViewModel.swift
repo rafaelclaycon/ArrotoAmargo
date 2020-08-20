@@ -22,12 +22,12 @@ class AvaliacaoLinhaViewModel: ObservableObject {
         
         self.nota = avaliacao.nota
         
-        let dateFormatter = DateFormatter()
+        let dateFormatter = RelativeDateTimeFormatter()
         //dateFormatter.dateFormat = "dd/MM/yyyy hh:mm:ss"
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .none
+        //dateFormatter.dateStyle = .full
+        //dateFormatter.timeStyle = .none
         dateFormatter.locale = Locale(identifier: "pt_BR")
-        self.dataHoraRegistro = dateFormatter.string(from: avaliacao.dataHoraRegistro)
+        self.dataHoraRegistro = dateFormatter.localizedString(for: avaliacao.dataHoraRegistro, relativeTo: Date())
         
         self.localRegistro = avaliacao.localRegistro
         self.localConsumo = avaliacao.localConsumo

@@ -16,14 +16,14 @@ struct AvaliacaoLinha: View {
     
     var body: some View {
         HStack {
-            /*Mapa(coordinate: viewModel.localRegistro)
-                .frame(width: 80, height: 80, alignment: .center)*/
+            Mapa(coordinate: viewModel.localRegistro)
+                .frame(width: 80, height: 80, alignment: .center)
             VStack(alignment: .leading) {
                 Text(viewModel.dataHoraRegistro)
                     .font(.body)
                     .bold()
-                    //.padding()
-                Spacer()
+                    .padding(.bottom, 5)
+                //Spacer()
                 Text(viewModel.anotacoes)
                     .font(.body)
                     .foregroundColor(.gray)
@@ -31,7 +31,8 @@ struct AvaliacaoLinha: View {
             }
             .padding()
             Spacer()
-            MedidorNota(nota: viewModel.nota)
+            Text("Nota: \(viewModel.nota)")
+                .bold()
                 .padding()
         }
     }

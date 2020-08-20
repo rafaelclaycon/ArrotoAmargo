@@ -34,13 +34,14 @@ class CervejaDetalheViewModel: ObservableObject {
         self.imagem = cerveja.imagem
         self.cervejaria = cerveja.cervejaria!
         self.marca = cerveja.marca!
-        self.nota = cerveja.nota
         self.ibu = Int(round(cerveja.ibu))
         self.teorAlcoolico = cerveja.teorAlcoolico
         self.avaliacoes = cerveja.avaliacoes?.sorted(by: { $0.dataHoraRegistro > $1.dataHoraRegistro })
         self.existemAvaliacoes = cerveja.avaliacoes != nil
         self.existemFotosUsuario = cerveja.fotosUsuario != nil
         self.idCerveja = cerveja.id
+        
+        self.nota = obterMediaAvaliacoes(cerveja.avaliacoes)
     }
     
     func primeiraFoto() -> Image {
@@ -78,5 +79,17 @@ class CervejaDetalheViewModel: ObservableObject {
         } else {
             print("Cerveja não encontrada! Lista de avaliações não será atualizada!")
         }
+    }
+    
+    func obterMediaAvaliacoes(_ avaliacoes: [Avaliacao]?) -> Int? {
+        guard avaliacoes != nil else {
+            return nil
+        }
+        var soma = 0
+        for avaliacao in avaliacoes! {
+            soma += avaliacao.nota
+        }
+        let media: Double = Double(soma) / Double(avaliacoes!.count)
+        return Int(media)
     }
 }

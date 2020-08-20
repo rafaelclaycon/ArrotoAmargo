@@ -48,5 +48,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+    <string>Arroto Amargo usará a sua localização para exibir um mapa nas avaliações que você registrar.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Arroto Amargo usará a sua localização para exibir um mapa nas avaliações que você registrar.</string>
 </dict>
 </plist>

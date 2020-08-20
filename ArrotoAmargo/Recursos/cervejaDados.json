@@ -5,7 +5,7 @@
         "nomeImagem": "india_pale_ale",
         "idCervejaria": 1,
         "idMarca": 1,
-        "nota": 4,
+        "nota": 8,
         "coordenadas": {
             "longitude": -51.06552601,
             "latitude": -29.67756663
@@ -20,7 +20,7 @@
             {
                 "id": 45,
                 "dataHoraRegistro": "2020-06-22T07:22:00Z",
-                "nota": 4,
+                "nota": 8,
                 "localConsumo": "Casa",
                 "coordenadas": {
                     "longitude": -51.06552601,
@@ -31,7 +31,7 @@
             {
                 "id": 46,
                 "dataHoraRegistro": "2020-03-19T07:22:00Z",
-                "nota": 5,
+                "nota": 10,
                 "localConsumo": "Casa",
                 "coordenadas": {
                     "longitude": -51.06552601,
@@ -42,7 +42,7 @@
             {
                 "id": 47,
                 "dataHoraRegistro": "2020-03-19T07:22:00Z",
-                "nota": 5,
+                "nota": 10,
                 "localConsumo": "Casa do Vitor",
                 "coordenadas": {
                     "longitude": -51.06552601,
@@ -58,7 +58,7 @@
         "nomeImagem": "new_england_ipa",
         "idCervejaria": 1,
         "idMarca": 1,
-        "nota": 5,
+        "nota": 10,
         "coordenadas": {
             "longitude": -51.0532093,
             "latitude": -29.68463672
@@ -77,7 +77,7 @@
         "nomeImagem": "easy_ipa",
         "idCervejaria": 1,
         "idMarca": 1,
-        "nota": 1,
+        "nota": 2,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -95,7 +95,7 @@
         "nomeImagem": "double_new_england_ipa",
         "idCervejaria": 1,
         "idMarca": 1,
-        "nota": 2,
+        "nota": 4,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -113,7 +113,7 @@
         "nomeImagem": "weidmann",
         "idCervejaria": 3,
         "idMarca": 6,
-        "nota": 4,
+        "nota": 8,
         "coordenadas": {
             "longitude": 9.753374654934941,
             "latitude": 52.35445047476286
@@ -130,7 +130,7 @@
         "nomeImagem": "summer_ipa",
         "idCervejaria": 4,
         "idMarca": 5,
-        "nota": 1,
+        "nota": 2,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -146,7 +146,7 @@
         "nomeImagem": "hop_bomb_ipa",
         "idCervejaria": 4,
         "idMarca": 5,
-        "nota": 5,
+        "nota": 10,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -163,7 +163,7 @@
         "nomeImagem": "session_ipa",
         "idCervejaria": 5,
         "idMarca": 4,
-        "nota": 3,
+        "nota": 6,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -179,7 +179,7 @@
         "nomeImagem": "weisse",
         "idCervejaria": 2,
         "idMarca": 3,
-        "nota": 5,
+        "nota": 10,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -195,7 +195,7 @@
         "nomeImagem": "bohemian_pilsener",
         "idCervejaria": 2,
         "idMarca": 3,
-        "nota": 3,
+        "nota": 6,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -212,7 +212,7 @@
         "nomeImagem": "amber_lager",
         "idCervejaria": 2,
         "idMarca": 3,
-        "nota": 2,
+        "nota": 4,
         "coordenadas": {
             "longitude": -51.19876742,
             "latitude": -30.04065931
@@ -228,7 +228,7 @@
         "nomeImagem": "bellavista_american_ipa",
         "idCervejaria": 1,
         "idMarca": 2,
-        "nota": 4,
+        "nota": 8,
         "coordenadas": {
             "longitude": -51.06552601,
             "latitude": -29.67756663
@@ -244,7 +244,7 @@
         "nomeImagem": "imigracao_export",
         "idCervejaria": 1,
         "idMarca": 1,
-        "nota": 3,
+        "nota": 6,
         "coordenadas": {
             "longitude": -51.06552601,
             "latitude": -29.67756663
