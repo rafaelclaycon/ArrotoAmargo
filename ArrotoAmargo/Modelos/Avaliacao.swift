@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 
 struct Avaliacao: Hashable, Codable, Identifiable {
-    var id: Int
+    var id: String
     var dataHoraRegistro: Date
     var nota: Int
     var localConsumo: String
@@ -22,7 +22,7 @@ struct Avaliacao: Hashable, Codable, Identifiable {
     }
     
     init(dataHora: Date, nota: Int, localConsumo: String, anotacoes: String, localRegistroLatitude: Double, localRegistroLongitude: Double) {
-        self.id = 48
+        self.id = UUID().uuidString
         self.dataHoraRegistro = dataHora
         self.nota = nota
         self.localConsumo = localConsumo

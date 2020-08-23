@@ -38,7 +38,7 @@ struct NovaAvaliacao: View {
                 
                 Section {
                     #if !os(tvOS)
-                    Stepper(value: $viewModel.nota, in: 0...5) {
+                    Stepper(value: $viewModel.nota, in: 0...10) {
                         Text("Nota: \(viewModel.nota)")
                     }
                     #endif

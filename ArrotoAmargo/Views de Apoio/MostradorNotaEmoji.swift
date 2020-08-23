@@ -52,6 +52,14 @@ struct MostradorNotaEmoji_Previews: PreviewProvider {
             MostradorNotaEmoji(viewModel: MostradorNotaEmojiViewModel(nota: 4))
             MostradorNotaEmoji(viewModel: MostradorNotaEmojiViewModel(nota: 5))
         }
-        .previewLayout(.fixed(width: 230, height: 100))
+        .previewLayout(.fixed(width: 400, height: 100))
+        Group {
+            MostradorNotaEmoji(viewModel: MostradorNotaEmojiViewModel(nota: 6))
+            MostradorNotaEmoji(viewModel: MostradorNotaEmojiViewModel(nota: 7))
+            MostradorNotaEmoji(viewModel: MostradorNotaEmojiViewModel(nota: 8))
+            MostradorNotaEmoji(viewModel: MostradorNotaEmojiViewModel(nota: 9))
+            MostradorNotaEmoji(viewModel: MostradorNotaEmojiViewModel(nota: 10))
+        }
+        .previewLayout(.fixed(width: 400, height: 100))
     }
 }
