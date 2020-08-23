@@ -6,6 +6,8 @@
 //
 
 import Combine
+import Foundation
+import CoreLocation
 
 class NovaAvaliacaoViewModel: ObservableObject {
     @Published var cervejas: [String] = []
@@ -29,8 +31,15 @@ class NovaAvaliacaoViewModel: ObservableObject {
         }
     }
     @Published var textoNota: String = ""
+    @Published var veioTelaDetalheCerveja: Bool = false
+    @Published var descricaoLocal: String = ""
+    @Published var anotacoes: String = ""
+    @Published var dataRegistro = Date()
+    @Published var usarLocalizacaoAtual: Bool = true
+    private var idCerveja: Int? = nil
+    private var locationManager = CLLocationManager()
     
-    init(nomeCerveja: String?) {
+    init(nomeCerveja: String?, idCerveja: Int?) {
         let copiaCervejasOrdenadasAlfabeticamente = cervejaDados.sorted {
             $0.nome.lowercased() < $1.nome.lowercased()
         }
@@ -39,6 +48,37 @@ class NovaAvaliacaoViewModel: ObservableObject {
         }
         if nomeCerveja != nil {
             self.indiceCerveja = cervejas.firstIndex(of: nomeCerveja!) ?? 0
+        }
+        self.veioTelaDetalheCerveja = nomeCerveja != nil
+        self.idCerveja = idCerveja
+        
+        locationManager.requestWhenInUseAuthorization()
+    }
+    
+    func salvarAvaliacao() {
+        guard idCerveja != nil else {
+            fatalError("idCerveja não especificado!")
+        }
+        guard let indice = cervejaDados.firstIndex(where: {$0.id == idCerveja}) else {
+            fatalError("Índice não encontrado para ID: \(String(describing: idCerveja))")
+        }
+        
+        if cervejaDados[indice].avaliacoes != nil {
+            var currentLocation: CLLocation!
+
+            if
+               CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
+               CLLocationManager.authorizationStatus() ==  .authorizedAlways
+            {
+                currentLocation = locationManager.location
+            }
+            
+            print("Cerveja: \(cervejaDados[indice].nome)")
+            print("Count avaliações antes da adição: \(cervejaDados[indice].avaliacoes!.count)")
+            cervejaDados[indice].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: currentLocation.coordinate.latitude, localRegistroLongitude: currentLocation.coordinate.longitude))
+            print("Count avaliações depois da adição: \(cervejaDados[indice].avaliacoes!.count)")
+        } else {
+            print("Array de avaliações era nil para \(cervejaDados[indice].nome).")
         }
     }
 }

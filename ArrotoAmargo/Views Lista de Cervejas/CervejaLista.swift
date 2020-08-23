@@ -62,7 +62,7 @@ struct CervejaLista: View {
             }
             .sheet(isPresented: $viewModel.exibindoModal) {
                 if viewModel.exibirCadastroAvaliacao {
-                    NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: nil), estaSendoExibido: $viewModel.exibindoModal)
+                    NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: nil, idCerveja: nil), estaSendoExibido: $viewModel.exibindoModal)
                 } else if viewModel.exibirCadastroCerveja {
                     NovaCerveja(viewModel: NovaCervejaViewModel(), estaSendoExibido: $viewModel.exibindoModal)
                 } else if viewModel.exibirCadastroCervejaria {

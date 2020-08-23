@@ -20,4 +20,13 @@ struct Avaliacao: Hashable, Codable, Identifiable {
             latitude: coordenadas.latitude,
             longitude: coordenadas.longitude)
     }
+    
+    init(dataHora: Date, nota: Int, localConsumo: String, anotacoes: String, localRegistroLatitude: Double, localRegistroLongitude: Double) {
+        self.id = 48
+        self.dataHoraRegistro = dataHora
+        self.nota = nota
+        self.localConsumo = localConsumo
+        self.anotacoes = anotacoes
+        self.coordenadas = Coordinates(latitude: localRegistroLatitude, longitude: localRegistroLongitude)
+    }
 }

@@ -28,7 +28,7 @@ struct MedidorNota: View {
                     .frame(width: circleSize, height: circleSize, alignment: .center)
                 
                 Circle()
-                    .trim(from: 0.0, to: CGFloat(min((Float(self.nota ?? 0) / 5) * 0.75, 0.75)))
+                    .trim(from: 0.0, to: CGFloat(min((Float(self.nota ?? 0) / 10) * 0.75, 0.75)))
                     .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin: .round))
                     .foregroundColor(cor)
                     .rotationEffect(Angle(degrees: 135.0))
@@ -64,6 +64,15 @@ struct MedidorNota_Previews: PreviewProvider {
             MedidorNota(nota: 4)
             MedidorNota(nota: 5)
         }
-        .previewLayout(.fixed(width: 50, height: 70))
+        .previewLayout(.fixed(width: 50, height: 80))
+        
+        Group {
+            MedidorNota(nota: 6)
+            MedidorNota(nota: 7)
+            MedidorNota(nota: 8)
+            MedidorNota(nota: 9)
+            MedidorNota(nota: 10)
+        }
+        .previewLayout(.fixed(width: 50, height: 80))
     }
 }

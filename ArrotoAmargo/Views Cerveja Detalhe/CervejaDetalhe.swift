@@ -71,17 +71,18 @@ struct CervejaDetalhe: View {
                             .frame(width: 26, height: 26, alignment: .center)
                     }
                     .padding(.trailing, 20)
-                    .sheet(isPresented: $exibindoTelaNovaAvaliacao) {
-                        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: viewModel.nome), estaSendoExibido: $exibindoTelaNovaAvaliacao)
+                    .sheet(isPresented: $exibindoTelaNovaAvaliacao, onDismiss: { viewModel.atualizarListaAvaliacoes() }) {
+                        NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: viewModel.nome, idCerveja: viewModel.idCerveja), estaSendoExibido: $exibindoTelaNovaAvaliacao)
                     }
                 }
+                .padding(.bottom, 20)
                     
                 if viewModel.existemAvaliacoes {
                     VStack() {
                         ForEach(viewModel.avaliacoes!) { avaliacao in
                             AvaliacaoLinha(viewModel: AvaliacaoLinhaViewModel(avaliacao: avaliacao))
-                                .frame(height: 88)
-                                .background(Color.white)
+                                .frame(height: 150)
+                                .background(Color.background)
                                 .cornerRadius(14)
                                 .shadow(color: .gray, radius: 2, x: 0.0, y: 1)
                                 .padding(.horizontal, 15)
@@ -97,7 +98,7 @@ struct CervejaDetalhe: View {
                         .padding(.horizontal, 10)
                 }
             }
-            //.navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
+            .navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
         }
     }
 }
