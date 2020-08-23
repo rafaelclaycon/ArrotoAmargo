@@ -16,8 +16,9 @@ struct TVCervejaLinha: View {
                 viewModel.primeiraFoto()
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.top)
-                    .frame(height: 180)
+                    //.edgesIgnoringSafeArea(.top)
+                    .frame(height: 250)
+                    //.frame(width: .greatestFiniteMagnitude)
                     .clipped()
             }
             
@@ -25,13 +26,6 @@ struct TVCervejaLinha: View {
                 .font(.headline)
                 .padding(.bottom, 0.1)
                 .padding(.leading, 5)
-            
-            HStack {
-                Text(viewModel.nomeCervejaria)
-                    .font(.footnote)
-                    .foregroundColor(.gray)
-                    .padding(.leading, 5)
-            }
         }
     }
 }
