@@ -94,7 +94,6 @@
 		D9712F3524E5EE9200A792E9 /* NovaCervejariaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92923A524D90CBA00977803 /* NovaCervejariaViewModel.swift */; };
 		D9712F3624E5EE9200A792E9 /* CervejariaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD524D662580099DD51 /* CervejariaDetalheViewModel.swift */; };
 		D9712F3724E5EE9200A792E9 /* CervejariaCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF81124CD1DE300EDA25C /* CervejariaCelula.swift */; };
-		D9712F3824E5EE9500A792E9 /* NovaCerveja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929239D24D8E86800977803 /* NovaCerveja.swift */; };
 		D9712F3924E5EE9500A792E9 /* CorLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BFA7E624E4A500008ED37A /* CorLista.swift */; };
 		D9712F3A24E5EE9500A792E9 /* NovaCervejaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929239F24D8ECB900977803 /* NovaCervejaViewModel.swift */; };
 		D9712F3B24E5EE9900A792E9 /* AvaliacaoListaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF4D2A24C7E6CB00739866 /* AvaliacaoListaViewModel.swift */; };
@@ -203,6 +202,7 @@
 		D9E954A124E5DDFC00910B45 /* CervejaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */; };
 		D9EBE37F24D77A1800F74645 /* NovaAvaliacaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EBE37E24D77A1800F74645 /* NovaAvaliacaoViewModel.swift */; };
 		D9F18E6F24BBECA500325193 /* CervejaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F18E6E24BBECA500325193 /* CervejaLista.swift */; };
+		D9F37EF724F32CC40086298C /* sud_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9F37EF624F32CC40086298C /* sud_logo.jpg */; };
 		D9FAF80E24CC305A00EDA25C /* CervejaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */; };
 		D9FAF81024CD149000EDA25C /* Cervejaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80F24CD149000EDA25C /* Cervejaria.swift */; };
 		D9FAF81224CD1DE300EDA25C /* CervejariaCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF81124CD1DE300EDA25C /* CervejariaCelula.swift */; };
@@ -380,6 +380,7 @@
 		D9D895F624D22967004F0EF2 /* NovaAvaliacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaAvaliacao.swift; sourceTree = "<group>"; };
 		D9EBE37E24D77A1800F74645 /* NovaAvaliacaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaAvaliacaoViewModel.swift; sourceTree = "<group>"; };
 		D9F18E6E24BBECA500325193 /* CervejaLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaLista.swift; sourceTree = "<group>"; };
+		D9F37EF624F32CC40086298C /* sud_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sud_logo.jpg; sourceTree = "<group>"; };
 		D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaDetalheViewModel.swift; sourceTree = "<group>"; };
 		D9FAF80F24CD149000EDA25C /* Cervejaria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cervejaria.swift; sourceTree = "<group>"; };
 		D9FAF81124CD1DE300EDA25C /* CervejariaCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejariaCelula.swift; sourceTree = "<group>"; };
@@ -669,6 +670,7 @@
 		D9CC7DE324BA17D8006C2D4D /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				D9F37EF624F32CC40086298C /* sud_logo.jpg */,
 				D9BFA7E424E4A46F008ED37A /* corDados.json */,
 				D9049DCF24D624F00099DD51 /* imigracao_export.jpg */,
 				D9049DC924D5B87F0099DD51 /* bellavista_logo.jpg */,
@@ -952,6 +954,7 @@
 				D95DE9A624CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg in Resources */,
 				D9049DC624D5A91C0099DD51 /* bellavista_american_ipa.jpg in Resources */,
 				D99E5CA024C7B31300D8A648 /* amber_lager.jpg in Resources */,
+				D9F37EF724F32CC40086298C /* sud_logo.jpg in Resources */,
 				D98E91D224C00B05006B7C44 /* double_new_england_ipa.jpg in Resources */,
 				D9BFA7E524E4A46F008ED37A /* corDados.json in Resources */,
 				D904D6F124C4F1C500FAEEE6 /* summer_ipa.jpg in Resources */,
@@ -1039,7 +1042,6 @@
 				D9712F4224E5EE9C00A792E9 /* MostradorNotaEmoji.swift in Sources */,
 				D9712F3324E5EE9200A792E9 /* CervejariaDetalhe.swift in Sources */,
 				D9712F0B24E5EDB800A792E9 /* Dados.swift in Sources */,
-				D9712F3824E5EE9500A792E9 /* NovaCerveja.swift in Sources */,
 				D9712F3D24E5EE9900A792E9 /* NovaAvaliacao.swift in Sources */,
 				D9712F3E24E5EE9900A792E9 /* AvaliacaoLinha.swift in Sources */,
 				D9712F4524E5EEAF00A792E9 /* UIID.swift in Sources */,
