@@ -1,5 +1,5 @@
 //
-//  CervejaPageView.swift
+//  CervejaPagina.swift
 //  ArrotoAmargo
 //
 //  Created by Rafael Claycon Schmitt on 23/08/20.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct CervejaPageView: View {
+struct CervejaPagina: View {
+    @ObservedObject var viewModel: CervejaPaginaViewModel
+    
     var body: some View {
         HStack() {
             MedidorIBU(valor: viewModel.ibu)
@@ -22,6 +24,6 @@ struct CervejaPageView: View {
 
 struct CervejaPageView_Previews: PreviewProvider {
     static var previews: some View {
-        CervejaPageView()
+        CervejaPagina(viewModel: CervejaPaginaViewModel(ibu: Int(round(cervejaDados[1].ibu)), teorAlcoolico: cervejaDados[1].teorAlcoolico))
     }
 }

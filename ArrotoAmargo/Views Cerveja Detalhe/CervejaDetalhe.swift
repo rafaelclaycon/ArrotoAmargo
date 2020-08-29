@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CervejaDetalhe: View {
     @ObservedObject var viewModel: CervejaDetalheViewModel
-    @State var exibindoTelaNovaAvaliacao = false
+    //@State var exibindoTelaNovaAvaliacao = false
     
     var body: some View {
         ScrollView {
@@ -48,14 +48,19 @@ struct CervejaDetalhe: View {
                 ScrollView {
                     LazyHStack {
                         TabView {
-                            CervejaPageView()
+                            CervejaPagina(viewModel: CervejaPaginaViewModel(ibu: viewModel.ibu, teorAlcoolico: viewModel.teorAlcoolico))
+                                //.background(Color.orange)
                             
-                            CervejariaPageView()
+                            CervejariaPagina(viewModel: CervejariaPaginaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca))
+                                //.background(Color.blue)
                             
-                            AvaliacaoPageView()
+                            AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: viewModel.avaliacoes, idCerveja: viewModel.idCerveja, nomeCerveja: viewModel.nome))
+                                //.background(Color.green)
                         }
-                        .frame(width: UIScreen.main.bounds.width, height: 200)
+                        .frame(width: UIScreen.main.bounds.width, height: 500)
+                        //.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
                         .tabViewStyle(PageTabViewStyle())
+                        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                     }
                 }
             }

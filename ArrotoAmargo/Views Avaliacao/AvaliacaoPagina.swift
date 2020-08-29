@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct AvaliacaoPagina: View {
-    @ObservedObject var viewModel = AvaliacaoPaginaViewModel(cervejas: cervejaDados)
+    @ObservedObject var viewModel: AvaliacaoPaginaViewModel
+    //@Binding var exibindoTelaNovaAvaliacao = false
+    @State var exibindoTelaNovaAvaliacao = false
     
     var body: some View {
         HStack() {
@@ -56,6 +58,6 @@ struct AvaliacaoPagina: View {
 
 struct AvaliacaoPageView_Previews: PreviewProvider {
     static var previews: some View {
-        AvaliacaoPageView()
+        AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: cervejaDados[1].avaliacoes, idCerveja: cervejaDados[1].id, nomeCerveja: cervejaDados[1].nome))
     }
 }

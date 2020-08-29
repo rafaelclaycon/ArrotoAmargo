@@ -30,6 +30,7 @@
 		D906102124D0F66A003DA906 /* MostradorTeorAlcoolico.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906102024D0F66A003DA906 /* MostradorTeorAlcoolico.swift */; };
 		D9084BCD24C88660003EA025 /* AvaliacaoLinhaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084BCC24C88660003EA025 /* AvaliacaoLinhaViewModel.swift */; };
 		D91E407924BEA50B003448B5 /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91E407824BEA50B003448B5 /* Mapa.swift */; };
+		D922581224FAA16A00CBB2E5 /* CervejaPaginaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922581124FAA16A00CBB2E5 /* CervejaPaginaViewModel.swift */; };
 		D929239E24D8E86800977803 /* NovaCerveja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929239D24D8E86800977803 /* NovaCerveja.swift */; };
 		D92923A024D8ECB900977803 /* NovaCervejaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929239F24D8ECB900977803 /* NovaCervejaViewModel.swift */; };
 		D92923A224D9032F00977803 /* NovaCervejaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92923A124D9032F00977803 /* NovaCervejaria.swift */; };
@@ -176,6 +177,7 @@
 		D9B5CFAD24E5D99F0024540B /* session_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EC24C4F1C500FAEEE6 /* session_ipa.jpg */; };
 		D9B5CFAE24E5D99F0024540B /* bohemian_pilsener.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D99E5C9D24C7B31300D8A648 /* bohemian_pilsener.jpg */; };
 		D9B5CFAF24E5DA580024540B /* CervejaLinhaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD124D65CDD0099DD51 /* CervejaLinhaViewModel.swift */; };
+		D9BD7C5124F9B1630017CC0B /* CervejariaPaginaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C5024F9B1630017CC0B /* CervejariaPaginaViewModel.swift */; };
 		D9BFA7E524E4A46F008ED37A /* corDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9BFA7E424E4A46F008ED37A /* corDados.json */; };
 		D9BFA7E724E4A500008ED37A /* CorLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BFA7E624E4A500008ED37A /* CorLista.swift */; };
 		D9BFA80D24E4CB3C008ED37A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BFA80C24E4CB3C008ED37A /* WidgetKit.framework */; };
@@ -204,8 +206,8 @@
 		D9EBE37F24D77A1800F74645 /* NovaAvaliacaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EBE37E24D77A1800F74645 /* NovaAvaliacaoViewModel.swift */; };
 		D9F18E6F24BBECA500325193 /* CervejaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F18E6E24BBECA500325193 /* CervejaLista.swift */; };
 		D9F37EF724F32CC40086298C /* sud_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9F37EF624F32CC40086298C /* sud_logo.jpg */; };
-		D9F37EF924F33BD20086298C /* CervejariaPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F37EF824F33BD20086298C /* CervejariaPageView.swift */; };
-		D9F37EFB24F33C7F0086298C /* CervejaPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F37EFA24F33C7F0086298C /* CervejaPageView.swift */; };
+		D9F37EF924F33BD20086298C /* CervejariaPagina.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F37EF824F33BD20086298C /* CervejariaPagina.swift */; };
+		D9F37EFB24F33C7F0086298C /* CervejaPagina.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F37EFA24F33C7F0086298C /* CervejaPagina.swift */; };
 		D9F37EFD24F3464F0086298C /* AvaliacaoPagina.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F37EFC24F3464F0086298C /* AvaliacaoPagina.swift */; };
 		D9FAF80E24CC305A00EDA25C /* CervejaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */; };
 		D9FAF81024CD149000EDA25C /* Cervejaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80F24CD149000EDA25C /* Cervejaria.swift */; };
@@ -311,6 +313,7 @@
 		D906102024D0F66A003DA906 /* MostradorTeorAlcoolico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostradorTeorAlcoolico.swift; sourceTree = "<group>"; };
 		D9084BCC24C88660003EA025 /* AvaliacaoLinhaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoLinhaViewModel.swift; sourceTree = "<group>"; };
 		D91E407824BEA50B003448B5 /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
+		D922581124FAA16A00CBB2E5 /* CervejaPaginaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaPaginaViewModel.swift; sourceTree = "<group>"; };
 		D929239D24D8E86800977803 /* NovaCerveja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaCerveja.swift; sourceTree = "<group>"; };
 		D929239F24D8ECB900977803 /* NovaCervejaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaCervejaViewModel.swift; sourceTree = "<group>"; };
 		D92923A124D9032F00977803 /* NovaCervejaria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaCervejaria.swift; sourceTree = "<group>"; };
@@ -368,6 +371,7 @@
 		D9B5CF7824E5D2AA0024540B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9B5CF7924E5D2AA0024540B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		D9B5CF8524E5D8950024540B /* WatchCervejaDetalhe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCervejaDetalhe.swift; sourceTree = "<group>"; };
+		D9BD7C5024F9B1630017CC0B /* CervejariaPaginaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejariaPaginaViewModel.swift; sourceTree = "<group>"; };
 		D9BFA7E424E4A46F008ED37A /* corDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corDados.json; sourceTree = "<group>"; };
 		D9BFA7E624E4A500008ED37A /* CorLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorLista.swift; sourceTree = "<group>"; };
 		D9BFA80A24E4CB3C008ED37A /* ArrotoAmargoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ArrotoAmargoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -386,8 +390,8 @@
 		D9EBE37E24D77A1800F74645 /* NovaAvaliacaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaAvaliacaoViewModel.swift; sourceTree = "<group>"; };
 		D9F18E6E24BBECA500325193 /* CervejaLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaLista.swift; sourceTree = "<group>"; };
 		D9F37EF624F32CC40086298C /* sud_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sud_logo.jpg; sourceTree = "<group>"; };
-		D9F37EF824F33BD20086298C /* CervejariaPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejariaPageView.swift; sourceTree = "<group>"; };
-		D9F37EFA24F33C7F0086298C /* CervejaPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaPageView.swift; sourceTree = "<group>"; };
+		D9F37EF824F33BD20086298C /* CervejariaPagina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejariaPagina.swift; sourceTree = "<group>"; };
+		D9F37EFA24F33C7F0086298C /* CervejaPagina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaPagina.swift; sourceTree = "<group>"; };
 		D9F37EFC24F3464F0086298C /* AvaliacaoPagina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoPagina.swift; sourceTree = "<group>"; };
 		D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaDetalheViewModel.swift; sourceTree = "<group>"; };
 		D9FAF80F24CD149000EDA25C /* Cervejaria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cervejaria.swift; sourceTree = "<group>"; };
@@ -452,7 +456,8 @@
 				D9049DD524D662580099DD51 /* CervejariaDetalheViewModel.swift */,
 				D92923A124D9032F00977803 /* NovaCervejaria.swift */,
 				D92923A524D90CBA00977803 /* NovaCervejariaViewModel.swift */,
-				D9F37EF824F33BD20086298C /* CervejariaPageView.swift */,
+				D9F37EF824F33BD20086298C /* CervejariaPagina.swift */,
+				D9BD7C5024F9B1630017CC0B /* CervejariaPaginaViewModel.swift */,
 			);
 			path = "Views Cervejaria";
 			sourceTree = "<group>";
@@ -486,7 +491,8 @@
 				D929239D24D8E86800977803 /* NovaCerveja.swift */,
 				D929239F24D8ECB900977803 /* NovaCervejaViewModel.swift */,
 				D9BFA7E624E4A500008ED37A /* CorLista.swift */,
-				D9F37EFA24F33C7F0086298C /* CervejaPageView.swift */,
+				D9F37EFA24F33C7F0086298C /* CervejaPagina.swift */,
+				D922581124FAA16A00CBB2E5 /* CervejaPaginaViewModel.swift */,
 			);
 			path = "Views Cerveja";
 			sourceTree = "<group>";
@@ -1093,10 +1099,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BD7C5124F9B1630017CC0B /* CervejariaPaginaViewModel.swift in Sources */,
 				D9AF4D3024C7E84D00739866 /* AvaliacaoLinha.swift in Sources */,
 				D940EC1F24BFE45D001CC829 /* MedidorIBU.swift in Sources */,
 				D9049DC824D5B11E0099DD51 /* Marca.swift in Sources */,
-				D9F37EF924F33BD20086298C /* CervejariaPageView.swift in Sources */,
+				D9F37EF924F33BD20086298C /* CervejariaPagina.swift in Sources */,
 				D9FAF81024CD149000EDA25C /* Cervejaria.swift in Sources */,
 				D91E407924BEA50B003448B5 /* Mapa.swift in Sources */,
 				D9CC7DE924BA4137006C2D4D /* Dados.swift in Sources */,
@@ -1106,7 +1113,7 @@
 				D9D895F724D22967004F0EF2 /* NovaAvaliacao.swift in Sources */,
 				D9BFA7E724E4A500008ED37A /* CorLista.swift in Sources */,
 				D97BD4E124D24DCB00B321B7 /* Color+BackgroundColor.swift in Sources */,
-				D9F37EFB24F33C7F0086298C /* CervejaPageView.swift in Sources */,
+				D9F37EFB24F33C7F0086298C /* CervejaPagina.swift in Sources */,
 				D9049DD424D661A80099DD51 /* CervejariaDetalhe.swift in Sources */,
 				D9F18E6F24BBECA500325193 /* CervejaLista.swift in Sources */,
 				D9B0EBF524D4F7F4007B6F93 /* UIID.swift in Sources */,
@@ -1134,6 +1141,7 @@
 				D973616724E231C600ABBDC3 /* MostradorNotaEmojiViewModel.swift in Sources */,
 				D973616524E22BA400ABBDC3 /* MostradorNotaEmoji.swift in Sources */,
 				D92923A224D9032F00977803 /* NovaCervejaria.swift in Sources */,
+				D922581224FAA16A00CBB2E5 /* CervejaPaginaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
