@@ -10,62 +10,58 @@ import SwiftUI
 struct CervejaDetalhe: View {
     @ObservedObject var viewModel: CervejaDetalheViewModel
     //@State var exibindoTelaNovaAvaliacao = false
+    @State private var indicePagina = 0
     
     var body: some View {
-        ScrollView {
-            VStack {
-                if viewModel.existemFotosUsuario {
-                    viewModel.primeiraFoto()
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .edgesIgnoringSafeArea(.top)
-                        .frame(height: 180)
-                        .clipped()
-                }
-                
-                HStack {
-                    viewModel.imagem
-                        .resizable()
-                        .frame(width: 100, height: 100, alignment: .center)
-                    VStack(alignment: .leading) {
-                        Text(viewModel.nome)
-                            .font(.title2)
-                            .bold()
-                            .accessibility(identifier: UIID.nomeCervejaTitulo)
-                            .padding(.bottom, 8)
-                            .padding(.leading, 10)
-                        viewModel.getTextoEstilo()
-                            .font(.subheadline)
-                            .bold()
-                            .padding(.leading, 10)
-                    }
-                    Spacer()
-                    MedidorNota(nota: viewModel.nota)
-                        .padding(.all, 20)
-                }
-                .padding(.bottom, 15)
-                
-                ScrollView {
-                    LazyHStack {
-                        TabView {
-                            CervejaPagina(viewModel: CervejaPaginaViewModel(ibu: viewModel.ibu, teorAlcoolico: viewModel.teorAlcoolico))
-                                //.background(Color.orange)
-                            
-                            CervejariaPagina(viewModel: CervejariaPaginaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca))
-                                //.background(Color.blue)
-                            
-                            AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: viewModel.avaliacoes, idCerveja: viewModel.idCerveja, nomeCerveja: viewModel.nome))
-                                //.background(Color.green)
-                        }
-                        .frame(width: UIScreen.main.bounds.width, height: 500)
-                        //.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-                        .tabViewStyle(PageTabViewStyle())
-                        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-                    }
-                }
+        VStack {
+            if viewModel.existemFotosUsuario {
+                viewModel.primeiraFoto()
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.top)
+                    .frame(height: 180)
+                    .clipped()
             }
-            .navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
+            
+            HStack {
+                viewModel.imagem
+                    .resizable()
+                    .frame(width: 100, height: 100, alignment: .center)
+                VStack(alignment: .leading) {
+                    Text(viewModel.nome)
+                        .font(.title2)
+                        .bold()
+                        .accessibility(identifier: UIID.nomeCervejaTitulo)
+                        .padding(.bottom, 8)
+                        .padding(.leading, 10)
+                    viewModel.getTextoEstilo()
+                        .font(.subheadline)
+                        .bold()
+                        .padding(.leading, 10)
+                }
+                Spacer()
+                MedidorNota(nota: viewModel.nota)
+                    .padding(.all, 20)
+            }
+            .padding(.bottom, 15)
+            
+            Picker(selection: $indicePagina, label: Text("Info")) {
+                Text("Detalhes").tag(0)
+                Text("Avaliações").tag(1)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.horizontal, 25)
+            .padding(.bottom, 20)
+            
+            if indicePagina == 0 {
+                CervejariaPagina(viewModel: CervejariaPaginaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca))
+                CervejaPagina(viewModel: CervejaPaginaViewModel(ibu: viewModel.ibu, teorAlcoolico: viewModel.teorAlcoolico))
+                Spacer()
+            } else if indicePagina == 1 {
+                AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: viewModel.avaliacoes, idCerveja: viewModel.idCerveja, nomeCerveja: viewModel.nome))
+            }
         }
+        .navigationBarTitle(Text(viewModel.nome), displayMode: .inline)
     }
 }
 
