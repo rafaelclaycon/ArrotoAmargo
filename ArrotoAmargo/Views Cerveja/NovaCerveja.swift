@@ -31,24 +31,28 @@ struct NovaCerveja: View {
 //                        .frame(width: 100, height: 100, alignment: .center)
                     
                     TextField("Nome", text: $nome)
+                        .disableAutocorrection(true)
                     Button("Tirar foto") {
                         print("Câmera aberta")
                     }
                 }
                 
                 Section {
+                    // TODO - Criar Estilo
                     Picker(selection: $indiceEstilo, label: Text("Estilo")) {
                         ForEach(0 ..< viewModel.estilos.count) {
                             Text("\(self.viewModel.estilos[$0])")
                         }
                     }
                     
+                    // TODO - Criar Marca
                     Picker(selection: $indiceMarca, label: Text("Marca")) {
                         ForEach(0 ..< viewModel.marcas.count) {
                             Text("\(self.viewModel.marcas[$0])")
                         }
                     }
                     
+                    // TODO - Criar Cervejaria
                     Picker(selection: $indiceCervejaria, label: Text("Cervejaria")) {
                         ForEach(0 ..< viewModel.cervejarias.count) {
                             Text("\(self.viewModel.cervejarias[$0])")
@@ -57,17 +61,15 @@ struct NovaCerveja: View {
                 }
                 
                 Section(header: Text("Amargor")) {
-                    #if !os(tvOS)
                     Slider(value: $ibu, in: 0...120, step: 1)
-                    #endif
                     Text("IBU: \(Int(ibu))")
                 }
                 
                 Section(header: Text("Teor alcoólico")) {
-                    #if !os(tvOS)
-                    Slider(value: $viewModel.teorAlcoolico, in: 0...10, step: 0.1)
-                    #endif
-                    Text(viewModel.textoTeorAlcoolico)
+                    //Slider(value: $viewModel.teorAlcoolico, in: 0...10, step: 0.1)
+                    Stepper(value: $viewModel.teorAlcoolico, in: 0...10, step: 0.1) {
+                        Text(viewModel.textoTeorAlcoolico)
+                    }
                 }
                 
                 Section(header: Text("Cor")/*, footer: Text("Escolher uma das cores pré-definidas pode ser o método menos fiél de definir a cor da cerveja.")*/) {
@@ -115,12 +117,10 @@ struct NovaCerveja: View {
                     }
                 }
                 
-                #if !os(tvOS)
                 Section(header: Text("Notas de degustação")) {
                     TextEditor(text: $notasDegustacao)
                         .frame(height: 100)
                 }
-                #endif
                 
                 Button("Salvar cerveja") {
                     self.estaSendoExibido = false

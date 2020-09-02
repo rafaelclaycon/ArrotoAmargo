@@ -40,5 +40,12 @@
         "proprietario": "Gilde Brauerei GmbH",
         "enderecoSede": "Hanôver - Baixa Saxónia, Alemanha",
         "nomeImagem": "gilde_logo"
+    },
+    {
+        "id": 7,
+        "nome": "Sud",
+        "proprietario": "Cervejaria Sud Brau Ltda",
+        "enderecoSede": "Bento Gonçalves - RS, Brasil",
+        "nomeImagem": "sud_logo"
     }
 ]

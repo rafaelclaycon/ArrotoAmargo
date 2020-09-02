@@ -48,10 +48,6 @@ class CervejaDetalheViewModel: ObservableObject {
         return ImageStore.shared.image(name: cerveja.fotosUsuario![0])
     }
     
-    func getTeorAlcoolicoTexto() -> String {
-        return String(format: "%.1f", locale: Locale(identifier: "pt_BR"), self.teorAlcoolico) + "%"
-    }
-    
     func getTextoEstilo() -> Text {
         switch self.cerveja.estilo {
         case .indiaPaleAle:
@@ -70,14 +66,6 @@ class CervejaDetalheViewModel: ObservableObject {
             return Text("☕️  \(nomeEstilo)").foregroundColor(.orange)
         default:
             return Text(nomeEstilo).foregroundColor(.orange)
-        }
-    }
-    
-    func atualizarListaAvaliacoes() {
-        if let cervejaEncontrada = cervejaDados.first(where: {$0.id == self.cerveja.id}) {
-            self.avaliacoes = cervejaEncontrada.avaliacoes?.sorted(by: { $0.dataHoraRegistro > $1.dataHoraRegistro })
-        } else {
-            print("Cerveja não encontrada! Lista de avaliações não será atualizada!")
         }
     }
     

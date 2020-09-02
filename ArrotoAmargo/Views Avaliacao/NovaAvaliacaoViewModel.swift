@@ -72,13 +72,13 @@ class NovaAvaliacaoViewModel: ObservableObject {
             {
                 currentLocation = locationManager.location
             }
-            
-            print("Cerveja: \(cervejaDados[indice].nome)")
-            print("Count avaliações antes da adição: \(cervejaDados[indice].avaliacoes!.count)")
-            cervejaDados[indice].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: currentLocation.coordinate.latitude, localRegistroLongitude: currentLocation.coordinate.longitude))
-            print("Count avaliações depois da adição: \(cervejaDados[indice].avaliacoes!.count)")
         } else {
-            print("Array de avaliações era nil para \(cervejaDados[indice].nome).")
+            cervejaDados[indice].avaliacoes = [Avaliacao]()
         }
+        
+        print("Cerveja: \(cervejaDados[indice].nome)")
+        print("Count avaliações antes da adição: \(cervejaDados[indice].avaliacoes!.count)")
+        cervejaDados[indice].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: -29.926913, localRegistroLongitude: -51.191612))
+        print("Count avaliações depois da adição: \(cervejaDados[indice].avaliacoes!.count)")
     }
 }

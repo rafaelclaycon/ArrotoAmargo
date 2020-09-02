@@ -15,46 +15,80 @@ class MostradorNotaEmojiViewModel: ObservableObject {
     @Published var opacidadeQuarto: Double = 0.4
     @Published var opacidadeQuinto: Double = 0.4
     
+    private let apagado = 0.25
+    private let metade = 0.65
+    private let totalmenteVisivel = 1.0
+    
     init(nota: Int) {
         self.nota = nota
         
         switch nota {
         case 1:
-            opacidadePrimeiro = 1.0
-            opacidadeSegundo = 0.4
-            opacidadeTerceiro = 0.4
-            opacidadeQuarto = 0.4
-            opacidadeQuinto = 0.4
+            opacidadePrimeiro = metade
+            opacidadeSegundo = apagado
+            opacidadeTerceiro = apagado
+            opacidadeQuarto = apagado
+            opacidadeQuinto = apagado
         case 2:
-            opacidadePrimeiro = 1.0
-            opacidadeSegundo = 1.0
-            opacidadeTerceiro = 0.4
-            opacidadeQuarto = 0.4
-            opacidadeQuinto = 0.4
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = apagado
+            opacidadeTerceiro = apagado
+            opacidadeQuarto = apagado
+            opacidadeQuinto = apagado
         case 3:
-            opacidadePrimeiro = 1.0
-            opacidadeSegundo = 1.0
-            opacidadeTerceiro = 1.0
-            opacidadeQuarto = 0.4
-            opacidadeQuinto = 0.4
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = metade
+            opacidadeTerceiro = apagado
+            opacidadeQuarto = apagado
+            opacidadeQuinto = apagado
         case 4:
-            opacidadePrimeiro = 1.0
-            opacidadeSegundo = 1.0
-            opacidadeTerceiro = 1.0
-            opacidadeQuarto = 1.0
-            opacidadeQuinto = 0.4
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = totalmenteVisivel
+            opacidadeTerceiro = apagado
+            opacidadeQuarto = apagado
+            opacidadeQuinto = apagado
         case 5:
-            opacidadePrimeiro = 1.0
-            opacidadeSegundo = 1.0
-            opacidadeTerceiro = 1.0
-            opacidadeQuarto = 1.0
-            opacidadeQuinto = 1.0
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = totalmenteVisivel
+            opacidadeTerceiro = metade
+            opacidadeQuarto = apagado
+            opacidadeQuinto = apagado
+        case 6:
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = totalmenteVisivel
+            opacidadeTerceiro = totalmenteVisivel
+            opacidadeQuarto = apagado
+            opacidadeQuinto = apagado
+        case 7:
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = totalmenteVisivel
+            opacidadeTerceiro = totalmenteVisivel
+            opacidadeQuarto = metade
+            opacidadeQuinto = apagado
+        case 8:
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = totalmenteVisivel
+            opacidadeTerceiro = totalmenteVisivel
+            opacidadeQuarto = totalmenteVisivel
+            opacidadeQuinto = apagado
+        case 9:
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = totalmenteVisivel
+            opacidadeTerceiro = totalmenteVisivel
+            opacidadeQuarto = totalmenteVisivel
+            opacidadeQuinto = metade
+        case 10:
+            opacidadePrimeiro = totalmenteVisivel
+            opacidadeSegundo = totalmenteVisivel
+            opacidadeTerceiro = totalmenteVisivel
+            opacidadeQuarto = totalmenteVisivel
+            opacidadeQuinto = totalmenteVisivel
         default:
-            opacidadePrimeiro = 0.4
-            opacidadeSegundo = 0.4
-            opacidadeTerceiro = 0.4
-            opacidadeQuarto = 0.4
-            opacidadeQuinto = 0.4
+            opacidadePrimeiro = apagado
+            opacidadeSegundo = apagado
+            opacidadeTerceiro = apagado
+            opacidadeQuarto = apagado
+            opacidadeQuinto = apagado
         }
     }
     
@@ -63,12 +97,22 @@ class MostradorNotaEmojiViewModel: ObservableObject {
         case 1:
             return "SUQUINHO DE MILHO"
         case 2:
-            return "NÃO VALEU OS PILA"
+            return "SUQUINHO DE MILHO"
         case 3:
-            return "HMMMM"
+            return "NÃO VALEU OS PILA"
         case 4:
-            return "E VAMOS DE DELÍCIA"
+            return "NÃO VALEU OS PILA"
         case 5:
+            return "HMMMM"
+        case 6:
+            return "HMMMM"
+        case 7:
+            return "E VAMOS DE DELÍCIA"
+        case 8:
+            return "E VAMOS DE DELÍCIA"
+        case 9:
+            return "HITOU MO"
+        case 10:
             return "HITOU MO"
         default:
             return ""

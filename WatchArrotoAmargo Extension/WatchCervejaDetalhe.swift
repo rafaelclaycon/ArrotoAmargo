@@ -10,20 +10,21 @@ import SwiftUI
 struct WatchCervejaDetalhe: View {
     @ObservedObject var viewModel: CervejaDetalheViewModel
     
+    // TODO: Adaptar para a mudança para páginas.
     var body: some View {
         ScrollView {
             VStack {
                 viewModel.imagem
                     .resizable()
                     .frame(width: 100, height: 100, alignment: .center)
-                Text(viewModel.nome)
+                /*Text(viewModel.nome)
                     .font(.title3)
-                    .bold()
+                    .bold()*/
                 viewModel.getTextoEstilo()
                     .font(.subheadline)
                     .bold()
-                MedidorIBU(valor: viewModel.ibu)
-                    .padding(.all, 20)
+                /*MedidorIBU(valor: viewModel.ibu)
+                    .padding(.all, 20)*/
             }
         }
     }
