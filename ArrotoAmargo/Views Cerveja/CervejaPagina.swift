@@ -11,19 +11,23 @@ struct CervejaPagina: View {
     @ObservedObject var viewModel: CervejaPaginaViewModel
     
     var body: some View {
-        HStack() {
-            MedidorIBU(valor: viewModel.ibu)
-                .padding(.all, 20)
+        VStack {
+            CervejariaCelula(viewModel: CervejariaCelulaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca))
             
-            MostradorTeorAlcoolico(valor: viewModel.teorAlcoolico, texto: viewModel.getTeorAlcoolicoTexto())
-                .frame(width: 200, height: 80, alignment: .center)
+            HStack {
+                MedidorIBU(valor: viewModel.ibu)
+                    .padding(.all, 20)
+                
+                MostradorTeorAlcoolico(valor: viewModel.teorAlcoolico, texto: viewModel.getTeorAlcoolicoTexto())
+                    .frame(width: 200, height: 80, alignment: .center)
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
 struct CervejaPageView_Previews: PreviewProvider {
     static var previews: some View {
-        CervejaPagina(viewModel: CervejaPaginaViewModel(ibu: Int(round(cervejaDados[1].ibu)), teorAlcoolico: cervejaDados[1].teorAlcoolico))
+        CervejaPagina(viewModel: CervejaPaginaViewModel(cervejaria: cervejaDados[1].cervejaria!, marca: cervejaDados[1].marca!, ibu: Int(round(cervejaDados[1].ibu)), teorAlcoolico: cervejaDados[1].teorAlcoolico))
     }
 }
