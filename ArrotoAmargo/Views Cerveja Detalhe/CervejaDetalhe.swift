@@ -54,8 +54,7 @@ struct CervejaDetalhe: View {
             .padding(.bottom, 20)
             
             if indicePagina == 0 {
-                CervejariaPagina(viewModel: CervejariaPaginaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca))
-                CervejaPagina(viewModel: CervejaPaginaViewModel(ibu: viewModel.ibu, teorAlcoolico: viewModel.teorAlcoolico))
+                CervejaPagina(viewModel: CervejaPaginaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca, ibu: viewModel.ibu, teorAlcoolico: viewModel.teorAlcoolico))
                 Spacer()
             } else if indicePagina == 1 {
                 AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: viewModel.avaliacoes, idCerveja: viewModel.idCerveja, nomeCerveja: viewModel.nome))
