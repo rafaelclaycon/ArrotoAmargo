@@ -9,10 +9,14 @@ import Combine
 import Foundation
 
 class CervejaPaginaViewModel: ObservableObject {
+    @Published var cervejaria: Cervejaria
+    @Published var marca: Marca
     @Published var ibu: Int
     @Published var teorAlcoolico: Float
     
-    init(ibu: Int, teorAlcoolico: Float) {
+    init(cervejaria: Cervejaria, marca: Marca, ibu: Int, teorAlcoolico: Float) {
+        self.cervejaria = cervejaria
+        self.marca = marca
         self.ibu = ibu
         self.teorAlcoolico = teorAlcoolico
     }
