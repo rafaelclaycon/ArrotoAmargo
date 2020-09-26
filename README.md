@@ -24,7 +24,7 @@ In order of priority:
 - watchOS
 - tvOS
 
-Code is 99.9% in Portuguese.
+Most of the code (class names, variable names) is written in Portuguese.
 
 ![Imagem bem próxima da lateral de um copo de cerveja exibindo a cerveja dourada, a espuma branca e as gotas de água condensadas escorrendo por fora do copo](Imagens/timothy-dykes-Lq1rOaigDoY-unsplash.jpg)
 
@@ -33,12 +33,12 @@ Code is 99.9% in Portuguese.
 ## Funcionalidades
 
 - Visualizar lista de cervejas e seus detalhes
-- Registrar avaliações (*em breve*)
+- Registrar avaliações
 
 ## Requisitos
 
 - iOS 14
-- Xcode 12 beta
+- Xcode 12
 
 ## Perguntas & respostas
 
