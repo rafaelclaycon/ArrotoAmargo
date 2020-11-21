@@ -7,7 +7,7 @@ Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI para t
 Em ordem de prioridade:
 
 - iOS
-- macOS (*em breve*)
+- macOS
 - iPadOS
 - watchOS
 - tvOS
@@ -19,7 +19,7 @@ A personal beer rating catalog made with Swift and SwiftUI for all of Apple's pl
 In order of priority:
 
 - iOS
-- macOS (*coming soon*)
+- macOS
 - iPadOS
 - watchOS
 - tvOS
@@ -39,12 +39,7 @@ Most of the code (class names, variable names) is written in Portuguese.
 
 - iOS 14
 - Xcode 12
-
-## Perguntas & respostas
-
-*Por que macOS diz "em breve" na descrição?*
-
-Visto que esse projeto utiliza os novos recursos de gerenciamento de ciclo de vida (*lifecycle management*) do SwiftUI, disponíveis apenas no macOS Big Sur, não é possível buildar o target do Mac utilizando a versão atual do SO (macOS Catalina). Trabalharei na versão para Mac após o lançamento oficial do Big Sur (setembro/outubro de 2020).
+- macOS 11 Big Sur (para rodar o target do Mac)
 
 ## Contato
 
