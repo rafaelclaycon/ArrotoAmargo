@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -137,7 +137,7 @@
 		D9B5CF7224E5D2A90024540B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5CF7124E5D2A90024540B /* ComplicationController.swift */; };
 		D9B5CF7424E5D2AA0024540B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B5CF7324E5D2AA0024540B /* Assets.xcassets */; };
 		D9B5CF7724E5D2AA0024540B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B5CF7624E5D2AA0024540B /* Preview Assets.xcassets */; };
-		D9B5CF7C24E5D2AA0024540B /* WatchArrotoAmargo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9B5CF5B24E5D2A70024540B /* WatchArrotoAmargo.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9B5CF7C24E5D2AA0024540B /* WatchArrotoAmargo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9B5CF5B24E5D2A70024540B /* WatchArrotoAmargo.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D9B5CF8624E5D8950024540B /* WatchCervejaDetalhe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5CF8524E5D8950024540B /* WatchCervejaDetalhe.swift */; };
 		D9B5CF8724E5D9350024540B /* Cervejaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80F24CD149000EDA25C /* Cervejaria.swift */; };
 		D9B5CF8824E5D9350024540B /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE824BA4137006C2D4D /* Dados.swift */; };
@@ -340,6 +340,8 @@
 		D9945E3524BBD43800E9428F /* new_england_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_england_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3624BBD43800E9428F /* easy_ipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = easy_ipa.jpg; sourceTree = "<group>"; };
 		D9945E3724BBD43800E9428F /* india_pale_ale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = india_pale_ale.jpg; sourceTree = "<group>"; };
+		D999C7552568A337000EADB9 /* ArrotoAmargo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArrotoAmargo.entitlements; sourceTree = "<group>"; };
+		D999C7562568A337000EADB9 /* ArrotoAmargoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArrotoAmargoWidgetExtension.entitlements; sourceTree = "<group>"; };
 		D99A189424B6A1DA00D63C79 /* ArrotoAmargo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArrotoAmargo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99A189724B6A1DA00D63C79 /* ArrotoAmargoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoApp.swift; sourceTree = "<group>"; };
 		D99A189B24B6A1DC00D63C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -521,6 +523,7 @@
 		D99A188B24B6A1DA00D63C79 = {
 			isa = PBXGroup;
 			children = (
+				D999C7562568A337000EADB9 /* ArrotoAmargoWidgetExtension.entitlements */,
 				D99A189624B6A1DA00D63C79 /* ArrotoAmargo */,
 				D99A18A824B6A1DC00D63C79 /* ArrotoAmargoTests */,
 				D99A18B324B6A1DC00D63C79 /* ArrotoAmargoUITests */,
@@ -550,6 +553,7 @@
 		D99A189624B6A1DA00D63C79 /* ArrotoAmargo */ = {
 			isa = PBXGroup;
 			children = (
+				D999C7552568A337000EADB9 /* ArrotoAmargo.entitlements */,
 				D9CC7DE024B7FBB4006C2D4D /* Modelos */,
 				D9C0FB1E24BF62CC00B221A5 /* Views Lista de Cervejas */,
 				D906101F24D08A8E003DA906 /* Views Cerveja Detalhe */,
@@ -1222,6 +1226,7 @@
 		};
 		D9B5CF7B24E5D2AA0024540B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = D9B5CF5A24E5D2A70024540B /* WatchArrotoAmargo */;
 			targetProxy = D9B5CF7A24E5D2AA0024540B /* PBXContainerItemProxy */;
 		};
@@ -1401,20 +1406,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArrotoAmargo/ArrotoAmargo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ArrotoAmargo/Preview Content\"";
 				DEVELOPMENT_TEAM = L8X3H5XA82;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArrotoAmargo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -1424,20 +1433,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArrotoAmargo/ArrotoAmargo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ArrotoAmargo/Preview Content\"";
 				DEVELOPMENT_TEAM = L8X3H5XA82;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArrotoAmargo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
@@ -1618,6 +1631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ArrotoAmargoWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8X3H5XA82;
 				INFOPLIST_FILE = ArrotoAmargoWidget/Info.plist;
@@ -1629,6 +1643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.ArrotoAmargoWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1639,6 +1654,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ArrotoAmargoWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8X3H5XA82;
 				INFOPLIST_FILE = ArrotoAmargoWidget/Info.plist;
@@ -1650,6 +1666,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.ArrotoAmargoWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
