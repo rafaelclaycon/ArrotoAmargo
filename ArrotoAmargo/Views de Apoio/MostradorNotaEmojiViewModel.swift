@@ -107,13 +107,13 @@ class MostradorNotaEmojiViewModel: ObservableObject {
         case 6:
             return "HMMMM"
         case 7:
-            return "E VAMOS DE DELÍCIA"
+            return "UMA DELÍCIA"
         case 8:
-            return "E VAMOS DE DELÍCIA"
+            return "UMA DELÍCIA"
         case 9:
-            return "HITOU MO"
+            return "HITOU!"
         case 10:
-            return "HITOU MO"
+            return "HITOU!"
         default:
             return ""
         }

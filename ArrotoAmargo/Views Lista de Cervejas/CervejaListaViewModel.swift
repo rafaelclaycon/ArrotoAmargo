@@ -74,7 +74,7 @@ class CervejaListaViewModel: ObservableObject {
             buttons: [.default(Text("🔠  Nome (A → Z)")) { self.ordenarAlfabeticamentePeloNomeDaCerveja() },
                       .default(Text("🥇  Nota (5 → 0)")) { self.ordenarPorNota() },
                       .default(Text("📆  Data de adição")) { self.ordenarPorDataAdicao() },
-                      .default(Text("😖  IBU")) { self.ordenarPorIBU() },
+                      .default(Text("😖  IBU (amargor)")) { self.ordenarPorIBU() },
                       .cancel(Text("Cancelar"))])
     }
 }
