@@ -22,7 +22,6 @@ struct CervejariaDetalhe: View {
                         Text(viewModel.nomeCervejaria)
                             .font(.title2)
                             .bold()
-                            .accessibility(identifier: UIID.nomeCervejaTitulo)
                             .padding(.bottom, 6)
                             .padding(.leading, 20)
                             .padding(.top, 10)

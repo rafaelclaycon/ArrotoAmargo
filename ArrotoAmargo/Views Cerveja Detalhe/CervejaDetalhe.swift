@@ -31,7 +31,6 @@ struct CervejaDetalhe: View {
                     Text(viewModel.nome)
                         .font(.title2)
                         .bold()
-                        .accessibility(identifier: UIID.nomeCervejaTitulo)
                         .padding(.bottom, 8)
                         .padding(.leading, 10)
                     viewModel.getTextoEstilo()
@@ -52,7 +51,7 @@ struct CervejaDetalhe: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding(.horizontal, 25)
             .padding(.bottom, 20)
-            
+
             if indicePagina == 0 {
                 CervejaPagina(viewModel: CervejaPaginaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca, ibu: viewModel.ibu, teorAlcoolico: viewModel.teorAlcoolico))
                 Spacer()

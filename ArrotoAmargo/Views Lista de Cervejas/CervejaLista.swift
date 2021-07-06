@@ -58,7 +58,6 @@ struct CervejaLista: View {
                     }
                 )
                 .navigationBarTitle(Text("Cervejas 🍻"))
-                .accessibility(identifier: UIID.cervejaLista)
             }
             .sheet(isPresented: $viewModel.exibindoModal) {
                 if viewModel.exibirCadastroAvaliacao {

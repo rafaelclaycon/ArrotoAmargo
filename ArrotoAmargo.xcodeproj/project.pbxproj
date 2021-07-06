@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -43,72 +43,6 @@
 		D95DE9A624CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A324CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg */; };
 		D95DE9A724CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A424CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg */; };
 		D9612D6B24C7E3B300EFF8EE /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */; };
-		D9712EFA24E5EBF100A792E9 /* TVArrotoAmargoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9712EF924E5EBF100A792E9 /* TVArrotoAmargoApp.swift */; };
-		D9712EFE24E5EBF200A792E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9712EFD24E5EBF200A792E9 /* Assets.xcassets */; };
-		D9712F0124E5EBF200A792E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9712F0024E5EBF200A792E9 /* Preview Assets.xcassets */; };
-		D9712F0624E5EDB100A792E9 /* CervejaLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */; };
-		D9712F0724E5EDB100A792E9 /* CervejaLinhaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD124D65CDD0099DD51 /* CervejaLinhaViewModel.swift */; };
-		D9712F0824E5EDB800A792E9 /* Marca.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DC724D5B11E0099DD51 /* Marca.swift */; };
-		D9712F0924E5EDB800A792E9 /* PreferenciasUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC2024BFFD59001CC829 /* PreferenciasUsuario.swift */; };
-		D9712F0A24E5EDB800A792E9 /* Cerveja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE124B7FDE3006C2D4D /* Cerveja.swift */; };
-		D9712F0B24E5EDB800A792E9 /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE824BA4137006C2D4D /* Dados.swift */; };
-		D9712F0C24E5EDB800A792E9 /* Cervejaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80F24CD149000EDA25C /* Cervejaria.swift */; };
-		D9712F0D24E5EDB800A792E9 /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */; };
-		D9712F0E24E5EDB800A792E9 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92923A324D90AE200977803 /* UF.swift */; };
-		D9712F0F24E5EDD100A792E9 /* MedidorNota.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */; };
-		D9712F1024E5EDD100A792E9 /* MedidorIBU.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */; };
-		D9712F1224E5EDE800A792E9 /* TVCervejaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9712F1124E5EDE800A792E9 /* TVCervejaLista.swift */; };
-		D9712F1324E5EE1400A792E9 /* CervejaListaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */; };
-		D9712F1424E5EE2900A792E9 /* summer_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6ED24C4F1C500FAEEE6 /* summer_ipa.jpg */; };
-		D9712F1524E5EE2900A792E9 /* hop_bomb_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EE24C4F1C500FAEEE6 /* hop_bomb_ipa.jpg */; };
-		D9712F1624E5EE2900A792E9 /* double_new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D98E91D124C00B05006B7C44 /* double_new_england_ipa.jpg */; };
-		D9712F1724E5EE2900A792E9 /* cervejaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCA24D5B87F0099DD51 /* cervejaDados.json */; };
-		D9712F1824E5EE2900A792E9 /* hop_bomb_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A324CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg */; };
-		D9712F1924E5EE2900A792E9 /* patagonia_pilsen_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A024CF0FC500404D98 /* patagonia_pilsen_foto_usuario.jpg */; };
-		D9712F1A24E5EE2900A792E9 /* imigracao_export.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCF24D624F00099DD51 /* imigracao_export.jpg */; };
-		D9712F1B24E5EE2900A792E9 /* new_england_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A424CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg */; };
-		D9712F1C24E5EE2900A792E9 /* cervejariaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D906101224CF84B9003DA906 /* cervejariaDados.json */; };
-		D9712F1D24E5EE2900A792E9 /* ambev_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101724D088E1003DA906 /* ambev_logo.jpg */; };
-		D9712F1E24E5EE2900A792E9 /* bellavista_american_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9049DC524D5A91C0099DD51 /* bellavista_american_ipa.jpg */; };
-		D9712F1F24E5EE2900A792E9 /* weidmann.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EA24C4C7EB00FAEEE6 /* weidmann.jpg */; };
-		D9712F2024E5EE2900A792E9 /* new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3524BBD43800E9428F /* new_england_ipa.jpg */; };
-		D9712F2124E5EE2900A792E9 /* logo_imigracao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9FAF81324CE308F00EDA25C /* logo_imigracao.jpg */; };
-		D9712F2224E5EE2900A792E9 /* india_pale_ale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3724BBD43800E9428F /* india_pale_ale.jpg */; };
-		D9712F2324E5EE2900A792E9 /* gilde_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101824D088E1003DA906 /* gilde_logo.jpg */; };
-		D9712F2424E5EE2900A792E9 /* session_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EC24C4F1C500FAEEE6 /* session_ipa.jpg */; };
-		D9712F2524E5EE2900A792E9 /* weisse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EF24C4F1C500FAEEE6 /* weisse.jpg */; };
-		D9712F2624E5EE2900A792E9 /* dado_bier_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101924D088E1003DA906 /* dado_bier_logo.jpg */; };
-		D9712F2724E5EE2900A792E9 /* amber_lager.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D99E5C9E24C7B31300D8A648 /* amber_lager.jpg */; };
-		D9712F2824E5EE2900A792E9 /* bohemian_pilsener.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D99E5C9D24C7B31300D8A648 /* bohemian_pilsener.jpg */; };
-		D9712F2924E5EE2900A792E9 /* bellavista_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9049DC924D5B87F0099DD51 /* bellavista_logo.jpg */; };
-		D9712F2A24E5EE2900A792E9 /* easy_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3624BBD43800E9428F /* easy_ipa.jpg */; };
-		D9712F2B24E5EE2900A792E9 /* corDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9BFA7E424E4A46F008ED37A /* corDados.json */; };
-		D9712F2C24E5EE2900A792E9 /* marcaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCB24D5B87F0099DD51 /* marcaDados.json */; };
-		D9712F2D24E5EE2900A792E9 /* tupiniquim_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101624D088E1003DA906 /* tupiniquim_logo.jpg */; };
-		D9712F2E24E5EE2900A792E9 /* weidmann_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A224CF2E6A00404D98 /* weidmann_foto_usuario.jpg */; };
-		D9712F2F24E5EE6C00A792E9 /* CervejaDetalhe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DDE24B7FA3D006C2D4D /* CervejaDetalhe.swift */; };
-		D9712F3024E5EE6E00A792E9 /* CervejaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */; };
-		D9712F3124E5EE8B00A792E9 /* CervejaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F18E6E24BBECA500325193 /* CervejaLista.swift */; };
-		D9712F3224E5EE9200A792E9 /* CervejariaCelulaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906101424D0851B003DA906 /* CervejariaCelulaViewModel.swift */; };
-		D9712F3324E5EE9200A792E9 /* CervejariaDetalhe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD324D661A80099DD51 /* CervejariaDetalhe.swift */; };
-		D9712F3424E5EE9200A792E9 /* NovaCervejaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92923A124D9032F00977803 /* NovaCervejaria.swift */; };
-		D9712F3524E5EE9200A792E9 /* NovaCervejariaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92923A524D90CBA00977803 /* NovaCervejariaViewModel.swift */; };
-		D9712F3624E5EE9200A792E9 /* CervejariaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD524D662580099DD51 /* CervejariaDetalheViewModel.swift */; };
-		D9712F3724E5EE9200A792E9 /* CervejariaCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF81124CD1DE300EDA25C /* CervejariaCelula.swift */; };
-		D9712F3924E5EE9500A792E9 /* CorLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BFA7E624E4A500008ED37A /* CorLista.swift */; };
-		D9712F3A24E5EE9500A792E9 /* NovaCervejaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929239F24D8ECB900977803 /* NovaCervejaViewModel.swift */; };
-		D9712F3B24E5EE9900A792E9 /* AvaliacaoListaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF4D2A24C7E6CB00739866 /* AvaliacaoListaViewModel.swift */; };
-		D9712F3C24E5EE9900A792E9 /* AvaliacaoLinhaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084BCC24C88660003EA025 /* AvaliacaoLinhaViewModel.swift */; };
-		D9712F3D24E5EE9900A792E9 /* NovaAvaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D895F624D22967004F0EF2 /* NovaAvaliacao.swift */; };
-		D9712F3E24E5EE9900A792E9 /* AvaliacaoLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF4D2F24C7E84D00739866 /* AvaliacaoLinha.swift */; };
-		D9712F3F24E5EE9900A792E9 /* NovaAvaliacaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EBE37E24D77A1800F74645 /* NovaAvaliacaoViewModel.swift */; };
-		D9712F4024E5EE9C00A792E9 /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91E407824BEA50B003448B5 /* Mapa.swift */; };
-		D9712F4124E5EE9C00A792E9 /* MostradorTeorAlcoolico.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906102024D0F66A003DA906 /* MostradorTeorAlcoolico.swift */; };
-		D9712F4224E5EE9C00A792E9 /* MostradorNotaEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973616424E22BA400ABBDC3 /* MostradorNotaEmoji.swift */; };
-		D9712F4324E5EE9C00A792E9 /* MostradorNotaEmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973616624E231C600ABBDC3 /* MostradorNotaEmojiViewModel.swift */; };
-		D9712F4424E5EE9C00A792E9 /* Color+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BD4E024D24DCB00B321B7 /* Color+BackgroundColor.swift */; };
-		D9712F4524E5EEAF00A792E9 /* UIID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0EBF324D4F7C8007B6F93 /* UIID.swift */; };
-		D9712F4724E5FBBA00A792E9 /* TVCervejaLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9712F4624E5FBBA00A792E9 /* TVCervejaLinha.swift */; };
 		D973616524E22BA400ABBDC3 /* MostradorNotaEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973616424E22BA400ABBDC3 /* MostradorNotaEmoji.swift */; };
 		D973616724E231C600ABBDC3 /* MostradorNotaEmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973616624E231C600ABBDC3 /* MostradorNotaEmojiViewModel.swift */; };
 		D97BD4E124D24DCB00B321B7 /* Color+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BD4E024D24DCB00B321B7 /* Color+BackgroundColor.swift */; };
@@ -120,63 +54,12 @@
 		D99A189C24B6A1DC00D63C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99A189B24B6A1DC00D63C79 /* Assets.xcassets */; };
 		D99A189F24B6A1DC00D63C79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99A189E24B6A1DC00D63C79 /* Preview Assets.xcassets */; };
 		D99A18AA24B6A1DC00D63C79 /* ArrotoAmargoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A18A924B6A1DC00D63C79 /* ArrotoAmargoTests.swift */; };
-		D99A18B524B6A1DC00D63C79 /* ArrotoAmargoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */; };
 		D99E5C9F24C7B31300D8A648 /* bohemian_pilsener.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D99E5C9D24C7B31300D8A648 /* bohemian_pilsener.jpg */; };
 		D99E5CA024C7B31300D8A648 /* amber_lager.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D99E5C9E24C7B31300D8A648 /* amber_lager.jpg */; };
 		D99E5CA224C7CDD100D8A648 /* CervejaListaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */; };
 		D9A7C6AF24BFB43C005AC54F /* MedidorNota.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */; };
 		D9AF4D2B24C7E6CB00739866 /* AvaliacaoListaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF4D2A24C7E6CB00739866 /* AvaliacaoListaViewModel.swift */; };
 		D9AF4D3024C7E84D00739866 /* AvaliacaoLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF4D2F24C7E84D00739866 /* AvaliacaoLinha.swift */; };
-		D9B0EBF424D4F7C8007B6F93 /* UIID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0EBF324D4F7C8007B6F93 /* UIID.swift */; };
-		D9B0EBF524D4F7F4007B6F93 /* UIID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0EBF324D4F7C8007B6F93 /* UIID.swift */; };
-		D9B5CF5E24E5D2A80024540B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B5CF5D24E5D2A80024540B /* Assets.xcassets */; };
-		D9B5CF6524E5D2A90024540B /* WatchArrotoAmargo Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9B5CF6424E5D2A90024540B /* WatchArrotoAmargo Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D9B5CF6A24E5D2A90024540B /* ArrotoAmargoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5CF6924E5D2A90024540B /* ArrotoAmargoApp.swift */; };
-		D9B5CF6E24E5D2A90024540B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5CF6D24E5D2A90024540B /* NotificationController.swift */; };
-		D9B5CF7024E5D2A90024540B /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5CF6F24E5D2A90024540B /* NotificationView.swift */; };
-		D9B5CF7224E5D2A90024540B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5CF7124E5D2A90024540B /* ComplicationController.swift */; };
-		D9B5CF7424E5D2AA0024540B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B5CF7324E5D2AA0024540B /* Assets.xcassets */; };
-		D9B5CF7724E5D2AA0024540B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B5CF7624E5D2AA0024540B /* Preview Assets.xcassets */; };
-		D9B5CF7C24E5D2AA0024540B /* WatchArrotoAmargo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9B5CF5B24E5D2A70024540B /* WatchArrotoAmargo.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D9B5CF8624E5D8950024540B /* WatchCervejaDetalhe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5CF8524E5D8950024540B /* WatchCervejaDetalhe.swift */; };
-		D9B5CF8724E5D9350024540B /* Cervejaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80F24CD149000EDA25C /* Cervejaria.swift */; };
-		D9B5CF8824E5D9350024540B /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE824BA4137006C2D4D /* Dados.swift */; };
-		D9B5CF8924E5D9350024540B /* Marca.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DC724D5B11E0099DD51 /* Marca.swift */; };
-		D9B5CF8A24E5D9350024540B /* Cerveja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE124B7FDE3006C2D4D /* Cerveja.swift */; };
-		D9B5CF8B24E5D9350024540B /* PreferenciasUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC2024BFFD59001CC829 /* PreferenciasUsuario.swift */; };
-		D9B5CF8C24E5D9350024540B /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */; };
-		D9B5CF8D24E5D9350024540B /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92923A324D90AE200977803 /* UF.swift */; };
-		D9B5CF8E24E5D93D0024540B /* CervejaLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE624BA1887006C2D4D /* CervejaLinha.swift */; };
-		D9B5CF8F24E5D94D0024540B /* MedidorNota.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */; };
-		D9B5CF9224E5D94D0024540B /* MedidorIBU.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940EC1E24BFE45D001CC829 /* MedidorIBU.swift */; };
-		D9B5CF9424E5D99F0024540B /* bellavista_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9049DC924D5B87F0099DD51 /* bellavista_logo.jpg */; };
-		D9B5CF9524E5D99F0024540B /* tupiniquim_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101624D088E1003DA906 /* tupiniquim_logo.jpg */; };
-		D9B5CF9624E5D99F0024540B /* hop_bomb_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EE24C4F1C500FAEEE6 /* hop_bomb_ipa.jpg */; };
-		D9B5CF9724E5D99F0024540B /* patagonia_pilsen_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A024CF0FC500404D98 /* patagonia_pilsen_foto_usuario.jpg */; };
-		D9B5CF9824E5D99F0024540B /* hop_bomb_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A324CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg */; };
-		D9B5CF9924E5D99F0024540B /* amber_lager.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D99E5C9E24C7B31300D8A648 /* amber_lager.jpg */; };
-		D9B5CF9A24E5D99F0024540B /* marcaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCB24D5B87F0099DD51 /* marcaDados.json */; };
-		D9B5CF9B24E5D99F0024540B /* weisse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EF24C4F1C500FAEEE6 /* weisse.jpg */; };
-		D9B5CF9C24E5D99F0024540B /* new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3524BBD43800E9428F /* new_england_ipa.jpg */; };
-		D9B5CF9D24E5D99F0024540B /* cervejariaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D906101224CF84B9003DA906 /* cervejariaDados.json */; };
-		D9B5CF9E24E5D99F0024540B /* cervejaDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCA24D5B87F0099DD51 /* cervejaDados.json */; };
-		D9B5CF9F24E5D99F0024540B /* gilde_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101824D088E1003DA906 /* gilde_logo.jpg */; };
-		D9B5CFA024E5D99F0024540B /* dado_bier_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101924D088E1003DA906 /* dado_bier_logo.jpg */; };
-		D9B5CFA124E5D99F0024540B /* new_england_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A424CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg */; };
-		D9B5CFA224E5D99F0024540B /* double_new_england_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D98E91D124C00B05006B7C44 /* double_new_england_ipa.jpg */; };
-		D9B5CFA324E5D99F0024540B /* weidmann.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EA24C4C7EB00FAEEE6 /* weidmann.jpg */; };
-		D9B5CFA424E5D99F0024540B /* logo_imigracao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9FAF81324CE308F00EDA25C /* logo_imigracao.jpg */; };
-		D9B5CFA524E5D99F0024540B /* corDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9BFA7E424E4A46F008ED37A /* corDados.json */; };
-		D9B5CFA624E5D99F0024540B /* bellavista_american_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9049DC524D5A91C0099DD51 /* bellavista_american_ipa.jpg */; };
-		D9B5CFA724E5D99F0024540B /* weidmann_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A224CF2E6A00404D98 /* weidmann_foto_usuario.jpg */; };
-		D9B5CFA824E5D99F0024540B /* summer_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6ED24C4F1C500FAEEE6 /* summer_ipa.jpg */; };
-		D9B5CFA924E5D99F0024540B /* ambev_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D906101724D088E1003DA906 /* ambev_logo.jpg */; };
-		D9B5CFAA24E5D99F0024540B /* india_pale_ale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3724BBD43800E9428F /* india_pale_ale.jpg */; };
-		D9B5CFAB24E5D99F0024540B /* imigracao_export.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9049DCF24D624F00099DD51 /* imigracao_export.jpg */; };
-		D9B5CFAC24E5D99F0024540B /* easy_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9945E3624BBD43800E9428F /* easy_ipa.jpg */; };
-		D9B5CFAD24E5D99F0024540B /* session_ipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D904D6EC24C4F1C500FAEEE6 /* session_ipa.jpg */; };
-		D9B5CFAE24E5D99F0024540B /* bohemian_pilsener.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D99E5C9D24C7B31300D8A648 /* bohemian_pilsener.jpg */; };
-		D9B5CFAF24E5DA580024540B /* CervejaLinhaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9049DD124D65CDD0099DD51 /* CervejaLinhaViewModel.swift */; };
 		D9BD7C5124F9B1630017CC0B /* CervejariaPaginaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C5024F9B1630017CC0B /* CervejariaPaginaViewModel.swift */; };
 		D9BFA7E524E4A46F008ED37A /* corDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9BFA7E424E4A46F008ED37A /* corDados.json */; };
 		D9BFA7E724E4A500008ED37A /* CorLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BFA7E624E4A500008ED37A /* CorLista.swift */; };
@@ -202,7 +85,6 @@
 		D9CC7DE924BA4137006C2D4D /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC7DE824BA4137006C2D4D /* Dados.swift */; };
 		D9D895F724D22967004F0EF2 /* NovaAvaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D895F624D22967004F0EF2 /* NovaAvaliacao.swift */; };
 		D9E8AE1024F6B99F0097BBF5 /* AvaliacaoPaginaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E8AE0F24F6B99F0097BBF5 /* AvaliacaoPaginaViewModel.swift */; };
-		D9E954A124E5DDFC00910B45 /* CervejaDetalheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */; };
 		D9EBE37F24D77A1800F74645 /* NovaAvaliacaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EBE37E24D77A1800F74645 /* NovaAvaliacaoViewModel.swift */; };
 		D9F18E6F24BBECA500325193 /* CervejaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F18E6E24BBECA500325193 /* CervejaLista.swift */; };
 		D9F37EF724F32CC40086298C /* sud_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9F37EF624F32CC40086298C /* sud_logo.jpg */; };
@@ -223,27 +105,6 @@
 			remoteGlobalIDString = D99A189324B6A1DA00D63C79;
 			remoteInfo = ArrotoAmargo;
 		};
-		D99A18B124B6A1DC00D63C79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D99A188C24B6A1DA00D63C79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D99A189324B6A1DA00D63C79;
-			remoteInfo = ArrotoAmargo;
-		};
-		D9B5CF6624E5D2A90024540B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D99A188C24B6A1DA00D63C79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9B5CF6324E5D2A90024540B;
-			remoteInfo = "WatchArrotoAmargo Extension";
-		};
-		D9B5CF7A24E5D2AA0024540B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D99A188C24B6A1DA00D63C79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9B5CF5A24E5D2A70024540B;
-			remoteInfo = WatchArrotoAmargo;
-		};
 		D9BFA81924E4CB3E008ED37A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D99A188C24B6A1DA00D63C79 /* Project object */;
@@ -260,20 +121,8 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				D9B5CF7C24E5D2AA0024540B /* WatchArrotoAmargo.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9B5CF8024E5D2AA0024540B /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				D9B5CF6524E5D2A90024540B /* WatchArrotoAmargo Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D9BFA81F24E4CB3E008ED37A /* Embed App Extensions */ = {
@@ -326,13 +175,6 @@
 		D95DE9A324CF2E6B00404D98 /* hop_bomb_ipa_foto_usuario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hop_bomb_ipa_foto_usuario.jpg; sourceTree = "<group>"; };
 		D95DE9A424CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_england_ipa_foto_usuario.jpg; sourceTree = "<group>"; };
 		D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
-		D9712EF724E5EBF000A792E9 /* TVArrotoAmargo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVArrotoAmargo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9712EF924E5EBF100A792E9 /* TVArrotoAmargoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVArrotoAmargoApp.swift; sourceTree = "<group>"; };
-		D9712EFD24E5EBF200A792E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D9712F0024E5EBF200A792E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D9712F0224E5EBF200A792E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9712F1124E5EDE800A792E9 /* TVCervejaLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCervejaLista.swift; sourceTree = "<group>"; };
-		D9712F4624E5FBBA00A792E9 /* TVCervejaLinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCervejaLinha.swift; sourceTree = "<group>"; };
 		D973616424E22BA400ABBDC3 /* MostradorNotaEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostradorNotaEmoji.swift; sourceTree = "<group>"; };
 		D973616624E231C600ABBDC3 /* MostradorNotaEmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostradorNotaEmojiViewModel.swift; sourceTree = "<group>"; };
 		D97BD4E024D24DCB00B321B7 /* Color+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+BackgroundColor.swift"; sourceTree = "<group>"; };
@@ -350,29 +192,12 @@
 		D99A18A524B6A1DC00D63C79 /* ArrotoAmargoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrotoAmargoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99A18A924B6A1DC00D63C79 /* ArrotoAmargoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoTests.swift; sourceTree = "<group>"; };
 		D99A18AB24B6A1DC00D63C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrotoAmargoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoUITests.swift; sourceTree = "<group>"; };
-		D99A18B624B6A1DC00D63C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99E5C9D24C7B31300D8A648 /* bohemian_pilsener.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bohemian_pilsener.jpg; sourceTree = "<group>"; };
 		D99E5C9E24C7B31300D8A648 /* amber_lager.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amber_lager.jpg; sourceTree = "<group>"; };
 		D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaListaViewModel.swift; sourceTree = "<group>"; };
 		D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidorNota.swift; sourceTree = "<group>"; };
 		D9AF4D2A24C7E6CB00739866 /* AvaliacaoListaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoListaViewModel.swift; sourceTree = "<group>"; };
 		D9AF4D2F24C7E84D00739866 /* AvaliacaoLinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoLinha.swift; sourceTree = "<group>"; };
-		D9B0EBF324D4F7C8007B6F93 /* UIID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIID.swift; sourceTree = "<group>"; };
-		D9B5CF5B24E5D2A70024540B /* WatchArrotoAmargo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchArrotoAmargo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9B5CF5D24E5D2A80024540B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D9B5CF5F24E5D2A80024540B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9B5CF6424E5D2A90024540B /* WatchArrotoAmargo Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchArrotoAmargo Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9B5CF6924E5D2A90024540B /* ArrotoAmargoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrotoAmargoApp.swift; sourceTree = "<group>"; };
-		D9B5CF6D24E5D2A90024540B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		D9B5CF6F24E5D2A90024540B /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		D9B5CF7124E5D2A90024540B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		D9B5CF7324E5D2AA0024540B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D9B5CF7624E5D2AA0024540B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D9B5CF7824E5D2AA0024540B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9B5CF7924E5D2AA0024540B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		D9B5CF8524E5D8950024540B /* WatchCervejaDetalhe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCervejaDetalhe.swift; sourceTree = "<group>"; };
 		D9BD7C5024F9B1630017CC0B /* CervejariaPaginaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejariaPaginaViewModel.swift; sourceTree = "<group>"; };
 		D9BFA7E424E4A46F008ED37A /* corDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corDados.json; sourceTree = "<group>"; };
 		D9BFA7E624E4A500008ED37A /* CorLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorLista.swift; sourceTree = "<group>"; };
@@ -402,13 +227,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D9712EF424E5EBF000A792E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D99A189124B6A1DA00D63C79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,20 +235,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D99A18A224B6A1DC00D63C79 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D99A18AD24B6A1DC00D63C79 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9B5CF6124E5D2A90024540B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -499,38 +303,13 @@
 			path = "Views Cerveja";
 			sourceTree = "<group>";
 		};
-		D9712EF824E5EBF100A792E9 /* TVArrotoAmargo */ = {
-			isa = PBXGroup;
-			children = (
-				D9712EF924E5EBF100A792E9 /* TVArrotoAmargoApp.swift */,
-				D9712F1124E5EDE800A792E9 /* TVCervejaLista.swift */,
-				D9712F4624E5FBBA00A792E9 /* TVCervejaLinha.swift */,
-				D9712EFD24E5EBF200A792E9 /* Assets.xcassets */,
-				D9712F0224E5EBF200A792E9 /* Info.plist */,
-				D9712EFF24E5EBF200A792E9 /* Preview Content */,
-			);
-			path = TVArrotoAmargo;
-			sourceTree = "<group>";
-		};
-		D9712EFF24E5EBF200A792E9 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				D9712F0024E5EBF200A792E9 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		D99A188B24B6A1DA00D63C79 = {
 			isa = PBXGroup;
 			children = (
 				D999C7562568A337000EADB9 /* ArrotoAmargoWidgetExtension.entitlements */,
 				D99A189624B6A1DA00D63C79 /* ArrotoAmargo */,
 				D99A18A824B6A1DC00D63C79 /* ArrotoAmargoTests */,
-				D99A18B324B6A1DC00D63C79 /* ArrotoAmargoUITests */,
 				D9BFA81024E4CB3C008ED37A /* ArrotoAmargoWidget */,
-				D9B5CF5C24E5D2A70024540B /* WatchArrotoAmargo */,
-				D9B5CF6824E5D2A90024540B /* WatchArrotoAmargo Extension */,
-				D9712EF824E5EBF100A792E9 /* TVArrotoAmargo */,
 				D9BFA80B24E4CB3C008ED37A /* Frameworks */,
 				D99A189524B6A1DA00D63C79 /* Products */,
 			);
@@ -541,11 +320,7 @@
 			children = (
 				D99A189424B6A1DA00D63C79 /* ArrotoAmargo.app */,
 				D99A18A524B6A1DC00D63C79 /* ArrotoAmargoTests.xctest */,
-				D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */,
 				D9BFA80A24E4CB3C008ED37A /* ArrotoAmargoWidgetExtension.appex */,
-				D9B5CF5B24E5D2A70024540B /* WatchArrotoAmargo.app */,
-				D9B5CF6424E5D2A90024540B /* WatchArrotoAmargo Extension.appex */,
-				D9712EF724E5EBF000A792E9 /* TVArrotoAmargo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -587,16 +362,6 @@
 			path = ArrotoAmargoTests;
 			sourceTree = "<group>";
 		};
-		D99A18B324B6A1DC00D63C79 /* ArrotoAmargoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D9B0EBF324D4F7C8007B6F93 /* UIID.swift */,
-				D99A18B424B6A1DC00D63C79 /* ArrotoAmargoUITests.swift */,
-				D99A18B624B6A1DC00D63C79 /* Info.plist */,
-			);
-			path = ArrotoAmargoUITests;
-			sourceTree = "<group>";
-		};
 		D9AF4D2C24C7E79A00739866 /* Views Avaliacao */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,39 +374,6 @@
 				D9E8AE0F24F6B99F0097BBF5 /* AvaliacaoPaginaViewModel.swift */,
 			);
 			path = "Views Avaliacao";
-			sourceTree = "<group>";
-		};
-		D9B5CF5C24E5D2A70024540B /* WatchArrotoAmargo */ = {
-			isa = PBXGroup;
-			children = (
-				D9B5CF5D24E5D2A80024540B /* Assets.xcassets */,
-				D9B5CF5F24E5D2A80024540B /* Info.plist */,
-			);
-			path = WatchArrotoAmargo;
-			sourceTree = "<group>";
-		};
-		D9B5CF6824E5D2A90024540B /* WatchArrotoAmargo Extension */ = {
-			isa = PBXGroup;
-			children = (
-				D9B5CF6924E5D2A90024540B /* ArrotoAmargoApp.swift */,
-				D9B5CF8524E5D8950024540B /* WatchCervejaDetalhe.swift */,
-				D9B5CF6D24E5D2A90024540B /* NotificationController.swift */,
-				D9B5CF6F24E5D2A90024540B /* NotificationView.swift */,
-				D9B5CF7124E5D2A90024540B /* ComplicationController.swift */,
-				D9B5CF7324E5D2AA0024540B /* Assets.xcassets */,
-				D9B5CF7824E5D2AA0024540B /* Info.plist */,
-				D9B5CF7924E5D2AA0024540B /* PushNotificationPayload.apns */,
-				D9B5CF7524E5D2AA0024540B /* Preview Content */,
-			);
-			path = "WatchArrotoAmargo Extension";
-			sourceTree = "<group>";
-		};
-		D9B5CF7524E5D2AA0024540B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				D9B5CF7624E5D2AA0024540B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		D9BFA80B24E4CB3C008ED37A /* Frameworks */ = {
@@ -727,23 +459,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D9712EF624E5EBF000A792E9 /* TVArrotoAmargo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9712F0524E5EBF200A792E9 /* Build configuration list for PBXNativeTarget "TVArrotoAmargo" */;
-			buildPhases = (
-				D9712EF324E5EBF000A792E9 /* Sources */,
-				D9712EF424E5EBF000A792E9 /* Frameworks */,
-				D9712EF524E5EBF000A792E9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TVArrotoAmargo;
-			productName = TVArrotoAmargo;
-			productReference = D9712EF724E5EBF000A792E9 /* TVArrotoAmargo.app */;
-			productType = "com.apple.product-type.application";
-		};
 		D99A189324B6A1DA00D63C79 /* ArrotoAmargo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D99A18B924B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargo" */;
@@ -758,7 +473,6 @@
 			);
 			dependencies = (
 				D9BFA81A24E4CB3E008ED37A /* PBXTargetDependency */,
-				D9B5CF7B24E5D2AA0024540B /* PBXTargetDependency */,
 			);
 			name = ArrotoAmargo;
 			productName = ArrotoAmargo;
@@ -782,58 +496,6 @@
 			productName = ArrotoAmargoTests;
 			productReference = D99A18A524B6A1DC00D63C79 /* ArrotoAmargoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D99A18AF24B6A1DC00D63C79 /* ArrotoAmargoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D99A18BF24B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargoUITests" */;
-			buildPhases = (
-				D99A18AC24B6A1DC00D63C79 /* Sources */,
-				D99A18AD24B6A1DC00D63C79 /* Frameworks */,
-				D99A18AE24B6A1DC00D63C79 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D99A18B224B6A1DC00D63C79 /* PBXTargetDependency */,
-			);
-			name = ArrotoAmargoUITests;
-			productName = ArrotoAmargoUITests;
-			productReference = D99A18B024B6A1DC00D63C79 /* ArrotoAmargoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		D9B5CF5A24E5D2A70024540B /* WatchArrotoAmargo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9B5CF8424E5D2AA0024540B /* Build configuration list for PBXNativeTarget "WatchArrotoAmargo" */;
-			buildPhases = (
-				D9B5CF5924E5D2A70024540B /* Resources */,
-				D9B5CF8024E5D2AA0024540B /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D9B5CF6724E5D2A90024540B /* PBXTargetDependency */,
-			);
-			name = WatchArrotoAmargo;
-			productName = WatchArrotoAmargo;
-			productReference = D9B5CF5B24E5D2A70024540B /* WatchArrotoAmargo.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		D9B5CF6324E5D2A90024540B /* WatchArrotoAmargo Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9B5CF8324E5D2AA0024540B /* Build configuration list for PBXNativeTarget "WatchArrotoAmargo Extension" */;
-			buildPhases = (
-				D9B5CF6024E5D2A90024540B /* Sources */,
-				D9B5CF6124E5D2A90024540B /* Frameworks */,
-				D9B5CF6224E5D2A90024540B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "WatchArrotoAmargo Extension";
-			productName = "WatchArrotoAmargo Extension";
-			productReference = D9B5CF6424E5D2A90024540B /* WatchArrotoAmargo Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		D9BFA80924E4CB3C008ED37A /* ArrotoAmargoWidgetExtension */ = {
 			isa = PBXNativeTarget;
@@ -861,25 +523,12 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					D9712EF624E5EBF000A792E9 = {
-						CreatedOnToolsVersion = 12.0;
-					};
 					D99A189324B6A1DA00D63C79 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 					D99A18A424B6A1DC00D63C79 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = D99A189324B6A1DA00D63C79;
-					};
-					D99A18AF24B6A1DC00D63C79 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = D99A189324B6A1DA00D63C79;
-					};
-					D9B5CF5A24E5D2A70024540B = {
-						CreatedOnToolsVersion = 12.0;
-					};
-					D9B5CF6324E5D2A90024540B = {
-						CreatedOnToolsVersion = 12.0;
 					};
 					D9BFA80924E4CB3C008ED37A = {
 						CreatedOnToolsVersion = 12.0;
@@ -901,52 +550,12 @@
 			targets = (
 				D99A189324B6A1DA00D63C79 /* ArrotoAmargo */,
 				D99A18A424B6A1DC00D63C79 /* ArrotoAmargoTests */,
-				D99A18AF24B6A1DC00D63C79 /* ArrotoAmargoUITests */,
 				D9BFA80924E4CB3C008ED37A /* ArrotoAmargoWidgetExtension */,
-				D9B5CF5A24E5D2A70024540B /* WatchArrotoAmargo */,
-				D9B5CF6324E5D2A90024540B /* WatchArrotoAmargo Extension */,
-				D9712EF624E5EBF000A792E9 /* TVArrotoAmargo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D9712EF524E5EBF000A792E9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9712F2824E5EE2900A792E9 /* bohemian_pilsener.jpg in Resources */,
-				D9712F2324E5EE2900A792E9 /* gilde_logo.jpg in Resources */,
-				D9712F2A24E5EE2900A792E9 /* easy_ipa.jpg in Resources */,
-				D9712F2724E5EE2900A792E9 /* amber_lager.jpg in Resources */,
-				D9712F0124E5EBF200A792E9 /* Preview Assets.xcassets in Resources */,
-				D9712F2C24E5EE2900A792E9 /* marcaDados.json in Resources */,
-				D9712F1424E5EE2900A792E9 /* summer_ipa.jpg in Resources */,
-				D9712F1724E5EE2900A792E9 /* cervejaDados.json in Resources */,
-				D9712F1524E5EE2900A792E9 /* hop_bomb_ipa.jpg in Resources */,
-				D9712F1D24E5EE2900A792E9 /* ambev_logo.jpg in Resources */,
-				D9712F2424E5EE2900A792E9 /* session_ipa.jpg in Resources */,
-				D9712F2D24E5EE2900A792E9 /* tupiniquim_logo.jpg in Resources */,
-				D9712F2E24E5EE2900A792E9 /* weidmann_foto_usuario.jpg in Resources */,
-				D9712F2924E5EE2900A792E9 /* bellavista_logo.jpg in Resources */,
-				D9712F1E24E5EE2900A792E9 /* bellavista_american_ipa.jpg in Resources */,
-				D9712F2024E5EE2900A792E9 /* new_england_ipa.jpg in Resources */,
-				D9712F1F24E5EE2900A792E9 /* weidmann.jpg in Resources */,
-				D9712F2B24E5EE2900A792E9 /* corDados.json in Resources */,
-				D9712F1C24E5EE2900A792E9 /* cervejariaDados.json in Resources */,
-				D9712F1924E5EE2900A792E9 /* patagonia_pilsen_foto_usuario.jpg in Resources */,
-				D9712F1824E5EE2900A792E9 /* hop_bomb_ipa_foto_usuario.jpg in Resources */,
-				D9712F2524E5EE2900A792E9 /* weisse.jpg in Resources */,
-				D9712F2224E5EE2900A792E9 /* india_pale_ale.jpg in Resources */,
-				D9712EFE24E5EBF200A792E9 /* Assets.xcassets in Resources */,
-				D9712F1A24E5EE2900A792E9 /* imigracao_export.jpg in Resources */,
-				D9712F2124E5EE2900A792E9 /* logo_imigracao.jpg in Resources */,
-				D9712F2624E5EE2900A792E9 /* dado_bier_logo.jpg in Resources */,
-				D9712F1B24E5EE2900A792E9 /* new_england_ipa_foto_usuario.jpg in Resources */,
-				D9712F1624E5EE2900A792E9 /* double_new_england_ipa.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D99A189224B6A1DA00D63C79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -991,57 +600,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D99A18AE24B6A1DC00D63C79 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9B5CF5924E5D2A70024540B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9B5CF5E24E5D2A80024540B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9B5CF6224E5D2A90024540B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9B5CFA124E5D99F0024540B /* new_england_ipa_foto_usuario.jpg in Resources */,
-				D9B5CF9C24E5D99F0024540B /* new_england_ipa.jpg in Resources */,
-				D9B5CFAA24E5D99F0024540B /* india_pale_ale.jpg in Resources */,
-				D9B5CFAE24E5D99F0024540B /* bohemian_pilsener.jpg in Resources */,
-				D9B5CFAD24E5D99F0024540B /* session_ipa.jpg in Resources */,
-				D9B5CF9724E5D99F0024540B /* patagonia_pilsen_foto_usuario.jpg in Resources */,
-				D9B5CF9624E5D99F0024540B /* hop_bomb_ipa.jpg in Resources */,
-				D9B5CFA624E5D99F0024540B /* bellavista_american_ipa.jpg in Resources */,
-				D9B5CFA724E5D99F0024540B /* weidmann_foto_usuario.jpg in Resources */,
-				D9B5CF9424E5D99F0024540B /* bellavista_logo.jpg in Resources */,
-				D9B5CF9B24E5D99F0024540B /* weisse.jpg in Resources */,
-				D9B5CF7724E5D2AA0024540B /* Preview Assets.xcassets in Resources */,
-				D9B5CF9824E5D99F0024540B /* hop_bomb_ipa_foto_usuario.jpg in Resources */,
-				D9B5CFA324E5D99F0024540B /* weidmann.jpg in Resources */,
-				D9B5CF9D24E5D99F0024540B /* cervejariaDados.json in Resources */,
-				D9B5CF9A24E5D99F0024540B /* marcaDados.json in Resources */,
-				D9B5CF7424E5D2AA0024540B /* Assets.xcassets in Resources */,
-				D9B5CFA824E5D99F0024540B /* summer_ipa.jpg in Resources */,
-				D9B5CFA524E5D99F0024540B /* corDados.json in Resources */,
-				D9B5CFA924E5D99F0024540B /* ambev_logo.jpg in Resources */,
-				D9B5CFA224E5D99F0024540B /* double_new_england_ipa.jpg in Resources */,
-				D9B5CF9F24E5D99F0024540B /* gilde_logo.jpg in Resources */,
-				D9B5CFA424E5D99F0024540B /* logo_imigracao.jpg in Resources */,
-				D9B5CF9524E5D99F0024540B /* tupiniquim_logo.jpg in Resources */,
-				D9B5CFA024E5D99F0024540B /* dado_bier_logo.jpg in Resources */,
-				D9B5CF9924E5D99F0024540B /* amber_lager.jpg in Resources */,
-				D9B5CFAB24E5D99F0024540B /* imigracao_export.jpg in Resources */,
-				D9B5CF9E24E5D99F0024540B /* cervejaDados.json in Resources */,
-				D9B5CFAC24E5D99F0024540B /* easy_ipa.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D9BFA80824E4CB3C008ED37A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1055,50 +613,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D9712EF324E5EBF000A792E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9712F3924E5EE9500A792E9 /* CorLista.swift in Sources */,
-				D9712F0624E5EDB100A792E9 /* CervejaLinha.swift in Sources */,
-				D9712F4224E5EE9C00A792E9 /* MostradorNotaEmoji.swift in Sources */,
-				D9712F3324E5EE9200A792E9 /* CervejariaDetalhe.swift in Sources */,
-				D9712F0B24E5EDB800A792E9 /* Dados.swift in Sources */,
-				D9712F3D24E5EE9900A792E9 /* NovaAvaliacao.swift in Sources */,
-				D9712F3E24E5EE9900A792E9 /* AvaliacaoLinha.swift in Sources */,
-				D9712F4524E5EEAF00A792E9 /* UIID.swift in Sources */,
-				D9712F3024E5EE6E00A792E9 /* CervejaDetalheViewModel.swift in Sources */,
-				D9712F1224E5EDE800A792E9 /* TVCervejaLista.swift in Sources */,
-				D9712F0E24E5EDB800A792E9 /* UF.swift in Sources */,
-				D9712F0C24E5EDB800A792E9 /* Cervejaria.swift in Sources */,
-				D9712F2F24E5EE6C00A792E9 /* CervejaDetalhe.swift in Sources */,
-				D9712F0824E5EDB800A792E9 /* Marca.swift in Sources */,
-				D9712F0F24E5EDD100A792E9 /* MedidorNota.swift in Sources */,
-				D9712F3C24E5EE9900A792E9 /* AvaliacaoLinhaViewModel.swift in Sources */,
-				D9712F3724E5EE9200A792E9 /* CervejariaCelula.swift in Sources */,
-				D9712F3B24E5EE9900A792E9 /* AvaliacaoListaViewModel.swift in Sources */,
-				D9712F4724E5FBBA00A792E9 /* TVCervejaLinha.swift in Sources */,
-				D9712F3A24E5EE9500A792E9 /* NovaCervejaViewModel.swift in Sources */,
-				D9712F4424E5EE9C00A792E9 /* Color+BackgroundColor.swift in Sources */,
-				D9712F4124E5EE9C00A792E9 /* MostradorTeorAlcoolico.swift in Sources */,
-				D9712F0924E5EDB800A792E9 /* PreferenciasUsuario.swift in Sources */,
-				D9712F1024E5EDD100A792E9 /* MedidorIBU.swift in Sources */,
-				D9712F3124E5EE8B00A792E9 /* CervejaLista.swift in Sources */,
-				D9712F3524E5EE9200A792E9 /* NovaCervejariaViewModel.swift in Sources */,
-				D9712F4024E5EE9C00A792E9 /* Mapa.swift in Sources */,
-				D9712F0724E5EDB100A792E9 /* CervejaLinhaViewModel.swift in Sources */,
-				D9712F4324E5EE9C00A792E9 /* MostradorNotaEmojiViewModel.swift in Sources */,
-				D9712F3F24E5EE9900A792E9 /* NovaAvaliacaoViewModel.swift in Sources */,
-				D9712F0D24E5EDB800A792E9 /* Avaliacao.swift in Sources */,
-				D9712EFA24E5EBF100A792E9 /* TVArrotoAmargoApp.swift in Sources */,
-				D9712F1324E5EE1400A792E9 /* CervejaListaViewModel.swift in Sources */,
-				D9712F3424E5EE9200A792E9 /* NovaCervejaria.swift in Sources */,
-				D9712F3624E5EE9200A792E9 /* CervejariaDetalheViewModel.swift in Sources */,
-				D9712F3224E5EE9200A792E9 /* CervejariaCelulaViewModel.swift in Sources */,
-				D9712F0A24E5EDB800A792E9 /* Cerveja.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D99A189024B6A1DA00D63C79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1120,7 +634,6 @@
 				D9F37EFB24F33C7F0086298C /* CervejaPagina.swift in Sources */,
 				D9049DD424D661A80099DD51 /* CervejariaDetalhe.swift in Sources */,
 				D9F18E6F24BBECA500325193 /* CervejaLista.swift in Sources */,
-				D9B0EBF524D4F7F4007B6F93 /* UIID.swift in Sources */,
 				D92923A624D90CBA00977803 /* NovaCervejariaViewModel.swift in Sources */,
 				D99A189824B6A1DA00D63C79 /* ArrotoAmargoApp.swift in Sources */,
 				D9F37EFD24F3464F0086298C /* AvaliacaoPagina.swift in Sources */,
@@ -1157,39 +670,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D99A18AC24B6A1DC00D63C79 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9B0EBF424D4F7C8007B6F93 /* UIID.swift in Sources */,
-				D99A18B524B6A1DC00D63C79 /* ArrotoAmargoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9B5CF6024E5D2A90024540B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9B5CF8624E5D8950024540B /* WatchCervejaDetalhe.swift in Sources */,
-				D9B5CF8824E5D9350024540B /* Dados.swift in Sources */,
-				D9B5CF8724E5D9350024540B /* Cervejaria.swift in Sources */,
-				D9B5CF6E24E5D2A90024540B /* NotificationController.swift in Sources */,
-				D9B5CF8D24E5D9350024540B /* UF.swift in Sources */,
-				D9B5CF8A24E5D9350024540B /* Cerveja.swift in Sources */,
-				D9B5CF8B24E5D9350024540B /* PreferenciasUsuario.swift in Sources */,
-				D9B5CF9224E5D94D0024540B /* MedidorIBU.swift in Sources */,
-				D9B5CF8C24E5D9350024540B /* Avaliacao.swift in Sources */,
-				D9B5CF7224E5D2A90024540B /* ComplicationController.swift in Sources */,
-				D9B5CF6A24E5D2A90024540B /* ArrotoAmargoApp.swift in Sources */,
-				D9B5CF7024E5D2A90024540B /* NotificationView.swift in Sources */,
-				D9B5CFAF24E5DA580024540B /* CervejaLinhaViewModel.swift in Sources */,
-				D9B5CF8F24E5D94D0024540B /* MedidorNota.swift in Sources */,
-				D9E954A124E5DDFC00910B45 /* CervejaDetalheViewModel.swift in Sources */,
-				D9B5CF8924E5D9350024540B /* Marca.swift in Sources */,
-				D9B5CF8E24E5D93D0024540B /* CervejaLinha.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D9BFA80624E4CB3C008ED37A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1214,22 +694,6 @@
 			target = D99A189324B6A1DA00D63C79 /* ArrotoAmargo */;
 			targetProxy = D99A18A624B6A1DC00D63C79 /* PBXContainerItemProxy */;
 		};
-		D99A18B224B6A1DC00D63C79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D99A189324B6A1DA00D63C79 /* ArrotoAmargo */;
-			targetProxy = D99A18B124B6A1DC00D63C79 /* PBXContainerItemProxy */;
-		};
-		D9B5CF6724E5D2A90024540B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D9B5CF6324E5D2A90024540B /* WatchArrotoAmargo Extension */;
-			targetProxy = D9B5CF6624E5D2A90024540B /* PBXContainerItemProxy */;
-		};
-		D9B5CF7B24E5D2AA0024540B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = D9B5CF5A24E5D2A70024540B /* WatchArrotoAmargo */;
-			targetProxy = D9B5CF7A24E5D2AA0024540B /* PBXContainerItemProxy */;
-		};
 		D9BFA81A24E4CB3E008ED37A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D9BFA80924E4CB3C008ED37A /* ArrotoAmargoWidgetExtension */;
@@ -1238,52 +702,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		D9712F0324E5EBF200A792E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TVArrotoAmargo/Preview Content\"";
-				DEVELOPMENT_TEAM = L8X3H5XA82;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TVArrotoAmargo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.TVArrotoAmargo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 14.0;
-			};
-			name = Debug;
-		};
-		D9712F0424E5EBF200A792E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TVArrotoAmargo/Preview Content\"";
-				DEVELOPMENT_TEAM = L8X3H5XA82;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TVArrotoAmargo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.TVArrotoAmargo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 14.0;
-			};
-			name = Release;
-		};
 		D99A18B724B6A1DC00D63C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1413,17 +831,16 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArrotoAmargo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1440,17 +857,16 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArrotoAmargo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1498,134 +914,6 @@
 			};
 			name = Release;
 		};
-		D99A18C024B6A1DC00D63C79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L8X3H5XA82;
-				INFOPLIST_FILE = ArrotoAmargoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArrotoAmargo;
-			};
-			name = Debug;
-		};
-		D99A18C124B6A1DC00D63C79 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L8X3H5XA82;
-				INFOPLIST_FILE = ArrotoAmargoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArrotoAmargo;
-			};
-			name = Release;
-		};
-		D9B5CF7E24E5D2AA0024540B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L8X3H5XA82;
-				IBSC_MODULE = WatchArrotoAmargo_Extension;
-				INFOPLIST_FILE = WatchArrotoAmargo/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Debug;
-		};
-		D9B5CF7F24E5D2AA0024540B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L8X3H5XA82;
-				IBSC_MODULE = WatchArrotoAmargo_Extension;
-				INFOPLIST_FILE = WatchArrotoAmargo/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Release;
-		};
-		D9B5CF8124E5D2AA0024540B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchArrotoAmargo Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = L8X3H5XA82;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "WatchArrotoAmargo Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Debug;
-		};
-		D9B5CF8224E5D2AA0024540B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchArrotoAmargo Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = L8X3H5XA82;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "WatchArrotoAmargo Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Release;
-		};
 		D9BFA81D24E4CB3E008ED37A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1643,7 +931,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.ArrotoAmargoWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1666,7 +954,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.ArrotoAmargo.ArrotoAmargoWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1675,15 +963,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9712F0524E5EBF200A792E9 /* Build configuration list for PBXNativeTarget "TVArrotoAmargo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9712F0324E5EBF200A792E9 /* Debug */,
-				D9712F0424E5EBF200A792E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D99A188F24B6A1DA00D63C79 /* Build configuration list for PBXProject "ArrotoAmargo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1707,33 +986,6 @@
 			buildConfigurations = (
 				D99A18BD24B6A1DC00D63C79 /* Debug */,
 				D99A18BE24B6A1DC00D63C79 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D99A18BF24B6A1DC00D63C79 /* Build configuration list for PBXNativeTarget "ArrotoAmargoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D99A18C024B6A1DC00D63C79 /* Debug */,
-				D99A18C124B6A1DC00D63C79 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D9B5CF8324E5D2AA0024540B /* Build configuration list for PBXNativeTarget "WatchArrotoAmargo Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9B5CF8124E5D2AA0024540B /* Debug */,
-				D9B5CF8224E5D2AA0024540B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D9B5CF8424E5D2AA0024540B /* Build configuration list for PBXNativeTarget "WatchArrotoAmargo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9B5CF7E24E5D2AA0024540B /* Debug */,
-				D9B5CF7F24E5D2AA0024540B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
