@@ -2,29 +2,13 @@
 
 🇧🇷 PT:
 
-Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI para todas as plataformas da Apple.
-
-Em ordem de prioridade:
-
-- iOS
-- macOS
-- iPadOS
-- watchOS
-- tvOS
+Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI.
 
 🇺🇸 EN:
 
-A personal beer rating catalog made with Swift and SwiftUI for all of Apple's platforms.
+A personal beer rating catalog made in Swift and SwiftUI.
 
-In order of priority:
-
-- iOS
-- macOS
-- iPadOS
-- watchOS
-- tvOS
-
-Most of the code (class names, variable names) is written in Portuguese.
+Note: Most of the code (class names, variable names) is written in Portuguese.
 
 ![Imagem bem próxima da lateral de um copo de cerveja exibindo a cerveja dourada, a espuma branca e as gotas de água condensadas escorrendo por fora do copo](Imagens/timothy-dykes-Lq1rOaigDoY-unsplash.jpg)
 
@@ -39,7 +23,6 @@ Most of the code (class names, variable names) is written in Portuguese.
 
 - iOS 14
 - Xcode 12
-- macOS 11 Big Sur (para rodar o target do Mac)
 
 ## Contato
 
