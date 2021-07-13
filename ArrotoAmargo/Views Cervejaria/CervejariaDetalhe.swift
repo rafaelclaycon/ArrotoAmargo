@@ -13,9 +13,9 @@ struct CervejariaDetalhe: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Mapa(coordinate: viewModel.localizacao/*, span: 0.005*/)
+                /*Mapa(coordinate: viewModel.localizacao/*, span: 0.005*/)
                     .edgesIgnoringSafeArea(.top)
-                    .frame(height: 200)
+                    .frame(height: 200)*/
                 
                 HStack {
                     VStack(alignment: .leading) {
@@ -41,10 +41,10 @@ struct CervejariaDetalhe: View {
                     .padding(.leading, 20)
                     .padding(.bottom, 10)
                 
-                ForEach(viewModel.cervejas) { cerveja in
-                    CervejaLinha(viewModel: CervejaLinhaViewModel(cerveja: cerveja))
-                }
-                .padding(.horizontal, 15)
+//                ForEach(viewModel.cervejas) { cerveja in
+//                    CervejaLinha(viewModel: CervejaLinhaViewModel(cerveja: cerveja))
+//                }
+//                .padding(.horizontal, 15)
             }
             .navigationBarTitle(Text("Sobre a cervejaria"), displayMode: .inline)
         }

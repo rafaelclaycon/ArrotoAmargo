@@ -14,19 +14,19 @@ struct CervejaDetalhe: View {
     
     var body: some View {
         VStack {
-            if viewModel.existemFotosUsuario {
-                viewModel.primeiraFoto()
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.top)
-                    .frame(height: 180)
-                    .clipped()
-            }
+//            if viewModel.existemFotosUsuario {
+//                viewModel.primeiraFoto()
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .edgesIgnoringSafeArea(.top)
+//                    .frame(height: 180)
+//                    .clipped()
+//            }
             
             HStack {
-                viewModel.imagem
-                    .resizable()
-                    .frame(width: 100, height: 100, alignment: .center)
+//                viewModel.imagem
+//                    .resizable()
+//                    .frame(width: 100, height: 100, alignment: .center)
                 VStack(alignment: .leading) {
                     Text(viewModel.nome)
                         .font(.title2)
@@ -56,7 +56,7 @@ struct CervejaDetalhe: View {
                 CervejaPagina(viewModel: CervejaPaginaViewModel(cervejaria: viewModel.cervejaria, marca: viewModel.marca, ibu: viewModel.ibu, teorAlcoolico: viewModel.teorAlcoolico))
                 Spacer()
             } else if indicePagina == 1 {
-                AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: viewModel.avaliacoes, idCerveja: viewModel.idCerveja, nomeCerveja: viewModel.nome))
+//                AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: viewModel.avaliacoes, idCerveja: viewModel.idCerveja, nomeCerveja: viewModel.nome))
             }
         }
         .navigationBarTitle(Text(viewModel.nome), displayMode: .inline)

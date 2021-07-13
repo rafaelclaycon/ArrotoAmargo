@@ -8,6 +8,7 @@
 import Foundation
 
 enum UF: String, CaseIterable {
+
     case rs = "Rio Grande do Sul"
     case sp = "São Paulo"
     case mg = "Minas Gerais"
@@ -16,4 +17,5 @@ enum UF: String, CaseIterable {
     case ba = "Bahia"
     case ce = "Ceará"
     case rj = "Rio de Janeiro"
+
 }

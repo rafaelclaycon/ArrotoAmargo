@@ -10,7 +10,6 @@ import CoreLocation
 
 struct CervejaLista: View {
     @ObservedObject var viewModel = CervejaListaViewModel(cervejas: cervejaDados)
-    @State var preferencias: PreferenciasUsuario
     
     var body: some View {
         let navBarItemSize: CGFloat = 36
@@ -70,7 +69,7 @@ struct CervejaLista: View {
     }
 }
 
-struct AvaliacaoLista_Previews: PreviewProvider {
+/*struct AvaliacaoLista_Previews: PreviewProvider {
     static var previews: some View {
         // iPhone SE (1st generation)
         // iPhone SE (2nd generation)
@@ -80,4 +79,4 @@ struct AvaliacaoLista_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
     }
-}
+}*/

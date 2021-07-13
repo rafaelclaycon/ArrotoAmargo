@@ -13,7 +13,7 @@ class AvaliacaoLinhaViewModel: ObservableObject {
     var avaliacao: Avaliacao
     @Published var nota: Int
     @Published var dataHoraRegistro: String
-    @Published var localRegistro: CLLocationCoordinate2D
+    //@Published var localRegistro: CLLocationCoordinate2D
     @Published var localConsumo: String
     @Published var anotacoes: String
     
@@ -29,7 +29,7 @@ class AvaliacaoLinhaViewModel: ObservableObject {
         dateFormatter.locale = Locale(identifier: "pt_BR")
         self.dataHoraRegistro = dateFormatter.localizedString(for: avaliacao.dataHoraRegistro, relativeTo: Date())
         
-        self.localRegistro = avaliacao.localRegistro
+        //self.localRegistro = avaliacao.localConsumo
         self.localConsumo = avaliacao.localConsumo
         self.anotacoes = avaliacao.anotacoes
     }

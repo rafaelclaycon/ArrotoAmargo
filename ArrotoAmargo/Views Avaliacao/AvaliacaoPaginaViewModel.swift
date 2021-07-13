@@ -21,10 +21,6 @@ class AvaliacaoPaginaViewModel: ObservableObject {
     }
     
     func atualizarListaAvaliacoes() {
-        if let cervejaEncontrada = cervejaDados.first(where: {$0.id == idCerveja}) {
-            self.avaliacoes = cervejaEncontrada.avaliacoes?.sorted(by: { $0.dataHoraRegistro > $1.dataHoraRegistro })
-        } else {
-            print("Cerveja não encontrada! Lista de avaliações não será atualizada!")
-        }
+
     }
 }

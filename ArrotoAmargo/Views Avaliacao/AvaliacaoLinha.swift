@@ -16,8 +16,8 @@ struct AvaliacaoLinha: View {
     
     var body: some View {
         HStack {
-            Mapa(coordinate: viewModel.localRegistro)
-                .frame(width: 80, height: 80, alignment: .center)
+//            Mapa(coordinate: viewModel.localRegistro)
+//                .frame(width: 80, height: 80, alignment: .center)
             VStack(alignment: .leading) {
                 Text(viewModel.dataHoraRegistro)
                     .font(.body)

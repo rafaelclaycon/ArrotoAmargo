@@ -9,43 +9,30 @@ import SwiftUI
 import CoreLocation
 
 struct Cerveja: Hashable, Codable, Identifiable {
-    var id: Int
+
+    // MARK: - Propriedades do objeto
+    var id: String
     var nome: String
-    fileprivate var nomeImagem: String
-    fileprivate var coordenadas: Coordinates
-    var idCervejaria: Int
-    var idMarca: Int
     var nota: Int?
     var ibu: Float
     var teorAlcoolico: Float
     var estilo: EstiloCerveja
     var cor: Float?
-    var notasDegustacao: String?
-    var fotosUsuario: [String]?
     var dataAdicao: Date
     
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordenadas.latitude,
-            longitude: coordenadas.longitude)
-    }
-    
+    // MARK: - Ligações externas
+    var imagem: Imagem?
+    var cervejaria: Cervejaria?
+    var marca: Marca?
     var avaliacoes: [Avaliacao]?
-    
-    var cervejaria: Cervejaria? {
-        return cervejariaDados.first(where: {$0.id == self.idCervejaria}) ?? nil
-    }
-    
-    var marca: Marca? {
-        return marcaDados.first(where: {$0.id == self.idMarca}) ?? nil
-    }
+
 }
 
-extension Cerveja {
-    var imagem: Image {
-        ImageStore.shared.image(name: nomeImagem)
-    }
-}
+//extension Cerveja {
+//    var imagem: Image {
+//        ImageStore.shared.image(name: nomeImagem)
+//    }
+//}
 
 struct Coordinates: Hashable, Codable {
     var latitude: Double

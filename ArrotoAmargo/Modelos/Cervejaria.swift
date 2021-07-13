@@ -12,14 +12,18 @@ struct Cervejaria: Hashable, Codable, Identifiable {
     
     // Cervejaria, do ponto de vista do Arroto Amargo, é a empresa que produziu e envasou a cerveja.
     
-    var id: Int
+    var id: String
     var razaoSocial: String
-    var endereco: String
-    fileprivate var coordenadas: Coordinates
+    var cidade: String
+    var uf: String
+    var pais: String
     
-    var localizacao: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordenadas.latitude,
-            longitude: coordenadas.longitude)
-    }
+//    fileprivate var coordenadas: Coordinates
+//    
+//    var localizacao: CLLocationCoordinate2D {
+//        CLLocationCoordinate2D(
+//            latitude: coordenadas.latitude,
+//            longitude: coordenadas.longitude)
+//    }
+
 }

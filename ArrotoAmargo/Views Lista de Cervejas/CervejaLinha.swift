@@ -12,9 +12,9 @@ struct CervejaLinha: View {
     
     var body: some View {
         HStack {
-            viewModel.imagem
-                .resizable()
-                .frame(width: 50, height: 50, alignment: .center)
+//            viewModel.imagem
+//                .resizable()
+//                .frame(width: 50, height: 50, alignment: .center)
                         
             VStack(alignment: .leading) {
                 Text(viewModel.nomeCerveja)

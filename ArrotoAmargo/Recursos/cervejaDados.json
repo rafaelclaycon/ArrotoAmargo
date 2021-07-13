@@ -1,282 +1,124 @@
 [
     {
+        "id": "49145542-9B6F-4CC3-83E6-6A02EC9F572F",
         "nome": "Roleta Russa India Pale Ale",
-        "id": 1,
-        "nomeImagem": "india_pale_ale",
-        "idCervejaria": 1,
-        "idMarca": 1,
         "nota": 8,
-        "coordenadas": {
-            "longitude": -51.06552601,
-            "latitude": -29.67756663
-        },
         "ibu": 58,
         "teorAlcoolico": 5.6,
         "estilo": "India Pale Ale",
         "cor": 5.08,
-        "notasDegustacao": "Aroma e sabor cítrico e frutado devido à adição exagerada de lúpulos americanos, remetendo a frutas amarelas e tropicais, como maracujá, laranja, pomelo e manga.",
-        "dataAdicao": "2020-07-08T20:04:00Z",
-        "avaliacoes": [
-            {
-                "id": "2C82556A-5236-462E-B867-08DE9F9D9D4D",
-                "dataHoraRegistro": "2020-06-22T07:22:00Z",
-                "nota": 8,
-                "localConsumo": "Casa",
-                "coordenadas": {
-                    "longitude": -51.06552601,
-                    "latitude": -29.67756663
-                },
-                "anotacoes": "Lorem ipsum dolor sit amet."
-            },
-            {
-                "id": "99E5E64D-1457-4003-9725-7D49A6997CF6",
-                "dataHoraRegistro": "2020-03-19T07:22:00Z",
-                "nota": 10,
-                "localConsumo": "Casa",
-                "coordenadas": {
-                    "longitude": -51.06552601,
-                    "latitude": -29.67756663
-                },
-                "anotacoes": "Para analistas consultados pelo G1, fim de programas como Auxílio Emergencial e BEm somados à abertura econômica vão sobrecarregar busca por vagas. Projeções apontam para desemprego de até 18% no final do ano."
-            },
-            {
-                "id": "9570DB0A-FC63-49E2-9B95-4545C763B073",
-                "dataHoraRegistro": "2020-03-19T07:22:00Z",
-                "nota": 10,
-                "localConsumo": "Casa do Vitor",
-                "coordenadas": {
-                    "longitude": -51.06552601,
-                    "latitude": -29.67756663
-                },
-                "anotacoes": "Bem gostosa, como sempre."
-            },
-            {
-                "id": "EEC3A9E2-0264-420B-9304-8DE8908AC6A4",
-                "dataHoraRegistro": "2020-08-25T19:22:00Z",
-                "nota": 9,
-                "localConsumo": "Casa",
-                "coordenadas": {
-                    "longitude": -51.06552601,
-                    "latitude": -29.67756663
-                },
-                "anotacoes": "Estava boa."
-            },
-            {
-                "id": "0EE4E0E1-BFAF-4E78-82A6-85EFB65FC241",
-                "dataHoraRegistro": "2020-08-26T20:37:33Z",
-                "nota": 9,
-                "localConsumo": "Casa",
-                "coordenadas": {
-                    "longitude": -51.06552601,
-                    "latitude": -29.67756663
-                },
-                "anotacoes": "Boa!"
-            }
-        ]
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "131CBD3E-982E-4D9E-9D4A-8493DC6A14EC",
         "nome": "Roleta Russa New England IPA",
-        "id": 2,
-        "nomeImagem": "new_england_ipa",
-        "idCervejaria": 1,
-        "idMarca": 1,
         "nota": 10,
-        "coordenadas": {
-            "longitude": -51.0532093,
-            "latitude": -29.68463672
-        },
         "ibu": 64,
         "teorAlcoolico": 6.0,
         "estilo": "India Pale Ale",
         "cor": 3.5,
-        "notasDegustacao": "Aroma e sabor cítrico e frutado devido à receita complexa que utiliza muitos lúpulos americanos e australianos.",
-        "fotosUsuario": ["new_england_ipa_foto_usuario"],
-        "dataAdicao": "2020-07-08T20:04:00Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "B6C98763-2F80-42C1-99A1-E730976E4B47",
         "nome": "Roleta Russa Easy IPA",
-        "id": 3,
-        "nomeImagem": "easy_ipa",
-        "idCervejaria": 1,
-        "idMarca": 1,
         "nota": 2,
-        "coordenadas": {
-            "longitude": -51.19876742,
-            "latitude": -30.04065931
-        },
         "ibu": 30,
         "teorAlcoolico": 4.6,
         "estilo": "India Pale Ale",
         "cor": 3.3,
-        "notasDegustacao": "Aroma e sabor cítrico que remetem a frutas tropicais e amarelas, como maracujá e mamão papaia.",
-        "dataAdicao": "2020-07-08T20:04:00Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "FD563A84-A8BE-4472-9E58-48A99F47FEF1",
         "nome": "Roleta Russa Double New England IPA",
-        "id": 4,
-        "nomeImagem": "double_new_england_ipa",
-        "idCervejaria": 1,
-        "idMarca": 1,
         "nota": 4,
-        "coordenadas": {
-            "longitude": -51.19876742,
-            "latitude": -30.04065931
-        },
         "ibu": 70,
         "teorAlcoolico": 8.1,
         "estilo": "India Pale Ale",
         "cor": 4,
-        "notasDegustacao": "Aromas intensos que remetem a suco de frutas como maracujá, laranja, mamão papaia e melão. No sabor as notas frutadas se repetem em primeiro plano, em seguida, o amargor prevalece inserido de forma equilibrada.",
-        "dataAdicao": "2020-07-08T20:04:00Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "93FF31DE-2187-408F-8486-E989F7610361",
         "nome": "Weidmann",
-        "id": 5,
-        "nomeImagem": "weidmann",
-        "idCervejaria": 3,
-        "idMarca": 6,
         "nota": 8,
-        "coordenadas": {
-            "longitude": 9.753374654934941,
-            "latitude": 52.35445047476286
-        },
         "ibu": 0,
         "teorAlcoolico": 5.0,
         "estilo": "Dunkel",
-        "fotosUsuario": ["weidmann_foto_usuario"],
-        "dataAdicao": "2020-07-17T22:21:18Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "CFD813DA-4FFE-4D02-80A5-762C276E9872",
         "nome": "Summer IPA",
-        "id": 6,
-        "nomeImagem": "summer_ipa",
-        "idCervejaria": 4,
-        "idMarca": 5,
         "nota": 2,
-        "coordenadas": {
-            "longitude": -51.19876742,
-            "latitude": -30.04065931
-        },
         "ibu": 0,
         "teorAlcoolico": 5.0,
         "estilo": "India Pale Ale",
-        "dataAdicao": "2020-07-17T23:54:13Z",
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "73760017-17A4-44D6-BA5D-615928912542",
         "nome": "Hop Bomb IPA",
-        "id": 7,
-        "nomeImagem": "hop_bomb_ipa",
-        "idCervejaria": 4,
-        "idMarca": 5,
         "nota": 10,
-        "coordenadas": {
-            "longitude": -51.19876742,
-            "latitude": -30.04065931
-        },
         "ibu": 0,
         "teorAlcoolico": 5.0,
         "estilo": "India Pale Ale",
-        "fotosUsuario": ["hop_bomb_ipa_foto_usuario"],
-        "dataAdicao": "2020-07-18T14:32:43Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "DB3D3C47-2B34-414A-92BA-8D8057338E14",
         "nome": "Session IPA",
-        "id": 8,
-        "nomeImagem": "session_ipa",
-        "idCervejaria": 5,
-        "idMarca": 4,
         "nota": 6,
-        "coordenadas": {
-            "longitude": -51.19876742,
-            "latitude": -30.04065931
-        },
         "ibu": 40,
         "teorAlcoolico": 4.1,
         "estilo": "India Pale Ale",
-        "dataAdicao": "2020-07-18T15:23:02Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "D2290519-936D-40AC-A7B1-47C76A12169E",
         "nome": "Patagonia Weisse",
-        "id": 9,
-        "nomeImagem": "weisse",
-        "idCervejaria": 2,
-        "idMarca": 3,
         "nota": 10,
-        "coordenadas": {
-            "longitude": -51.19876742,
-            "latitude": -30.04065931
-        },
         "ibu": 18,
         "teorAlcoolico": 4.4,
         "estilo": "Witbier",
-        "dataAdicao": "2020-07-18T22:32:52Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "F3D41F84-BC98-4DF7-8D34-7FB9EAD74F99",
         "nome": "Patagonia Bohemian Pilsener",
-        "id": 10,
-        "nomeImagem": "bohemian_pilsener",
-        "idCervejaria": 2,
-        "idMarca": 3,
         "nota": 6,
-        "coordenadas": {
-            "longitude": -51.19876742,
-            "latitude": -30.04065931
-        },
         "ibu": 18,
         "teorAlcoolico": 5.2,
         "estilo": "Pilsen",
-        "fotosUsuario": ["patagonia_pilsen_foto_usuario"],
-        "dataAdicao": "2020-07-18T22:32:52Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "CAAC3E6E-6BF1-4159-8555-0E892E0125C3",
         "nome": "Patagonia Amber Lager",
-        "id": 11,
-        "nomeImagem": "amber_lager",
-        "idCervejaria": 2,
-        "idMarca": 3,
         "nota": 4,
-        "coordenadas": {
-            "longitude": -51.19876742,
-            "latitude": -30.04065931
-        },
         "ibu": 13.5,
         "teorAlcoolico": 4.5,
         "estilo": "Amber Lager",
-        "dataAdicao": "2020-07-19T00:38:56Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "7631DBC9-96A0-47AA-9FAF-6396AF345E7A",
         "nome": "Bellavista American IPA",
-        "id": 12,
-        "nomeImagem": "bellavista_american_ipa",
-        "idCervejaria": 1,
-        "idMarca": 2,
         "nota": 8,
-        "coordenadas": {
-            "longitude": -51.06552601,
-            "latitude": -29.67756663
-        },
         "ibu": 55,
         "teorAlcoolico": 6.2,
         "estilo": "American IPA",
-        "dataAdicao": "2020-07-31T18:02:00Z"
+        "dataAdicao": 1626135094.158544
     },
     {
+        "id": "838E0D3F-0C26-4E1D-894C-8F855A5F62A9",
         "nome": "Imigração Export",
-        "id": 13,
-        "nomeImagem": "imigracao_export",
-        "idCervejaria": 1,
-        "idMarca": 1,
         "nota": 6,
-        "coordenadas": {
-            "longitude": -51.06552601,
-            "latitude": -29.67756663
-        },
         "ibu": 18,
         "teorAlcoolico": 5.2,
         "estilo": "Dortmunder Export",
         "cor": null,
-        "notasDegustacao": "Produzida com quatro tipos de maltes, aroma e sabor equilibrados com floral do lúpulo, que remetem a casca de pão e biscoito, lembrando o mel. A sensação de boca é de corpo médio-baixo, amargor baixo, e final levemente doce.",
-        "avaliacoes": null,
-        "dataAdicao": "2020-08-01T19:33:00Z"
+        "dataAdicao": 1626135094.158544
     }
 ]
