@@ -15,8 +15,8 @@ struct CervejariaPagina: View {
     }
 }
 
-struct CervejariaPageView_Previews: PreviewProvider {
-    static var previews: some View {
-        CervejariaPagina(viewModel: CervejariaPaginaViewModel(cervejaria: cervejaDados[1].cervejaria!, marca: cervejaDados[1].marca!))
-    }
-}
+//struct CervejariaPageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CervejariaPagina(viewModel: CervejariaPaginaViewModel(cervejaria: cervejaDados[1].cervejaria!, marca: cervejaDados[1].marca!))
+//    }
+//}

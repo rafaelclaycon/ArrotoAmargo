@@ -6,12 +6,12 @@
 //
 
 import Foundation
-import CoreLocation
 
 struct Marca: Hashable, Codable, Identifiable {
-    var id: Int
+
+    var id: String
     var nome: String
-    var proprietario: String
-    var enderecoSede: String
-    var nomeImagem: String
+    var fabricas: [Cervejaria]
+    var proprietario: Proprietario
+
 }

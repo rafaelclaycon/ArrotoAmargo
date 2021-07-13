@@ -60,8 +60,8 @@ struct AvaliacaoPagina: View {
     }
 }
 
-struct AvaliacaoPageView_Previews: PreviewProvider {
-    static var previews: some View {
-        AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: cervejaDados[1].avaliacoes, idCerveja: cervejaDados[1].id, nomeCerveja: cervejaDados[1].nome))
-    }
-}
+//struct AvaliacaoPageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AvaliacaoPagina(viewModel: AvaliacaoPaginaViewModel(avaliacoes: cervejaDados[1].avaliacoes, idCerveja: cervejaDados[1].id, nomeCerveja: cervejaDados[1].nome))
+//    }
+//}

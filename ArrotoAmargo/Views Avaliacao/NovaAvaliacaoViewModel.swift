@@ -56,29 +56,22 @@ class NovaAvaliacaoViewModel: ObservableObject {
     }
     
     func salvarAvaliacao() {
-        guard idCerveja != nil else {
-            fatalError("idCerveja não especificado!")
-        }
-        guard let indice = cervejaDados.firstIndex(where: {$0.id == idCerveja}) else {
-            fatalError("Índice não encontrado para ID: \(String(describing: idCerveja))")
-        }
-        
-        if cervejaDados[indice].avaliacoes != nil {
-            var currentLocation: CLLocation!
-
-            if
-               CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
-               CLLocationManager.authorizationStatus() ==  .authorizedAlways
-            {
-                currentLocation = locationManager.location
-            }
-        } else {
-            cervejaDados[indice].avaliacoes = [Avaliacao]()
-        }
-        
-        print("Cerveja: \(cervejaDados[indice].nome)")
-        print("Count avaliações antes da adição: \(cervejaDados[indice].avaliacoes!.count)")
-        cervejaDados[indice].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: -29.926913, localRegistroLongitude: -51.191612))
-        print("Count avaliações depois da adição: \(cervejaDados[indice].avaliacoes!.count)")
+//        guard idCerveja != nil else {
+//            fatalError("idCerveja não especificado!")
+//        }
+//        guard let indice = cervejaDados.firstIndex(where: {$0.id == idCerveja}) else {
+//            fatalError("Índice não encontrado para ID: \(String(describing: idCerveja))")
+//        }
+//        
+//        if cervejaDados[indice].avaliacoes != nil {
+//            
+//        } else {
+//            cervejaDados[indice].avaliacoes = [Avaliacao]()
+//        }
+//        
+//        print("Cerveja: \(cervejaDados[indice].nome)")
+//        print("Count avaliações antes da adição: \(cervejaDados[indice].avaliacoes!.count)")
+//        cervejaDados[indice].avaliacoes!.append(Avaliacao(dataHora: dataRegistro, nota: nota, localConsumo: descricaoLocal, anotacoes: anotacoes, localRegistroLatitude: -29.926913, localRegistroLongitude: -51.191612))
+//        print("Count avaliações depois da adição: \(cervejaDados[indice].avaliacoes!.count)")
     }
 }

@@ -24,8 +24,8 @@ struct Mapa: UIViewRepresentable {
     }
 }
 
-struct Mapa_Previews: PreviewProvider {
-    static var previews: some View {
-        Mapa(coordinate: cervejaDados[0].locationCoordinate)
-    }
-}
+//struct Mapa_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Mapa(coordinate: cervejaDados[0].locationCoordinate)
+//    }
+//}

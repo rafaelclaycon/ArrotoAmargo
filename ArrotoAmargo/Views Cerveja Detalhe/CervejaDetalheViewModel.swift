@@ -11,10 +11,10 @@ import CoreLocation
 
 class CervejaDetalheViewModel: ObservableObject {
     var cerveja: Cerveja
-    @Published var locationCoordinate: CLLocationCoordinate2D
+    //@Published var locationCoordinate: CLLocationCoordinate2D
     @Published var nome: String
     @Published var nomeEstilo: String
-    @Published var imagem: Image
+    //@Published var imagem: Image
     @Published var cervejaria: Cervejaria
     @Published var marca: Marca
     @Published var nota: Int?
@@ -23,30 +23,30 @@ class CervejaDetalheViewModel: ObservableObject {
     @Published var existemAvaliacoes: Bool
     @Published var avaliacoes: [Avaliacao]?
     @Published var existemFotosUsuario: Bool
-    @Published var idCerveja: Int
+    //@Published var idCerveja: Int
     
     init(cerveja: Cerveja) {
         self.cerveja = cerveja
         
-        self.locationCoordinate = cerveja.locationCoordinate
+        //self.locationCoordinate = cerveja.locationCoordinate
         self.nome = cerveja.nome
         self.nomeEstilo = cerveja.estilo.rawValue.uppercased()
-        self.imagem = cerveja.imagem
+        //self.imagem = cerveja.imagem
         self.cervejaria = cerveja.cervejaria!
         self.marca = cerveja.marca!
         self.ibu = Int(round(cerveja.ibu))
         self.teorAlcoolico = cerveja.teorAlcoolico
         self.avaliacoes = cerveja.avaliacoes?.sorted(by: { $0.dataHoraRegistro > $1.dataHoraRegistro })
         self.existemAvaliacoes = cerveja.avaliacoes != nil
-        self.existemFotosUsuario = cerveja.fotosUsuario != nil
-        self.idCerveja = cerveja.id
+        self.existemFotosUsuario = false
+        //self.idCerveja = cerveja.id
         
-        self.nota = obterMediaAvaliacoes(cerveja.avaliacoes)
+        self.nota = 0
     }
     
-    func primeiraFoto() -> Image {
-        return ImageStore.shared.image(name: cerveja.fotosUsuario![0])
-    }
+//    func primeiraFoto() -> Image {
+//        return ImageStore.shared.image(name: cerveja.fotosUsuario![0])
+//    }
     
     func getTextoEstilo() -> Text {
         switch self.cerveja.estilo {

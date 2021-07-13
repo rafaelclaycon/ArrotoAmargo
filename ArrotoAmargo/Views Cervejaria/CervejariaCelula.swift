@@ -30,8 +30,8 @@ struct CervejariaCelula: View {
                 self.action = 1
             }) {
                 HStack {
-                    Mapa(coordinate: viewModel.localizacao)
-                        .frame(width: 80, height: 70)
+//                    Mapa(coordinate: viewModel.localizacao)
+//                        .frame(width: 80, height: 70)
                         
                     VStack(alignment: .leading) {
                         Text(viewModel.nomeCervejaria)
@@ -65,11 +65,11 @@ struct CervejariaCelula: View {
                         .padding(.leading, 20)
                     
                     HStack {
-                        viewModel.logoCervejaria
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 30, height: 30, alignment: .center)
-                            .padding(.leading, 15)
+//                        viewModel.logoCervejaria
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fit)
+//                            .frame(width: 30, height: 30, alignment: .center)
+//                            .padding(.leading, 15)
                         Text(viewModel.nomeMarca)
                             .font(.subheadline)
                             .padding(.leading, 20)
