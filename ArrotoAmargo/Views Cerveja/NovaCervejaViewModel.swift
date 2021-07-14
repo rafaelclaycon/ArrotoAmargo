@@ -24,9 +24,9 @@ class NovaCervejaViewModel: ObservableObject {
     //@State private var indiceCor = 0
     
     init() {
-        for estilo in EstiloCerveja.allCases {
-            estilos.append(estilo.rawValue)
-        }
+        //for estilo in EstiloCerveja.allCases {
+            estilos.append("Nenhum")
+        //}
         
         let copiaMarcasOrdenadasAlfabeticamente = marcaDados.sorted {
             $0.nome.lowercased() < $1.nome.lowercased()
