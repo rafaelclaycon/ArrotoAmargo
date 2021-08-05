@@ -47,7 +47,7 @@ struct CervejaLista: View {
                     .actionSheet(isPresented: $viewModel.exibindoOpcoesCriacao) {
                         ActionSheet(title: Text("Criar nova:"),
                                     message: nil,
-                                    buttons: [.default(Image(systemName: "rosette")) { viewModel.exibirCadastroNovaAvaliacao() },
+                                    buttons: [.default(Text("📕  Avaliação")) { viewModel.exibirCadastroNovaAvaliacao() },
                                               .default(Text("🍺  Cerveja")) { viewModel.exibirCadastroNovaCerveja() },
                                               .default(Text("🏢  Cervejaria")) { viewModel.exibirCadastroNovaCevejaria() },
                                               .default(Text("💎  Marca")),
