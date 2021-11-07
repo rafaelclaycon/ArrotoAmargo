@@ -45,12 +45,12 @@ struct CervejaLista: View {
                     }
                     .frame(width: navBarItemSize, height: navBarItemSize, alignment: .center)
                     .actionSheet(isPresented: $viewModel.exibindoOpcoesCriacao) {
-                        ActionSheet(title: Text("O que você deseja criar?"),
+                        ActionSheet(title: Text("Criar nova:"),
                                     message: nil,
-                                    buttons: [.default(Text("📕  Nova avaliação")) { viewModel.exibirCadastroNovaAvaliacao() },
-                                              .default(Text("🍺  Nova cerveja")) { viewModel.exibirCadastroNovaCerveja() },
-                                              .default(Text("🏢  Nova cervejaria")) { viewModel.exibirCadastroNovaCevejaria() },
-                                              .default(Text("💎  Nova marca")),
+                                    buttons: [.default(Text("📕  Avaliação")) { viewModel.exibirCadastroNovaAvaliacao() },
+                                              .default(Text("🍺  Cerveja")) { viewModel.exibirCadastroNovaCerveja() },
+                                              .default(Text("🏢  Cervejaria")) { viewModel.exibirCadastroNovaCevejaria() },
+                                              .default(Text("💎  Marca")),
                                               .cancel(Text("Cancelar"))])
                     }
                 }

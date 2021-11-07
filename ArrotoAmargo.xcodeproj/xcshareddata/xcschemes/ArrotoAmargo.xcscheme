@@ -29,22 +29,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D99A18A424B6A1DC00D63C79"
                BuildableName = "ArrotoAmargoTests.xctest"
                BlueprintName = "ArrotoAmargoTests"
-               ReferencedContainer = "container:ArrotoAmargo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D99A18AF24B6A1DC00D63C79"
-               BuildableName = "ArrotoAmargoUITests.xctest"
-               BlueprintName = "ArrotoAmargoUITests"
                ReferencedContainer = "container:ArrotoAmargo.xcodeproj">
             </BuildableReference>
          </TestableReference>

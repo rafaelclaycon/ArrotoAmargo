@@ -39,26 +39,26 @@ struct Coordinates: Hashable, Codable {
     var longitude: Double
 }
 
-enum EstiloCerveja: String, CaseIterable {
-    case americanPaleAle = "American Pale Ale"
-    case indiaPaleAle = "India Pale Ale"
-    case pilsen = "Pilsen"
-    case americanLager = "American Lager"
-    case premium = "Premium"
-    case witbier = "Witbier"
-    case dunkel = "Dunkel"
-    case amberLager = "Amber Lager"
-    case americanIPA = "American IPA"
-    case dortmunderExport = "Dortmunder Export"
-    
-    case desconhecido
-}
+//enum EstiloCerveja: String, CaseIterable {
+//    case 0 americanPaleAle = "American Pale Ale"
+//    case 1 indiaPaleAle = "India Pale Ale"
+//    case 2 pilsen = "Pilsen"
+//    case 3 americanLager = "American Lager"
+//    case 4 premium = "Premium"
+//    case 5 witbier = "Witbier"
+//    case 6 dunkel = "Dunkel"
+//    case 7 amberLager = "Amber Lager"
+//    case 8 americanIPA = "American IPA"
+//    case 9 dortmunderExport = "Dortmunder Export"
+//    
+//    case desconhecido
+//}
 
-extension EstiloCerveja: Codable {
-    public init(from decoder: Decoder) throws {
-        self = try EstiloCerveja(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .desconhecido
-    }
-}
+//extension EstiloCerveja: Codable {
+//    public init(from decoder: Decoder) throws {
+//        self = try EstiloCerveja(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .desconhecido
+//    }
+//}
 
 struct CorCerveja: Hashable, Codable, Identifiable {
     var id: Int

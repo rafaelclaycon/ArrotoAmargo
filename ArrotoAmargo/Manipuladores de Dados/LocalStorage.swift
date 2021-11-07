@@ -11,11 +11,12 @@ import SQLite
 class LocalStorage {
 
     private var db: Connection
-    private var cervejas = Table("cervejas")
-    private var avaliacoes = Table("avaliacoes")
-    private var cervejarias = Table("cervejarias")
-    private var marcas = Table("marcas")
-    private var proprietarios = Table("proprietarios")
+    private var cervejas = Table("cerveja")
+    private var estilos = Table("estilo")
+    private var avaliacoes = Table("avaliacao")
+    private var cervejarias = Table("cervejaria")
+    private var marcas = Table("marca")
+    private var proprietarios = Table("proprietario")
 
     // MARK: - Init
 
@@ -27,6 +28,7 @@ class LocalStorage {
         do {
             db = try Connection("\(path)/db.sqlite3")
             try criarCervejas()
+            try criarEstilos()
             try criarAvaliacoes()
             try criarCervejarias()
             try criarMarcas()
@@ -55,6 +57,16 @@ class LocalStorage {
             t.column(estilo)
             t.column(cor)
             t.column(dataAdicao)
+        })
+    }
+    
+    private func criarEstilos() throws {
+        let id = Expression<String>("id")
+        let nome = Expression<String>("nome")
+        
+        try db.run(estilos.create(ifNotExists: true) { t in
+            t.column(id, primaryKey: true)
+            t.column(nome)
         })
     }
 
@@ -134,6 +146,30 @@ class LocalStorage {
 
     func deleteAllCervejas() throws {
         try db.run(cervejas.delete())
+    }
+    
+    // MARK: - Estilos
+
+    func getEstiloCount() throws -> Int {
+        try db.scalar(estilos.count)
+    }
+
+    func insert(estilo: EstiloCerveja) throws {
+        let insert = try estilos.insert(estilo)
+        try db.run(insert)
+    }
+
+    func getAllEstilos() throws -> [EstiloCerveja] {
+        var queriedEstilos = [EstiloCerveja]()
+
+        for estilo in try db.prepare(estilos) {
+            queriedEstilos.append(try estilo.decode())
+        }
+        return queriedEstilos
+    }
+
+    func deleteAllEstilos() throws {
+        try db.run(estilos.delete())
     }
 
     // MARK: - Avaliações

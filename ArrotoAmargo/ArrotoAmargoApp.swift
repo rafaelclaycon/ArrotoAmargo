@@ -18,7 +18,7 @@ struct ArrotoAmargoApp: App {
                               nota: 0,
                               ibu: 2.0,
                               teorAlcoolico: 3.0,
-                              estilo: EstiloCerveja(rawValue: "American Pale Ale")!,
+                              estilo: EstiloCerveja(id: "1", nome: "American Pale Ale"),
                               cor: 4.0,
                               dataAdicao: Date(),
                               imagem: Imagem(id: "defg", caminho: ""),

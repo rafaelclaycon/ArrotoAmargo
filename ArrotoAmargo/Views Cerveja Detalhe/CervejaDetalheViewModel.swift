@@ -30,7 +30,7 @@ class CervejaDetalheViewModel: ObservableObject {
         
         //self.locationCoordinate = cerveja.locationCoordinate
         self.nome = cerveja.nome
-        self.nomeEstilo = cerveja.estilo.rawValue.uppercased()
+        self.nomeEstilo = "NENHUM"
         //self.imagem = cerveja.imagem
         self.cervejaria = cerveja.cervejaria!
         self.marca = cerveja.marca!
@@ -48,26 +48,26 @@ class CervejaDetalheViewModel: ObservableObject {
 //        return ImageStore.shared.image(name: cerveja.fotosUsuario![0])
 //    }
     
-    func getTextoEstilo() -> Text {
-        switch self.cerveja.estilo {
-        case .indiaPaleAle:
-            return Text("🇮🇳  \(nomeEstilo)").foregroundColor(Color(UIColor(red: 0.21, green: 0.54, blue: 0.13, alpha: 1)))
-        case .americanIPA:
-            return Text("🇺🇸  \(nomeEstilo)").foregroundColor(.orange)
-        case .americanPaleAle:
-            return Text("🏈  \(nomeEstilo)").foregroundColor(.orange)
-        case .amberLager:
-            return Text("🟤  \(nomeEstilo)").foregroundColor(.orange)
-        case .witbier:
-            return Text("🌾  \(nomeEstilo)").foregroundColor(.orange)
-        case .pilsen:
-            return Text("🍺  \(nomeEstilo)").foregroundColor(.orange)
-        case .dunkel:
-            return Text("☕️  \(nomeEstilo)").foregroundColor(.orange)
-        default:
-            return Text(nomeEstilo).foregroundColor(.orange)
-        }
-    }
+//    func getTextoEstilo() -> Text {
+//        switch self.cerveja.estilo {
+//        case .indiaPaleAle:
+//            return Text("🇮🇳  \(nomeEstilo)").foregroundColor(Color(UIColor(red: 0.21, green: 0.54, blue: 0.13, alpha: 1)))
+//        case .americanIPA:
+//            return Text("🇺🇸  \(nomeEstilo)").foregroundColor(.orange)
+//        case .americanPaleAle:
+//            return Text("🏈  \(nomeEstilo)").foregroundColor(.orange)
+//        case .amberLager:
+//            return Text("🟤  \(nomeEstilo)").foregroundColor(.orange)
+//        case .witbier:
+//            return Text("🌾  \(nomeEstilo)").foregroundColor(.orange)
+//        case .pilsen:
+//            return Text("🍺  \(nomeEstilo)").foregroundColor(.orange)
+//        case .dunkel:
+//            return Text("☕️  \(nomeEstilo)").foregroundColor(.orange)
+//        default:
+//            return Text(nomeEstilo).foregroundColor(.orange)
+//        }
+//    }
     
     func obterMediaAvaliacoes(_ avaliacoes: [Avaliacao]?) -> Int? {
         guard avaliacoes != nil else {
