@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "nome": "India Pale Ale"
+    },
+    {
+        "id": "6",
+        "nome": "Dunkel"
+    },
+    {
+        "id": "5",
+        "nome": "Witbier"
+    },
+    {
+        "id": "2",
+        "nome": "Pilsen"
+    },
+    {
+        "id": "7",
+        "nome": "Amber Lager"
+    },
+    {
+        "id": "8",
+        "nome": "American IPA"
+    },
+    {
+        "id": "9",
+        "nome": "Dortmunder Export"
+    }
+]

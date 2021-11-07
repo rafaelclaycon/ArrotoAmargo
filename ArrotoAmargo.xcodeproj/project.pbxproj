@@ -57,6 +57,7 @@
 		D99E5CA024C7B31300D8A648 /* amber_lager.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D99E5C9E24C7B31300D8A648 /* amber_lager.jpg */; };
 		D99E5CA224C7CDD100D8A648 /* CervejaListaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */; };
 		D9A7C6AF24BFB43C005AC54F /* MedidorNota.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */; };
+		D9AAB2F627384217000D67A6 /* estiloDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D9AAB2F527384217000D67A6 /* estiloDados.json */; };
 		D9AF4D2B24C7E6CB00739866 /* AvaliacaoListaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF4D2A24C7E6CB00739866 /* AvaliacaoListaViewModel.swift */; };
 		D9AF4D3024C7E84D00739866 /* AvaliacaoLinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF4D2F24C7E84D00739866 /* AvaliacaoLinha.swift */; };
 		D9BD7C5124F9B1630017CC0B /* CervejariaPaginaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C5024F9B1630017CC0B /* CervejariaPaginaViewModel.swift */; };
@@ -203,6 +204,7 @@
 		D99E5C9E24C7B31300D8A648 /* amber_lager.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amber_lager.jpg; sourceTree = "<group>"; };
 		D99E5CA124C7CDD100D8A648 /* CervejaListaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejaListaViewModel.swift; sourceTree = "<group>"; };
 		D9A7C6AE24BFB43C005AC54F /* MedidorNota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidorNota.swift; sourceTree = "<group>"; };
+		D9AAB2F527384217000D67A6 /* estiloDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = estiloDados.json; sourceTree = "<group>"; };
 		D9AF4D2A24C7E6CB00739866 /* AvaliacaoListaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoListaViewModel.swift; sourceTree = "<group>"; };
 		D9AF4D2F24C7E84D00739866 /* AvaliacaoLinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliacaoLinha.swift; sourceTree = "<group>"; };
 		D9BD7C5024F9B1630017CC0B /* CervejariaPaginaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervejariaPaginaViewModel.swift; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 		D9CC7DE324BA17D8006C2D4D /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				D9AAB2F527384217000D67A6 /* estiloDados.json */,
 				D9F37EF624F32CC40086298C /* sud_logo.jpg */,
 				D9BFA7E424E4A46F008ED37A /* corDados.json */,
 				D9049DCF24D624F00099DD51 /* imigracao_export.jpg */,
@@ -609,6 +612,7 @@
 				D9049DCE24D5B87F0099DD51 /* marcaDados.json in Resources */,
 				D95DE9A124CF0FC500404D98 /* patagonia_pilsen_foto_usuario.jpg in Resources */,
 				D904D6F224C4F1C500FAEEE6 /* hop_bomb_ipa.jpg in Resources */,
+				D9AAB2F627384217000D67A6 /* estiloDados.json in Resources */,
 				D9FAF81424CE308F00EDA25C /* logo_imigracao.jpg in Resources */,
 				D9945E3824BBD43800E9428F /* new_england_ipa.jpg in Resources */,
 				D9945E3924BBD43800E9428F /* easy_ipa.jpg in Resources */,
