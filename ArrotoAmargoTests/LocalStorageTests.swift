@@ -16,11 +16,13 @@ class LocalStorageTests: XCTestCase {
     override func setUpWithError() throws {
         XCTAssertEqual(try storage.getCervejaCount(), 0)
         XCTAssertEqual(try storage.getEstiloCount(), 0)
+        XCTAssertEqual(try storage.getCervejariaCount(), 0)
     }
 
     override func tearDownWithError() throws {
         XCTAssertNoThrow(try storage.deleteAllCervejas())
         XCTAssertNoThrow(try storage.deleteAllEstilos())
+        XCTAssertNoThrow(try storage.deleteAllCervejarias())
     }
     
     // MARK: - Cervejas
@@ -41,6 +43,16 @@ class LocalStorageTests: XCTestCase {
             XCTAssertNoThrow(try storage.insert(estilo: estilo))
         }
         XCTAssertEqual(try storage.getAllEstilos().count, 7)
+    }
+    
+    // MARK: - Cervejarias
+    
+    func test_insertCervejariasIntoDB_shouldReturnCorrectCount() throws {
+        let cervejarias = ArrotoAmargoService.getCervejarias()
+        for cervejaria in cervejarias {
+            XCTAssertNoThrow(try storage.insert(cervejaria: cervejaria))
+        }
+        XCTAssertEqual(try storage.getAllCervejarias().count, 5)
     }
 
 }

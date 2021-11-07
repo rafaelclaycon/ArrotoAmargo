@@ -16,6 +16,10 @@ class ArrotoAmargoService {
     static func getEstilos() -> [EstiloCerveja] {
         load("estiloDados.json")
     }
+    
+    static func getCervejarias() -> [Cervejaria] {
+        load("cervejariaDados.json")
+    }
 
     private static func load<T: Decodable>(_ filename: String) -> T {
         let data: Data

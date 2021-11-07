@@ -1,47 +1,37 @@
 [
     {
-        "id": 1,
+        "id": "10468AC8-48B6-4E99-AB17-93AAF1D99137",
         "razaoSocial": "Cervejaria Campo Bom LTDA",
-        "endereco": "Campo Bom - RS, Brasil",
-        "coordenadas": {
-            "longitude": -51.064971,
-            "latitude": -29.676570
-        }
+        "cidade": "Campo Bom",
+        "uf": "RS",
+        "pais": "Brasil"
     },
     {
-        "id": 2,
+        "id": "14FE2129-1774-456E-80AB-F4260A1A38E4",
         "razaoSocial": "Cervejaria Bohemia",
-        "endereco": "Petrópolis - RJ, Brasil",
-        "coordenadas": {
-            "longitude": -43.184725,
-            "latitude": -22.506295
-        }
+        "cidade": "Petrópolis",
+        "uf": "RJ",
+        "pais": "Brasil"
     },
     {
-        "id": 3,
+        "id": "1FD5C525-FC4E-40B2-B81F-8F30EFCCD1C7",
         "razaoSocial": "Gilde Brauerei GmbH",
-        "endereco": "Hanôver - Baixa Saxónia, Alemanha",
-        "coordenadas": {
-            "longitude": 9.755236,
-            "latitude": 52.353742
-        }
+        "cidade": "Hanôver",
+        "uf": "Baixa Saxónia",
+        "pais": "Alemanha"
     },
     {
-        "id": 4,
+        "id": "7778B1F0-B361-4653-863B-E7422ABCD81D",
         "razaoSocial": "Cervejaria Tupiniquim S.A.",
-        "endereco": "Porto Alegre - RS, Brasil",
-        "coordenadas": {
-            "longitude": -51.174702,
-            "latitude": -29.974663
-        }
+        "cidade": "Porto Alegre",
+        "uf": "RS",
+        "pais": "Brasil"
     },
     {
-        "id": 5,
+        "id": "C402D634-532D-4301-B371-859341DB6B1E",
         "razaoSocial": "Santamate Indústria e Comércio LTDA",
-        "endereco": "Santa Maria - RS, Brasil",
-        "coordenadas": {
-            "longitude": -53.783119,
-            "latitude": -29.773929
-        }
+        "cidade": "Santa Maria",
+        "uf": "RS",
+        "pais": "Brasil"
     }
 ]

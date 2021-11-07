@@ -124,7 +124,7 @@ class LocalStorage {
         })
     }
 
-    // MARK: - Cervejas
+    // MARK: - Cerveja
 
     func getCervejaCount() throws -> Int {
         try db.scalar(cervejas.count)
@@ -148,7 +148,7 @@ class LocalStorage {
         try db.run(cervejas.delete())
     }
     
-    // MARK: - Estilos
+    // MARK: - Estilo
 
     func getEstiloCount() throws -> Int {
         try db.scalar(estilos.count)
@@ -170,6 +170,30 @@ class LocalStorage {
 
     func deleteAllEstilos() throws {
         try db.run(estilos.delete())
+    }
+    
+    // MARK: - Cervejaria
+
+    func getCervejariaCount() throws -> Int {
+        try db.scalar(cervejarias.count)
+    }
+
+    func insert(cervejaria: Cervejaria) throws {
+        let insert = try cervejarias.insert(cervejaria)
+        try db.run(insert)
+    }
+
+    func getAllCervejarias() throws -> [Cervejaria] {
+        var queriedRows = [Cervejaria]()
+
+        for row in try db.prepare(cervejarias) {
+            queriedRows.append(try row.decode())
+        }
+        return queriedRows
+    }
+
+    func deleteAllCervejarias() throws {
+        try db.run(cervejarias.delete())
     }
 
     // MARK: - Avaliações
