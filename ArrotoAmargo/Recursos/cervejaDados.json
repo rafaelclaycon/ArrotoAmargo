@@ -6,7 +6,8 @@
         "ibu": 58,
         "teorAlcoolico": 5.6,
         "estilo": {
-            "1": "India Pale Ale"
+            "id": "1",
+            "nome": "India Pale Ale"
         },
         "cor": 5.08,
         "dataAdicao": 1626135094.158544
@@ -18,7 +19,8 @@
         "ibu": 64,
         "teorAlcoolico": 6.0,
         "estilo": {
-            "1": "India Pale Ale"
+            "id": "1",
+            "nome": "India Pale Ale"
         },
         "cor": 3.5,
         "dataAdicao": 1626135094.158544
@@ -30,7 +32,8 @@
         "ibu": 30,
         "teorAlcoolico": 4.6,
         "estilo": {
-            "1": "India Pale Ale"
+            "id": "1",
+            "nome": "India Pale Ale"
         },
         "cor": 3.3,
         "dataAdicao": 1626135094.158544
@@ -42,7 +45,8 @@
         "ibu": 70,
         "teorAlcoolico": 8.1,
         "estilo": {
-            "1": "India Pale Ale"
+            "id": "1",
+            "nome": "India Pale Ale"
         },
         "cor": 4,
         "dataAdicao": 1626135094.158544
@@ -54,7 +58,8 @@
         "ibu": 0,
         "teorAlcoolico": 5.0,
         "estilo": {
-            "6": "Dunkel"
+            "id": "6",
+            "nome": "Dunkel"
         },
         "dataAdicao": 1626135094.158544
     },
@@ -65,7 +70,8 @@
         "ibu": 0,
         "teorAlcoolico": 5.0,
         "estilo": {
-            "1": "India Pale Ale"
+            "id": "1",
+            "nome": "India Pale Ale"
         },
         "dataAdicao": 1626135094.158544
     },
@@ -76,7 +82,8 @@
         "ibu": 0,
         "teorAlcoolico": 5.0,
         "estilo": {
-            "1": "India Pale Ale"
+            "id": "1",
+            "nome": "India Pale Ale"
         },
         "dataAdicao": 1626135094.158544
     },
@@ -87,7 +94,8 @@
         "ibu": 40,
         "teorAlcoolico": 4.1,
         "estilo": {
-            "1": "India Pale Ale"
+            "id": "1",
+            "nome": "India Pale Ale"
         },
         "dataAdicao": 1626135094.158544
     },
@@ -98,7 +106,8 @@
         "ibu": 18,
         "teorAlcoolico": 4.4,
         "estilo": {
-            "5": "Witbier"
+            "id": "5",
+            "nome": "Witbier"
         },
         "dataAdicao": 1626135094.158544
     },
@@ -109,7 +118,8 @@
         "ibu": 18,
         "teorAlcoolico": 5.2,
         "estilo": {
-            "2": "Pilsen"
+            "id": "2",
+            "nome": "Pilsen"
         },
         "dataAdicao": 1626135094.158544
     },
@@ -120,7 +130,8 @@
         "ibu": 13.5,
         "teorAlcoolico": 4.5,
         "estilo": {
-            "7": "Amber Lager"
+            "id": "7",
+            "nome": "Amber Lager"
         },
         "dataAdicao": 1626135094.158544
     },
@@ -131,7 +142,8 @@
         "ibu": 55,
         "teorAlcoolico": 6.2,
         "estilo": {
-            "8": "American IPA"
+            "id": "8",
+            "nome": "American IPA"
         },
         "dataAdicao": 1626135094.158544
     },
@@ -142,7 +154,8 @@
         "ibu": 18,
         "teorAlcoolico": 5.2,
         "estilo": {
-            "9": "Dortmunder Export"
+            "id": "9",
+            "nome": "Dortmunder Export"
         },
         "cor": null,
         "dataAdicao": 1626135094.158544
