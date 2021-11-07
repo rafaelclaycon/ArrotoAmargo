@@ -21,8 +21,8 @@ Note: Most of the code (class names, variable names) is written in Portuguese.
 
 ## Requisitos
 
-- iOS 14
-- Xcode 12
+- iOS 14.0+
+- Xcode 12+
 
 ## Contato
 
