@@ -20,6 +20,10 @@ class ArrotoAmargoService {
     static func getCervejarias() -> [Cervejaria] {
         load("cervejariaDados.json")
     }
+    
+    static func getAvaliacoes() -> [Avaliacao] {
+        load("avaliacaoDados.json")
+    }
 
     private static func load<T: Decodable>(_ filename: String) -> T {
         let data: Data
@@ -37,6 +41,7 @@ class ArrotoAmargoService {
 
         do {
             let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
             return try decoder.decode(T.self, from: data)
         } catch {
             fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")

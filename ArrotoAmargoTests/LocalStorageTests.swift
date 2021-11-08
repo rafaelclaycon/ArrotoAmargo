@@ -16,12 +16,14 @@ class LocalStorageTests: XCTestCase {
         XCTAssertEqual(try storage.getCount(of: TableName.cerveja), 0)
         XCTAssertEqual(try storage.getCount(of: TableName.estilo), 0)
         XCTAssertEqual(try storage.getCount(of: TableName.cervejaria), 0)
+        XCTAssertEqual(try storage.getCount(of: TableName.avaliacao), 0)
     }
 
     override func tearDownWithError() throws {
         XCTAssertNoThrow(try storage.deleteAll(from: TableName.cerveja))
         XCTAssertNoThrow(try storage.deleteAll(from: TableName.estilo))
         XCTAssertNoThrow(try storage.deleteAll(from: TableName.cervejaria))
+        XCTAssertNoThrow(try storage.deleteAll(from: TableName.avaliacao))
     }
     
     // MARK: - Cervejas
@@ -52,6 +54,16 @@ class LocalStorageTests: XCTestCase {
             XCTAssertNoThrow(try storage.insert(cervejaria, into: TableName.cervejaria))
         }
         XCTAssertEqual(try storage.getCount(of: TableName.cervejaria), 5)
+    }
+    
+    // MARK: - Avaliações
+    
+    func test_insertAvaliacoesIntoDB_shouldReturnCorrectCount() throws {
+        let avaliacoes = ArrotoAmargoService.getAvaliacoes()
+        for avaliacao in avaliacoes {
+            XCTAssertNoThrow(try storage.insert(avaliacao, into: TableName.avaliacao))
+        }
+        XCTAssertEqual(try storage.getCount(of: TableName.avaliacao), 5)
     }
 
 }

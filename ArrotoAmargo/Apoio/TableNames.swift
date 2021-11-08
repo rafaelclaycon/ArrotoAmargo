@@ -12,5 +12,6 @@ struct TableName {
     static let cerveja = "cerveja"
     static let estilo = "estilo"
     static let cervejaria = "cervejaria"
+    static let avaliacao = "avaliacao"
 
 }

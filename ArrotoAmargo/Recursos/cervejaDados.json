@@ -10,7 +10,7 @@
             "nome": "India Pale Ale"
         },
         "cor": 5.08,
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "131CBD3E-982E-4D9E-9D4A-8493DC6A14EC",
@@ -23,7 +23,7 @@
             "nome": "India Pale Ale"
         },
         "cor": 3.5,
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "B6C98763-2F80-42C1-99A1-E730976E4B47",
@@ -36,7 +36,7 @@
             "nome": "India Pale Ale"
         },
         "cor": 3.3,
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "FD563A84-A8BE-4472-9E58-48A99F47FEF1",
@@ -49,7 +49,7 @@
             "nome": "India Pale Ale"
         },
         "cor": 4,
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "93FF31DE-2187-408F-8486-E989F7610361",
@@ -61,7 +61,7 @@
             "id": "6",
             "nome": "Dunkel"
         },
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "CFD813DA-4FFE-4D02-80A5-762C276E9872",
@@ -73,7 +73,7 @@
             "id": "1",
             "nome": "India Pale Ale"
         },
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "73760017-17A4-44D6-BA5D-615928912542",
@@ -85,7 +85,7 @@
             "id": "1",
             "nome": "India Pale Ale"
         },
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "DB3D3C47-2B34-414A-92BA-8D8057338E14",
@@ -97,7 +97,7 @@
             "id": "1",
             "nome": "India Pale Ale"
         },
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "D2290519-936D-40AC-A7B1-47C76A12169E",
@@ -109,7 +109,7 @@
             "id": "5",
             "nome": "Witbier"
         },
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "F3D41F84-BC98-4DF7-8D34-7FB9EAD74F99",
@@ -121,7 +121,7 @@
             "id": "2",
             "nome": "Pilsen"
         },
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "CAAC3E6E-6BF1-4159-8555-0E892E0125C3",
@@ -133,7 +133,7 @@
             "id": "7",
             "nome": "Amber Lager"
         },
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "7631DBC9-96A0-47AA-9FAF-6396AF345E7A",
@@ -145,7 +145,7 @@
             "id": "8",
             "nome": "American IPA"
         },
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     },
     {
         "id": "838E0D3F-0C26-4E1D-894C-8F855A5F62A9",
@@ -158,6 +158,6 @@
             "nome": "Dortmunder Export"
         },
         "cor": null,
-        "dataAdicao": 1626135094.158544
+        "dataAdicao": "2021-07-13T00:11:34Z"
     }
 ]
