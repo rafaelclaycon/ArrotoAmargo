@@ -19,9 +19,9 @@ class LocalStorageTests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        XCTAssertNoThrow(try storage.deleteAllCervejas())
-        XCTAssertNoThrow(try storage.deleteAllEstilos())
-        XCTAssertNoThrow(try storage.deleteAllCervejarias())
+        XCTAssertNoThrow(try storage.deleteAll(from: TableName.cerveja))
+        XCTAssertNoThrow(try storage.deleteAll(from: TableName.estilo))
+        XCTAssertNoThrow(try storage.deleteAll(from: TableName.cervejaria))
     }
     
     // MARK: - Cervejas

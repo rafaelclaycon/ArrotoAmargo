@@ -143,66 +143,47 @@ class LocalStorage {
         let insert = try table.insert(newRow)
         try db.run(insert)
     }
+    
+    func deleteAll(from tableName: String) throws {
+        guard tableName.isEmpty == false else {
+            throw NSError(domain: "Unable to add row into empty table name.", code: 0, userInfo: nil)
+        }
+        let table = Table(tableName)
+        try db.run(table.delete())
+    }
 
     // MARK: - Cerveja
 
-    func insert(cerveja: Cerveja) throws {
-        let insert = try cervejas.insert(cerveja)
-        try db.run(insert)
-    }
-
-    func getAllCervejas() throws -> [Cerveja] {
-        var queriedCervejas = [Cerveja]()
-
-        for cerveja in try db.prepare(cervejas) {
-            queriedCervejas.append(try cerveja.decode())
-        }
-        return queriedCervejas
-    }
-
-    func deleteAllCervejas() throws {
-        try db.run(cervejas.delete())
-    }
+//    func getAllCervejas() throws -> [Cerveja] {
+//        var queriedCervejas = [Cerveja]()
+//
+//        for cerveja in try db.prepare(cervejas) {
+//            queriedCervejas.append(try cerveja.decode())
+//        }
+//        return queriedCervejas
+//    }
     
     // MARK: - Estilo
 
-    func insert(estilo: EstiloCerveja) throws {
-        let insert = try estilos.insert(estilo)
-        try db.run(insert)
-    }
-
-    func getAllEstilos() throws -> [EstiloCerveja] {
-        var queriedEstilos = [EstiloCerveja]()
-
-        for estilo in try db.prepare(estilos) {
-            queriedEstilos.append(try estilo.decode())
-        }
-        return queriedEstilos
-    }
-
-    func deleteAllEstilos() throws {
-        try db.run(estilos.delete())
-    }
+//    func getAllEstilos() throws -> [EstiloCerveja] {
+//        var queriedEstilos = [EstiloCerveja]()
+//
+//        for estilo in try db.prepare(estilos) {
+//            queriedEstilos.append(try estilo.decode())
+//        }
+//        return queriedEstilos
+//    }
     
     // MARK: - Cervejaria
 
-    func insert(cervejaria: Cervejaria) throws {
-        let insert = try cervejarias.insert(cervejaria)
-        try db.run(insert)
-    }
-
-    func getAllCervejarias() throws -> [Cervejaria] {
-        var queriedRows = [Cervejaria]()
-
-        for row in try db.prepare(cervejarias) {
-            queriedRows.append(try row.decode())
-        }
-        return queriedRows
-    }
-
-    func deleteAllCervejarias() throws {
-        try db.run(cervejarias.delete())
-    }
+//    func getAllCervejarias() throws -> [Cervejaria] {
+//        var queriedRows = [Cervejaria]()
+//
+//        for row in try db.prepare(cervejarias) {
+//            queriedRows.append(try row.decode())
+//        }
+//        return queriedRows
+//    }
 
     // MARK: - Avaliações
 
