@@ -123,12 +123,28 @@ class LocalStorage {
             t.column(nome)
         })
     }
+    
+    // MARK: - Generic query functions
+    
+    func getCount(of tableName: String) throws -> Int? {
+        guard tableName.isEmpty == false else {
+            return nil
+        }
+        let table = Table(tableName)
+        return try db.scalar(table.count)
+    }
+    
+//    func insert<T>(_ newRow: T, into tableName: String) throws {
+//        guard tableName.isEmpty == false else {
+//            throw Error("Unable to add row into empty table name.")
+//        }
+//        let table = Table(tableName)
+//        
+//        let insert = try table.insert(T)
+//        try db.run(insert)
+//    }
 
     // MARK: - Cerveja
-
-    func getCervejaCount() throws -> Int {
-        try db.scalar(cervejas.count)
-    }
 
     func insert(cerveja: Cerveja) throws {
         let insert = try cervejas.insert(cerveja)
@@ -150,10 +166,6 @@ class LocalStorage {
     
     // MARK: - Estilo
 
-    func getEstiloCount() throws -> Int {
-        try db.scalar(estilos.count)
-    }
-
     func insert(estilo: EstiloCerveja) throws {
         let insert = try estilos.insert(estilo)
         try db.run(insert)
@@ -173,10 +185,6 @@ class LocalStorage {
     }
     
     // MARK: - Cervejaria
-
-    func getCervejariaCount() throws -> Int {
-        try db.scalar(cervejarias.count)
-    }
 
     func insert(cervejaria: Cervejaria) throws {
         let insert = try cervejarias.insert(cervejaria)

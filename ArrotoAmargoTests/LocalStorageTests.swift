@@ -32,7 +32,7 @@ class LocalStorageTests: XCTestCase {
         for cerveja in cervejas {
             XCTAssertNoThrow(try storage.insert(cerveja: cerveja))
         }
-        XCTAssertEqual(try storage.getAllCervejas().count, 13)
+        XCTAssertEqual(try storage.getCount(of: "cerveja"), 13)
     }
     
     // MARK: - Estilos
@@ -42,7 +42,7 @@ class LocalStorageTests: XCTestCase {
         for estilo in estilos {
             XCTAssertNoThrow(try storage.insert(estilo: estilo))
         }
-        XCTAssertEqual(try storage.getAllEstilos().count, 7)
+        XCTAssertEqual(try storage.getCount(of: "estilo"), 7)
     }
     
     // MARK: - Cervejarias
@@ -52,7 +52,7 @@ class LocalStorageTests: XCTestCase {
         for cervejaria in cervejarias {
             XCTAssertNoThrow(try storage.insert(cervejaria: cervejaria))
         }
-        XCTAssertEqual(try storage.getAllCervejarias().count, 5)
+        XCTAssertEqual(try storage.getCount(of: "cervejaria"), 5)
     }
 
 }
