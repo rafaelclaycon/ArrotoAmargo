@@ -126,23 +126,23 @@ class LocalStorage {
     
     // MARK: - Generic query functions
     
-    func getCount(of tableName: String) throws -> Int? {
+    func getCount(of tableName: String) throws -> Int {
         guard tableName.isEmpty == false else {
-            return nil
+            throw NSError(domain: "Unable to add row into empty table name.", code: 0, userInfo: nil)
         }
         let table = Table(tableName)
         return try db.scalar(table.count)
     }
     
-//    func insert<T>(_ newRow: T, into tableName: String) throws {
-//        guard tableName.isEmpty == false else {
-//            throw Error("Unable to add row into empty table name.")
-//        }
-//        let table = Table(tableName)
-//        
-//        let insert = try table.insert(T)
-//        try db.run(insert)
-//    }
+    func insert<T: Encodable>(_ newRow: T, into tableName: String) throws {
+        guard tableName.isEmpty == false else {
+            throw NSError(domain: "Unable to add row into empty table name.", code: 0, userInfo: nil)
+        }
+        let table = Table(tableName)
+        
+        let insert = try table.insert(newRow)
+        try db.run(insert)
+    }
 
     // MARK: - Cerveja
 
