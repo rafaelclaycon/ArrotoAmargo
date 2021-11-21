@@ -11,7 +11,8 @@ struct Marca: Hashable, Codable, Identifiable {
 
     var id: String
     var nome: String
-    var fabricas: [Cervejaria]
-    var proprietario: Proprietario
+    var idProprietario: String
+    var idImagemLogo: String
+    var enderecoSede: String
 
 }

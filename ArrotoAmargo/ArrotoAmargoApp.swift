@@ -23,7 +23,7 @@ struct ArrotoAmargoApp: App {
                               dataAdicao: Date(),
                               imagem: Imagem(id: "defg", caminho: ""),
                               cervejaria: cervejaria,
-                              marca: Marca(id: "erfg", nome: "Bellavista", fabricas: [cervejaria], proprietario: Proprietario(id: "dddd", nome: "Fruki")),
+                              marca: Marca(id: "3C4A5608-AD5F-4183-95B0-F023BC21935A", nome: "Imigração", idProprietario: "A9B12804-38EB-4CAE-8D7E-F578663E846F", idImagemLogo: "logo_imigracao", enderecoSede: "Campo Bom - RS, Brasil"),
                               avaliacoes: nil)
         
         WindowGroup {

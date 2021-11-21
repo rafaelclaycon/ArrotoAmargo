@@ -13,10 +13,11 @@ class LocalStorage {
     private var db: Connection
     private var cervejas = Table("cerveja")
     private var estilos = Table("estilo")
-    private var avaliacoes = Table("avaliacao")
     private var cervejarias = Table("cervejaria")
-    private var marcas = Table("marca")
+    private var avaliacoes = Table("avaliacao")
     private var proprietarios = Table("proprietario")
+    private var marcas = Table("marca")
+    private var imagens = Table("imagem")
 
     // MARK: - Init
 
@@ -29,10 +30,11 @@ class LocalStorage {
             db = try Connection("\(path)/db.sqlite3")
             try criarCervejas()
             try criarEstilos()
-            try criarAvaliacoes()
             try criarCervejarias()
-            try criarMarcas()
+            try criarAvaliacoes()
             try criarProprietarios()
+            try criarMarcas()
+            try criarImagens()
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -69,6 +71,22 @@ class LocalStorage {
             t.column(nome)
         })
     }
+    
+    private func criarCervejarias() throws {
+        let id = Expression<String>("id")
+        let razaoSocial = Expression<String>("razaoSocial")
+        let cidade = Expression<String>("cidade")
+        let uf = Expression<String>("uf")
+        let pais = Expression<String>("pais")
+
+        try db.run(cervejarias.create(ifNotExists: true) { t in
+            t.column(id, primaryKey: true)
+            t.column(razaoSocial)
+            t.column(cidade)
+            t.column(uf)
+            t.column(pais)
+        })
+    }
 
     private func criarAvaliacoes() throws {
         let id = Expression<String>("id")
@@ -88,32 +106,6 @@ class LocalStorage {
         })
     }
     
-    private func criarCervejarias() throws {
-        let id = Expression<String>("id")
-        let razaoSocial = Expression<String>("razaoSocial")
-        let cidade = Expression<String>("cidade")
-        let uf = Expression<String>("uf")
-        let pais = Expression<String>("pais")
-
-        try db.run(cervejarias.create(ifNotExists: true) { t in
-            t.column(id, primaryKey: true)
-            t.column(razaoSocial)
-            t.column(cidade)
-            t.column(uf)
-            t.column(pais)
-        })
-    }
-    
-    private func criarMarcas() throws {
-        let id = Expression<String>("id")
-        let nome = Expression<String>("nome")
-
-        try db.run(marcas.create(ifNotExists: true) { t in
-            t.column(id, primaryKey: true)
-            t.column(nome)
-        })
-    }
-    
     private func criarProprietarios() throws {
         let id = Expression<String>("id")
         let nome = Expression<String>("nome")
@@ -121,6 +113,32 @@ class LocalStorage {
         try db.run(proprietarios.create(ifNotExists: true) { t in
             t.column(id, primaryKey: true)
             t.column(nome)
+        })
+    }
+    
+    private func criarMarcas() throws {
+        let id = Expression<String>("id")
+        let nome = Expression<String>("nome")
+        let idProprietario = Expression<String>("idProprietario")
+        let idImagemLogo = Expression<String>("idImagemLogo")
+        let enderecoSede = Expression<String>("enderecoSede")
+        
+        try db.run(marcas.create(ifNotExists: true) { t in
+            t.column(id, primaryKey: true)
+            t.column(nome)
+            t.column(idProprietario)
+            t.column(idImagemLogo)
+            t.column(enderecoSede)
+        })
+    }
+    
+    private func criarImagens() throws {
+        let id = Expression<String>("id")
+        let imagem = Expression<Blob>("imagem")
+
+        try db.run(imagens.create(ifNotExists: true) { t in
+            t.column(id, primaryKey: true)
+            t.column(imagem)
         })
     }
     
@@ -187,16 +205,7 @@ class LocalStorage {
 
     // MARK: - Avaliações
 
-    /*func getEpisodeCount() throws -> Int {
-        try db.scalar(episodios.count)
-    }
-
-    func insert(episode: Episodio) throws {
-        let insert = try episodios.insert(episode)
-        try db.run(insert)
-    }
-
-    func getAllEpisodes(forID idPodcast: Int) throws -> [Episodio] {
+    /*func getAllEpisodes(forID idPodcast: Int) throws -> [Episodio] {
         var queriedEpisodes = [Episodio]()
 
         let id_podcast = Expression<Int>("idPodcast")

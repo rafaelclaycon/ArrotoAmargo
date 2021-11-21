@@ -17,6 +17,8 @@ class LocalStorageTests: XCTestCase {
         XCTAssertEqual(try storage.getCount(of: TableName.estilo), 0)
         XCTAssertEqual(try storage.getCount(of: TableName.cervejaria), 0)
         XCTAssertEqual(try storage.getCount(of: TableName.avaliacao), 0)
+        XCTAssertEqual(try storage.getCount(of: TableName.proprietario), 0)
+        XCTAssertEqual(try storage.getCount(of: TableName.marca), 0)
     }
 
     override func tearDownWithError() throws {
@@ -24,6 +26,8 @@ class LocalStorageTests: XCTestCase {
         XCTAssertNoThrow(try storage.deleteAll(from: TableName.estilo))
         XCTAssertNoThrow(try storage.deleteAll(from: TableName.cervejaria))
         XCTAssertNoThrow(try storage.deleteAll(from: TableName.avaliacao))
+        XCTAssertNoThrow(try storage.deleteAll(from: TableName.proprietario))
+        XCTAssertNoThrow(try storage.deleteAll(from: TableName.marca))
     }
     
     // MARK: - Cervejas
@@ -64,6 +68,26 @@ class LocalStorageTests: XCTestCase {
             XCTAssertNoThrow(try storage.insert(avaliacao, into: TableName.avaliacao))
         }
         XCTAssertEqual(try storage.getCount(of: TableName.avaliacao), 5)
+    }
+    
+    // MARK: - Proprietários
+    
+    func test_insertProprietariosIntoDB_shouldReturnCorrectCount() throws {
+        let proprietarios = ArrotoAmargoService.getProprietarios()
+        for propietario in proprietarios {
+            XCTAssertNoThrow(try storage.insert(propietario, into: TableName.proprietario))
+        }
+        XCTAssertEqual(try storage.getCount(of: TableName.proprietario), 7)
+    }
+    
+    // MARK: - Marcas
+    
+    func test_insertMarcasIntoDB_shouldReturnCorrectCount() throws {
+        let marcas = ArrotoAmargoService.getMarcas()
+        for marca in marcas {
+            XCTAssertNoThrow(try storage.insert(marca, into: TableName.marca))
+        }
+        XCTAssertEqual(try storage.getCount(of: TableName.marca), 7)
     }
 
 }

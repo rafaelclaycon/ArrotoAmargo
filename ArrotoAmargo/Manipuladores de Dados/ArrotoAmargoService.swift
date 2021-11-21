@@ -24,6 +24,14 @@ class ArrotoAmargoService {
     static func getAvaliacoes() -> [Avaliacao] {
         load("avaliacaoDados.json")
     }
+    
+    static func getProprietarios() -> [Proprietario] {
+        load("proprietarioDados.json")
+    }
+    
+    static func getMarcas() -> [Marca] {
+        load("marcaDados.json")
+    }
 
     private static func load<T: Decodable>(_ filename: String) -> T {
         let data: Data
