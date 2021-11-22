@@ -1,0 +1,42 @@
+[
+    {
+        "id": "616CE089-A5F6-415F-881F-F99853A6E421",
+        "latitude": -29.67705692488356,
+        "longitude": -51.06499092386792,
+        "cidade": "Campo Bom",
+        "uf": "RS",
+        "pais": "Brasil"
+    },
+    {
+        "id": "4D158B58-C0E3-49E0-A4D1-362A816C41BD",
+        "latitude": -22.505924656899772,
+        "longitude": -43.184322793421444,
+        "cidade": "Petrópolis",
+        "uf": "RJ",
+        "pais": "Brasil"
+    },
+    {
+        "id": "5FB3D37B-1E48-48AB-B469-773781E68EF0",
+        "latitude": 52.353873059059005,
+        "longitude": 9.755293602839245,
+        "cidade": "Hanôver",
+        "uf": "Baixa Saxónia",
+        "pais": "Alemanha"
+    },
+    {
+        "id": "11719535-EDF2-4D6A-9A7B-57EBACA6F664",
+        "latitude": -29.974807548978564,
+        "longitude": -51.17467358164198,
+        "cidade": "Porto Alegre",
+        "uf": "RS",
+        "pais": "Brasil"
+    },
+    {
+        "id": "63DF8D1A-BDC0-403A-9788-A41D7D1D6736",
+        "latitude": -29.773885273992903,
+        "longitude": -53.783144251980154,
+        "cidade": "Santa Maria",
+        "uf": "RS",
+        "pais": "Brasil"
+    }
+]

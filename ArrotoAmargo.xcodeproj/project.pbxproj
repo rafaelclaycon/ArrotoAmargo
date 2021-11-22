@@ -43,6 +43,7 @@
 		D95DE9A724CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95DE9A424CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg */; };
 		D9612D6B24C7E3B300EFF8EE /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */; };
 		D97055D4274ADA0100E5A8D1 /* proprietarioDados.json in Resources */ = {isa = PBXBuildFile; fileRef = D97055D3274ADA0100E5A8D1 /* proprietarioDados.json */; };
+		D97055D6274B11A900E5A8D1 /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97055D5274B11A900E5A8D1 /* Local.swift */; };
 		D973616524E22BA400ABBDC3 /* MostradorNotaEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973616424E22BA400ABBDC3 /* MostradorNotaEmoji.swift */; };
 		D973616724E231C600ABBDC3 /* MostradorNotaEmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973616624E231C600ABBDC3 /* MostradorNotaEmojiViewModel.swift */; };
 		D97BD4E124D24DCB00B321B7 /* Color+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BD4E024D24DCB00B321B7 /* Color+BackgroundColor.swift */; };
@@ -187,6 +188,7 @@
 		D95DE9A424CF2E6B00404D98 /* new_england_ipa_foto_usuario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_england_ipa_foto_usuario.jpg; sourceTree = "<group>"; };
 		D9612D6A24C7E3B300EFF8EE /* Avaliacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
 		D97055D3274ADA0100E5A8D1 /* proprietarioDados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = proprietarioDados.json; sourceTree = "<group>"; };
+		D97055D5274B11A900E5A8D1 /* Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
 		D973616424E22BA400ABBDC3 /* MostradorNotaEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostradorNotaEmoji.swift; sourceTree = "<group>"; };
 		D973616624E231C600ABBDC3 /* MostradorNotaEmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostradorNotaEmojiViewModel.swift; sourceTree = "<group>"; };
 		D97BD4E024D24DCB00B321B7 /* Color+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+BackgroundColor.swift"; sourceTree = "<group>"; };
@@ -275,7 +277,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D906101E24D08A59003DA906 /* Views Cervejaria */ = {
+		D906101E24D08A59003DA906 /* Cervejaria Views */ = {
 			isa = PBXGroup;
 			children = (
 				D9FAF81124CD1DE300EDA25C /* CervejariaCelula.swift */,
@@ -287,16 +289,16 @@
 				D9F37EF824F33BD20086298C /* CervejariaPagina.swift */,
 				D9BD7C5024F9B1630017CC0B /* CervejariaPaginaViewModel.swift */,
 			);
-			path = "Views Cervejaria";
+			path = "Cervejaria Views";
 			sourceTree = "<group>";
 		};
-		D906101F24D08A8E003DA906 /* Views Cerveja Detalhe */ = {
+		D906101F24D08A8E003DA906 /* Detalhe Cerveja */ = {
 			isa = PBXGroup;
 			children = (
 				D9CC7DDE24B7FA3D006C2D4D /* CervejaDetalhe.swift */,
 				D9FAF80D24CC305A00EDA25C /* CervejaDetalheViewModel.swift */,
 			);
-			path = "Views Cerveja Detalhe";
+			path = "Detalhe Cerveja";
 			sourceTree = "<group>";
 		};
 		D91E407A24BF61D0003448B5 /* Views de Apoio */ = {
@@ -313,7 +315,7 @@
 			path = "Views de Apoio";
 			sourceTree = "<group>";
 		};
-		D929239C24D8E85100977803 /* Views Cerveja */ = {
+		D929239C24D8E85100977803 /* Cerveja Views */ = {
 			isa = PBXGroup;
 			children = (
 				D929239D24D8E86800977803 /* NovaCerveja.swift */,
@@ -322,7 +324,7 @@
 				D9F37EFA24F33C7F0086298C /* CervejaPagina.swift */,
 				D922581124FAA16A00CBB2E5 /* CervejaPaginaViewModel.swift */,
 			);
-			path = "Views Cerveja";
+			path = "Cerveja Views";
 			sourceTree = "<group>";
 		};
 		D99A188B24B6A1DA00D63C79 = {
@@ -352,11 +354,11 @@
 			children = (
 				D999C7552568A337000EADB9 /* ArrotoAmargo.entitlements */,
 				D9CC7DE024B7FBB4006C2D4D /* Modelos */,
-				D9C0FB1E24BF62CC00B221A5 /* Views Lista de Cervejas */,
-				D906101F24D08A8E003DA906 /* Views Cerveja Detalhe */,
-				D906101E24D08A59003DA906 /* Views Cervejaria */,
-				D929239C24D8E85100977803 /* Views Cerveja */,
-				D9AF4D2C24C7E79A00739866 /* Views Avaliacao */,
+				D9C0FB1E24BF62CC00B221A5 /* Lista de Cervejas */,
+				D906101F24D08A8E003DA906 /* Detalhe Cerveja */,
+				D906101E24D08A59003DA906 /* Cervejaria Views */,
+				D929239C24D8E85100977803 /* Cerveja Views */,
+				D9AF4D2C24C7E79A00739866 /* Avaliacao Views */,
 				D91E407A24BF61D0003448B5 /* Views de Apoio */,
 				D9CC7DE324BA17D8006C2D4D /* Recursos */,
 				D99A189724B6A1DA00D63C79 /* ArrotoAmargoApp.swift */,
@@ -386,7 +388,7 @@
 			path = ArrotoAmargoTests;
 			sourceTree = "<group>";
 		};
-		D9AF4D2C24C7E79A00739866 /* Views Avaliacao */ = {
+		D9AF4D2C24C7E79A00739866 /* Avaliacao Views */ = {
 			isa = PBXGroup;
 			children = (
 				D9AF4D2F24C7E84D00739866 /* AvaliacaoLinha.swift */,
@@ -397,7 +399,7 @@
 				D9F37EFC24F3464F0086298C /* AvaliacaoPagina.swift */,
 				D9E8AE0F24F6B99F0097BBF5 /* AvaliacaoPaginaViewModel.swift */,
 			);
-			path = "Views Avaliacao";
+			path = "Avaliacao Views";
 			sourceTree = "<group>";
 		};
 		D9BFA80B24E4CB3C008ED37A /* Frameworks */ = {
@@ -420,7 +422,7 @@
 			path = ArrotoAmargoWidget;
 			sourceTree = "<group>";
 		};
-		D9C0FB1E24BF62CC00B221A5 /* Views Lista de Cervejas */ = {
+		D9C0FB1E24BF62CC00B221A5 /* Lista de Cervejas */ = {
 			isa = PBXGroup;
 			children = (
 				D9F18E6E24BBECA500325193 /* CervejaLista.swift */,
@@ -429,7 +431,7 @@
 				D9049DD124D65CDD0099DD51 /* CervejaLinhaViewModel.swift */,
 				D9C21E85269E3118003FC58D /* NewAvaliacaoActionCell.swift */,
 			);
-			path = "Views Lista de Cervejas";
+			path = "Lista de Cervejas";
 			sourceTree = "<group>";
 		};
 		D9CC7DE024B7FBB4006C2D4D /* Modelos */ = {
@@ -443,6 +445,7 @@
 				D9049DC724D5B11E0099DD51 /* Marca.swift */,
 				D9C21E79269CA988003FC58D /* Imagem.swift */,
 				D92923A324D90AE200977803 /* UF.swift */,
+				D97055D5274B11A900E5A8D1 /* Local.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 			files = (
 				D9BD7C5124F9B1630017CC0B /* CervejariaPaginaViewModel.swift in Sources */,
 				D9AF4D3024C7E84D00739866 /* AvaliacaoLinha.swift in Sources */,
+				D97055D6274B11A900E5A8D1 /* Local.swift in Sources */,
 				D940EC1F24BFE45D001CC829 /* MedidorIBU.swift in Sources */,
 				D9049DC824D5B11E0099DD51 /* Marca.swift in Sources */,
 				D9F37EF924F33BD20086298C /* CervejariaPagina.swift in Sources */,

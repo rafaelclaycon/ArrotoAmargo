@@ -19,7 +19,7 @@ class CervejariaDetalheViewModel: ObservableObject {
     init(cervejaria: Cervejaria) {
         self.cervejaria = cervejaria
         self.nomeCervejaria = cervejaria.razaoSocial
-        self.endereco = "\(cervejaria.cidade) - \(cervejaria.uf), \(cervejaria.pais)"
+        self.endereco = ""
         //self.localizacao = cervejaria.localizacao
 //        self.cervejas = cervejaDados.filter { cerveja in
 //            return cerveja.idCervejaria == cervejaria.id

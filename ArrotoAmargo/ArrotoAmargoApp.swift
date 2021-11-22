@@ -11,7 +11,9 @@ import SwiftUI
 struct ArrotoAmargoApp: App {
 
     var body: some Scene {
-        let cervejaria = Cervejaria(id: "pppp", razaoSocial: "Campo Bom Ltda", cidade: "Campo Bom", uf: "RS", pais: "Brasil")
+        
+        
+        let cervejaria = Cervejaria(id: "pppp", razaoSocial: "Campo Bom Ltda", idLocal: "")
         
         let cerveja = Cerveja(id: "ABCD",
                               nome: "Teste",

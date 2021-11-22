@@ -14,16 +14,6 @@ struct Cervejaria: Hashable, Codable, Identifiable {
     
     var id: String
     var razaoSocial: String
-    var cidade: String
-    var uf: String
-    var pais: String
-    
-//    fileprivate var coordenadas: Coordinates
-//    
-//    var localizacao: CLLocationCoordinate2D {
-//        CLLocationCoordinate2D(
-//            latitude: coordenadas.latitude,
-//            longitude: coordenadas.longitude)
-//    }
+    var idLocal: String
 
 }

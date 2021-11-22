@@ -18,6 +18,7 @@ class LocalStorage {
     private var proprietarios = Table("proprietario")
     private var marcas = Table("marca")
     private var imagens = Table("imagem")
+    private var locais = Table("local")
 
     // MARK: - Init
 
@@ -35,6 +36,7 @@ class LocalStorage {
             try criarProprietarios()
             try criarMarcas()
             try criarImagens()
+            try criarLocais()
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -75,16 +77,12 @@ class LocalStorage {
     private func criarCervejarias() throws {
         let id = Expression<String>("id")
         let razaoSocial = Expression<String>("razaoSocial")
-        let cidade = Expression<String>("cidade")
-        let uf = Expression<String>("uf")
-        let pais = Expression<String>("pais")
+        let idLocal = Expression<String>("idLocal")
 
         try db.run(cervejarias.create(ifNotExists: true) { t in
             t.column(id, primaryKey: true)
             t.column(razaoSocial)
-            t.column(cidade)
-            t.column(uf)
-            t.column(pais)
+            t.column(idLocal)
         })
     }
 
@@ -94,7 +92,7 @@ class LocalStorage {
         let localConsumo = Expression<String>("localConsumo")
         let nota = Expression<Int>("nota")
         let anotacoes = Expression<String>("anotacoes")
-        //let foto = Expression<String>("foto")
+        //let idsFotos = Expression<String>("idsFotos")
 
         try db.run(avaliacoes.create(ifNotExists: true) { t in
             t.column(id, primaryKey: true)
@@ -102,7 +100,7 @@ class LocalStorage {
             t.column(localConsumo)
             t.column(nota)
             t.column(anotacoes)
-            //t.column(foto)
+            //t.column(idsFotos)
         })
     }
     
@@ -139,6 +137,24 @@ class LocalStorage {
         try db.run(imagens.create(ifNotExists: true) { t in
             t.column(id, primaryKey: true)
             t.column(imagem)
+        })
+    }
+    
+    private func criarLocais() throws {
+        let id = Expression<String>("id")
+        let latitude = Expression<Double>("latitude")
+        let longitude = Expression<Double>("longitude")
+        let cidade = Expression<String>("cidade")
+        let uf = Expression<String>("uf")
+        let pais = Expression<String>("pais")
+
+        try db.run(imagens.create(ifNotExists: true) { t in
+            t.column(id, primaryKey: true)
+            t.column(latitude)
+            t.column(longitude)
+            t.column(cidade)
+            t.column(uf)
+            t.column(pais)
         })
     }
     

@@ -24,7 +24,7 @@ class CervejariaCelulaViewModel: ObservableObject {
         self.marca = marca
         //self.logoCervejaria = ImageStore.shared.image(name: marca.nomeImagem)
         self.nomeCervejaria = cervejaria.razaoSocial
-        self.endereco = "\(cervejaria.cidade) - \(cervejaria.uf), \(cervejaria.pais)"
+        self.endereco = ""
         //self.localizacao = cervejaria.localizacao
         self.nomeMarca = marca.nome
         self.nomeProprietarioMarca = ""

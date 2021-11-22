@@ -2,36 +2,26 @@
     {
         "id": "10468AC8-48B6-4E99-AB17-93AAF1D99137",
         "razaoSocial": "Cervejaria Campo Bom LTDA",
-        "cidade": "Campo Bom",
-        "uf": "RS",
-        "pais": "Brasil"
+        "idLocal": "616CE089-A5F6-415F-881F-F99853A6E421"
     },
     {
         "id": "14FE2129-1774-456E-80AB-F4260A1A38E4",
         "razaoSocial": "Cervejaria Bohemia",
-        "cidade": "Petrópolis",
-        "uf": "RJ",
-        "pais": "Brasil"
+        "idLocal": "4D158B58-C0E3-49E0-A4D1-362A816C41BD"
     },
     {
         "id": "1FD5C525-FC4E-40B2-B81F-8F30EFCCD1C7",
         "razaoSocial": "Gilde Brauerei GmbH",
-        "cidade": "Hanôver",
-        "uf": "Baixa Saxónia",
-        "pais": "Alemanha"
+        "idLocal": "5FB3D37B-1E48-48AB-B469-773781E68EF0"
     },
     {
         "id": "7778B1F0-B361-4653-863B-E7422ABCD81D",
         "razaoSocial": "Cervejaria Tupiniquim S.A.",
-        "cidade": "Porto Alegre",
-        "uf": "RS",
-        "pais": "Brasil"
+        "idLocal": "11719535-EDF2-4D6A-9A7B-57EBACA6F664"
     },
     {
         "id": "C402D634-532D-4301-B371-859341DB6B1E",
         "razaoSocial": "Santamate Indústria e Comércio LTDA",
-        "cidade": "Santa Maria",
-        "uf": "RS",
-        "pais": "Brasil"
+        "idLocal": "63DF8D1A-BDC0-403A-9788-A41D7D1D6736"
     }
 ]

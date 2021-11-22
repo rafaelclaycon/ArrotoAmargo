@@ -15,7 +15,7 @@ struct Avaliacao: Hashable, Codable, Identifiable {
     var localConsumo: String
     var nota: Int
     var anotacoes: String
-    var foto: Imagem?
+    var idsFotos: [String]?
 
     init(dataHora: Date, nota: Int, localConsumo: String, anotacoes: String, localRegistroLatitude: Double, localRegistroLongitude: Double) {
         self.id = UUID().uuidString
