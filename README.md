@@ -1,31 +1,25 @@
 # Arroto Amargo
 
-🇧🇷 PT:
+Note: Most of the code (class names, variable names) is written in Portuguese. The translation to English is ongoing.
 
-Um catálogo pessoal de avaliações de cervejas feito em Swift e SwiftUI.
+![Close-up image of the side of a beer glass showing the golden beer, white foam and condensed water drops running down the outside of the glass.](Imagens/timothy-dykes-Lq1rOaigDoY-unsplash.jpg)
 
-🇺🇸 EN:
+Drink it. Rate it. Keep your favorites at the top.
 
-A personal beer rating catalog made in Swift and SwiftUI.
+![A GIF showing the user choosing a beer from the list and viewing its details.](Imagens/app_demo.gif)
 
-Note: Most of the code (class names, variable names) is written in Portuguese.
+## Features
 
-![Imagem bem próxima da lateral de um copo de cerveja exibindo a cerveja dourada, a espuma branca e as gotas de água condensadas escorrendo por fora do copo](Imagens/timothy-dykes-Lq1rOaigDoY-unsplash.jpg)
+- View beer list and its details
+- Log ratings
 
-![GIF de demonstração do app](Imagens/app_demo.gif)
-
-## Funcionalidades
-
-- Visualizar lista de cervejas e seus detalhes
-- Registrar avaliações
-
-## Requisitos
+## Prerequisites
 
 - iOS 14.0+
 - Xcode 12+
 
-## Contato
+## About this repo
 
-Twitter: <a href="http://twitter.com/mitt_rafael" target="_blank">`@mitt_rafael`</a>
+Rafael Claycon Schmitt – [@mitt_rafael](https://twitter.com/mitt_rafael) – rafael.claycon@gmail.com
 
-E-mail: rafael.claycon@gmail.com
+Distributed under the MIT license. See ``LICENSE`` for more information.
