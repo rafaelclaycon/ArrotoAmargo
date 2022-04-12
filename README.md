@@ -15,8 +15,8 @@ Drink it. Rate it. Keep your favorites at the top.
 
 ## Prerequisites
 
-- iOS 14.0+
-- Xcode 12+
+- iOS 15.0+
+- Xcode 13+
 
 ## About this repo
 
