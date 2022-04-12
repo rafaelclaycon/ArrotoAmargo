@@ -1,16 +1,10 @@
-//
-//  CervejaDetalheViewModel.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Claycon Schmitt on 25/07/20.
-//
-
 import Combine
 import SwiftUI
 import CoreLocation
 
 class CervejaDetalheViewModel: ObservableObject {
-    var cerveja: Cerveja
+
+    var cerveja: Beer
     //@Published var locationCoordinate: CLLocationCoordinate2D
     @Published var nome: String
     @Published var nomeEstilo: String
@@ -25,7 +19,7 @@ class CervejaDetalheViewModel: ObservableObject {
     @Published var existemFotosUsuario: Bool
     //@Published var idCerveja: Int
     
-    init(cerveja: Cerveja) {
+    init(cerveja: Beer) {
         self.cerveja = cerveja
         
         //self.locationCoordinate = cerveja.locationCoordinate
@@ -80,4 +74,5 @@ class CervejaDetalheViewModel: ObservableObject {
         let media: Double = Double(soma) / Double(avaliacoes!.count)
         return Int(media)
     }
+
 }

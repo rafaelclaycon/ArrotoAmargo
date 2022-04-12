@@ -1,7 +1,7 @@
 import SwiftUI
 import CoreLocation
 
-struct Cerveja: Hashable, Codable, Identifiable {
+struct Beer: Hashable, Codable, Identifiable {
 
     // MARK: - Propriedades do objeto
     var id: String
@@ -21,15 +21,17 @@ struct Cerveja: Hashable, Codable, Identifiable {
 
 }
 
-//extension Cerveja {
+//extension Beer {
 //    var imagem: Image {
 //        ImageStore.shared.image(name: nomeImagem)
 //    }
 //}
 
 struct Coordinates: Hashable, Codable {
+
     var latitude: Double
     var longitude: Double
+
 }
 
 //enum EstiloCerveja: String, CaseIterable {
@@ -53,11 +55,13 @@ struct Coordinates: Hashable, Codable {
 //    }
 //}
 
-struct CorCerveja: Hashable, Codable, Identifiable {
+struct BeerColor: Hashable, Codable, Identifiable {
+
     var id: Int
     var valorSRM: Int
     var exemplos: String
     var valorVermelho: Double
     var valorVerde: Double
     var valorAzul: Double
+
 }

@@ -1,18 +1,13 @@
-//
-//  AvaliacaoListaViewModel.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 22/07/20.
-//
-
 import Combine
 
 class AvaliacaoListaViewModel: ObservableObject {
-    var cerveja: Cerveja
+
+    var cerveja: Beer
     @Published var avaliacoes: [Avaliacao]?
     
-    init(cerveja: Cerveja) {
-        self.cerveja = cerveja
+    init(beer: Beer) {
+        self.cerveja = beer
         self.avaliacoes = self.cerveja.avaliacoes
     }
+
 }

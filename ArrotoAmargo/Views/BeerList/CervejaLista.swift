@@ -3,7 +3,7 @@ import CoreLocation
 
 struct CervejaLista: View {
 
-    @ObservedObject var viewModel = CervejaListaViewModel(cervejas: cervejaDados)
+    @ObservedObject var viewModel = BeerListViewModel(cervejas: cervejaDados)
     
     var body: some View {
         let navBarItemSize: CGFloat = 36

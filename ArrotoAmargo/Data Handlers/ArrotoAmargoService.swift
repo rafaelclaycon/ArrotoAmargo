@@ -9,7 +9,7 @@ import Foundation
 
 class ArrotoAmargoService {
 
-    static func getCervejas() -> [Cerveja] {
+    static func getCervejas() -> [Beer] {
         load("cervejaDados.json")
     }
     

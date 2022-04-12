@@ -3,13 +3,13 @@ import SwiftUI
 
 class CervejaLinhaViewModel: ObservableObject {
 
-    var cerveja: Cerveja
+    var cerveja: Beer
     @Published var nomeCerveja: String
     @Published var nomeCervejaria: String
     //@Published var imagem: Image
     //@Published var existeFoto: Bool
     
-    init(cerveja: Cerveja) {
+    init(cerveja: Beer) {
         self.cerveja = cerveja
         self.nomeCerveja = cerveja.nome
         self.nomeCervejaria = cerveja.cervejaria?.razaoSocial.uppercased() ?? ""

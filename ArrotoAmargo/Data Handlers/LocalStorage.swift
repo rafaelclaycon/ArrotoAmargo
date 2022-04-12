@@ -186,7 +186,7 @@ class LocalStorage {
         try db.run(table.delete())
     }
 
-    // MARK: - Cerveja
+    // MARK: - Beer
 
 //    func getAllCervejas() throws -> [Cerveja] {
 //        var queriedCervejas = [Cerveja]()

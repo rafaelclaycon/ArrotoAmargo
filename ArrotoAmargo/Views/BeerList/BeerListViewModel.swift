@@ -1,9 +1,9 @@
 import Combine
 import SwiftUI
 
-class CervejaListaViewModel: ObservableObject {
+class BeerListViewModel: ObservableObject {
 
-    @Published var cervejas: [Cerveja]
+    @Published var cervejas: [Beer]
     @Published var exibindoOpcoesOrdenacao = false
     @Published var exibindoOpcoesCriacao = false
     @Published var exibindoModal = false
@@ -11,7 +11,7 @@ class CervejaListaViewModel: ObservableObject {
     @Published var exibirCadastroCerveja = false
     @Published var exibirCadastroCervejaria = false
     
-    init(cervejas: [Cerveja]) {
+    init(cervejas: [Beer]) {
         self.cervejas = cervejas
         self.ordenarAlfabeticamentePeloNomeDaCerveja()
     }

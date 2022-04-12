@@ -14,7 +14,7 @@ class CervejariaDetalheViewModel: ObservableObject {
     @Published var nomeCervejaria: String
     @Published var endereco: String
     //@Published var localizacao: CLLocationCoordinate2D
-    //@Published var cervejas: [Cerveja]
+    //@Published var cervejas: [Beer]
     
     init(cervejaria: Cervejaria) {
         self.cervejaria = cervejaria
