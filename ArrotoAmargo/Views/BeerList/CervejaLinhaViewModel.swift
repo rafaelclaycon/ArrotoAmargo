@@ -1,14 +1,8 @@
-//
-//  CervejaLinhaViewModel.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 01/08/20.
-//
-
 import Combine
 import SwiftUI
 
 class CervejaLinhaViewModel: ObservableObject {
+
     var cerveja: Cerveja
     @Published var nomeCerveja: String
     @Published var nomeCervejaria: String
@@ -26,4 +20,5 @@ class CervejaLinhaViewModel: ObservableObject {
 //    func primeiraFoto() -> Image {
 //        return ImageStore.shared.image(name: cerveja.fotosUsuario![0])
 //    }
+
 }

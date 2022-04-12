@@ -1,10 +1,3 @@
-//
-//  Cerveja.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Claycon Schmitt on 09/07/20.
-//
-
 import SwiftUI
 import CoreLocation
 

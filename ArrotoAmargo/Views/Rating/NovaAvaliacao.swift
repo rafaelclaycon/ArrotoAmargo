@@ -1,13 +1,7 @@
-//
-//  NovaAvaliacao.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Claycon Schmitt on 29/07/20.
-//
-
 import SwiftUI
 
 struct NovaAvaliacao: View {
+
     @ObservedObject var viewModel: NovaAvaliacaoViewModel
     @Binding var estaSendoExibido: Bool
 
@@ -69,10 +63,13 @@ struct NovaAvaliacao: View {
             )
         }
     }
+
 }
 
 struct NovaAvaliacao_Previews: PreviewProvider {
+
     static var previews: some View {
         NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: nil, idCerveja: nil), estaSendoExibido: .constant(true))
     }
+
 }

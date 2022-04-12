@@ -1,10 +1,3 @@
-//
-//  NewAvaliacaoActionCell.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 13/07/21.
-//
-
 import SwiftUI
 
 struct NewAvaliacaoActionCell: View {
@@ -19,7 +12,9 @@ struct NewAvaliacaoActionCell: View {
 }
 
 struct NewAvaliacaoActionCell_Previews: PreviewProvider {
+
     static var previews: some View {
         NewAvaliacaoActionCell()
     }
+
 }

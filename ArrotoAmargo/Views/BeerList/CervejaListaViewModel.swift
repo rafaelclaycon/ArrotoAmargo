@@ -1,14 +1,8 @@
-//
-//  CervejaListaViewModel.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 21/07/20.
-//
-
 import Combine
 import SwiftUI
 
 class CervejaListaViewModel: ObservableObject {
+
     @Published var cervejas: [Cerveja]
     @Published var exibindoOpcoesOrdenacao = false
     @Published var exibindoOpcoesCriacao = false
@@ -77,4 +71,5 @@ class CervejaListaViewModel: ObservableObject {
                       .default(Text("😖  IBU (amargor)")) { self.ordenarPorIBU() },
                       .cancel(Text("Cancelar"))])
     }
+
 }

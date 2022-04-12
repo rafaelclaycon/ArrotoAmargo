@@ -1,10 +1,3 @@
-//
-//  TableNames.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 08/11/21.
-//
-
 import Foundation
 
 struct TableName {

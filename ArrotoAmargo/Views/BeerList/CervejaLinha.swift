@@ -1,13 +1,7 @@
-//
-//  CervejaLinha.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Claycon Schmitt on 11/07/20.
-//
-
 import SwiftUI
 
 struct CervejaLinha: View {
+
     @ObservedObject var viewModel: CervejaLinhaViewModel
     
     var body: some View {
@@ -30,9 +24,11 @@ struct CervejaLinha: View {
             Spacer()
         }
     }
+
 }
 
 struct CervejaLinha_Previews: PreviewProvider {
+
     static var previews: some View {
         Group {
             CervejaLinha(viewModel: CervejaLinhaViewModel(cerveja: cervejaDados[0]))
@@ -40,4 +36,5 @@ struct CervejaLinha_Previews: PreviewProvider {
         }
         .previewLayout(.fixed(width: 350, height: 70))
     }
+
 }

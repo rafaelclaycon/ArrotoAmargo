@@ -1,10 +1,3 @@
-//
-//  UF.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 04/08/20.
-//
-
 import Foundation
 
 enum UF: String, CaseIterable {

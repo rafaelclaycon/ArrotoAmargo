@@ -1,14 +1,8 @@
-//
-//  CervejaLista.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Claycon Schmitt on 12/07/20.
-//
-
 import SwiftUI
 import CoreLocation
 
 struct CervejaLista: View {
+
     @ObservedObject var viewModel = CervejaListaViewModel(cervejas: cervejaDados)
     
     var body: some View {
@@ -67,6 +61,7 @@ struct CervejaLista: View {
             }
         }
     }
+
 }
 
 /*struct AvaliacaoLista_Previews: PreviewProvider {

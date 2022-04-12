@@ -1,15 +1,8 @@
-//
-//  Local.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 21/11/21.
-//
-
 import Foundation
 import CoreLocation
 
 struct Local: Hashable, Codable, Identifiable {
-    
+
     var id: String
     var latitude: Double
     var longitude: Double

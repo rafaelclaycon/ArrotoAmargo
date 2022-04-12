@@ -1,10 +1,3 @@
-//
-//  Avaliacao.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 22/07/20.
-//
-
 import Foundation
 import CoreLocation
 
