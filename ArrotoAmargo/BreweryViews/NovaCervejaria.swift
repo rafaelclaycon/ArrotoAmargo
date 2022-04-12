@@ -35,7 +35,7 @@ struct NovaCervejaria: View {
                     TextField("Cidade", text: $cidade)
                     if self.nacional {
                         Picker(selection: $indiceEstado, label: Text("Estado")) {
-                            ForEach(0 ..< viewModel.estados.count) {
+                            ForEach(0 ..< viewModel.estados.count, id:\.self) {
                                 Text("\(self.viewModel.estados[$0])")
                             }
                         }

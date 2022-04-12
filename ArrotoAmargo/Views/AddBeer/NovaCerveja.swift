@@ -40,21 +40,21 @@ struct NovaCerveja: View {
                 Section {
                     // TODO - Criar Estilo
                     Picker(selection: $indiceEstilo, label: Text("Estilo")) {
-                        ForEach(0 ..< viewModel.estilos.count) {
+                        ForEach(0 ..< viewModel.estilos.count, id:\.self) {
                             Text("\(self.viewModel.estilos[$0])")
                         }
                     }
                     
                     // TODO - Criar Marca
                     Picker(selection: $indiceMarca, label: Text("Marca")) {
-                        ForEach(0 ..< viewModel.marcas.count) {
+                        ForEach(0 ..< viewModel.marcas.count, id:\.self) {
                             Text("\(self.viewModel.marcas[$0])")
                         }
                     }
                     
                     // TODO - Criar Cervejaria
                     Picker(selection: $indiceCervejaria, label: Text("Cervejaria")) {
-                        ForEach(0 ..< viewModel.cervejarias.count) {
+                        ForEach(0 ..< viewModel.cervejarias.count, id:\.self) {
                             Text("\(self.viewModel.cervejarias[$0])")
                         }
                     }

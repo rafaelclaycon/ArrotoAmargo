@@ -10,7 +10,7 @@ struct NovaAvaliacao: View {
             Form {
                 Section(header: Text("DE")) {
                     Picker(selection: $viewModel.indiceCerveja, label: Text("Cerveja")) {
-                        ForEach(0 ..< viewModel.cervejas.count) {
+                        ForEach(0 ..< viewModel.cervejas.count, id:\.self) {
                             Text("\(self.viewModel.cervejas[$0])")
                         }
                     }.disabled(viewModel.veioTelaDetalheCerveja)
