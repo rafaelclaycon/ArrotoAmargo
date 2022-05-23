@@ -1,14 +1,8 @@
-//
-//  NovaCervejaria.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 03/08/20.
-//
-
 import SwiftUI
 import CoreLocation
 
-struct NovaCervejaria: View {
+struct NewBreweryView: View {
+
     @ObservedObject var viewModel: NovaCervejariaViewModel
     @Binding var estaSendoExibido: Bool
     @State private var nome: String = ""
@@ -56,10 +50,13 @@ struct NovaCervejaria: View {
             )
         }
     }
+
 }
 
 struct NovaCervejaria_Previews: PreviewProvider {
+
     static var previews: some View {
-        NovaCervejaria(viewModel: NovaCervejariaViewModel(), estaSendoExibido: .constant(true))
+        NewBreweryView(viewModel: NovaCervejariaViewModel(), estaSendoExibido: .constant(true))
     }
+
 }

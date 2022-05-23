@@ -13,7 +13,7 @@ class ArrotoAmargoService {
         load("cervejaDados.json")
     }
     
-    static func getEstilos() -> [EstiloCerveja] {
+    static func getEstilos() -> [BeerStyle] {
         load("estiloDados.json")
     }
     

@@ -55,9 +55,9 @@ struct CervejaLista: View {
             if viewModel.exibirCadastroAvaliacao {
                 NovaAvaliacao(viewModel: NovaAvaliacaoViewModel(nomeCerveja: nil, idCerveja: nil), estaSendoExibido: $viewModel.exibindoModal)
             } else if viewModel.exibirCadastroCerveja {
-                NovaCerveja(viewModel: NovaCervejaViewModel(), estaSendoExibido: $viewModel.exibindoModal)
+                NewBeerView(viewModel: NewBeerViewViewModel(), estaSendoExibido: $viewModel.exibindoModal)
             } else if viewModel.exibirCadastroCervejaria {
-                NovaCervejaria(viewModel: NovaCervejariaViewModel(), estaSendoExibido: $viewModel.exibindoModal)
+                NewBreweryView(viewModel: NovaCervejariaViewModel(), estaSendoExibido: $viewModel.exibindoModal)
             }
         }
     }

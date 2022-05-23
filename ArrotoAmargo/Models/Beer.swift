@@ -9,7 +9,7 @@ struct Beer: Hashable, Codable, Identifiable {
     var nota: Int?
     var ibu: Float
     var teorAlcoolico: Float
-    var estilo: EstiloCerveja
+    var estilo: BeerStyle
     var cor: Float?
     var dataAdicao: Date
     

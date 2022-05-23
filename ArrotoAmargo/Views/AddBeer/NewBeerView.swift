@@ -1,14 +1,8 @@
-//
-//  NovaCerveja.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 03/08/20.
-//
-
 import SwiftUI
 
-struct NovaCerveja: View {
-    @ObservedObject var viewModel: NovaCervejaViewModel
+struct NewBeerView: View {
+
+    @ObservedObject var viewModel: NewBeerViewViewModel
     @Binding var estaSendoExibido: Bool
     @State private var nome: String = ""
     @State private var indiceEstilo = 0
@@ -136,10 +130,13 @@ struct NovaCerveja: View {
             )
         }
     }
+
 }
 
 struct NovaCerveja_Previews: PreviewProvider {
+
     static var previews: some View {
-        NovaCerveja(viewModel: NovaCervejaViewModel(), estaSendoExibido: .constant(true))
+        NewBeerView(viewModel: NewBeerViewViewModel(), estaSendoExibido: .constant(true))
     }
+
 }

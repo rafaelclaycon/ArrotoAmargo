@@ -1,15 +1,9 @@
-//
-//  NovaCervejaViewModel.swift
-//  ArrotoAmargo
-//
-//  Created by Rafael Schmitt on 03/08/20.
-//
-
 import Combine
 import CoreLocation
 import SwiftUI
 
-class NovaCervejaViewModel: ObservableObject {
+class NewBeerViewViewModel: ObservableObject {
+
     @Published var estilos: [String] = []
     @Published var marcas: [String] = []
     @Published var cervejarias: [String] = []
@@ -57,4 +51,5 @@ class NovaCervejaViewModel: ObservableObject {
 //            return UIColor.systemPink
 //        }
     }
+
 }

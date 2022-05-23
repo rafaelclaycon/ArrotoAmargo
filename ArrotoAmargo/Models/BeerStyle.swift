@@ -1,6 +1,6 @@
 import Foundation
 
-struct EstiloCerveja: Hashable, Codable, Identifiable {
+struct BeerStyle: Hashable, Codable, Identifiable {
 
     var id: String
     var nome: String
